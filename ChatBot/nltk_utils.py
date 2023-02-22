@@ -6,7 +6,6 @@ stemmer = PorterStemmer()
 # Delete line after first run
 # nltk.download('punkt')
 
-
 def tokenize(sentence):
     return nltk.word_tokenize(sentence);
 

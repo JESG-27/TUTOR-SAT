@@ -14,13 +14,13 @@
           "Hola, mi nombre es Pablo y soy tu asistente de SAT",
           "Hola, ¿En qué te puedo ayudar?",
           "Hola, ¿Cómo puedo ayudarte?",
-          "Hola, preguntame tus dudas",
+          "Hola, bienvenido. ¿En que te ayudo?",
           "Bienvenido, estoy listo para ayudarte"
         ]
       },
       {
         "tag": "despedida",
-        "patterns": ["Adiós", "Eso es todo", "Termine", "Adios", "Nos vemos", "Salir", "Finalizar"],
+        "patterns": ["Adios", "Eso es todo", "Termine", "Nos vemos", "Salir", "Finalizar"],
         "responses": [
           "Nos vemos, gracias por visitarme",
           "Ten un maravilloso día",
@@ -29,17 +29,18 @@
       },
       {
         "tag": "gracias",
-        "patterns": ["Gracias", "Muchas gracias", "Me ayudo mucho", "Me ayudó mucho", "Le agradesco", "Ok, Gracias"],
+        "patterns": ["Gracias", "Muchas gracias", "Me ayudo mucho","Le agradesco", "Ok, Gracias"],
         "responses": ["Me alegra ser de ayuda", "Un placer ayudarle", "Estoy para servirle"]
       },
       {
         "tag": "e.firma",
         "patterns": [
           "¿Donde tramito la e.firma?",
-          "¿Qué es la e.firma?",
+          "¿Que es la e.firma?",
           "¿En donde se tramita la e.firma?",
-          "¿Cómo se tramita la e.firma?",
-          "¿Qué es la e.firma (FIEL) y donde la tramito? "
+          "¿Como se tramita la e.firma?",
+          "¿Que es la e.firma (FIEL) y donde la tramito?",
+          "e.firma"
         ],
         "responses": [
           "La e.firma el conjunto de datos y caracteres que te identifica al realizar trámites y servicios por internet en el SAT, así como en otras Dependencias, Entidades Federativas, Municipios y la iniciativa privada. \nTu e.firma es única, es un archivo seguro y cifrado, que tiene la validez de una firma autógrafa. \nPara tramitarla es en cualquier oficina del SAT que preste el servicio e.firma de Personas Físicas, con previa cita registrada en el Portal del SAT."
@@ -48,11 +49,11 @@
       {
         "tag": "noE.firma",
         "patterns": [
-          "¿Qué pasa si no tengo mi e.firma (FIEL)?",
+          "¿Que pasa si no tengo mi e.firma (FIEL)?",
           "¿Necesito e.firma?",
           "¿Debo tener e.firma?",
-          "¿Por qué tengo que tener e.firma?",
-          "¿Qué sucede si no tengo e.firma?"
+          "¿Por que tengo que tener e.firma?",
+          "¿Que sucede si no tengo e.firma?"
         ],
         "responses": [
           "No contar con tu firma electrónica representa un obstáculo para presentar Declaraciones mensuales o anuales, reimprimir acuses de RFC o reimprimir constancia de tu situación fiscal"
@@ -61,11 +62,12 @@
       {
         "tag": "declara",
         "patterns": [
-          "¿Por qué tengo que hacer declaraciones?",
+          "¿Por que tengo que hacer declaraciones?",
           "¿Para que se hacen declaraciones?",
           "¿Es necesario hacer declaraciones?",
-          "¿Por qué tengo que declarar?",
-          "¿Es obligatorio declarar?"
+          "¿Por que tengo que declarar?",
+          "¿Es obligatorio declarar?",
+          "¿Debo hacer una declaracion?"
         ],
         "responses": [
           "Es en nuestra Constitución Política donde se establece la obligación de los mexicanos de contribuir para el gasto público del país, es decir, de pagar impuestos. Los impuestos son uno de los medios principales por los que el gobierno obtiene ingresos; tienen gran importancia para la economía de nuestro país, ya que gracias a ellos se  puede invertir en aspectos prioritarios como la educación, la salud, la impartición de justicia y la seguridad."
@@ -74,10 +76,12 @@
       {
         "tag": "ceros",
         "patterns": [
-          "¿¿Puedo ingresar mi declaración de ingresos si está en cero pesos ($0.00)?",
+          "¿Puedo ingresar mi declaración de ingresos si esta en cero pesos ($0.00)?",
           "¿Se puede hacer una declaración en ceros?",
           "¿Puedo ingresar mi declaración sin ingresos o egresos?",
-          "¿Hay declaraciones en ceros?"
+          "¿Hay declaraciones en ceros?",
+          "¿Puedo hacer mis declaciones en cero?",
+          "¿Puedo hacer mis declaraciones en ceros?"
         ],
         "responses": [
           "Declarar en ceros es posible, pero siempre y cuando como persona física, autónomo, o persona moral no hayas obtenido ningún tipo de ingresos y egresos en el periodo que reportes."
@@ -86,9 +90,9 @@
 {
         "tag": "nueva",
         "patterns": [
-          "¿Qué hago si mi empresa es nueva y no tengo declaración de ingresos?",
-          "¿Mi empresa es de recién creación como demuestro que no tengo ingresos?",
-          "¿Cómo demuestro que mi empresa es nueva?"
+          "¿Que hago si mi empresa es nueva y no tengo declaracion de ingresos?",
+          "¿Mi empresa es de recien creacion como demuestro que no tengo ingresos?",
+          "¿Como demuestro que mi empresa es nueva?"
         ],
         "responses": [
           "Si tu empresa es de reciente creación, es posible demostrarlo validando la fecha de Inicio de tu Constancia de Situación Fiscal, esto quiere decir que tienes ingresos $0.00."
@@ -97,9 +101,9 @@
 {
         "tag": "navegador",
         "patterns": [
-          "¿Qué navegador es recomendable para presentar las declaraciones?",
-          "¿Cuál navegador debo usar?",
-          "¿Cuál es el mejor buscador?",
+          "¿Que navegador es recomendable para presentar las declaraciones?",
+          "¿Cual navegador debo usar?",
+          "¿Cual es el mejor buscador?",
           "navegador"
         ],
         "responses": [
@@ -109,9 +113,9 @@
 {
         "tag": "portal",
         "patterns": [
-          "¿En dónde tengo que hacer mis declaraciones?",
-          "¿Cuál es el portal del SAT?",
-          "¿En qué página debo hacer mis declaración?",
+          "¿En donde tengo que hacer mis declaraciones?",
+          "¿Cual es el portal del SAT?",
+          "¿En que pagina debo hacer mis declaracion?",
           "¿En donde debo declarar?"
         ],
         "responses": [
@@ -121,13 +125,13 @@
 {
         "tag": "ingresarDeclaraciones",
         "patterns": [
-          "¿Qué necesito para ingresar al portal del SAT?",
-          "¿Qué necesito para ingresar a hacer mis declaraciones?",
-          "¿Qué necesito para ingresar al SAT?",
-          "¿Cómo ingreso a mis declaraciones?",
-          "¿Con qué ingreso a mis declaraciones?",
-          "¿Con qué puedo ingresar al portal del SAT?",
-          "¿Con qué ingreso al portal"
+          "¿Que necesito para ingresar al portal del SAT?",
+          "¿Que necesito para ingresar a hacer mis declaraciones?",
+          "¿Que necesito para ingresar al SAT?",
+          "¿Como ingreso a mis declaraciones?",
+          "¿Con que ingreso a mis declaraciones?",
+          "¿Con que puedo ingresar al portal del SAT?",
+          "¿Con que ingreso al portal"
         ],
         "responses": [
           "Hay dos maneras de autenticarse para ingresar al portal. \nOpción 1: Con contraseña, para lo cual se requiere el RFC a 13 posiciones, tu contraseña y capturar el captcha. \nOpción 2: Con firma electrónica (e.firma), para lo cual se requieren los archivos .cer y .key, la contraseña de clave privada y el RFC a 13 posiciones."
@@ -136,7 +140,7 @@
 {
         "tag": "definitiva",
         "patterns": [
-          "¿Qué es una declaración definitiva?",
+          "¿Que es una declaracion definitiva?",
           "Declaración definitiva"
         ],
         "responses": [
@@ -146,12 +150,12 @@
 {
         "tag": "frecuencia",
         "patterns": [
-          "¿Con qué frecuencia debo presentar mi declaración?",
-          "¿Cada cuánto presento mi declaración?",
-          "¿Cuándo se presentan las declaraciones?",
-          "¿Con que frecuencia hago mis declaración?",
+          "¿Con que frecuencia debo presentar mi declaracion?",
+          "¿Cada cuanto presento mi declaracion?",
+          "¿Cuando se presentan las declaraciones?",
+          "¿Con que frecuencia hago mis declaracion?",
           "¿Con que frecuencia debo presentar declaraciones?",
-          "¿Cada cuánto debo presentar declaraciones?"
+          "¿Cada cuanto debo presentar declaraciones?"
         ],
         "responses": [
           "Las declaraciones se deben presentar a más tardar el día 17 del mes inmediato posterior a aquél al que corresponda el pago."
@@ -160,7 +164,7 @@
 {
         "tag": "errorRegistro",
         "patterns": [
-          "¿Qué hago si al ver el detalle de mis ingresos por sueldos y salarios me muestra el mensaje “Existen errores en el registro”?",
+          "¿Que hago si al ver el detalle de mis ingresos por sueldos y salarios me muestra el mensaje “Existen errores en el registro”?",
           "Errores de registro"
         ],
         "responses": [
@@ -170,11 +174,11 @@
 {
         "tag": "CFDIdefinicion",
         "patterns": [
-          "¿Qué es el CDFI?",
-          "¿Qué es un CDFI?",
-          "Definición CFDI",
+          "¿Que es el CFDI?",
+          "¿Que es un CFDI?",
+          "Definicion CFDI",
           "CFDI",
-          "¿Qué es CFDI?"
+          "¿Que es CFDI?"
         ],
         "responses": [
           "El CFDI (Comprobante Fiscal Digital por Internet) es un documento que avala las operaciones o transacciones realizadas por personas físicas o morales ante el SAT. Desde su instauración en 2004, es obligatorio para todos los contribuyentes.",
@@ -184,10 +188,11 @@
 {
         "tag": "version",
         "patterns": [
-          "¿En qué versión del CFDI debo de hacer mi trámite?",
-          "¿Cuál es la versión de CFDI que debo usar?",
-          "¿Qué versión de CFDI utilizo?",
-          "¿Cúal versión de CFDI uso?"
+          "¿En que versión del CFDI debo de hacer mi tramite?",
+          "¿Cual es la version de CFDI que debo usar?",
+          "¿Que versión de CFDI utilizo?",
+          "¿Cual versión de CFDI uso?",
+          "¿Que version de CFDI uso?"
         ],
         "responses": [
           "Servicio de facturación CFDI versión 4.0"
@@ -196,8 +201,8 @@
 {
         "tag": "facturaElectronica",
         "patterns": [
-          "¿Qué es una factura electrónica?",
-          "Factura electrónica "
+          "¿Que es una factura electronica?",
+          "Factura electronica "
         ],
         "responses": [
           "Una factura electrónica es un comprobante fiscal digital que se genera mediante internet (CFDI). Este comprobante es emitido a través de la página del SAT para que así se tenga registro de lo que una empresa o comerciante vende, es decir, los ingresos que está generando y que las autoridades fiscales tengan notificación de ello."
@@ -206,10 +211,10 @@
 {
         "tag": "usosCFDI",
         "patterns": [
-          "¿Cuáles son los usos de CFDI más utilizados?",
+          "¿Cuales son los usos de CFDI mas utilizados?",
           "CFDI usos",
-          "CFDI más utilizados",
-          "¿Qué uso de CDFI utilizo?"
+          "CFDI mas utilizados",
+          "¿Que uso de CDFI utilizo?"
         ],
         "responses": [
           "Estos son los 5 CFDI más usados: \nG03: Gastos en general \nG01: Adquisición de mercancías \nD01: Honorarios médicos, dentales y gastos hospitalarios \nD07: Pagos por servicios educativos (colegiaturas) \nG02: Devoluciones, descuentos o bonificaciones"
@@ -218,11 +223,11 @@
 {
         "tag": "usosCFDIRegimen",
         "patterns": [
-          "¿Cuáles son los usos de CFDI más utilizados para Régimen Simplificado de confianza RESICO?",
+          "¿Cuales son los usos de CFDI mas utilizados para Regimen Simplificado de confianza RESICO?",
           "CFDI que aplican en RESICO",
-          "CFDI para Régimen Simplificado de Confianza",
-          "Usos de CFDI que aplican para el Régimen Simplificado de Confianza",
-          "¿Qué usos de CFDI puedo usar para el Régimen Simplificado de Confianza",
+          "CFDI para Regimen Simplificado de Confianza",
+          "Usos de CFDI que aplican para el Regimen Simplificado de Confianza",
+          "¿Que usos de CFDI puedo usar para el Regimen Simplificado de Confianza",
           "usos CDFI en Regimen simplificado de confianza"
         ],
         "responses": [
@@ -232,10 +237,10 @@
 {
         "tag": "cualesObligaciones",
         "patterns": [
-          "¿Cuáles son mis obligaciones fiscales?",
-          "¿Cómo se cuales son mis obligaciones fiscales?",
-          "¿Cómo veo mis obligaciones fiscales?",
-          "¿Dónde están mis obligaciones fiscales?"
+          "¿Cuales son mis obligaciones fiscales?",
+          "¿Como se cuales son mis obligaciones fiscales?",
+          "¿Como veo mis obligaciones fiscales?",
+          "¿Donde estan mis obligaciones fiscales?"
         ],
         "responses": [
           "En tu constancia de situación fiscal se encuentran tus obligaciones fiscales en la segunda hoja."
@@ -244,9 +249,9 @@
 {
         "tag": "defConstancia",
         "patterns": [
-          "¿Qué es una constancia de situación fiscal?",
-          "¿Para qué sirve una constancia?",
-          "Definición de constancia de situación fiscal"
+          "¿Que es una constancia de situacion fiscal?",
+          "¿Para que sirve una constancia?",
+          "Definición de constancia de situacion fiscal"
         ],
         "responses": [
           "La Constancia de Situación Fiscal es un acta que permite conocer el estatus de los contribuyentes ante el SAT. Se trata de una referencia sobre la legalidad de la situación fiscal del contribuyente."
@@ -256,11 +261,11 @@
         "tag": "oficinas",
         "patterns": [
           "",
-          "¿En donde se sitúan las oficinas del sat?",
+          "¿En donde se situan las oficinas del sat?",
           "Oficinas del SAT",
           "Oficinas de hacienda",
-          "¿A dónde puedo ir para aclaraciones?",
-          "¿Cuáles son las oficionas del SAT"
+          "¿A donde puedo ir para aclaraciones?",
+          "¿Cuales son las oficionas del SAT"
         ],
         "responses": [
           "Módulo ADSC Jalisco «1» Guadalajara \nDirección: Avenida de las Américas núm. 833, P.B., entre Florencia y Colomos, Col, Jesús García, 44656, Guadalajara, Jalisco \nHorario: Lunes a Jueves de 08:00 a 16:00 y Viernes de 08:00 a 15:00 hrs. \nTeléfono: 55 6272 2728 \n Módulo ADSC Jalisco «2» Guadalajara Sur \n Dirección: Av. Lázaro Cárdenas núm. 2305, Col. Las Torres, 44920, Guadalajara, Jalisco. \n Planta G  Comercial Abastos. \n Horario: Lunes a Jueves de 08:30 a 16:00 y Viernes de 08:30 a 15:00 hrs. \n Teléfono: 33 3880 9700 \n Módulo ADSC Jalisco «3» Zapopan \n Dirección: Av. Central núm. 735, col. Residencial Pnte., c.p. 45136, Zapopan, Jalisco. \n Horario: Lunes a Jueves de 08:00 a 16:00 y Viernes de 08:30 a 15:00 hrs. \n Teléfono: 33 3836 2000 \n MST Lagos de Moreno \n Dirección: San Modesto #50, Fraccionamiento La Palma, Lagos de Moreno, Jalisco, como referencia se puede señalar a un costado del edificio UNIRSE \n Horario: Lunes a Viernes de 8:30 a 14:30 hrs.\n Teléfono: 55 627 22 728 \nMST Ocotlán\nDirección: Av. Universidad núm. 950, locales del 55 al 58, Plaza San Felipe, entre Ecuador y del Obrero, Col. Centro, 47810, Ocotlán, Jalisco.\nHorario: Lunes a Viernes de 8:30 a 14:30 hrs. \nTeléfono: 55 627 22 728 \n MST Puerto Vallarta \n Dirección: Av. Francisco Villa núm. 1292, p.b., edif. Aralias, entre av. Pavorreal y av. Los Tules, col. Las Aralias, c.p. 48328, Puerto Vallarta, Jalisco. \n Horario: Lunes a Jueves de 08:30 a 16:00 hrs. y Viernes de 8:30 a 15:00 hrs. \n Teléfono: 55 627 22 728 \n MST Tepatitlán \n Dirección: Blvd. Anacleto González Flores, 323 Local B, Plaza Vizcaya, Col. Del Carmen, 47690, Tepatitlán de Morelos, Jalisco. \n Horario: Lunes a Viernes de 8:30 a 14:30 hrs. \n Teléfono: 55 627 22 728"
@@ -269,9 +274,9 @@
 {
         "tag": "tiposImpuestos",
         "patterns": [
-          "¿Qué tipos de impuestos se pagan en el SAT?",
-          "¿Cuáles son los impuestos del SAT?",
-          "¿Qué impuestos se pagan en el SAT?"
+          "¿Que tipos de impuestos se pagan en el SAT?",
+          "¿Cuales son los impuestos del SAT?",
+          "¿Que impuestos se pagan en el SAT?"
         ],
         "responses": [
           "Los impuestos más importantes son: \nImpuesto Sobre la Renta (ISR) \nImpuesto al Valor Agregado (IVA) \nImpuesto Especial sobre Producción y Servicios (IEPS) \nImpuesto sobre Automóviles Nuevos (ISAN) \nImpuesto Empresarial a Tasa Única (IETU) \nImpuesto a los Depósitos en Efectivo (IDE)"

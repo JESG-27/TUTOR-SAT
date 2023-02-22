@@ -24,15 +24,43 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
+# Filtro de acentos
+def acentos(sentences):
+    """
+    Funcion que cambia las vocales con acentos a la vocal sin ellos.
+    """
+    acentos = ["á","é","í","ó","ú"]
+    flag = False
+    for i in sentences:
+        if i in acentos:
+            flag = True
+    if (flag):
+        sentences = sentences.replace('á', 'a')
+        sentences = sentences.replace('é', 'e')
+        sentences = sentences.replace('í', 'i')
+        sentences = sentences.replace('ó', 'o')
+        sentences = sentences.replace('ú', 'u')
+        return sentences
+    return sentences
+
 # Saludo segun la hora del dia
-hour = datetime.datetime.now().hour
-greeting = "Buenos dias" if hour>=12 and hour<18 else "Buenas tardes" if hour>=18 else "Buenas noches"
+currentTime = datetime.datetime.now()
+currentTime.hour
+greeting = ""
+if currentTime.hour < 12:
+    greeting = "Buenos dias"
+elif 12 <= currentTime.hour <= 18:
+    greeting = "Buenos tardes"
+else:
+    greeting = "Buenos noches"
 
 bot_name = 'Pablo'
 print(f"{greeting}, ¡Comencemos!")
-while flag:
-    sentence = input("Tú: ")
-    sentence = tokenize(sentence)
+
+def get_response(msg):
+    sentece = msg
+    sentece = acentos(sentece)
+    sentence = tokenize(sentece)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X).to(device)
@@ -44,11 +72,24 @@ while flag:
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
 
-    if prob.item() > 0.75:
+    if prob.item() > 0.85:
         for intent in intents['intents']:
             if tag == intent['tag']:
-                print(f"{bot_name}: {random.choice(intent['responses'])}")
+               return random.choice(intent['responses'])
+            '''
             if tag == "despedida":
-                flag = False
-    else:
-        print(f"{bot_name}: Perdón, no te entiendo.")
+                break
+            '''
+    return "Perdón, no te entiendo."
+
+if __name__ == "__main__":
+    print("Let's chat! (type 'quit' to exit)")
+    while True:
+        # sentence = "do you use credit cards?"
+        sentence = input("You: ")
+        if sentence == "quit":
+            break
+
+        resp = get_response(sentence)
+        print(resp)
+# Hacer metodo para ingresar datos al json
