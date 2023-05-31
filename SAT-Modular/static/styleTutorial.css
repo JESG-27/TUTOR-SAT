@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana,Geneva,sans-serif; 
+    box-sizing: border-box;
+}
+
+/* ---- Letras ----*/
+h1 { 
+     font-size: 28px; font-style: normal; font-variant: normal; font-weight: 600; line-height: 35.4px; padding-bottom: .8rem; letter-spacing: 1px; 
+}
+h3 { 
+    font-size: 23px; font-style: normal; font-variant: normal; font-weight: 200; line-height: 32.4px; padding-right: 5rem; padding-bottom: 4%;
+} 
+p { 
+    font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; text-align: justify; padding-right: 3rem; 
+} 
+h2 {
+    font-size: 20px; font-style: normal; font-variant: normal; font-weight: 600; line-height: 32.4px; padding-bottom: 3%;
+}
+
+/* ---- Contenido ----*/
+.container {
+    margin: 2% 5%;
+    display: flex;
+}
+
+/* Dos columnas principales*/
+.content1 {
+    width: 55%;
+    margin: 0 auto;
+    padding-left: 3%;
+}
+
+.content2 {
+    width: 45%;
+    margin: 0 auto;
+}
+
+/* Demas columnas */
+.content {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/* ---- Div izquierda ----*/
+/* Requisitos */
+.container-requisitos {
+    margin: 0% 0% 3% 4%;
+    display: flex;
+}
+
+/* Duración y precio */
+.container-icons {
+    margin: 0%;
+    display: flex;
+    padding: 2%;
+    margin-right: 3rem; 
+    box-shadow: 0 0 0 4px white, 0 6px 2px #ccc, 0 -6px 2px #ccc;
+    margin-bottom: 4%;
+}
+
+.list {
+    list-style: none;
+    font-size: 20px;
+}
+
+.list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #919191;
+}
+
+.icon-list {
+    width: 42px;
+    height: 42px;
+    margin-right: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    
+}
+
+/* ---- Div derecha ----*/
+.right {
+    margin: 0 auto;
+}
+
+.view-img {
+    width: 75%;
+    padding-bottom: 7%;
+}
+
+/* Boton de comenzar */
+button {
+    height: 3.8rem;
+    width: 73.5%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 2.5px;
+}
+
+.css-button-arrow--green {
+
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0 3px 1px -6px #ccc, 0 2px 2px 0 #ccc, 0 4px 6px 0 #ccc;
+    background-color: #4CAF50;
+  }
+  .css-button-arrow--green:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left: 8px;
+  }
+  .css-button-arrow--green:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+  .css-button-arrow--green:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 40px;
+    line-height: 40px;
+    top: 6.9px;
+    right: -15px;
+    transition: 0.4s;
+  }
+
