@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>SATSIM - Preguntas Frecuentes</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1 class="main_title">Preguntas Frecuentes</h1>
+    <div class="question">
+        <h2 class="question_title">¿Qué es una e.firma?</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quidem expedita quos accusamus suscipit error laudantium ex accusantium dolore</p>
+        <a href="">Referencia</a>
+    </div>
+    <div class="question__input">
+        <h2 class="question_title">Realiza una pregunta</h2>
+        <form>
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo electrónico">
+            <input type="text" placeholder="Inserte su pregunta">
+            <button type="submit">Realizar</button>
+        </form>
+        <img src="{{ url_for('static', filename='images/logoSATSIM.png') }}">
+    </div>
+</div>
+{% endblock %}

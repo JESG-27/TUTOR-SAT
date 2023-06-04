@@ -4,11 +4,12 @@ from chat import get_response
 
 app = Flask(__name__)
 
-
+# --------------------------------------  Ruta de inicio  --------------------------------------
 @app.route('/')
 def homepage():
-   return render_template('base.html')
+   return render_template('inicio.html')
 
+# --------------------------------------  Chatbot  --------------------------------------
 @app.post('/predict')
 def predict():
     text = request.get_json().get('message')
@@ -16,14 +17,20 @@ def predict():
     message = {"answer": response}
     return jsonify(message)
 
+# --------------------------------------  Tutoriales  --------------------------------------
 @app.route('/declaraciones')
 def declaraciones():
-    return render_template('declaraciones.html')
+    return render_template('declaraciones copy.html')
 
 @app.route('/CFDI')
 def CFDI():
     return render_template('CFDI.html')
 
+# --------------------------------------  Preguntas Frecuentes  --------------------------------------
+@app.route('/preguntas-frecuentes')
+def preguntas():
+    return render_template('preguntas.html')
 
+# -------------------------------------- app.run --------------------------------------
 if __name__ == '__main__':
     app.run(debug=True)
