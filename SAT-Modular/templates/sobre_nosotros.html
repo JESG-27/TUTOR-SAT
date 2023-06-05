@@ -1,0 +1,60 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>SATSIM - Sobre nosotros</title>
+{% endblock %}
+
+{% block body %}
+
+
+    <img src="{{ url_for('static', filename='images/Somos.png') }}" width="1000" height="400">
+
+    <div class="container">
+        <div class="content_left">
+            <h1 class="main_title">Descripcion 1</h1>
+            <h2>!Quienes somos </h2>
+        </div>
+        <div class="content_right">
+            <img src="">  <!-- Imagen uno orientada a la derecha -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content_right">
+            <h1 class="main_title">Descripcion 2</h1>
+            <h2>!Quienes somos </h2>
+        </div>
+        <div class="content_left">
+            <img src="">    <!-- Imagen dos orientada a la izquierda -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content_left">
+            <h1 class="main_title">Descripcion 3</h1>
+            <h2>!Quienes somos </h2>
+        </div>
+        <div class="content_right">
+            <img src="">   <!-- Imagen tres orientada a la derecha -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="formulario_contacto">
+            <h2 class="question_title">Contactanos</h2>
+            <form>
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Correo electrónico">
+                <input type="text" placeholder="Mensaje">
+                <button type="submit">Contactar</button>
+            </form>
+        </div>
+        <div class="content_right">
+            <img src="{{ url_for('static', filename='images/image 16.png') }}" width="60" height="30">   <!-- Imagen tres orientada a la derecha -->
+            <img src="{{ url_for('static', filename='images/image 17.png') }}" width="60" height="30">   <!-- Imagen tres orientada a la derecha -->
+        </div>
+
+    </div>
+        
+
+{% endblock %}
