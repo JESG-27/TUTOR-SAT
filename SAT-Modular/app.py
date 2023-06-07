@@ -24,7 +24,7 @@ def tutorial():
 
 @app.route('/declaraciones')
 def declaraciones():
-    return render_template('declaraciones copy.html')
+    return render_template('declaraciones.html')
 
 @app.route('/CFDI')
 def CFDI():
@@ -41,6 +41,11 @@ def preguntas():
 def nosotros():
     return render_template('sobre_nosotros.html')
 
+# -------------------------------------- Errores --------------------------------------
+def not_found(error):
+    return render_template('404.html'), 404
+
 # -------------------------------------- app.run --------------------------------------
 if __name__ == '__main__':
+    app.register_error_handler(404, not_found)
     app.run(debug=True)

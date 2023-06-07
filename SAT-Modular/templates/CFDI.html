@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html lang="es">
+{% extends 'layout.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIMSAT - Declaraciones</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styleTutorial.css') }}">
-    
-</head>
+{% block head %}
+<title>SIMSAT - Declaraciones</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styleTutorial.css') }}">
+{% endblock %}
 
-<body>
-    <h1>LOGO</h1>
+{% block body %}
     <div class="container">
         <div class="content1">
             <h1>Tutorial con Simulación para tus CFDI Versión 4.0</h1>
@@ -50,8 +45,4 @@
             <center><button class="css-button-arrow--green"><a href="">COMENZAR</a></button></center>
         </div>
     </div>
-
-</body>
-
-</html>
-
+{% endblock %}
