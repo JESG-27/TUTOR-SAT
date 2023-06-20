@@ -26,6 +26,7 @@ def tutorial():
 def declaraciones():
     return render_template('declaraciones.html')
 
+# ------------------- CFDI -------------------
 @app.route('/CFDI')
 def CFDI():
     return render_template('CFDI.html')

@@ -11,18 +11,14 @@
 
 <body>
 
-    <header class="header__style">
-        <a href="/">
-            <img class="logo_navbar" src="{{ url_for('static', filename='images/logoNavbar.png') }}">
-        </a>
-        <nav class="navbar">
-            <a class="navbar__item" href="/tutoriales">Tutoriales</a>
-            <a class="navbar__item" href="/sobre_nosotros">Sobre Nosotros</a>
-        </nav>
-    </header>
+    <div class="tutorial_text_header">
+        <p class="tutorial_text" id="tutorialText">Aqui está el texto original</p>
+    </div>
 
     {% block body %}
     {% endblock %}
+
+    <a class="return_home" href="/">Inicio</a>
 
     <div class="container">
         <div class="chatbox">
@@ -50,18 +46,11 @@
         </div>
     </div>
 
-    <footer class="footer_info">
-        <div class="container">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eaque doloribus! Quidem aspernatur dolores tenetur soluta beatae? Odio asperiores vel sit rem, aliquam enim alias, similique ab perferendis, architecto nesciunt? Layout
-            </p>
-        </div>
-    </footer>
-
     <script>
         $SCRIPT_ROOT = {{ request.script_root|tojson }};
     </script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/tutorialCFDI.js') }}"></script>
 
 </body>
 </html>
