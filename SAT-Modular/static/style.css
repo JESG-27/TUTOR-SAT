@@ -22,7 +22,7 @@ body {
 /* CHATBOX
 =============== */
 .chatbox {
-    position: absolute;
+    position: fixed;
     bottom: 30px;
     right: 30px;
 }
@@ -204,3 +204,61 @@ body {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+
+/* -------TUTORIAL CFDI ------- */
+.body-tutorial{
+    background-color: rgb(243, 243, 244);
+    overflow: hidden;
+}
+
+/* BUTTON ARROW*/
+.img-arrow{
+    width: 50px;
+}
+
+.arrow__button{
+    position: fixed;
+    bottom: 25px;
+    left: 30px;
+}
+
+/*TUTORIAL*/
+.name-course {
+    font-size: 14px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 32.4px; margin-left: 30px; color: gray;
+}
+
+/*Instructions part*/
+.tutorial_text_header{
+    height: 60px;
+    width: 80%;
+    background-color: #581B98;
+    position: relative;
+    padding: 0 15px 0 15px  ;
+    border-bottom: 4px solid  rgb(243, 243, 244);
+    margin: auto;
+    display: flex;
+}
+
+.tutorial_text {
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+
+.tuto-window{
+    background-color:rgb(243, 243, 244);
+    width: 300px;
+    margin: auto;
+    width: 80%; 
+    height:530px; 
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.captura {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
