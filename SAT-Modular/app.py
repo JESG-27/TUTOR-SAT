@@ -31,6 +31,11 @@ def declaraciones():
 def CFDI():
     return render_template('CFDI.html')
 
+# ------------------- CFDI Tutorial -------------------
+@app.route('/tuto')
+def tutorialCFDI():
+    return render_template('layoutCFDI.html')
+
 # --------------------------------------  Preguntas Frecuentes  --------------------------------------
 @app.route('/preguntas-frecuentes')
 def preguntas():
