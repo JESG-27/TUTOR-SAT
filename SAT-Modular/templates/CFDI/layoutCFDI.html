@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
-    
+
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/jpg" href="{{ url_for('static', filename='./images/Favicon.png' ) }}"/>
+    <link rel="icon" type="image/jpg" href="{{ url_for('static', filename='./images/Favicon.png' ) }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     {% block head %}
     {% endblock %}
 </head>
 
-<body>
+<body class="body-tutorial">
 
-    <div class="tutorial_text_header">
-        <p class="tutorial_text" id="tutorialText">Aqui está el texto original</p>
+    
+
+    <div class="full-tutorial">
+        <h2 class="name-course">Tutorial CFDI Para Público en General</h2>
+        <div class="tutorial_text_header">
+            <p class="tutorial_text" id="tutorialText">Aqui está el texto original</p>
+        </div>
+        <div class="tutorial_text_header2">
+        {% block body %}
+        {% endblock %}
+        </div>
     </div>
 
-    {% block body %}
-    {% endblock %}
-
-    <a class="return_home" href="/">Inicio</a>
+    <div class="arrow__button">
+        <a class="return_home" href="/"><img class="img-arrow"
+                src="{{ url_for('static', filename='images/arrow.png') }}" /></button></a>
+    </div>
 
     <div class="container">
         <div class="chatbox">
@@ -29,7 +38,8 @@
                     </div>
                     <div class="chatbox__content--header">
                         <h4 class="chatbox__heading--header">SATSIM</h4>
-                        <p class="chatbox__description--header">Desarrollado por alumnos de INCO del Centro Universitario de Ciencias Exactas e Ingenierías.</p>
+                        <p class="chatbox__description--header">Desarrollado por alumnos de INCO del Centro
+                            Universitario de Ciencias Exactas e Ingenierías.</p>
                     </div>
                 </div>
                 <div class="chatbox__messages">
@@ -47,10 +57,11 @@
     </div>
 
     <script>
-        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+        $SCRIPT_ROOT = {{ request.script_root | tojson }};
     </script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/tutorialCFDI.js') }}"></script>
 
 </body>
+
 </html>
