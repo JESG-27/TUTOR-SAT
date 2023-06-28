@@ -32,9 +32,9 @@ def CFDI():
     return render_template('CFDI.html')
 
 # ------------------- CFDI Tutorial -------------------
-@app.route('/tuto')
+@app.route('/CFDI-tutorial')
 def tutorialCFDI():
-    return render_template('CFDI/CFDIpt1.html')
+    return render_template('CFDI/tutorialCFDI.html')
 
 # --------------------------------------  Preguntas Frecuentes  --------------------------------------
 @app.route('/preguntas-frecuentes')

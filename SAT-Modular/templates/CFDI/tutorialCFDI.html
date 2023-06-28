@@ -1,0 +1,14 @@
+{% extends 'CFDI/layoutCFDI.html' %}
+
+{% block head %}
+<title>CFDI - Pt1</title>
+{% endblock %}
+
+{% block body %}
+<div class="tutorial_text_header2" id="tuto-window">
+    <div class="tuto-window">
+        <img class="captura" src="{{ url_for('static', filename='images/CFDI/SAT-inicio0.png') }}" alt="image">
+        <input type="button" onclick="siguiente(), actualizarTexto(1)" value="Factura electrónica">
+    </div>
+</div>
+{% endblock %}
