@@ -263,14 +263,17 @@ body {
 }
 
 /* Large screens ----------- */
+/* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
     .tuto-window {
-        height: 1030px;
+        height: 930px;
         width: 90%;
     }
 
     .tutorial_text_header {
-        height: 70px;
+        height: 75px;
         width: 90%;
+        border-bottom: 6px solid  rgb(243, 243, 244);
+        margin-top: 15px;
     }
 }
