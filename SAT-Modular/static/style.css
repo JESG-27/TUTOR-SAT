@@ -263,7 +263,6 @@ body {
 }
 
 /* Large screens ----------- */
-/* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
     .tuto-window {
         height: 930px;
