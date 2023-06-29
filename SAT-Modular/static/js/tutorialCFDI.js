@@ -40,11 +40,31 @@ var SAT_inicio3 = `
 var SAT_inicio4 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/SAT-inicio4.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto()" value="EJECTUAR EN LINEA">
+    <input type="button" onclick="siguiente(), actualizarTexto(5)" value="EJECTUAR EN LINEA">
 </div>
 <input type="button" onclick="anterior(), actualizarTexto(3)" value="Atras">
 `;
 
+// Posición 5
+var Login1 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Login-pt1.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Login-pt2.png" alt="image">
+    
+    <div class="sesion">
+        <form action="#" method="post">
+            <input type="text" placeholder="RFC" required/>
+            <input type="password" placeholder="Contraseña" required/>
+            <input type="text" placeholder="Escribe la palabra del captcha" required/>
+            <button type="submit">Enviar</button>
+        </form>
+
+    </div>    
+</div>
+<input type="button" onclick="anterior(), actualizarTexto(4)" value="Atras">
+`;
+
+//<input type="button" onclick="siguiente(), actualizarTexto()" value="EJECTUAR EN LINEA">
 
 // Textos de guía
 // Posición 0
@@ -92,8 +112,8 @@ var captcha_login = `
 El captcha es un método de seguridad de la plataforma, debes de ingresar las letras/números de la imágen superior, por último da click en "Enviar"
 `;
 
-var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, SAT_inicio4]
-var tutorial_text = [boton_factura_electronica, boton_servicio_facturacion, boton_servicios_facturacion, boton_facturacion_cuentas, boton_ejecutar_linea,
+var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, SAT_inicio4,Login1]
+var tutorial_text = [boton_factura_electronica, boton_servicio_facturacion, boton_servicios_facturacion, boton_facturacion_cuentas, boton_ejecutar_linea,login,
                     RFC_login, contrasena_login, captcha_login]
 
 async function actualizarTexto(pos){
