@@ -1,4 +1,5 @@
-var contador = 0;
+var contador = 0
+var username = ""
 
 // HTML captura del tutorial
 // Posición 0
@@ -80,10 +81,13 @@ var config_datos_emisor = `
 <div class="tuto-window">
     <img class="capturaCorta" src="/static/images/CFDI/Datos-emisor-pt1.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Datos-emisor-pt2.png" alt="image">
-    <input type="text" onclick="actualizarTexto(5)" id="RFC" onkeyup="this.value = this.value.toUpperCase();">
-    <input type="text" onclick="actualizarTexto(12)" id="nombre">
-    <input type="text" onclick="actualizarTexto(13)">
-    <input type="button" onclick="siguiente(), actualizarTexto()" value="Guardar">
+    <form>
+        <input type="text" onclick="actualizarTexto(5)" id="RFC" onkeyup="this.value = this.value.toUpperCase();" required>
+        <input type="text" onclick="actualizarTexto(12)" id="nombre">
+        <input type="text" onclick="actualizarTexto(13)">
+        <input type="button" onclick="val_registro_emisor()" value="Guardar">
+        <!-- <input type="button" onclick="siguiente(), actualizarTexto()" value="Guardar"> -->
+    </form>
 </div>
 <input type="button" onclick="anterior(), actualizarTexto(10)" value="Atras">
 `;
@@ -161,7 +165,7 @@ Si así lo deseas y cuentas con un nombre comercial puedes agregarlo aquí y tam
 
 var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor]
 
-var tutorial_text = [boton_factura_electronica, boton_servicios_facturacion, boton_facturacion_cuentas, boton_ejecutar_linea,login,
+var tutorial_text = [boton_factura_electronica, boton_servicios_facturacion, boton_facturacion_cuentas, boton_ejecutar_linea, login,
                     RFC_login, contrasena_login, captcha_login, datos_incorrectos,
                     engrane_opciones, opcion_datos_emisor, registro_emisor, nombre_razon_social, nombre_comercial]
 
@@ -200,6 +204,23 @@ async function val_login(){
     else
     {
         actualizarTexto(8)
+        document.getElementById("RFC").value = ""
+        document.getElementById("contrasena").value = ""
+        document.getElementById("captcha").value = ""
+    }
+}
+
+// Validación de registro de emisor
+async function val_registro_emisor(){
+    RFC = document.getElementById("RFC").value
+    if (RFC == "ABCD123456XXX")
+    {
+        username = document.getElementById("nombre").value
+    }
+    else
+    {
+        actualizarTexto(8)
+        document.getElementById("RFC").value = ""
     }
 }
 
