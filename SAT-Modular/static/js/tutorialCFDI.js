@@ -4,7 +4,7 @@ var contador = 0;
 // Posición 0
 var SAT_inicio0 = `
 <div class="tuto-window">
-    <img class="captura" src="/static/images/CFDI/1.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/SAT-inicio1.png" alt="image">
     <input type="button" onclick="siguiente(), actualizarTexto(1)" value="Factura electrónica">
 </div>
 `;
