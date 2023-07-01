@@ -262,6 +262,12 @@ body {
     display: block;
 }
 
+.capturaCorta {
+    width: 100%;
+    height: 65%;
+    display: block;
+}
+
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
     .tuto-window {
