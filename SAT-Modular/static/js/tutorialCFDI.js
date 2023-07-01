@@ -25,7 +25,7 @@ var SAT_inicio2 = `
 <div class="tuto-window">
     <img class="capturaCorta" src="/static/images/CFDI/SAT-inicio2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/SAT-inicio3.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto(3)" value="Servicio de facturación Mis Cuentas versión 4.0 (vigente a partir del 1 de enero de 2022">
+    <input type="button" onclick="siguiente(), actualizarTexto(3)" value="Servicio de facturación Mis Cuentas versión 4.0">
 </div>
 <input type="button" onclick="anterior(), actualizarTexto(1)" value="Atras">
 `;
@@ -105,7 +105,7 @@ Una vez dentro ubica y haz click en "Servicios de facturación" donde se despleg
 
 // Posición 2
 var boton_facturacion_cuentas = `
-Una vez dentro ubica y haz click en "Servicio de facturación Mis Cuentas versión 4.0 (vigente a partir del 1 de enero de 2022", al ingresar en la sección de Mis cuentas no necesitarás la e.firma
+Una vez dentro ubica y haz click en "Servicio de facturación Mis Cuentas versión 4.0", al ingresar en la sección de Mis cuentas no necesitarás la e.firma
 `;
 
 // Posición 3
