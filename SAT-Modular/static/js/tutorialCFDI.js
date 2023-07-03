@@ -1,5 +1,4 @@
 var contador = 0
-var username = ""
 
 // HTML captura del tutorial
 // Posición 0
@@ -81,9 +80,9 @@ var config_datos_emisor = `
 <div class="tuto-window">
     <img class="capturaCorta" src="/static/images/CFDI/Datos-emisor-pt1.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Datos-emisor-pt2.png" alt="image">
-    <form>
-        <input type="text" onclick="actualizarTexto(5)" id="RFC" onkeyup="this.value = this.value.toUpperCase();" required>
-        <input type="text" onclick="actualizarTexto(12)" id="nombre">
+    <form id="congif_datos_emisor">
+        <input type="text" onclick="actualizarTexto(5)" id="RFC" onkeyup="this.value = this.value.toUpperCase();">
+        <input type="text" onclick="actualizarTexto(12)" id="nombre" onkeyup="this.value = this.value.toUpperCase();">
         <input type="text" onclick="actualizarTexto(13)">
         <input type="button" onclick="val_registro_emisor()" value="Guardar">
         <!-- <input type="button" onclick="siguiente(), actualizarTexto()" value="Guardar"> -->
@@ -92,7 +91,21 @@ var config_datos_emisor = `
 <input type="button" onclick="anterior(), actualizarTexto(10)" value="Atras">
 `;
 
-// Textos de guía
+// Posición 8
+var config_datos_emisor_engrane = `
+<div class="tuto-window">
+    <img class="capturaCorta" src="/static/images/CFDI/Datos-emisor-engrane.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Datos-emisor-pt2.png" alt="image">
+    <input type="button" onclick="siguiente(), actualizarTexto()" value="Básica">
+    <form>
+        <input type="text" id="RFC" onkeyup="this.value = this.value.toUpperCase();" value="ABCD123456XXX">
+        <input type="text" id="nombre" onkeyup="this.value = this.value.toUpperCase();" value="NOMBRE LEGAL">
+    </form>
+</div>
+<input type="button" onclick="anterior(), actualizarTexto(11)" value="Atras">
+`;
+
+// -------------------------------------------------------- Textos de guía --------------------------------------------------------
 // Posición 0
 var boton_factura_electronica = `
 Desde la página de inicio del portal SAT haz click en el apartado de "Factura electrónica"
@@ -155,7 +168,7 @@ Llegaste hasta la configuración de datos del emisor, lo más importante de este
 
 // Posición 12
 var nombre_razon_social = `
-En este apartado debes de agregar tu nombre, denominación o razón social inscrito a tu RFC
+En este apartado debes de agregar tu nombre, denominación o razón social inscrito a tu RFC, para este ejemplo agrega "NOMBRE LEGAL"
 `;
 
 // Posición 13
@@ -163,11 +176,21 @@ var nombre_comercial = `
 Si así lo deseas y cuentas con un nombre comercial puedes agregarlo aquí y también el logotipo, pero para este tutorial no será necesario. Ya con los datos anteriores ingresados recuerda hacer click en guardar
 `;
 
-var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor]
+// Posición 14
+var registro_emisor_guardado = `
+Perfecto, ahora tus datos estan guardados, haz click nuevamente en el engrane de opciones
+`;
+
+// Posición 15
+var opcion_basica = `
+Elige la opción que lleva por nombre "Básica"
+`;
+
+var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor, config_datos_emisor_engrane]
 
 var tutorial_text = [boton_factura_electronica, boton_servicios_facturacion, boton_facturacion_cuentas, boton_ejecutar_linea, login,
                     RFC_login, contrasena_login, captcha_login, datos_incorrectos,
-                    engrane_opciones, opcion_datos_emisor, registro_emisor, nombre_razon_social, nombre_comercial]
+                    engrane_opciones, opcion_datos_emisor, registro_emisor, nombre_razon_social, nombre_comercial, registro_emisor_guardado, opcion_basica]
 
 
 // Actualizar textos de tutorial
@@ -213,14 +236,28 @@ async function val_login(){
 // Validación de registro de emisor
 async function val_registro_emisor(){
     RFC = document.getElementById("RFC").value
-    if (RFC == "ABCD123456XXX")
+    nombre = document.getElementById("nombre").value
+    if (RFC == "ABCD123456XXX" && nombre == "NOMBRE LEGAL")
     {
-        username = document.getElementById("nombre").value
+        actualizarTexto(14)
+        document.getElementById("tuto-window").innerHTML = `
+        <div class="tuto-window">
+            <img class="capturaCorta" src="/static/images/CFDI/Datos-emisor-pt1.png" alt="image">
+            <img class="captura" src="/static/images/CFDI/Datos-emisor-pt2.png" alt="image">
+            <input type="button" value="engrane" onclick="siguiente(), actualizarTexto(15)">
+            <form>
+                <input type="text" id="RFC" onkeyup="this.value = this.value.toUpperCase();" value="ABCD123456XXX">
+                <input type="text" id="nombre" onkeyup="this.value = this.value.toUpperCase();" value="NOMBRE LEGAL">
+            </form>
+        </div>
+        <input type="button" onclick="anterior(), actualizarTexto(10)" value="Atras">
+        `;
     }
     else
     {
         actualizarTexto(8)
         document.getElementById("RFC").value = ""
+        document.getElementById("nombre").value = ""
     }
 }
 
