@@ -81,11 +81,10 @@ var config_datos_emisor = `
     <img class="capturaCorta" src="/static/images/CFDI/Datos-emisor-pt1.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Datos-emisor-pt2.png" alt="image">
     <form id="congif_datos_emisor">
-        <input type="text" onclick="actualizarTexto(5)" id="RFC" onkeyup="this.value = this.value.toUpperCase();">
-        <input type="text" onclick="actualizarTexto(12)" id="nombre" onkeyup="this.value = this.value.toUpperCase();">
+        <input type="text" onclick="actualizarTexto(5)" id="RFC" onkeyup="this.value = this.value.toUpperCase();" value="ABCD123456XXX">
+        <input type="text" onclick="actualizarTexto(12)" id="nombre" onkeyup="this.value = this.value.toUpperCase();" value="NOMBRE LEGAL">
         <input type="text" onclick="actualizarTexto(13)">
         <input type="button" onclick="val_registro_emisor()" value="Guardar">
-        <!-- <input type="button" onclick="siguiente(), actualizarTexto()" value="Guardar"> -->
     </form>
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(10)" value="">
@@ -133,7 +132,7 @@ Aquí se realiza el inicio de sesión, como entraste desde "Mis cuentas" no se r
 
 // Posición 5
 var RFC_login = `
-El RFC en una clave tu única alfanumérica compuesta de 13 letras y números, para este ejemplo ingresa: ABCD123456XXX
+El RFC en una clave tu única alfanumérica compuesta de 13 letras y números, para este ejemplo se utilizará: ABCD123456XXX
 `;
 
 // Posición 6
@@ -168,7 +167,7 @@ Llegaste hasta la configuración de datos del emisor, lo más importante de este
 
 // Posición 12
 var nombre_razon_social = `
-En este apartado debes de agregar tu nombre, denominación o razón social inscrito a tu RFC, para este ejemplo agrega "NOMBRE LEGAL"
+En este apartado debes de agregar tu nombre, denominación o razón social inscrito a tu RFC, para este ejemplo se utiliza "NOMBRE LEGAL"
 `;
 
 // Posición 13
