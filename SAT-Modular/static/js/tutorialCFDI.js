@@ -5,7 +5,7 @@ var contador = 0
 var SAT_inicio0 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/SAT-inicio0.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto(1)" value="Factura electrónica">
+    <input class="primera" type="button" onclick="siguiente(), actualizarTexto(1)" value="">
 </div>
 `;
 
@@ -14,9 +14,9 @@ var SAT_inicio1 = `
 <div class="tuto-window">
     <img class="capturaCorta" src="/static/images/CFDI/SAT-inicio2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/SAT-inicio2-0.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto(2)" value="Servicios de facturación">
+    <input class="segunda" type="button" onclick="siguiente(), actualizarTexto(2)" value="">
 </div>
-<input type="button" onclick="anterior(), actualizarTexto(0)" value="Atras">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(0)" value="">
 `;
 
 // Posición 2
@@ -26,7 +26,7 @@ var SAT_inicio2 = `
     <img class="captura" src="/static/images/CFDI/SAT-inicio3.png" alt="image">
     <input type="button" onclick="siguiente(), actualizarTexto(3)" value="Servicio de facturación Mis Cuentas versión 4.0">
 </div>
-<input type="button" onclick="anterior(), actualizarTexto(1)" value="Atras">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(1)" value="">
 `;
 
 // Posición 3
@@ -35,7 +35,7 @@ var SAT_inicio3 = `
     <img class="captura" src="/static/images/CFDI/SAT-inicio4.png" alt="image">
     <input type="button" onclick="siguiente(), actualizarTexto(4)" value="EJECTUAR EN LINEA">
 </div>
-<input type="button" onclick="anterior(), actualizarTexto(2)" value="Atras">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(2)" value="">
 `;
 
 // Posición 4
@@ -54,7 +54,7 @@ var Login1 = `
         </form>
     </div>    
 </div>
-<input type="button" onclick="anterior(), actualizarTexto(3)" value="Atras">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(3)" value="">
 `;
 
 // Posición 5
@@ -63,7 +63,7 @@ var config_pt1 = `
     <img class="captura" src="/static/images/CFDI/Config-1.png" alt="image">
     <input type="button" onclick="siguiente(), actualizarTexto(10)" value="engrane">
 </div>
-<input type="button" onclick="anterior(), actualizarTexto(4)" value="Atras">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(4)" value="">
 `;
 
 // Posición 6
@@ -72,7 +72,7 @@ var config_pt2 = `
     <img class="captura" src="/static/images/CFDI/Config-2.png" alt="image">
     <input type="button" onclick="siguiente(), actualizarTexto(11)" value="Configuración de datos del emisor">
 </div>
-<input type="button" onclick="anterior(), actualizarTexto(9)" value="Atras">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(9)" value="">
 `;
 
 // Posición 7
@@ -88,7 +88,7 @@ var config_datos_emisor = `
         <!-- <input type="button" onclick="siguiente(), actualizarTexto()" value="Guardar"> -->
     </form>
 </div>
-<input type="button" onclick="anterior(), actualizarTexto(10)" value="Atras">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(10)" value="">
 `;
 
 // Posición 8
@@ -102,7 +102,7 @@ var config_datos_emisor_engrane = `
         <input type="text" id="nombre" onkeyup="this.value = this.value.toUpperCase();" value="NOMBRE LEGAL">
     </form>
 </div>
-<input type="button" onclick="anterior(), actualizarTexto(11)" value="Atras">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(11)" value="">
 `;
 
 // -------------------------------------------------------- Textos de guía --------------------------------------------------------
