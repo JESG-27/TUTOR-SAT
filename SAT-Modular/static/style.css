@@ -11,7 +11,8 @@ body {
     background: #F1F1F1;
 }
 
-*, html {
+*,
+html {
     --primaryGradient: linear-gradient(93.12deg, #581B98 0.52%, #9C1DE7 100%);
     --secondaryGradient: linear-gradient(268.91deg, #581B98 -2.14%, #9C1DE7 99.69%);
     --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
@@ -206,35 +207,42 @@ body {
 }
 
 /* -------TUTORIAL CFDI ------- */
-.body-tutorial{
+.body-tutorial {
     background-color: rgb(243, 243, 244);
     overflow: hidden;
 }
 
 /* BUTTON ARROW*/
-.img-arrow{
-    width: 50px;
+.img-arrow {
+    width: 40px;
+    opacity: .550
 }
 
-.arrow__button{
+.arrow__button {
     position: fixed;
-    bottom: 25px;
-    left: 30px;
+    top: 35px;
+    right: 40px;
 }
 
 /*TUTORIAL*/
 .name-course {
-    font-size: 14px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 32.4px; margin-left: 30px; color: gray;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 32.4px;
+    margin-left: 30px;
+    color: gray;
 }
 
 /*Instructions part*/
-.tutorial_text_header{
+.tutorial_text_header {
     height: 60px;
     width: 80%;
     background-color: #581B98;
     position: relative;
-    padding: 0 15px 0 15px  ;
-    border-bottom: 4px solid  rgb(243, 243, 244);
+    padding: 0 15px 0 15px;
+    border-bottom: 4px solid rgb(243, 243, 244);
     margin: auto;
     display: flex;
 }
@@ -246,12 +254,12 @@ body {
 }
 
 
-.tuto-window{
-    background-color:rgb(243, 243, 244);
+.tuto-window {
+    background-color: rgb(243, 243, 244);
     width: 300px;
     margin: auto;
-    width: 80%; 
-    height:530px; 
+    width: 80%;
+    height: 530px;
     overflow: scroll;
     overflow-x: hidden;
 }
@@ -268,6 +276,49 @@ body {
     display: block;
 }
 
+
+/* -------BOTONES TUTORIAL CFDI ------- */
+.inicioBoton {
+    background: none;
+    width: 40px;
+}
+
+.atras{
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    border: none;
+    background: none;
+    background-image: url('/static/images/atras.png');
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.primera{
+    display:inline-block;
+    position:relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    bottom: 454px;
+    left: 277px;
+    width: 55px;
+    height: 65px;
+}
+
+.segunda{
+    display:inline-block;
+    position:relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 740px;
+    bottom: 500px;
+    left: 150px;
+}
+
+
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
     .tuto-window {
@@ -278,7 +329,26 @@ body {
     .tutorial_text_header {
         height: 75px;
         width: 90%;
-        border-bottom: 6px solid  rgb(243, 243, 244);
-        margin-top: 15px;
+        border-bottom: 6px solid rgb(243, 243, 244);
+        margin-top: 20px;
+    }
+
+    .arrow__button {
+        top: 52px;
+        right: 27px;
+    }
+
+    .primera{
+        bottom: 790px;
+        left: 530px;
+        width: 80px;
+        height:90px;
+    }
+
+    .segunda{
+        left: 250px;
+        bottom: 878px;
+        width: 1200px;
+        height: 35px;
     }
 }
