@@ -311,8 +311,9 @@ html {
     display:inline-block;
     position:relative;
     cursor: pointer;
-    background: none;
     border: none;
+    background: none;
+    
     width: 740px;
     bottom: 500px;
     left: 150px;
@@ -320,9 +321,9 @@ html {
 
 
 /* Large screens ----------- */
-@media only screen and (min-width : 1824px) {
+@media only screen and (min-width : 1365px){
     .tuto-window {
-        height: 930px;
+        height: 900px;
         width: 90%;
     }
 
@@ -339,15 +340,15 @@ html {
     }
 
     .primera{
-        bottom: 790px;
-        left: 530px;
+        bottom: 770px;
+        left: 460px;
         width: 80px;
         height:90px;
     }
 
     .segunda{
         left: 250px;
-        bottom: 878px;
+        bottom: 855px;
         width: 1200px;
         height: 35px;
     }
