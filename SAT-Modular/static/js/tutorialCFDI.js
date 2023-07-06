@@ -95,13 +95,61 @@ var config_datos_emisor_engrane = `
 <div class="tuto-window">
     <img class="capturaCorta" src="/static/images/CFDI/Datos-emisor-engrane.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Datos-emisor-pt2.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto()" value="Básica">
+    <input type="button" onclick="siguiente(), actualizarTexto(16)" value="Básica">
     <form>
         <input type="text" id="RFC" onkeyup="this.value = this.value.toUpperCase();" value="ABCD123456XXX">
         <input type="text" id="nombre" onkeyup="this.value = this.value.toUpperCase();" value="NOMBRE LEGAL">
     </form>
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(11)" value="">
+`;
+
+// Posición 9
+var config_basica = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-basica.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
+    <input type="button" onclick="siguiente(), actualizarTexto(17)" value="- Selecione un registro -">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(15)" value="">
+`;
+
+// Posición 10
+var config_basica_regimen_fiscal = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-basica-c0.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
+    <input type="button" onclick="siguiente(), actualizarTexto(18)" value="Regimen Simplificado de Confianza">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(16)" value="">
+`;
+
+// Posición 11
+var config_basica_c1 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-basica-c1.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
+    <input type="button" onclick="siguiente(), actualizarTexto(19)" value="+">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(17)" value="">
+`;
+
+// Posición 12
+var config_basica_c2 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-basica-c2.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
+    <input type="button" onclick="siguiente(), actualizarTexto()" value="- Seleccione un registro -">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(18)" value="">
 `;
 
 // -------------------------------------------------------- Textos de guía --------------------------------------------------------
@@ -185,11 +233,33 @@ var opcion_basica = `
 Elige la opción que lleva por nombre "Básica"
 `;
 
-var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor, config_datos_emisor_engrane]
+// Posición 16
+var config_basica_inicio = `
+Ya te encuentras en el apartado de la configuración básica, comienza eligiendo el regimen fiscal correspondiente
+`;
+
+// Posición 17
+var regimen_fiscal = `
+Debes especificar la clave vigente del régimen fiscal bajo el cual se está emitiendo el comprobante. En este caso es el "Regimen Simplificado de Confianza"
+`;
+
+// Posicion 18
+var favorito = `
+Una vez cargada la opción debes de hacer click en el símbolo de + que está debajo de favorito para que se guarde
+`;
+
+// Posicion 19
+var tipo_de_factura = `
+Perfecto, ahora elige el tipo de factura correspondiente esta debe de ser: Ingreso
+`;
+
+var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor, config_datos_emisor_engrane, config_basica, config_basica_regimen_fiscal, 
+    config_basica_c1, config_basica_c2]
 
 var tutorial_text = [boton_factura_electronica, boton_servicios_facturacion, boton_facturacion_cuentas, boton_ejecutar_linea, login,
                     RFC_login, contrasena_login, captcha_login, datos_incorrectos,
-                    engrane_opciones, opcion_datos_emisor, registro_emisor, nombre_razon_social, nombre_comercial, registro_emisor_guardado, opcion_basica]
+                    engrane_opciones, opcion_datos_emisor, registro_emisor, nombre_razon_social, nombre_comercial, registro_emisor_guardado, opcion_basica,
+                    config_basica_inicio, regimen_fiscal, favorito, tipo_de_factura]
 
 
 // Actualizar textos de tutorial
