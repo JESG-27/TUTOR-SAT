@@ -5,7 +5,7 @@ var contador = 0
 var SAT_inicio0 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/SAT-inicio0.png" alt="image">
-    <input class="primera" type="button" onclick="siguiente(), actualizarTexto(1)" value="">
+    <input class="primera" type="button" onclick="siguiente(), actualizarTexto(1)">
 </div>
 `;
 
@@ -16,7 +16,7 @@ var SAT_inicio1 = `
     <img class="captura" src="/static/images/CFDI/SAT-inicio2-0.png" alt="image">
     <input class="segunda" type="button" onclick="siguiente(), actualizarTexto(2)" value="">
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(0)" value="">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(0)">
 `;
 
 // Posición 2
@@ -26,7 +26,7 @@ var SAT_inicio2 = `
     <img class="captura" src="/static/images/CFDI/SAT-inicio3.png" alt="image">
     <input type="button" onclick="siguiente(), actualizarTexto(3)" value="Servicio de facturación Mis Cuentas versión 4.0">
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(1)" value="">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(1)">
 `;
 
 // Posición 3
@@ -35,7 +35,7 @@ var SAT_inicio3 = `
     <img class="captura" src="/static/images/CFDI/SAT-inicio4.png" alt="image">
     <input type="button" onclick="siguiente(), actualizarTexto(4)" value="EJECTUAR EN LINEA">
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(2)" value="">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(2)">
 `;
 
 // Posición 4
@@ -54,7 +54,7 @@ var Login1 = `
         </form>
     </div>    
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(3)" value="">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(3)">
 `;
 
 // Posición 5
@@ -63,7 +63,7 @@ var config_pt1 = `
     <img class="captura" src="/static/images/CFDI/Config-1.png" alt="image">
     <input type="button" onclick="siguiente(), actualizarTexto(10)" value="engrane">
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(4)" value="">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(4)">
 `;
 
 // Posición 6
@@ -72,7 +72,7 @@ var config_pt2 = `
     <img class="captura" src="/static/images/CFDI/Config-2.png" alt="image">
     <input type="button" onclick="siguiente(), actualizarTexto(11)" value="Configuración de datos del emisor">
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(9)" value="">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(9)">
 `;
 
 // Posición 7
@@ -87,7 +87,7 @@ var config_datos_emisor = `
         <input type="button" onclick="val_registro_emisor()" value="Guardar">
     </form>
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(10)" value="">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(10)">
 `;
 
 // Posición 8
@@ -101,7 +101,7 @@ var config_datos_emisor_engrane = `
         <input type="text" id="nombre" onkeyup="this.value = this.value.toUpperCase();" value="NOMBRE LEGAL">
     </form>
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(11)" value="">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(11)">
 `;
 
 // Posición 9
@@ -113,7 +113,7 @@ var config_basica = `
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
     <input type="button" onclick="siguiente(), actualizarTexto(17)" value="- Selecione un registro -">
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(15)" value="">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(15)">
 `;
 
 // Posición 10
@@ -125,7 +125,7 @@ var config_basica_regimen_fiscal = `
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
     <input type="button" onclick="siguiente(), actualizarTexto(18)" value="Regimen Simplificado de Confianza">
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(16)" value="">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(16)">
 `;
 
 // Posición 11
@@ -137,7 +137,7 @@ var config_basica_c1 = `
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
     <input type="button" onclick="siguiente(), actualizarTexto(19)" value="+">
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(17)" value="">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(17)">
 `;
 
 // Posición 12
@@ -147,9 +147,81 @@ var config_basica_c2 = `
     <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
     <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
+    <input type="button" onclick="siguiente(), actualizarTexto(19)" value="- Seleccione un registro -">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(18)">
+`;
+
+// Posición 13
+var config_basica_c3 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-basica-c3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
+    <input type="button" onclick="siguiente(), actualizarTexto(18)" value="Ingreso">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(19)">
+`;
+
+// Posición 14
+var config_basica_c4 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-basica-c4.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
+    <input type="button" onclick="siguiente(), actualizarTexto(20)" value="+">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(19)">
+`;
+
+// Posición 15
+var config_basica_c5 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-basica-c5.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
+    <input type="button" onclick="siguiente(), actualizarTexto(20)" value="- Seleccione un registro -">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(18)">
+`;
+
+// Posición 16
+var config_basica_c6 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-basica-c6.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
+    <input type="button" onclick="siguiente(), actualizarTexto(18)" value="45065 ZAPOPAN">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(20)">
+`;
+
+// Posición 17
+var config_basica_c7 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-basica-c7.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
+    <input type="button" onclick="siguiente(), actualizarTexto()" value="+">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(20)">
+`;
+
+// Posición 18
+var config_basica_c8 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
     <input type="button" onclick="siguiente(), actualizarTexto()" value="- Seleccione un registro -">
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(18)" value="">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto()">
 `;
 
 // -------------------------------------------------------- Textos de guía --------------------------------------------------------
@@ -253,13 +325,18 @@ var tipo_de_factura = `
 Perfecto, ahora elige el tipo de factura correspondiente esta debe de ser: Ingreso
 `;
 
+// Posicion 20
+var codigo_postal = `
+Ahora agregaras el código postal correspondiente, haz click en "Seleccione un registro" y por el momento usaras "45065 ZAPOPAN JALISCO"
+`;
+
 var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor, config_datos_emisor_engrane, config_basica, config_basica_regimen_fiscal, 
-    config_basica_c1, config_basica_c2]
+    config_basica_c1, config_basica_c2, config_basica_c3, config_basica_c4, config_basica_c5, config_basica_c6,config_basica_c7, config_basica_c8]
 
 var tutorial_text = [boton_factura_electronica, boton_servicios_facturacion, boton_facturacion_cuentas, boton_ejecutar_linea, login,
                     RFC_login, contrasena_login, captcha_login, datos_incorrectos,
                     engrane_opciones, opcion_datos_emisor, registro_emisor, nombre_razon_social, nombre_comercial, registro_emisor_guardado, opcion_basica,
-                    config_basica_inicio, regimen_fiscal, favorito, tipo_de_factura]
+                    config_basica_inicio, regimen_fiscal, favorito, tipo_de_factura, codigo_postal]
 
 
 // Actualizar textos de tutorial
