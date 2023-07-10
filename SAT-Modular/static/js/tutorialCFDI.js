@@ -207,7 +207,7 @@ var config_basica_c7 = `
     <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
     <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto()" value="+">
+    <input type="button" onclick="siguiente(), actualizarTexto(21)" value="+">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(20)">
 `;
@@ -219,9 +219,117 @@ var config_basica_c8 = `
     <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
     <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto()" value="- Seleccione un registro -">
+    <input type="button" onclick="siguiente(), actualizarTexto(21)" value="- Seleccione un registro -">
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto()">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(18)">
+`;
+
+// Posición 19
+var config_basica_pt2_c1 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt2-c1.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
+    <input type="button" onclick="siguiente(), actualizarTexto(18)" value="Peso Mexicano">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(21)">
+`;
+
+// Posición 20
+var config_basica_pt2_c2 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt2-c2.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
+    <input type="button" onclick="siguiente(), actualizarTexto(22)" value="+">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(21)">
+`;
+
+// Posición 21
+var config_basica_pt2_c3 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt2-c3.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
+    <input type="button" onclick="siguiente(), actualizarTexto(22)" value="- Seleccione un registro -">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(18)">
+`;
+
+// Posición 22
+var config_basica_pt2_c4 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt2-c4.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
+    <input type="button" onclick="siguiente(), actualizarTexto(18)" value="Efectivo">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(22)">
+`;
+
+// Posición 23
+var config_basica_pt2_c5 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt2-c5.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
+    <input type="button" onclick="siguiente(), actualizarTexto(23)" value="+">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(22)">
+`;
+
+// Posición 24
+var config_basica_pt2_c6 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt2-c6.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
+    <input type="button" onclick="siguiente(), actualizarTexto(23)" value="- Seleccione un registro -">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(18)">
+`;
+
+// Posición 25
+var config_basica_pt2_c7 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt2-c7.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
+    <input type="button" onclick="siguiente(), actualizarTexto(18)" value="Pago en una sola">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(23)">
+`;
+
+// Posición 26
+var config_basica_pt2_c8 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt2-c8.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
+    <input type="button" onclick="siguiente(), actualizarTexto(24)" value="+">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(23)">
+`;
+
+// Posición 27
+var config_basica_pt2_c9 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt2-c9.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
+    <input type="button" onclick="siguiente(), actualizarTexto()" value="engrane">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(18)">
 `;
 
 // -------------------------------------------------------- Textos de guía --------------------------------------------------------
@@ -330,13 +438,34 @@ var codigo_postal = `
 Ahora agregaras el código postal correspondiente, haz click en "Seleccione un registro" y por el momento usaras "45065 ZAPOPAN JALISCO"
 `;
 
+// Posicion 21
+var moneda = `
+Perfecto, el paso siguiente es registrar la clave de la moneda utilizada para expresar los montos, en este caso seran pesos mexicanos. Elige la opción de "Peso Mexicano"
+`;
+
+// Posicion 22
+var forma_pago = `
+Lo siguiente es que debes de registrar la clave de la forma de pago de los bienes, el registro que eligiras para este tutorial será "Efectivo"
+`;
+
+// Posicion 23
+var metodo_pago = `
+Debes registrar la clave que corresponda al metodo de pago, depende si se paga en una sola exhibición o en parcialidades. Elige la opción de "Pago en una sola exihibición"
+`;
+
+// Posición 24
+var config_basica_fin = `
+Con esto concluyes la configuración básica, hasta aquí no requieres de agregar más datos. Da click nuevamente en el engrane para que procedas con la configuración avanzada
+`;
+
 var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor, config_datos_emisor_engrane, config_basica, config_basica_regimen_fiscal, 
-    config_basica_c1, config_basica_c2, config_basica_c3, config_basica_c4, config_basica_c5, config_basica_c6,config_basica_c7, config_basica_c8]
+    config_basica_c1, config_basica_c2, config_basica_c3, config_basica_c4, config_basica_c5, config_basica_c6, config_basica_c7, config_basica_c8,
+    config_basica_pt2_c1, config_basica_pt2_c2, config_basica_pt2_c3, config_basica_pt2_c4, config_basica_pt2_c5, config_basica_pt2_c6, config_basica_pt2_c7, config_basica_pt2_c8, config_basica_pt2_c9]
 
 var tutorial_text = [boton_factura_electronica, boton_servicios_facturacion, boton_facturacion_cuentas, boton_ejecutar_linea, login,
                     RFC_login, contrasena_login, captcha_login, datos_incorrectos,
                     engrane_opciones, opcion_datos_emisor, registro_emisor, nombre_razon_social, nombre_comercial, registro_emisor_guardado, opcion_basica,
-                    config_basica_inicio, regimen_fiscal, favorito, tipo_de_factura, codigo_postal]
+                    config_basica_inicio, regimen_fiscal, favorito, tipo_de_factura, codigo_postal, moneda, forma_pago, metodo_pago, config_basica_fin]
 
 
 // Actualizar textos de tutorial
