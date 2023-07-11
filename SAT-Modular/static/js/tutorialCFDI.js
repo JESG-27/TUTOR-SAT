@@ -5,7 +5,7 @@ var contador = 0
 var SAT_inicio0 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/SAT-inicio0.png" alt="image">
-    <input class="primera" type="button" onclick="siguiente(), actualizarTexto(1)">
+    <input class="pos0Factura" type="button" onclick="siguiente(), actualizarTexto(1)" value="">
 </div>
 `;
 
@@ -14,9 +14,9 @@ var SAT_inicio1 = `
 <div class="tuto-window">
     <img class="capturaCorta" src="/static/images/CFDI/SAT-inicio2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/SAT-inicio2-0.png" alt="image">
-    <input class="segunda" type="button" onclick="siguiente(), actualizarTexto(2)" value="">
+    <input class="pos1Servicios" type="button" onclick="siguiente(), actualizarTexto(2)" value="">
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(0)">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(0)" value="">
 `;
 
 // Posición 2
@@ -24,18 +24,18 @@ var SAT_inicio2 = `
 <div class="tuto-window">
     <img class="capturaCorta" src="/static/images/CFDI/SAT-inicio2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/SAT-inicio3.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto(3)" value="Servicio de facturación Mis Cuentas versión 4.0">
+    <input class="pos2Servicio" type="button" onclick="siguiente(), actualizarTexto(3)" value="">
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(1)">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(1)" value="">
 `;
 
 // Posición 3
 var SAT_inicio3 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/SAT-inicio4.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto(4)" value="EJECTUAR EN LINEA">
+    <input class="pos3Ejecutar" type="button" onclick="siguiente(), actualizarTexto(4)" value="">
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(2)">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(2)" value="">
 `;
 
 // Posición 4
@@ -46,31 +46,31 @@ var Login1 = `
     
     <div class="sesion">
         <form>
-            <input type="text" placeholder="RFC" required onclick="actualizarTexto(5)" id="RFC" onkeyup="this.value = this.value.toUpperCase();">
-            <input type="password" placeholder="Contraseña" required onclick="actualizarTexto(6)" id="contrasena">
-            <input type="text" placeholder="Escribe la palabra del captcha" required onclick="actualizarTexto(7)" id="captcha">
-            <!-- <input type="button" onclick="val_login()" value="Enviar"> -->
-            <input type="button" onclick="siguiente(), actualizarTexto(9)" value="Enviar">
+            <input class="pos4RFC" type="text" placeholder="" required onclick="actualizarTexto(5)" id="RFC" onkeyup="this.value = this.value.toUpperCase();">
+            <input class="pos4Password" type="password" placeholder="" required onclick="actualizarTexto(6)" id="contrasena">
+            <input class="pos4Captcha" type="text" placeholder="" required onclick="actualizarTexto(7)" id="captcha">
+            <!-- <input class="pos4Enviar" type="button" onclick="val_login()" value="Enviar"> -->
+            <input class="pos4Enviar" type="button" onclick="siguiente(), actualizarTexto(9)" value="">
         </form>
     </div>    
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(3)">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(3)" value="">
 `;
 
 // Posición 5
 var config_pt1 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-1.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto(10)" value="engrane">
+    <input class="pos5Engrane" type="button" onclick="siguiente(), actualizarTexto(10)" value="">
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(4)">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(4)" value="">
 `;
 
 // Posición 6
 var config_pt2 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-2.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto(11)" value="Configuración de datos del emisor">
+    <input class="pos6Config" type="button" onclick="siguiente(), actualizarTexto(11)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(9)">
 `;
@@ -81,10 +81,10 @@ var config_datos_emisor = `
     <img class="capturaCorta" src="/static/images/CFDI/Datos-emisor-pt1.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Datos-emisor-pt2.png" alt="image">
     <form id="congif_datos_emisor">
-        <input type="text" onclick="actualizarTexto(5)" id="RFC" onkeyup="this.value = this.value.toUpperCase();" value="ABCD123456XXX">
-        <input type="text" onclick="actualizarTexto(12)" id="nombre" onkeyup="this.value = this.value.toUpperCase();" value="NOMBRE LEGAL">
-        <input type="text" onclick="actualizarTexto(13)">
-        <input type="button" onclick="val_registro_emisor()" value="Guardar">
+        <input class="pos7RFC" type="text" onclick="actualizarTexto(5)" id="RFC" onkeyup="this.value = this.value.toUpperCase();" value="ABCD123456XXX">
+        <input class="pos7Nombre" type="text" onclick="actualizarTexto(12)" id="nombre" onkeyup="this.value = this.value.toUpperCase();" value="NOMBRE LEGAL">
+        <input class="pos7Comercial" type="text" onclick="actualizarTexto(13)">
+        <input class="pos7Guardar" type="button" onclick="val_registro_emisor()" value="">
     </form>
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(10)">
@@ -95,10 +95,10 @@ var config_datos_emisor_engrane = `
 <div class="tuto-window">
     <img class="capturaCorta" src="/static/images/CFDI/Datos-emisor-engrane.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Datos-emisor-pt2.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto(16)" value="Básica">
+    <input class="pos8Basica" type="button" onclick="siguiente(), actualizarTexto(16)" value="">
     <form>
-        <input type="text" id="RFC" onkeyup="this.value = this.value.toUpperCase();" value="ABCD123456XXX">
-        <input type="text" id="nombre" onkeyup="this.value = this.value.toUpperCase();" value="NOMBRE LEGAL">
+        <input class="pos8RFC" type="text" id="RFC" onkeyup="this.value = this.value.toUpperCase();" value="ABCD123456XXX">
+        <input class="pos8Nombre" type="text" id="nombre" onkeyup="this.value = this.value.toUpperCase();" value="NOMBRE LEGAL">
     </form>
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(11)">
@@ -108,10 +108,10 @@ var config_datos_emisor_engrane = `
 var config_basica = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto(17)" value="- Selecione un registro -">
+    <input class="pos9Selec" type="button" onclick="siguiente(), actualizarTexto(17)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(15)">
 `;
@@ -120,10 +120,10 @@ var config_basica = `
 var config_basica_regimen_fiscal = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c0.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto(18)" value="Regimen Simplificado de Confianza">
+    <input class="pos10Regimen" type="button" onclick="siguiente(), actualizarTexto(18)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(16)">
 `;
@@ -132,10 +132,10 @@ var config_basica_regimen_fiscal = `
 var config_basica_c1 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c1.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto(19)" value="+">
+    <input class="pos11Fav" type="button" onclick="siguiente(), actualizarTexto(19)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(17)">
 `;
@@ -144,10 +144,10 @@ var config_basica_c1 = `
 var config_basica_c2 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c2.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto(19)" value="- Seleccione un registro -">
+    <input class="pos12Selec" type="button" onclick="siguiente(), actualizarTexto(19)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(18)">
 `;
@@ -156,10 +156,10 @@ var config_basica_c2 = `
 var config_basica_c3 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c3.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto(18)" value="Ingreso">
+    <input class="pos13Ingreso" type="button" onclick="siguiente(), actualizarTexto(18)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(19)">
 `;
@@ -168,10 +168,10 @@ var config_basica_c3 = `
 var config_basica_c4 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c4.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto(20)" value="+">
+    <input class="pos14Fav" type="button" onclick="siguiente(), actualizarTexto(20)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(19)">
 `;
@@ -180,10 +180,10 @@ var config_basica_c4 = `
 var config_basica_c5 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c5.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto(20)" value="- Seleccione un registro -">
+    <input class="pos15Selec" type="button" onclick="siguiente(), actualizarTexto(20)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(18)">
 `;
@@ -192,10 +192,10 @@ var config_basica_c5 = `
 var config_basica_c6 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c6.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto(18)" value="45065 ZAPOPAN">
+    <input class="pos16Codigo" type="button" onclick="siguiente(), actualizarTexto(18)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(20)">
 `;
@@ -204,10 +204,10 @@ var config_basica_c6 = `
 var config_basica_c7 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c7.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto(21)" value="+">
+    <input class="pos17Fav" type="button" onclick="siguiente(), actualizarTexto(21)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(20)">
 `;
@@ -216,10 +216,10 @@ var config_basica_c7 = `
 var config_basica_c8 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto(21)" value="- Seleccione un registro -">
+    <input class="pos18Selec" type="button" onclick="siguiente(), actualizarTexto(21)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(18)">
 `;
@@ -228,10 +228,10 @@ var config_basica_c8 = `
 var config_basica_pt2_c1 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-basica-pt2-c1.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c1.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto(18)" value="Peso Mexicano">
+    <input class="pos19Peso" type="button" onclick="siguiente(), actualizarTexto(18)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(21)">
 `;
@@ -240,10 +240,10 @@ var config_basica_pt2_c1 = `
 var config_basica_pt2_c2 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-basica-pt2-c2.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c2.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto(22)" value="+">
+    <input class="pos20Fav" type="button" onclick="siguiente(), actualizarTexto(22)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(21)">
 `;
@@ -252,8 +252,8 @@ var config_basica_pt2_c2 = `
 var config_basica_pt2_c3 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-basica-pt2-c3.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c3.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
     <input type="button" onclick="siguiente(), actualizarTexto(22)" value="- Seleccione un registro -">
 </div>
@@ -264,8 +264,8 @@ var config_basica_pt2_c3 = `
 var config_basica_pt2_c4 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-basica-pt2-c4.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c4.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
     <input type="button" onclick="siguiente(), actualizarTexto(18)" value="Efectivo">
 </div>
@@ -276,8 +276,8 @@ var config_basica_pt2_c4 = `
 var config_basica_pt2_c5 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-basica-pt2-c5.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c5.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
     <input type="button" onclick="siguiente(), actualizarTexto(23)" value="+">
 </div>
@@ -288,8 +288,8 @@ var config_basica_pt2_c5 = `
 var config_basica_pt2_c6 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-basica-pt2-c6.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c6.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
     <input type="button" onclick="siguiente(), actualizarTexto(23)" value="- Seleccione un registro -">
 </div>
@@ -300,8 +300,8 @@ var config_basica_pt2_c6 = `
 var config_basica_pt2_c7 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-basica-pt2-c7.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c7.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
     <input type="button" onclick="siguiente(), actualizarTexto(18)" value="Pago en una sola">
 </div>
@@ -312,8 +312,8 @@ var config_basica_pt2_c7 = `
 var config_basica_pt2_c8 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-basica-pt2-c8.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c8.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
     <input type="button" onclick="siguiente(), actualizarTexto(24)" value="+">
 </div>
@@ -324,8 +324,8 @@ var config_basica_pt2_c8 = `
 var config_basica_pt2_c9 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-basica-pt2-c9.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
+    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c9.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
     <input type="button" onclick="siguiente(), actualizarTexto()" value="engrane">
 </div>
@@ -519,13 +519,13 @@ async function val_registro_emisor(){
         <div class="tuto-window">
             <img class="capturaCorta" src="/static/images/CFDI/Datos-emisor-pt1.png" alt="image">
             <img class="captura" src="/static/images/CFDI/Datos-emisor-pt2.png" alt="image">
-            <input type="button" value="engrane" onclick="siguiente(), actualizarTexto(15)">
+            <input class="validEngrane" type="button" value="" onclick="siguiente(), actualizarTexto(15)">
             <form>
-                <input type="text" id="RFC" onkeyup="this.value = this.value.toUpperCase();" value="ABCD123456XXX">
-                <input type="text" id="nombre" onkeyup="this.value = this.value.toUpperCase();" value="NOMBRE LEGAL">
+                <input class="validRFC" type="text" id="RFC" onkeyup="this.value = this.value.toUpperCase();" value="ABCD123456XXX">
+                <input class="validNombre" type="text" id="nombre" onkeyup="this.value = this.value.toUpperCase();" value="NOMBRE LEGAL">
             </form>
         </div>
-        <input type="button" onclick="anterior(), actualizarTexto(10)" value="Atras">
+        <input class="atras" type="button" onclick="anterior(), actualizarTexto(10)" value="">
         `;
     }
     else
