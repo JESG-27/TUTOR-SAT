@@ -327,9 +327,65 @@ var config_basica_pt2_c9 = `
     <img class="capturaCorta3" src="/static/images/CFDI/Config-basica-pt2-c9.png" alt="image">
     <img class="capturaCortaProducto2" src="/static/images/CFDI/Config-basica-pt3-2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
-    <input class="pos27Engrane" type="button" onclick="siguiente(), actualizarTexto()" value="">
+    <input class="pos27Engrane" type="button" onclick="siguiente(), actualizarTexto(25)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(18)">
+`;
+
+// Posición 28
+var config_basica_c9 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-basica-c9.png" alt="image">
+    <img class="capturaCorta3" src="/static/images/CFDI/Config-basica-pt2-c9.png" alt="image">
+    <img class="capturaCortaProducto2" src="/static/images/CFDI/Config-basica-pt3-2.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
+    <input class="" type="button" onclick="siguiente(), actualizarTexto(26)" value="Avanzada">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(24)">
+`;
+
+// Posición 29
+var config_avanzada = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-avanzada.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-avanzada-pt2.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-avanzada-pt3.png" alt="image">
+    <input class="" type="button" onclick="siguiente(), actualizarTexto(27)" value="■">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(25)">
+`;
+
+// Posición 30
+var config_avanzada_c1 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-avanzada-c1.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-avanzada-pt2.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-avanzada-pt3.png" alt="image">
+    <input class="" type="button" onclick="siguiente(), actualizarTexto(27)" value="■">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(26)">
+`;
+
+// Posición 31
+var config_avanzada_c2 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-avanzada-c2.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-avanzada-pt2.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-avanzada-pt3.png" alt="image">
+    <input class="" type="button" onclick="siguiente(), actualizarTexto()" value="Guardar">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(27)">
+`;
+
+// Posición 32
+var config_avanzada_c3 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Config-avanzada-c2.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-avanzada-pt2.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-avanzada-pt3-c3.png" alt="image">
+    <input class="" type="button" onclick="siguiente(), actualizarTexto()" value="Generar">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(27)">
 `;
 
 // -------------------------------------------------------- Textos de guía --------------------------------------------------------
@@ -458,14 +514,31 @@ var config_basica_fin = `
 Con esto concluyes la configuración básica, hasta aquí no requieres de agregar más datos. Da click nuevamente en el engrane para que procedas con la configuración avanzada
 `;
 
+// Posicion 25
+var opcion_avanzada = `
+Procede dando click en la opción de "Avanzada", esta será la ultima parte de la configuración de datos
+`;
+
+// Posicion 26
+var serie_folio = `
+Inicia seleccionando la casilla de "Serie y Folio", la serie es el número que utilizas como contribuyente para el control interno de tu información. El folio es de control interno que se asigna al comprobante
+`;
+
+// Posicion 27
+var factura_global = `
+Ahora selecciona la casilla de "Es una Factura Global" y al final no olvides dar click en "Guardar" para que se mantengan seleccionados tus cambios
+`;
+
 var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor, config_datos_emisor_engrane, config_basica, config_basica_regimen_fiscal, 
     config_basica_c1, config_basica_c2, config_basica_c3, config_basica_c4, config_basica_c5, config_basica_c6, config_basica_c7, config_basica_c8,
-    config_basica_pt2_c1, config_basica_pt2_c2, config_basica_pt2_c3, config_basica_pt2_c4, config_basica_pt2_c5, config_basica_pt2_c6, config_basica_pt2_c7, config_basica_pt2_c8, config_basica_pt2_c9]
+    config_basica_pt2_c1, config_basica_pt2_c2, config_basica_pt2_c3, config_basica_pt2_c4, config_basica_pt2_c5, config_basica_pt2_c6, config_basica_pt2_c7, config_basica_pt2_c8, config_basica_pt2_c9, config_basica_c9,
+    config_avanzada, config_avanzada_c1, config_avanzada_c2, config_avanzada_c3]
 
 var tutorial_text = [boton_factura_electronica, boton_servicios_facturacion, boton_facturacion_cuentas, boton_ejecutar_linea, login,
                     RFC_login, contrasena_login, captcha_login, datos_incorrectos,
                     engrane_opciones, opcion_datos_emisor, registro_emisor, nombre_razon_social, nombre_comercial, registro_emisor_guardado, opcion_basica,
-                    config_basica_inicio, regimen_fiscal, favorito, tipo_de_factura, codigo_postal, moneda, forma_pago, metodo_pago, config_basica_fin]
+                    config_basica_inicio, regimen_fiscal, favorito, tipo_de_factura, codigo_postal, moneda, forma_pago, metodo_pago, config_basica_fin,
+                    opcion_avanzada, serie_folio, factura_global]
 
 
 // Actualizar textos de tutorial
