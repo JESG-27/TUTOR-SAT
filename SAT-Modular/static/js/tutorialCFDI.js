@@ -339,7 +339,7 @@ var config_basica_c9 = `
     <img class="capturaCorta3" src="/static/images/CFDI/Config-basica-pt2-c9.png" alt="image">
     <img class="capturaCortaProducto2" src="/static/images/CFDI/Config-basica-pt3-2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
-    <input class="" type="button" onclick="siguiente(), actualizarTexto(26)" value="Avanzada">
+    <input class="pos28Avanzada" type="button" onclick="siguiente(), actualizarTexto(26)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(24)">
 `;
@@ -348,9 +348,9 @@ var config_basica_c9 = `
 var config_avanzada = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-avanzada.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-avanzada-pt2.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-avanzada-pt2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-avanzada-pt3.png" alt="image">
-    <input class="" type="button" onclick="siguiente(), actualizarTexto(27)" value="■">
+    <input class="pos29Check" type="button" onclick="siguiente(), actualizarTexto(27)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(25)">
 `;
@@ -359,9 +359,9 @@ var config_avanzada = `
 var config_avanzada_c1 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-avanzada-c1.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-avanzada-pt2.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-avanzada-pt2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-avanzada-pt3.png" alt="image">
-    <input class="" type="button" onclick="siguiente(), actualizarTexto(27)" value="■">
+    <input class="pos30Check" type="button" onclick="siguiente(), actualizarTexto(27)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(26)">
 `;
@@ -370,9 +370,9 @@ var config_avanzada_c1 = `
 var config_avanzada_c2 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-avanzada-c2.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-avanzada-pt2.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-avanzada-pt2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-avanzada-pt3.png" alt="image">
-    <input class="" type="button" onclick="siguiente(), actualizarTexto()" value="Guardar">
+    <input class="pos31Guardar" type="button" onclick="siguiente(), actualizarTexto()" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(27)">
 `;
@@ -381,9 +381,9 @@ var config_avanzada_c2 = `
 var config_avanzada_c3 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-avanzada-c2.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-avanzada-pt2.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Config-avanzada-pt2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-avanzada-pt3-c3.png" alt="image">
-    <input class="" type="button" onclick="siguiente(), actualizarTexto()" value="Generar">
+    <input class="pos32Generar" type="button" onclick="siguiente(), actualizarTexto()" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(27)">
 `;
