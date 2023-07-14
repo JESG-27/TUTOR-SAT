@@ -11,14 +11,16 @@
 
 <body>
 
-    <header class="header__style">
-        <a href="/">
-            <img class="logo_navbar" src="{{ url_for('static', filename='images/logoNavbar.png') }}">
-        </a>
-        <nav class="navbar">
-            <a class="navbar__item" href="/tutoriales">Tutoriales</a>
-            <a class="navbar__item" href="/sobre_nosotros">Sobre Nosotros</a>
+    <header class="header">
+        <div class="logo">
+            <a href="/"><img src="{{ url_for('static', filename='images/logoNavbar.png') }}"></a>
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a class="navbar__item" href="/sobre_nosotros">Sobre Nosotros</a></li>
+            </ul>
         </nav>
+        <a class="btn" href="/tutoriales"><button>Tutoriales</button></a>
     </header>
 
     {% block body %}
