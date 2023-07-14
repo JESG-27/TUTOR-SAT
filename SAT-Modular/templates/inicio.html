@@ -5,14 +5,20 @@
 {% endblock %}
 
 {% block body %}
-    <div class="container">
-        <div class="content_left">
-            <h1 class="main_title">¿Tú ya sabes como declarar tus impuestos?</h1>
-            <h2>!Aquí te enseñamos!</h2>
-            <button class="css-button-arrow--green"><a href="">COMENZAR</a></button>
+    <div class="main">
+        <div class="text">
+            <h5>¿No sabes como declarar tus impuestos?</h5>
+            <h1><span class="gradient-text">Tutoriales</span> dinámicos,
+            <br>aprende a<span class="gradient-text"> Declarar</span></h1>
+
+            <p>Realizar tu contabilidad como emprendedor sin 
+                la necesidad de tener que pagar un contador mes con mes.</p>
+            
+            <a class="btn">Comenzar</a>
         </div>
-        <div class="content_right">
-            <img src="{{ url_for('static', filename='images/inicioSAT.png') }}">
+
+        <div class="main-img">
+            <img src="{{ url_for('static', filename='images/banner-img.png') }}">
         </div>
     </div>
 
