@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,16 +10,17 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     font-size: 100%;
-    background: #F1F1F1;
+    background: #fff;
+    overflow-x: hidden;
 }
 
 *,
 html {
-    --primaryGradient: linear-gradient(93.12deg, #581B98 0.52%, #9C1DE7 100%);
-    --secondaryGradient: linear-gradient(268.91deg, #581B98 -2.14%, #9C1DE7 99.69%);
+    --primaryGradient: linear-gradient(93.12deg, #052573 0.52%, #9C1DE7 100%);
+    --secondaryGradient: linear-gradient(268.91deg, #052573 -2.14%, #9C1DE7 99.69%);
     --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     --secondaryBoxShadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
-    --primary: #581B98;
+    --primary: #052573;
 }
 
 /* CHATBOX
@@ -49,7 +52,7 @@ html {
     transform: translateY(-40px);
     z-index: 123456;
     opacity: 1;
-
+    background-color: #F1F1F1;;
 }
 
 /* BUTTON */
@@ -206,26 +209,235 @@ html {
     cursor: pointer;
 }
 
-/* -------TUTORIAL CFDI PORTADA CURSO------- */
-.CFDI-container{
+/* -------NAVBAR------------------------------------------------------------------------------------------ */
+header {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Verdana,Geneva,sans-serif; 
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 3%;
+}
+
+.header .logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo img {
+    height: 40px;
+    width: auto;
+    transition: all 1.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.1);
+}
+
+.header .nav-links {
+    list-style: none;
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links a {
+    font-weight: 400;
+    color: #6b6b6b;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+    color: #052573;
+   
+    text-decoration: underline;
+}
+
+.header .btn button {
+    margin-left: 3px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 9px 25px;
+    background: linear-gradient(315deg, #9C1DE7  0.52%,  #052573 74%);;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover {
+    background: #fff;
+    color: #052573;
+    transform: scale(1.1);
+}
+
+/* -------BANNER------------------------------------------------------------------------------------------ */
+
+.main {
+    margin: auto 6%;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-size: ;*/
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+    height: 89vh;
+    /*IMAGEN DE FONDO*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.text {
+    margin-right: 35px;
+}
+
+.text h5 {
+    color: #052573;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.text h1 {
+    font-size: 3.70rem;
+    font-weight: 700;
+    color: black;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.gradient-text {
+    background: linear-gradient(315deg, #9C1DE7  0.52%,  #052573 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text p {
+    font-size: 15px;
+    color: #6b6b6b;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    margin-bottom: 2.25rem;
+}
+
+.text a {
+    display: inline-block;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    border-radius: 10px;
+    background: linear-gradient(315deg, #9C1DE7  0.52%,  #052573 74%);
+    transition: all .42s;
+    text-decoration: none;
+}
+
+.text {
+    padding-bottom: 6%;
+}
+
+.main-img  {
+    position: relative;
+    width: 100px;
+    height: auto;
+    margin-left: 5%;
+    padding-bottom: 5%;
+}
+
+.main-img img{
+    max-width: 800px;
+    width: 450px;
+    height: auto;
+    animation-name: slide;
+    animation-duration: 4s;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.text a:hover {
+    background: #fff;
+    color: #052573;
+    transform: scale(1.1);
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(0px);
+    } 
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/* -------TUTORIAL CFDI PORTADA CURSO------------------------------------------------------------------------------------------ */
+.CFDI-container {
+    margin: 0;
+    padding: 0;
+    /*font-family: Verdana, Geneva, sans-serif;*/
     box-sizing: border-box;
 }
 
 /* ---- Letras ----*/
-h1.CFDI { 
-     font-size: 28px; font-style: normal; font-variant: normal; font-weight: 600; line-height: 35.4px; padding-bottom: .8rem; letter-spacing: 1px; 
+h1.CFDI {
+    font-size: 28px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    line-height: 35.4px;
+    padding-bottom: .8rem;
+    letter-spacing: 1px;
 }
-h3.CFDI  { 
-    font-size: 23px; font-style: normal; font-variant: normal; font-weight: 200; line-height: 32.4px; padding-right: 5rem; padding-bottom: 4%;
-} 
-p.CFDI  { 
-    font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; text-align: justify; padding-right: 3rem; 
-} 
-h2.CFDI  {
-    font-size: 20px; font-style: normal; font-variant: normal; font-weight: 600; line-height: 32.4px; padding-bottom: 3%;
+
+h3.CFDI {
+    font-size: 23px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    line-height: 32.4px;
+    padding-right: 5rem;
+    padding-bottom: 4%;
+}
+
+p.CFDI {
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: justify;
+    padding-right: 3rem;
+}
+
+h2.CFDI {
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    line-height: 32.4px;
+    padding-bottom: 3%;
 }
 
 /* ---- Contenido ----*/
@@ -265,8 +477,8 @@ h2.CFDI  {
     margin: 0%;
     display: flex;
     padding: 2%;
-    margin-right: 3rem; 
-    box-shadow: 0 0 0 4px rgb(243, 243, 244), 0 6px 2px #ccc, 0 -6px 2px #ccc;
+    margin-right: 3rem;
+    box-shadow: 0 0 0 4px  #fff, 0 6px 2px #ccc, 0 -6px 2px #ccc;
     margin-bottom: 4%;
 }
 
@@ -291,7 +503,7 @@ h2.CFDI  {
     align-items: center;
     border-radius: 50%;
     color: white;
-    
+
 }
 
 /* ---- Div derecha ----*/
@@ -304,11 +516,6 @@ h2.CFDI  {
     padding-bottom: 7%;
 }
 
-/* Boton de comenzar 
-button.css-button-arrow--green {
-    height: 3.8rem;
-    width: 73.5%;
-}*/
 
 .refe {
     text-decoration: none;
@@ -333,17 +540,20 @@ button.css-button-arrow--green {
     border: none;
     box-shadow: 0 3px 1px -6px #ccc, 0 2px 2px 0 #ccc, 0 4px 6px 0 #ccc;
     background-color: #4CAF50;
-  }
-  .css-arrow--green:hover {
+}
+
+.css-arrow--green:hover {
     border-radius: 5px;
     padding-right: 24px;
     padding-left: 8px;
-  }
-  .css-arrow--green:hover:after {
+}
+
+.css-arrow--green:hover:after {
     opacity: 1;
     right: 10px;
-  }
-  .css-arrow--green:after {
+}
+
+.css-arrow--green:after {
     content: "\00BB";
     position: absolute;
     opacity: 0;
@@ -352,10 +562,9 @@ button.css-button-arrow--green {
     top: 6.9px;
     right: -15px;
     transition: 0.4s;
-  }
+}
 
-
-/* -------TUTORIAL CFDI------- */
+/* -------TUTORIAL CFDI----------------------------------------------------------------------------------- */
 .body-tutorial {
     background-color: rgb(243, 243, 244);
     overflow: hidden;
@@ -426,13 +635,13 @@ button.css-button-arrow--green {
 }
 
 
-/* -------BOTONES TUTORIAL CFDI ------- */
+/* -------BOTONES TUTORIAL CFDI ------------------------------------------------------------------------------------------ */
 .inicioBoton {
     background: none;
     width: 40px;
 }
 
-.atras{
+.atras {
     position: fixed;
     bottom: 30px;
     left: 30px;
@@ -445,9 +654,9 @@ button.css-button-arrow--green {
 }
 
 /* POSICION 0 */
-.pos0Factura{
-    display:inline-block;
-    position:relative;
+.pos0Factura {
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -458,9 +667,9 @@ button.css-button-arrow--green {
 }
 
 /* POSICION 1 */
-.pos1Servicios{
-    display:inline-block;
-    position:relative;
+.pos1Servicios {
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -471,9 +680,9 @@ button.css-button-arrow--green {
 }
 
 /* POSICION 2 */
-.pos2Servicio{
-    display:inline-block;
-    position:relative;
+.pos2Servicio {
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -485,8 +694,8 @@ button.css-button-arrow--green {
 
 /* POSICION 3 */
 .pos3Ejecutar {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -498,8 +707,8 @@ button.css-button-arrow--green {
 
 /* POSICION 4 */
 .pos4RFC {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -519,8 +728,8 @@ button.css-button-arrow--green {
 }
 
 .pos4Password {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -541,8 +750,8 @@ button.css-button-arrow--green {
 }
 
 .pos4Captcha {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -562,8 +771,8 @@ button.css-button-arrow--green {
 }
 
 .pos4Enviar {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -575,8 +784,8 @@ button.css-button-arrow--green {
 
 /* POSICION 5 */
 .pos5Engrane {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -588,8 +797,8 @@ button.css-button-arrow--green {
 
 /* POSICION 6 */
 .pos6Config {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -601,8 +810,8 @@ button.css-button-arrow--green {
 
 /* POSICION 7 */
 .pos7RFC {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -618,8 +827,8 @@ button.css-button-arrow--green {
 }
 
 .pos7Nombre {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -635,8 +844,8 @@ button.css-button-arrow--green {
 }
 
 .pos7Comercial {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -652,8 +861,8 @@ button.css-button-arrow--green {
 }
 
 .pos7Guardar {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -665,8 +874,8 @@ button.css-button-arrow--green {
 
 /* Validación de registro de emisor */
 .validEngrane {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -677,8 +886,8 @@ button.css-button-arrow--green {
 }
 
 .validRFC {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -694,8 +903,8 @@ button.css-button-arrow--green {
 }
 
 .validNombre {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -712,8 +921,8 @@ button.css-button-arrow--green {
 
 /* POSICION 8 */
 .pos8RFC {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -729,8 +938,8 @@ button.css-button-arrow--green {
 }
 
 .pos8Nombre {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -746,8 +955,8 @@ button.css-button-arrow--green {
 }
 
 .pos8Basica {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -767,8 +976,8 @@ button.css-button-arrow--green {
 
 /* POSICION 9 */
 .pos9Selec {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -780,8 +989,8 @@ button.css-button-arrow--green {
 
 /* POSICION 10 */
 .pos10Regimen {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -793,8 +1002,8 @@ button.css-button-arrow--green {
 
 /* POSICION 11 */
 .pos11Fav {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -806,8 +1015,8 @@ button.css-button-arrow--green {
 
 /* POSICION 12 */
 .pos12Selec {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -819,8 +1028,8 @@ button.css-button-arrow--green {
 
 /* POSICION 13 */
 .pos13Ingreso {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -832,8 +1041,8 @@ button.css-button-arrow--green {
 
 /* POSICION 14 */
 .pos14Fav {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -845,8 +1054,8 @@ button.css-button-arrow--green {
 
 /* POSICION 15*/
 .pos15Selec {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -858,8 +1067,8 @@ button.css-button-arrow--green {
 
 /* POSICION 16 */
 .pos16Codigo {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -871,8 +1080,8 @@ button.css-button-arrow--green {
 
 /* POSICION 17 */
 .pos17Fav {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -884,8 +1093,8 @@ button.css-button-arrow--green {
 
 /* POSICION 18*/
 .pos18Selec {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -897,8 +1106,8 @@ button.css-button-arrow--green {
 
 /* POSICION 19 */
 .pos19Peso {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -917,8 +1126,8 @@ button.css-button-arrow--green {
 
 /* POSICION 20 */
 .pos20Fav {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -930,8 +1139,8 @@ button.css-button-arrow--green {
 
 /* POSICION 21*/
 .pos21Selec {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -943,8 +1152,8 @@ button.css-button-arrow--green {
 
 /* POSICION 22 */
 .pos22Efectivo {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -956,8 +1165,8 @@ button.css-button-arrow--green {
 
 /* POSICION 23 */
 .pos23Fav {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -969,8 +1178,8 @@ button.css-button-arrow--green {
 
 /* POSICION 24*/
 .pos24Selec {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -982,8 +1191,8 @@ button.css-button-arrow--green {
 
 /* POSICION 25 */
 .pos25Pago {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -995,8 +1204,8 @@ button.css-button-arrow--green {
 
 /* POSICION 26 */
 .pos26Fav {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -1020,9 +1229,10 @@ button.css-button-arrow--green {
     display: block;
 }
 
+/* POSICION 27 */
 .pos27Engrane {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     background: none;
     border: none;
@@ -1032,7 +1242,72 @@ button.css-button-arrow--green {
     left: 960px;
 }
 
-/* Large screens ----------- 
+/* POSICION 28 */
+.pos28Avanzada {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 290px;
+    height: 35px;
+    bottom: 1587px;
+    left: 720px;
+}
+
+/* POSICION 29 */
+.pos29Check {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    bottom: 1165px;
+    left: 450px;
+}
+
+/* POSICION 29 */
+.pos30Check {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    bottom: 908px;
+    left: 450px;
+}
+
+/* POSICION 31 */
+.pos31Guardar {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 90px;
+    height: 40px;
+    bottom: 62px;
+    left: 75px;
+}
+
+/* POSICION 32 */
+.pos32Generar {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 90px;
+    height: 40px;
+    bottom: 1378px;
+    left: 870px;
+}
+
+/* Large screens ---------------------------------------------------------------------------------
 @media only screen and (min-width : 1920px) {
     .tuto-window {
         height: 900px;
