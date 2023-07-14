@@ -281,7 +281,8 @@ header {
 }
 
 .header .btn button:hover {
-    background: #fff;
+    background: none;
+    border: 1px solid #9C1DE7;
     color: #052573;
     transform: scale(1.1);
 }
@@ -374,7 +375,8 @@ header {
 }
 
 .text a:hover {
-    background: #fff;
+    background: none;
+    border: 2px solid #9C1DE7;
     color: #052573;
     transform: scale(1.1);
 }
