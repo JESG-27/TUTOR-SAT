@@ -228,7 +228,7 @@ var config_basica_c8 = `
 var config_basica_pt2_c1 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
-    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c1.png" alt="image">
+    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c1.png" alt="image" onload="scrollIntoView()">
     <img class="capturaCortaProducto2" src="/static/images/CFDI/Config-basica-pt3-2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
     <input class="pos19Peso" type="button" onclick="siguiente(), actualizarTexto(18)" value="">
@@ -240,7 +240,7 @@ var config_basica_pt2_c1 = `
 var config_basica_pt2_c2 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
-    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c2.png" alt="image">
+    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c2.png" alt="image" onload="scrollIntoView()">
     <img class="capturaCortaProducto2" src="/static/images/CFDI/Config-basica-pt3-2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
     <input class="pos20Fav" type="button" onclick="siguiente(), actualizarTexto(22)" value="">
@@ -252,7 +252,7 @@ var config_basica_pt2_c2 = `
 var config_basica_pt2_c3 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
-    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c3.png" alt="image">
+    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c3.png" alt="image" onload="scrollIntoView()">
     <img class="capturaCortaProducto2" src="/static/images/CFDI/Config-basica-pt3-2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
     <input class="pos21Selec" type="button" onclick="siguiente(), actualizarTexto(22)" value="">
@@ -264,7 +264,7 @@ var config_basica_pt2_c3 = `
 var config_basica_pt2_c4 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
-    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c4.png" alt="image">
+    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c4.png" alt="image" onload="scrollIntoView()">
     <img class="capturaCortaProducto2" src="/static/images/CFDI/Config-basica-pt3-2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
     <input class="pos22Efectivo" type="button" onclick="siguiente(), actualizarTexto(18)" value="">
@@ -276,7 +276,7 @@ var config_basica_pt2_c4 = `
 var config_basica_pt2_c5 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
-    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c5.png" alt="image">
+    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c5.png" alt="image" onload="scrollIntoView()">
     <img class="capturaCortaProducto2" src="/static/images/CFDI/Config-basica-pt3-2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
     <input class="pos23Fav" type="button" onclick="siguiente(), actualizarTexto(23)" value="">
@@ -288,7 +288,7 @@ var config_basica_pt2_c5 = `
 var config_basica_pt2_c6 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
-    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c6.png" alt="image">
+    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c6.png" alt="image" onload="scrollIntoView()">
     <img class="capturaCortaProducto2" src="/static/images/CFDI/Config-basica-pt3-2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
     <input class="pos24Selec" type="button" onclick="siguiente(), actualizarTexto(23)" value="">
@@ -300,7 +300,7 @@ var config_basica_pt2_c6 = `
 var config_basica_pt2_c7 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
-    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c7.png" alt="image">
+    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c7.png" alt="image" onload="scrollIntoView()">
     <img class="capturaCortaProducto2" src="/static/images/CFDI/Config-basica-pt3-2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
     <input class="pos25Pago" type="button" onclick="siguiente(), actualizarTexto(18)" value="">
@@ -312,7 +312,7 @@ var config_basica_pt2_c7 = `
 var config_basica_pt2_c8 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
-    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c8.png" alt="image">
+    <img class="capturaCorta2" src="/static/images/CFDI/Config-basica-pt2-c8.png" alt="image" onload="scrollIntoView()">
     <img class="capturaCortaProducto2" src="/static/images/CFDI/Config-basica-pt3-2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
     <input class="pos26Fav" type="button" onclick="siguiente(), actualizarTexto(24)" value="">
@@ -324,7 +324,7 @@ var config_basica_pt2_c8 = `
 var config_basica_pt2_c9 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica-c8.png" alt="image">
-    <img class="capturaCorta3" src="/static/images/CFDI/Config-basica-pt2-c9.png" alt="image">
+    <img class="capturaCorta3" src="/static/images/CFDI/Config-basica-pt2-c9.png" alt="image" onload="scrollIntoView()">
     <img class="capturaCortaProducto2" src="/static/images/CFDI/Config-basica-pt3-2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
     <input class="pos27Engrane" type="button" onclick="siguiente(), actualizarTexto(25)" value="">
@@ -382,7 +382,7 @@ var config_avanzada_c3 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-avanzada-c2.png" alt="image">
     <img class="capturaCorta" src="/static/images/CFDI/Config-avanzada-pt2.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-avanzada-pt3-c3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Config-avanzada-pt3-c3.png" alt="image" onload="scrollIntoView()">
     <input class="pos32Generar" type="button" onclick="siguiente(), actualizarTexto(28)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(27)">
@@ -394,7 +394,7 @@ var config_avanzada_c4 = `
     <img class="captura" src="/static/images/CFDI/Config-avanzada-c4.png" alt="image">
     <img class="capturaCorta" src="/static/images/CFDI/Config-avanzada-pt2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-avanzada-pt3.png" alt="image">
-    <input class="pos32Generar" type="button" onclick="siguiente(), actualizarTexto()" value="">
+    <input class="" type="button" onclick="siguiente(), actualizarTexto()" value="Nueva Factura">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(28)">
 `;
