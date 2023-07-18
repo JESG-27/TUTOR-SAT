@@ -380,8 +380,8 @@ var config_avanzada_c2 = `
 // Posición 32
 var config_avanzada_c3 = `
 <div class="tuto-window">
-    <img class="captura" src="/static/images/CFDI/Config-avanzada-c2.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Config-avanzada-pt2.png" alt="image">
+    <img class="captura" id="capturaGris" src="/static/images/CFDI/Config-avanzada-c2.png" alt="image">
+    <img class="capturaCorta" id="capturaGrisCorta" src="/static/images/CFDI/Config-avanzada-pt2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-avanzada-pt3-c3.png" alt="image" onload="scrollIntoView()">
     <input class="pos32Generar" type="button" onclick="siguiente(), actualizarTexto(28)" value="">
 </div>
@@ -394,7 +394,7 @@ var config_avanzada_c4 = `
     <img class="captura" src="/static/images/CFDI/Config-avanzada-c4.png" alt="image">
     <img class="capturaCorta" src="/static/images/CFDI/Config-avanzada-pt2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-avanzada-pt3.png" alt="image">
-    <input class="" type="button" onclick="siguiente(), actualizarTexto()" value="Nueva Factura">
+    <input class="pos33Nueva" type="button" onclick="siguiente(), actualizarTexto()" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(28)">
 `;
