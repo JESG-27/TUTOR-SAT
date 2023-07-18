@@ -262,8 +262,6 @@ header {
 
 .header .nav-links li a:hover {
     color: #052573;
-   
-    text-decoration: underline;
 }
 
 .header .btn button {
@@ -278,6 +276,7 @@ header {
     border-radius: 40px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    cursor: pointer;
 }
 
 .header .btn button:hover {
@@ -307,6 +306,7 @@ header {
 
 .text {
     margin-right: 35px;
+    padding-bottom: 6%;
 }
 
 .text h5 {
@@ -316,7 +316,7 @@ header {
 }
 
 .text h1 {
-    font-size: 3.70rem;
+    font-size: 3.80rem;
     font-weight: 700;
     color: black;
     line-height: 1.2;
@@ -352,9 +352,6 @@ header {
     text-decoration: none;
 }
 
-.text {
-    padding-bottom: 6%;
-}
 
 .main-img  {
     position: relative;
@@ -393,6 +390,70 @@ header {
     }
 }
 
+/* COMO TE ENSEÑAMOS */
+/* ---- Contenido ----*/
+.Como-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 89vh;
+    margin: auto;
+}
+
+.Como-container1 {
+    width: 80%;
+    margin-top: 5%;
+    position: absolute;
+    text-align: center;
+}
+
+
+.Como-container1  h1 {
+    font-size: 4.90rem;
+    font-weight: 700;
+    color: black;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.Como-container1  p {
+    font-size: 16px;
+    color: #6b6b6b;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    margin-bottom: 2.25rem;
+}
+
+.Como-container1 a {
+    display: inline-block;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    border-radius: 10px;
+    background: linear-gradient(315deg, #9C1DE7  0.52%,  #052573 74%);
+    transition: all .42s;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 210px;
+}
+
+.Como-container1 a:hover {
+    background: none;
+    border: 2px solid #9C1DE7;
+    color: #052573;
+    transform: scale(1.1);
+}
+
+.questionGif {
+    width: 100%;
+    height: 90vh;
+}
 
 /* -------TUTORIAL CFDI PORTADA CURSO------------------------------------------------------------------------------------------ */
 .CFDI-container {
@@ -572,7 +633,7 @@ h2.CFDI {
     overflow: hidden;
 }
 
-/* BUTTON ARROW*/
+/* BUTTON HOME*/
 .img-arrow {
     width: 40px;
     opacity: .550
@@ -718,7 +779,7 @@ h2.CFDI {
     height: 28px;
     bottom: 851px;
     left: 295px;
-    padding-left: 4px;
+    padding-left: 6px;
 }
 
 .pos4RFC:focus {
@@ -739,7 +800,7 @@ h2.CFDI {
     height: 28px;
     bottom: 807px;
     left: -60px;
-    padding-left: 4px;
+    padding-left: 6px;
 }
 
 .pos4Password:focus {
@@ -761,7 +822,7 @@ h2.CFDI {
     height: 28px;
     bottom: 655px;
     left: -415px;
-    padding-left: 4px;
+    padding-left: 6px;
 }
 
 .pos4Captcha:focus {
@@ -1309,7 +1370,29 @@ h2.CFDI {
     left: 870px;
 }
 
-/* Large screens ---------------------------------------------------------------------------------
+/* Capturas en Grises*/
+#capturaGris {
+    filter: brightness(48.5%);
+}
+
+#capturaGrisCorta {
+    filter: brightness(48.5%);
+}
+
+/* POSICION 33 */
+.pos33Nueva {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 265px;
+    height: 25px;
+    bottom: 1339px;
+    left: 703px;
+}
+
+/* Large screens ---------------------------------------------------------------------------------*/
 @media only screen and (min-width : 1920px) {
     .tuto-window {
         height: 900px;
@@ -1319,27 +1402,456 @@ h2.CFDI {
     .tutorial_text_header {
         height: 75px;
         width: 90%;
-        border-bottom: 6px solid rgb(243, 243, 244);
         margin-top: 20px;
     }     
 
+    /* Boton Home */
     .arrow__button {
         top: 52px;
         right: 27px;
     }
 
+    .inicioBoton {
+        background: none;
+        width: 40px;
+    }
+    
+     /* Boton Atras */
+    .atras {
+        bottom: 30px;
+        left: 30px;
+        border: none;
+        width: 50px;
+        height: 50px;
+    }
+    
+    /* POSICION 0 */
     .pos0Factura {
-        bottom: 770px;
-        left: 460px;
-        width: 80px;
-        height:90px;
+        border: none;
+        bottom: 454px;
+        left: 277px;
+        width: 55px;
+        height: 65px;
+    }
+    
+    /* POSICION 1 */
+    .pos1Servicios {
+        border: none;
+        width: 740px;
+        height: 30px;
+        bottom: 507px;
+        left: 150px;
+    }
+    
+    /* POSICION 2 */
+    .pos2Servicio {
+        border: none;
+        width: 740px;
+        height: 30px;
+        bottom: 327px;
+        left: 155px;
+    }
+    
+    /* POSICION 3 */
+    .pos3Ejecutar {
+        border: none;
+        width: 170px;
+        height: 39px;
+        bottom: 70px;
+        left: 503px;
+    }
+    
+    /* POSICION 4 */
+    .pos4RFC {
+        border: none;
+        width: 350px;
+        height: 28px;
+        bottom: 851px;
+        left: 295px;
+        padding-left: 6px;
+    }
+    
+    .pos4Password {
+        border: none;
+        width: 350px;
+        height: 28px;
+        bottom: 807px;
+        left: -60px;
+        padding-left: 6px;
+    }
+    
+    .pos4Captcha {
+        border: none;
+        width: 350px;
+        height: 28px;
+        bottom: 655px;
+        left: -415px;
+        padding-left: 6px;
+    }
+    
+    .pos4Enviar {
+        border: none;
+        width: 100px;
+        height: 41px;
+        bottom: 641px;
+        left: 588px;
+    }
+    
+    /* POSICION 5 */
+    .pos5Engrane {
+        border: none;
+        width: 40px;
+        height: 40px;
+        bottom: 500px;
+        left: 960px;
+    }
+    
+    /* POSICION 6 */
+    .pos6Config {
+        border: none;
+        width: 290px;
+        height: 35px;
+        bottom: 425px;
+        left: 719px;
+    }
+    
+    /* POSICION 7 */
+    .pos7RFC {
+        border: none;
+        width: 280px;
+        height: 28px;
+        bottom: 647px;
+        left: 100px;
+    }
+    
+    .pos7Nombre {
+        border: none;
+        width: 580px;
+        height: 28px;
+        bottom: 647px;
+        left: 112px;
+    }
+    
+    .pos7Comercial {
+        border: none;
+        width: 874px;
+        height: 28px;
+        bottom: 627px;
+        left: 101px;
+    }
+    
+    .pos7Guardar {
+        border: none;
+        width: 82px;
+        height: 39px;
+        bottom: 222px;
+        left: 38px;
+    }
+    
+    /* Validación de registro de emisor */
+    .validEngrane {
+        border: none;
+        width: 40px;
+        height: 40px;
+        bottom: 850px;
+        left: 960px;
+    }
+    
+    .validRFC {
+        border: none;
+        width: 280px;
+        height: 28px;
+        bottom: 691px;
+        left: 100px;
+    }
+    
+    .validNombre {
+        border: none;
+        width: 580px;
+        height: 28px;
+        bottom: 691px;
+        left: 112px;
     }
 
-    .pos1Servicios {
-        left: 250px;
-        bottom: 855px;
-        width: 1200px;
-        height: 35px;
+    /* POSICION 8 */
+    .pos8RFC {
+        border: none;
+        width: 283px;
+        height: 28px;
+        bottom: 686px;
+        left: 100px;
     }
+    
+    .pos8Nombre {
+        border: none;
+        width: 579px;
+        height: 28px;
+        bottom: 686px;
+        left: 110px;
+    }
+    
+    .pos8Basica {
+        border: none;
+        width: 290px;
+        height: 35px;
+        bottom: 817px;
+        left: 720px;
+    }
+    
+    /* CAPTURA CORTA  ***EDITAR SI EL TAMAÑO NO CORRESPONDE***
+    .capturaCortaProducto {
+        width: 100%;
+        height: 45%;
+        display: block;
+    }*/
+    
+    
+    /* POSICION 9 */
+    .pos9Selec {
+        border: none;
+        width: 390px;
+        height: 35px;
+        bottom: 1445px;
+        left: 100px;
+    }
+    
+    /* POSICION 10 */
+    .pos10Regimen {
+        border: none;
+        width: 390px;
+        height: 25px;
+        bottom: 1400px;
+        left: 100px;
+    }
+    
+    /* POSICION 11 */
+    .pos11Fav {
+        border: none;
+        width: 40px;
+        height: 35px;
+        bottom: 1452px;
+        left: 590px;
+    }
+    
+    /* POSICION 12 */
+    .pos12Selec {
+        border: none;
+        width: 390px;
+        height: 35px;
+        bottom: 1305px;
+        left: 100px;
+    }
+    
+    /* POSICION 13 */
+    .pos13Ingreso {
+        border: none;
+        width: 390px;
+        height: 25px;
+        bottom: 1265px;
+        left: 102px;
+    }
+    
+    /* POSICION 14 */
+    .pos14Fav {
+        border: none;
+        width: 40px;
+        height: 35px;
+        bottom: 1310px;
+        left: 591px;
+    }
+    
+    /* POSICION 15*/
+    .pos15Selec {
+        border: none;
+        width: 390px;
+        height: 35px;
+        bottom: 1183px;
+        left: 101px;
+    }
+    
+    /* POSICION 16 */
+    .pos16Codigo {
+        border: none;
+        width: 390px;
+        height: 25px;
+        bottom: 1143px;
+        left: 102px;
+    }
+    
+    /* POSICION 17 */
+    .pos17Fav {
+        border: none;
+        width: 40px;
+        height: 35px;
+        bottom: 1187px;
+        left: 591px;
+    }
+    
+    /* POSICION 18*/
+    .pos18Selec {
+        border: none;
+        width: 390px;
+        height: 35px;
+        bottom: 1068px;
+        left: 101px;
+    }
+    
+    /* POSICION 19 */
+    .pos19Peso {
+        border: none;
+        width: 467px;
+        height: 25px;
+        bottom: 1025px;
+        left: 105px;
+    }
+    
+    /* CAPTURA CORTA2       ***EDITAR SI EL TAMAÑO NO CORRESPONDE***
+    .capturaCorta2 {
+        width: 100%;
+        height: 75%;
+        display: block;
+    }*/
+    
+    /* POSICION 20 */
+    .pos20Fav {
+        border: none;
+        width: 40px;
+        height: 35px;
+        bottom: 1071px;
+        left: 591px;
+    }
+    
+    /* POSICION 21*/
+    .pos21Selec {
+        border: none;
+        width: 390px;
+        height: 35px;
+        bottom: 935px;
+        left: 101px;
+    }
+    
+    /* POSICION 22 */
+    .pos22Efectivo {
+        border: none;
+        width: 380px;
+        height: 25px;
+        bottom: 895px;
+        left: 105px;
+    }
+    
+    /* POSICION 23 */
+    .pos23Fav {
+        border: none;
+        width: 40px;
+        height: 35px;
+        bottom: 940px;
+        left: 591px;
+    }
+    
+    /* POSICION 24*/
+    .pos24Selec {
+        border: none;
+        width: 390px;
+        height: 35px;
+        bottom: 818px;
+        left: 101px;
+    }
+    
+    /* POSICION 25 */
+    .pos25Pago {
+        border: none;
+        width: 380px;
+        height: 25px;
+        bottom: 783px;
+        left: 105px;
+    }
+    
+    /* POSICION 26 */
+    .pos26Fav {
+        border: none;
+        width: 40px;
+        height: 35px;
+        bottom: 824px;
+        left: 591px;
+    }
+    
+    /*      ***EDITAR EN CASO DE QUE LAS IMAGENES NO QUEDEN BIEN EN PORCENTAJE***
+    /* CAPTURA CORTA3 
+    .capturaCorta3 {
+        width: 100%;
+        height: 80%;
+        display: block;
+    }
+    
+    /* CAPTURA CORTA PRODUCTO 2 
+    .capturaCortaProducto2 {
+        width: 100%;
+        height: 35%;
+        display: block;
+    }*/
+    
+    /* POSICION 27 */
+    .pos27Engrane {
+        border: none;
+        width: 40px;
+        height: 40px;
+        bottom: 1642px;
+        left: 960px;
+    }
+    
+    /* POSICION 28 */
+    .pos28Avanzada {
+        border: none;
+        width: 290px;
+        height: 35px;
+        bottom: 1587px;
+        left: 720px;
+    }
+    
+    /* POSICION 29 */
+    .pos29Check {
+        border: none;
+        width: 30px;
+        height: 30px;
+        bottom: 1165px;
+        left: 450px;
+    }
+    
+    /* POSICION 29 */
+    .pos30Check {
+        border: none;
+        width: 30px;
+        height: 30px;
+        bottom: 908px;
+        left: 450px;
+    }
+    
+    /* POSICION 31 */
+    .pos31Guardar {
+        border: none;
+        width: 90px;
+        height: 40px;
+        bottom: 62px;
+        left: 75px;
+    }
+    
+    /* POSICION 32 */
+    .pos32Generar {
+        border: none;
+        width: 90px;
+        height: 40px;
+        bottom: 1378px;
+        left: 870px;
+    }
+
+    /* POSICION 33 */
+    .pos33Nueva {
+        border: none;
+        width: 265px;
+        height: 25px;
+        bottom: 1339px;
+        left: 703px;
+    }
+
+    
 }
-*/
