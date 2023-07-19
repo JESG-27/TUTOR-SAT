@@ -5,45 +5,54 @@
 {% endblock %}
 
 {% block body %}
-    <div class="main">
-        <div class="text">
-            <h5>¿No sabes como declarar tus impuestos?</h5>
-            <h1><span class="gradient-text">Tutoriales</span> dinámicos,
-            <br>aprende a<span class="gradient-text"> Declarar</span></h1>
+<div class="main">
+    <div class="text">
+        <h5>¿No sabes como declarar tus impuestos?</h5>
+        <h1><span class="gradient-text">Tutoriales</span> dinámicos,
+            <br>aprende a<span class="gradient-text"> Declarar</span>
+        </h1>
 
-            <p>Realizar tu contabilidad como emprendedor sin 
-                la necesidad de tener que pagar un contador mes con mes.</p>
-            
-            <a href="/tutoriales" class="btn">Comenzar</a>
-        </div>
+        <p>Realizar tu contabilidad como emprendedor sin
+            la necesidad de tener que pagar un contador mes con mes.</p>
 
-        <div class="main-img">
-            <img src="{{ url_for('static', filename='images/banner-img.png') }}">
-        </div>
+        <a href="/tutoriales" class="btn">Comenzar</a>
     </div>
 
-    <div class="Como-container">
-        <img class="questionGif" src="{{ url_for('static', filename='images/Question.gif') }}">
-        <div class="Como-container1">
-            <h1><span class="gradient-text">¿Cómo</span> te <span class="gradient-text"> Enseñamos?</span></h1>
-
-            <p>Realizar tu contabilidad como emprendedor sin 
-                la necesidad de tener que pagar un contador mes con mes. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio vero tempore dicta est inventore odit, Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iusto, numquam repudiandae provident obcaecati in corrupti assumenda nostrum harum cum, quod aut. Voluptatibus sed laboriosam perspiciatis quisquam itaque consequuntur voluptates.</p>
-            
-            <a href="/sobre_nosotros" class="btn">Sobre Nosotros</a>
-            <a href="/" class="btn">Sobre SATSIM</a>
-        </div>
+    <div class="main-img">
+        <img src="{{ url_for('static', filename='images/banner-img.png') }}">
     </div>
+</div>
 
-    <div class="container">
-        <div class="content_left">
-            <h2>¿Te sientes confundído?</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam tempora aliquam odio officia, numquam at rerum autem eligendi debitis.</p>
-            <button class="css-button-arrow--green"><a href="/preguntas-frecuentes">Preguntas Frecuentes</a></button>
-        </div>
-        <div class="content_right">
+<div class="Como-container">
+    <img class="questionGif" src="{{ url_for('static', filename='images/Question.gif') }}">
+    <div class="Como-container1">
+        <h1><span class="gradient-text">¿Cómo</span> te <span class="gradient-text"> Enseñamos?</span></h1>
+
+        <p>Realizar tu contabilidad como emprendedor sin
+            la necesidad de tener que pagar un contador mes con mes. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Optio vero tempore dicta est inventore odit, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Adipisci iusto, numquam repudiandae provident obcaecati in corrupti assumenda nostrum harum cum, quod aut.
+            Voluptatibus sed laboriosam perspiciatis quisquam itaque consequuntur voluptates.</p>
+
+        <a href="/sobre_nosotros" class="btn">Sobre Nosotros</a>
+        <a href="/" class="btn">Sobre SATSIM</a>
+    </div>
+</div>
+
+<div class="preguntas-container">
+    <div class="preguntas-content1">
+        <div class="chatbot-main-img">
             <img src="{{ url_for('static', filename='images/logoSATSIM.png') }}">
         </div>
     </div>
+    <div class="preguntas-text">
+        <h1>¿Te sientes
+            <br><span class="gradient-text"> Confundído?</span>
+        </h1>
+        <h5>Consulta las preguntas frecuentes o dejanos las tuyas para que pronto sean contestadas por nuestro chatbot.
+        </h5>
 
+        <a href="/preguntas-frecuentes" class="btn">Preguntas Frecuentes</a>
+    </div>
+</div>
 {% endblock %}

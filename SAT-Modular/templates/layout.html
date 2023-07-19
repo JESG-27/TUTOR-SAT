@@ -2,7 +2,7 @@
 <html lang="es">
     
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <link rel="icon" type="image/jpg" href="{{ url_for('static', filename='./images/Favicon.png' ) }}"/>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     {% block head %}
@@ -52,11 +52,33 @@
         </div>
     </div>
 
-    <footer class="footer_info">
-        <div class="container">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eaque doloribus! Quidem aspernatur dolores tenetur soluta beatae? Odio asperiores vel sit rem, aliquam enim alias, similique ab perferendis, architecto nesciunt? Layout
-            </p>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content-container">
+                <img class="footer-img" src="{{ url_for('static', filename='images/footer.png') }}">
+                <span class="footer-info">CUCEI</span>
+                <span class="footer-info">Ingenieria en Computación</span>
+            </div>
+            <div class="footer-menus">
+                <div class="footer-content-container">
+                    <span class="menu-title">menu</span>
+                    <a href="/" class="menu-item-footer">Inicio</a>
+                    <a href="/tutoriales" class="menu-item-footer">Tutoriales</a>
+                    <a href="/preguntas-frecuentes" class="menu-item-footer">Preguntas Frecuentes</a>
+                </div>
+            </div>
+            
+            <div class="footer-content-container">
+                <span class="menu-title">Siguenos</span>
+                <div class="social-container">
+                    <a href="" class="social-link"></a>
+                    <a href="" class="social-link"></a>
+                    <a href="" class="social-link"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <span class="copyright">Copyright 2023, SATSIM. Todos los derechos reservados.</span>
         </div>
     </footer>
 
