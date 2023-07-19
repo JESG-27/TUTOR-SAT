@@ -1,4 +1,4 @@
-HTML (pos) - Texto tutorial (pos)
+HTML                        (pos) - Texto tutorial               (pos)
 
 SAT_inicio0                   (0) - boton_factura_electronica      (0)
 SAT_inicio1                   (1) - boton_servicios_facturacion    (1)
