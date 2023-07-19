@@ -1428,129 +1428,129 @@ h2.CFDI {
     /* POSICION 0 */
     .pos0Factura {
         border: none;
-        bottom: 454px;
-        left: 277px;
-        width: 55px;
-        height: 65px;
+        bottom: 768px;
+        left: 470px;
+        width: 60px;
+        height: 75px;
     }
     
     /* POSICION 1 */
     .pos1Servicios {
-        border: none;
-        width: 740px;
-        height: 30px;
-        bottom: 507px;
-        left: 150px;
+        border: 5px solid black;
+        width: 1215px;
+        height: 40px;
+        bottom: 852px;
+        left: 250px;
     }
     
     /* POSICION 2 */
     .pos2Servicio {
-        border: none;
-        width: 740px;
+        border: 5px solid black;
+        width: 500px;
         height: 30px;
-        bottom: 327px;
-        left: 155px;
+        bottom: 550px;
+        left: 260px;
     }
     
     /* POSICION 3 */
     .pos3Ejecutar {
-        border: none;
-        width: 170px;
-        height: 39px;
-        bottom: 70px;
-        left: 503px;
+        border: 5px solid black;
+        width: 242px;
+        height: 42px;
+        bottom: 110px;
+        left: 820px;
     }
     
     /* POSICION 4 */
     .pos4RFC {
-        border: none;
-        width: 350px;
-        height: 28px;
-        bottom: 851px;
-        left: 295px;
+        
+        width: 610px;
+        height: 40px;
+        bottom: 1440px;
+        left: 470px;
         padding-left: 6px;
     }
     
     .pos4Password {
-        border: none;
-        width: 350px;
-        height: 28px;
-        bottom: 807px;
-        left: -60px;
+        
+        width: 610px;
+        height: 40px;
+        bottom: 1368px;
+        left: -145px;
         padding-left: 6px;
     }
     
     .pos4Captcha {
-        border: none;
-        width: 350px;
-        height: 28px;
-        bottom: 655px;
-        left: -415px;
+        
+        width: 610px;
+        height: 40px;
+        bottom: 1185px;
+        left: 470px;
         padding-left: 6px;
     }
     
     .pos4Enviar {
-        border: none;
-        width: 100px;
-        height: 41px;
-        bottom: 641px;
-        left: 588px;
+        
+        width: 130px;
+        height: 60px;
+        bottom: 1080px;
+        left: 330px;
     }
     
     /* POSICION 5 */
     .pos5Engrane {
-        border: none;
+        
         width: 40px;
         height: 40px;
-        bottom: 500px;
-        left: 960px;
+        bottom: 840px;
+        left: 1545px;
     }
     
     /* POSICION 6 */
     .pos6Config {
-        border: none;
-        width: 290px;
+       
+        width: 420px;
         height: 35px;
-        bottom: 425px;
-        left: 719px;
+        bottom: 710px;
+        left: 1160px;
     }
     
     /* POSICION 7 */
     .pos7RFC {
-        border: none;
-        width: 280px;
-        height: 28px;
-        bottom: 647px;
-        left: 100px;
+        
+        width: 400px;
+        height: 35px;
+        bottom: 1110px;
+        left: 180px;
     }
     
     .pos7Nombre {
-        border: none;
-        width: 580px;
-        height: 28px;
-        bottom: 647px;
-        left: 112px;
+       
+        width: 400px;
+        height: 35px;
+        bottom: 1110px;
+        left: 450px;
     }
     
     .pos7Comercial {
-        border: none;
-        width: 874px;
-        height: 28px;
-        bottom: 627px;
-        left: 101px;
+        
+        width: 800px;
+        height: 40px;
+        bottom: 990px;
+        left: -300px;
     }
     
     .pos7Guardar {
-        border: none;
-        width: 82px;
+        
+        width: 96px;
         height: 39px;
-        bottom: 222px;
-        left: 38px;
+        bottom: 317px;
+        left: -138px;
     }
     
     /* Validación de registro de emisor */
     .validEngrane {
-        border: none;
+       border: 5px solid black;
         width: 40px;
         height: 40px;
         bottom: 850px;
@@ -1558,7 +1558,7 @@ h2.CFDI {
     }
     
     .validRFC {
-        border: none;
+        border: 5px solid black;
         width: 280px;
         height: 28px;
         bottom: 691px;
@@ -1566,7 +1566,7 @@ h2.CFDI {
     }
     
     .validNombre {
-        border: none;
+        border: 5px solid black;
         width: 580px;
         height: 28px;
         bottom: 691px;
@@ -1575,27 +1575,27 @@ h2.CFDI {
 
     /* POSICION 8 */
     .pos8RFC {
-        border: none;
-        width: 283px;
-        height: 28px;
-        bottom: 686px;
-        left: 100px;
+   
+       width: 400px;
+       height: 35px;
+       bottom: 1135px;
+       left: 180px;
     }
     
     .pos8Nombre {
-        border: none;
-        width: 579px;
-        height: 28px;
-        bottom: 686px;
-        left: 110px;
+        
+        width: 600px;
+        height: 35px;
+        bottom: 1135px;
+        left: 405px;
     }
     
     .pos8Basica {
-        border: none;
-        width: 290px;
+        
+        width: 420px;
         height: 35px;
-        bottom: 817px;
-        left: 720px;
+        bottom: 1375px;
+        left: 1160px;
     }
     
     /* CAPTURA CORTA  ***EDITAR SI EL TAMAÑO NO CORRESPONDE***
@@ -1608,101 +1608,101 @@ h2.CFDI {
     
     /* POSICION 9 */
     .pos9Selec {
-        border: none;
-        width: 390px;
+        border: 5px solid black;
+        width: 580px;
         height: 35px;
-        bottom: 1445px;
-        left: 100px;
+        bottom: 2440px;
+        left: 180px;
     }
     
     /* POSICION 10 */
     .pos10Regimen {
-        border: none;
-        width: 390px;
+        border: 5px solid black;
+        width: 580px;
         height: 25px;
-        bottom: 1400px;
-        left: 100px;
+        bottom: 2370px;
+        left: 180px;
     }
     
     /* POSICION 11 */
     .pos11Fav {
-        border: none;
+        border: 5px solid black;
         width: 40px;
         height: 35px;
-        bottom: 1452px;
-        left: 590px;
+        bottom: 2450px;
+        left: 955px;
     }
     
     /* POSICION 12 */
     .pos12Selec {
-        border: none;
-        width: 390px;
+        border: 5px solid black;
+        width: 588px;
         height: 35px;
-        bottom: 1305px;
-        left: 100px;
+        bottom: 2208px;
+        left: 180px;
     }
     
     /* POSICION 13 */
     .pos13Ingreso {
-        border: none;
-        width: 390px;
+        border: 5px solid black;
+        width: 580px;
         height: 25px;
-        bottom: 1265px;
-        left: 102px;
+        bottom: 2135px;
+        left: 180px;
     }
     
     /* POSICION 14 */
     .pos14Fav {
-        border: none;
+        border: 5px solid black;
         width: 40px;
         height: 35px;
-        bottom: 1310px;
-        left: 591px;
+        bottom: 2210px;
+        left: 955px;
     }
     
     /* POSICION 15*/
     .pos15Selec {
-        border: none;
-        width: 390px;
+        border: 5px solid black;
+        width: 588px;
         height: 35px;
-        bottom: 1183px;
-        left: 101px;
+        bottom: 1995px;
+        left: 180px;
     }
     
     /* POSICION 16 */
     .pos16Codigo {
-        border: none;
-        width: 390px;
+        
+        width: 580px;
         height: 25px;
-        bottom: 1143px;
-        left: 102px;
+        bottom: 1930px;
+        left: 180px;
     }
     
     /* POSICION 17 */
     .pos17Fav {
-        border: none;
+        border: 5px solid black;
         width: 40px;
         height: 35px;
-        bottom: 1187px;
-        left: 591px;
+        bottom: 1997px;
+        left: 955px;
     }
     
     /* POSICION 18*/
     .pos18Selec {
-        border: none;
-        width: 390px;
+        border: 5px solid black;
+        width: 588px;
         height: 35px;
-        bottom: 1068px;
-        left: 101px;
+        bottom: 1800px;
+        left: 180px;
     }
     
     /* POSICION 19 */
     .pos19Peso {
-        border: none;
-        width: 467px;
+        border: 5px solid black;
+        width: 580px;
         height: 25px;
-        bottom: 1025px;
-        left: 105px;
+        bottom: 1735px;
+        left: 180px;
     }
     
     /* CAPTURA CORTA2       ***EDITAR SI EL TAMAÑO NO CORRESPONDE***
@@ -1714,65 +1714,65 @@ h2.CFDI {
     
     /* POSICION 20 */
     .pos20Fav {
-        border: none;
+        border: 5px solid black;
         width: 40px;
         height: 35px;
-        bottom: 1071px;
-        left: 591px;
+        bottom: 1805px;
+        left: 955px;
     }
     
     /* POSICION 21*/
     .pos21Selec {
-        border: none;
-        width: 390px;
+        border: 5px solid black;
+        width: 588px;
         height: 35px;
-        bottom: 935px;
-        left: 101px;
+        bottom: 1578px;
+        left: 180px;
     }
     
     /* POSICION 22 */
     .pos22Efectivo {
-        border: none;
-        width: 380px;
+        border: 5px solid black;
+        width: 580px;
         height: 25px;
-        bottom: 895px;
-        left: 105px;
+        bottom: 1513px;
+        left: 170px;
     }
     
     /* POSICION 23 */
     .pos23Fav {
-        border: none;
+        border: 5px solid black;
         width: 40px;
         height: 35px;
-        bottom: 940px;
-        left: 591px;
+        bottom: 1578px;
+        left: 955px;
     }
     
     /* POSICION 24*/
     .pos24Selec {
-        border: none;
-        width: 390px;
+        border: 5px solid black;
+        width: 588px;
         height: 35px;
-        bottom: 818px;
-        left: 101px;
+        bottom: 1378px;
+        left: 180px;
     }
     
     /* POSICION 25 */
     .pos25Pago {
-        border: none;
-        width: 380px;
+        border: 5px solid black;
+        width: 580px;
         height: 25px;
-        bottom: 783px;
-        left: 105px;
+        bottom: 1320px;
+        left: 170px;
     }
     
     /* POSICION 26 */
     .pos26Fav {
-        border: none;
+        border: 5px solid black;
         width: 40px;
         height: 35px;
-        bottom: 824px;
-        left: 591px;
+        bottom: 1380px;
+        left: 955px;
     }
     
     /*      ***EDITAR EN CASO DE QUE LAS IMAGENES NO QUEDEN BIEN EN PORCENTAJE***
@@ -1792,65 +1792,65 @@ h2.CFDI {
     
     /* POSICION 27 */
     .pos27Engrane {
-        border: none;
+        border: 5px solid black;
         width: 40px;
         height: 40px;
-        bottom: 1642px;
-        left: 960px;
+        bottom: 2770px;
+        left: 1545px;
     }
     
     /* POSICION 28 */
     .pos28Avanzada {
-        border: none;
-        width: 290px;
+        border: 5px solid black;
+        width: 420px;
         height: 35px;
-        bottom: 1587px;
-        left: 720px;
+        bottom: 2680px;
+        left: 1160px;
     }
     
     /* POSICION 29 */
     .pos29Check {
-        border: none;
+        border: 5px solid black;
         width: 30px;
         height: 30px;
-        bottom: 1165px;
-        left: 450px;
+        bottom: 1968px;
+        left: 725px;
     }
     
     /* POSICION 29 */
     .pos30Check {
-        border: none;
+        border: 5px solid black;
         width: 30px;
         height: 30px;
-        bottom: 908px;
-        left: 450px;
+        bottom: 1528px;
+        left: 725px;
     }
     
     /* POSICION 31 */
     .pos31Guardar {
-        border: none;
-        width: 90px;
-        height: 40px;
-        bottom: 62px;
-        left: 75px;
+        border: 5px solid black;
+        width: 115px;
+        height: 50px;
+        bottom: 95px;
+        left: 135px;
     }
     
     /* POSICION 32 */
     .pos32Generar {
-        border: none;
-        width: 90px;
+        border: 5px solid black;
+        width: 110px;
         height: 40px;
-        bottom: 1378px;
-        left: 870px;
+        bottom: 2325px;
+        left: 1410px;
     }
 
     /* POSICION 33 */
     .pos33Nueva {
-        border: none;
+        border: 5px solid black;
         width: 265px;
         height: 25px;
-        bottom: 1339px;
-        left: 703px;
+        bottom: 2265px;
+        left: 1150px;
     }
 
     
