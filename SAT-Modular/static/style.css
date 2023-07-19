@@ -1680,14 +1680,14 @@ h2.CFDI {
     .atras {
         bottom: 30px;
         left: 30px;
-        border: none;
+        
         width: 50px;
         height: 50px;
     }
     
     /* POSICION 0 */
     .pos0Factura {
-        border: none;
+        
         bottom: 768px;
         left: 470px;
         width: 60px;
@@ -1696,7 +1696,7 @@ h2.CFDI {
     
     /* POSICION 1 */
     .pos1Servicios {
-        border: 5px solid black;
+        
         width: 1215px;
         height: 40px;
         bottom: 852px;
@@ -1705,7 +1705,7 @@ h2.CFDI {
     
     /* POSICION 2 */
     .pos2Servicio {
-        border: 5px solid black;
+        
         width: 500px;
         height: 30px;
         bottom: 550px;
@@ -1714,7 +1714,7 @@ h2.CFDI {
     
     /* POSICION 3 */
     .pos3Ejecutar {
-        border: 5px solid black;
+       
         width: 242px;
         height: 42px;
         bottom: 110px;
@@ -1778,59 +1778,59 @@ h2.CFDI {
     /* POSICION 7 */
     .pos7RFC {
         
-        width: 400px;
+        width: 450px;
         height: 35px;
-        bottom: 1110px;
-        left: 180px;
+        bottom: 1097px;
+        left: 160px;
     }
     
     .pos7Nombre {
-       
-        width: 400px;
+        
+        width: 900px;
         height: 35px;
-        bottom: 1110px;
-        left: 450px;
+        bottom: 1097px;
+        left: 190px;
     }
     
     .pos7Comercial {
-        
-        width: 800px;
+       
+        width: 1395px;
         height: 40px;
-        bottom: 990px;
-        left: -300px;
+        bottom: 1035px;
+        left: 160px;
     }
     
     .pos7Guardar {
-        
-        width: 96px;
-        height: 39px;
-        bottom: 317px;
-        left: -138px;
+       
+        width: 120px;
+        height: 46px;
+        bottom: 353px;
+        left: 68px;
     }
     
     /* Validación de registro de emisor */
     .validEngrane {
-       border: 5px solid black;
-        width: 40px;
-        height: 40px;
-        bottom: 850px;
-        left: 960px;
+    
+       width: 40px;
+       height: 40px;
+       bottom: 1420px;
+       left: 1545px;
     }
     
     .validRFC {
-        border: 5px solid black;
-        width: 280px;
-        height: 28px;
-        bottom: 691px;
-        left: 100px;
+        
+        width: 450px;
+        height: 35px;
+        bottom: 1143px;
+        left: 160px;
     }
     
     .validNombre {
-        border: 5px solid black;
-        width: 580px;
-        height: 28px;
-        bottom: 691px;
-        left: 112px;
+        
+        width: 900px;
+        height: 35px;
+        bottom: 1143px;
+        left: 190px;
     }
 
     /* POSICION 8 */
@@ -1868,7 +1868,7 @@ h2.CFDI {
     
     /* POSICION 9 */
     .pos9Selec {
-        border: 5px solid black;
+        
         width: 580px;
         height: 35px;
         bottom: 2440px;
@@ -1877,7 +1877,7 @@ h2.CFDI {
     
     /* POSICION 10 */
     .pos10Regimen {
-        border: 5px solid black;
+        
         width: 580px;
         height: 25px;
         bottom: 2370px;
@@ -1886,7 +1886,7 @@ h2.CFDI {
     
     /* POSICION 11 */
     .pos11Fav {
-        border: 5px solid black;
+        
         width: 40px;
         height: 35px;
         bottom: 2450px;
@@ -1895,7 +1895,7 @@ h2.CFDI {
     
     /* POSICION 12 */
     .pos12Selec {
-        border: 5px solid black;
+        
         width: 588px;
         height: 35px;
         bottom: 2208px;
@@ -1904,7 +1904,7 @@ h2.CFDI {
     
     /* POSICION 13 */
     .pos13Ingreso {
-        border: 5px solid black;
+       
         width: 580px;
         height: 25px;
         bottom: 2135px;
@@ -1913,7 +1913,7 @@ h2.CFDI {
     
     /* POSICION 14 */
     .pos14Fav {
-        border: 5px solid black;
+        
         width: 40px;
         height: 35px;
         bottom: 2210px;
@@ -1922,7 +1922,7 @@ h2.CFDI {
     
     /* POSICION 15*/
     .pos15Selec {
-        border: 5px solid black;
+        
         width: 588px;
         height: 35px;
         bottom: 1995px;
@@ -1940,7 +1940,7 @@ h2.CFDI {
     
     /* POSICION 17 */
     .pos17Fav {
-        border: 5px solid black;
+        
         width: 40px;
         height: 35px;
         bottom: 1997px;
@@ -1949,7 +1949,7 @@ h2.CFDI {
     
     /* POSICION 18*/
     .pos18Selec {
-        border: 5px solid black;
+        
         width: 588px;
         height: 35px;
         bottom: 1800px;
@@ -1958,7 +1958,7 @@ h2.CFDI {
     
     /* POSICION 19 */
     .pos19Peso {
-        border: 5px solid black;
+        
         width: 580px;
         height: 25px;
         bottom: 1735px;
@@ -1974,7 +1974,7 @@ h2.CFDI {
     
     /* POSICION 20 */
     .pos20Fav {
-        border: 5px solid black;
+        
         width: 40px;
         height: 35px;
         bottom: 1805px;
@@ -1983,7 +1983,7 @@ h2.CFDI {
     
     /* POSICION 21*/
     .pos21Selec {
-        border: 5px solid black;
+        
         width: 588px;
         height: 35px;
         bottom: 1578px;
@@ -1992,7 +1992,7 @@ h2.CFDI {
     
     /* POSICION 22 */
     .pos22Efectivo {
-        border: 5px solid black;
+        
         width: 580px;
         height: 25px;
         bottom: 1513px;
@@ -2001,7 +2001,7 @@ h2.CFDI {
     
     /* POSICION 23 */
     .pos23Fav {
-        border: 5px solid black;
+        
         width: 40px;
         height: 35px;
         bottom: 1578px;
@@ -2010,7 +2010,7 @@ h2.CFDI {
     
     /* POSICION 24*/
     .pos24Selec {
-        border: 5px solid black;
+        
         width: 588px;
         height: 35px;
         bottom: 1378px;
@@ -2019,7 +2019,7 @@ h2.CFDI {
     
     /* POSICION 25 */
     .pos25Pago {
-        border: 5px solid black;
+        
         width: 580px;
         height: 25px;
         bottom: 1320px;
@@ -2028,7 +2028,7 @@ h2.CFDI {
     
     /* POSICION 26 */
     .pos26Fav {
-        border: 5px solid black;
+     
         width: 40px;
         height: 35px;
         bottom: 1380px;
@@ -2052,7 +2052,7 @@ h2.CFDI {
     
     /* POSICION 27 */
     .pos27Engrane {
-        border: 5px solid black;
+  
         width: 40px;
         height: 40px;
         bottom: 2770px;
@@ -2061,7 +2061,7 @@ h2.CFDI {
     
     /* POSICION 28 */
     .pos28Avanzada {
-        border: 5px solid black;
+  
         width: 420px;
         height: 35px;
         bottom: 2680px;
@@ -2070,7 +2070,7 @@ h2.CFDI {
     
     /* POSICION 29 */
     .pos29Check {
-        border: 5px solid black;
+       
         width: 30px;
         height: 30px;
         bottom: 1968px;
@@ -2079,7 +2079,7 @@ h2.CFDI {
     
     /* POSICION 29 */
     .pos30Check {
-        border: 5px solid black;
+   
         width: 30px;
         height: 30px;
         bottom: 1528px;
@@ -2088,7 +2088,7 @@ h2.CFDI {
     
     /* POSICION 31 */
     .pos31Guardar {
-        border: 5px solid black;
+      
         width: 115px;
         height: 50px;
         bottom: 95px;
@@ -2097,7 +2097,7 @@ h2.CFDI {
     
     /* POSICION 32 */
     .pos32Generar {
-        border: 5px solid black;
+    
         width: 110px;
         height: 40px;
         bottom: 2325px;
@@ -2106,7 +2106,7 @@ h2.CFDI {
 
     /* POSICION 33 */
     .pos33Nueva {
-        border: 5px solid black;
+     
         width: 265px;
         height: 25px;
         bottom: 2265px;
