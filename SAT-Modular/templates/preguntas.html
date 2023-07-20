@@ -5,22 +5,87 @@
 {% endblock %}
 
 {% block body %}
-<div class="container">
-    <h1 class="main_title">Preguntas Frecuentes</h1>
-    <div class="question">
-        <h2 class="question_title">¿Qué es una e.firma?</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quidem expedita quos accusamus suscipit error laudantium ex accusantium dolore</p>
-        <a href="">Referencia</a>
+<div class="preguntas-container">
+    <div class="preguntas-container1">
+        <h1><span class="gradient-text">Preguntas</span> Frecuentes</h1>
+        <h5>¿Qué es una e.firma?</h5>
+        <p>Realizar tu contabilidad como emprendedor sin
+            la necesidad de tener que pagar un contador mes con mes.</p>
+        <h5>¿Qué es una e.firma?</h5>
+        <p>Realizar tu contabilidad como emprendedor sin
+            la necesidad de tener que pagar un contador mes con mes.</p>
+        <h5>¿Qué es una e.firma?</h5>
+        <p>Realizar tu contabilidad como emprendedor sin
+            la necesidad de tener que pagar un contador mes con mes.</p>
+        <h5>¿Qué es una e.firma?</h5>
+        <p>Realizar tu contabilidad como emprendedor sin
+            la necesidad de tener que pagar un contador mes con mes.</p>
+        <h5>¿Qué es una e.firma?</h5>
+        <p>Realizar tu contabilidad como emprendedor sin
+            la necesidad de tener que pagar un contador mes con mes.</p>
     </div>
-    <div class="question__input">
-        <h2 class="question_title">Realiza una pregunta</h2>
-        <form>
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Correo electrónico">
-            <input type="text" placeholder="Inserte su pregunta">
-            <button type="submit">Realizar</button>
-        </form>
-        <img src="{{ url_for('static', filename='images/logoSATSIM.png') }}">
+</div>
+
+<div class="Frecuente-container">
+    <div class="Frecuente-content1">
+        <section class="col left">
+            <div class="contactTitle">
+                <h2><span class="gradient-text">Manda</span> tu <span class="gradient-text">Pregunta</span></h2>
+                <p>Si nuestro chatbot no pudo responder tu pregunta háznoslo saber.</p>
+            </div>
+            <div class="contactInfo">
+
+                <div class="iconGroup">
+                    <div class="icon">
+                        <img class="phone" src="{{ url_for('static', filename='images/phone.png') }}">
+                    </div>
+                    <div class="details">
+                        <span>Teléfono</span>
+                        <span>+52 33 1518 0821 </span>
+                    </div>
+                </div>
+
+                <div class="iconGroup">
+                    <div class="icon">
+                        <img class="email" src="{{ url_for('static', filename='images/email.png') }}">
+                    </div>
+                    <div class="details">
+                        <span>Email</span>
+                        <span>modularSATSIM@gmail.com</span>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+    <div class="Frecuente-content2 right">
+        <section class="col right">
+            <form class="messageForm">
+
+                <div class="inputGroup halfWidth">
+                    <input type="text" name="" required="required">
+                    <label>Nombre Completo</label>
+                </div>
+
+                <div class="inputGroup halfWidth">
+                    <input type="text" name="" required="required">
+                    <label>Email</label>
+                </div>
+
+                <div class="inputGroup fullWidth">
+                    <input type="text" name="" required="required">
+                    <label>Tema</label>
+                </div>
+
+                <div class="inputGroup fullWidth">
+                    <textarea required="required"></textarea>
+                    <label>Escribe tus preguntas...</label>
+                </div>
+
+                <div class="inputGroup fullWidth">
+                    <button>Enviar Mensaje</button>
+                </div>
+
+            </form>
     </div>
 </div>
 {% endblock %}
