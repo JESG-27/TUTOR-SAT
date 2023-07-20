@@ -53,7 +53,28 @@ html {
     transform: translateY(-40px);
     z-index: 123456;
     opacity: 1;
-    background-color: #F1F1F1;;
+    background-color: #F1F1F1;
+    animation-name: slide2;
+    animation-duration: 1.2s;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+@keyframes slide2 {
+    0% {
+        transform: translateY(0px);
+        opacity: .98;
+    }
+
+    50% {
+        transform: translateY(-40px);
+        opacity: .98;
+    }
+
+    100% {
+        transform: translateY(-40px);
+        opacity: 1;
+    }
 }
 
 /* BUTTON */
@@ -272,7 +293,8 @@ header {
     letter-spacing: 1px;
     color: #fff;
     padding: 9px 25px;
-    background: linear-gradient(315deg, #9C1DE7  0.52%,  #052573 74%);;
+    background: linear-gradient(315deg, #9C1DE7 0.52%, #052573 74%);
+    ;
     border: none;
     border-radius: 40px;
     cursor: pointer;
@@ -325,7 +347,7 @@ header {
 }
 
 .gradient-text {
-    background: linear-gradient(315deg, #9C1DE7  0.52%,  #052573 74%);
+    background: linear-gradient(315deg, #9C1DE7 0.52%, #052573 74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -348,13 +370,13 @@ header {
     text-transform: capitalize;
     padding: 12px 30px;
     border-radius: 10px;
-    background: linear-gradient(315deg, #9C1DE7  0.52%,  #052573 74%);
+    background: linear-gradient(315deg, #9C1DE7 0.52%, #052573 74%);
     transition: all .42s;
     text-decoration: none;
 }
 
 
-.main-img  {
+.main-img {
     position: relative;
     width: 100px;
     height: auto;
@@ -362,7 +384,7 @@ header {
     padding-bottom: 5%;
 }
 
-.main-img img{
+.main-img img {
     max-width: 800px;
     width: 450px;
     height: auto;
@@ -382,10 +404,12 @@ header {
 @keyframes slide {
     0% {
         transform: translateY(0px);
-    } 
+    }
+
     50% {
         transform: translateY(-15px);
     }
+
     100% {
         transform: translateY(0px);
     }
@@ -395,7 +419,7 @@ header {
 /* ---- Contenido ----*/
 .Como-container {
     width: 100%;
-  
+
     justify-content: center;
     text-align: center;
     height: 92vh;
@@ -414,7 +438,7 @@ header {
 }
 
 
-.Como-container1  h1 {
+.Como-container1 h1 {
     font-size: 4.90rem;
     font-weight: 700;
     color: black;
@@ -422,7 +446,7 @@ header {
     margin-bottom: 20px;
 }
 
-.Como-container1  p {
+.Como-container1 p {
     font-size: 16px;
     color: #6b6b6b;
     font-weight: 400;
@@ -441,7 +465,7 @@ header {
     text-transform: capitalize;
     padding: 12px 30px;
     border-radius: 10px;
-    background: linear-gradient(315deg, #9C1DE7  0.52%,  #052573 74%);
+    background: linear-gradient(315deg, #9C1DE7 0.52%, #052573 74%);
     transition: all .42s;
     text-decoration: none;
     margin-left: 25px;
@@ -469,7 +493,7 @@ header {
     padding-top: 20px;
 }
 
-.chatbot-main-img  img{
+.chatbot-main-img img {
     max-width: 400px;
     width: 450px;
     height: auto;
@@ -491,7 +515,7 @@ header {
     font-weight: 700;
     color: black;
     line-height: 1.2;
-    margin:  0;
+    margin: 0;
     margin-bottom: 25px;
 }
 
@@ -513,7 +537,7 @@ header {
     text-transform: capitalize;
     padding: 12px 30px;
     border-radius: 10px;
-    background: linear-gradient(315deg, #9C1DE7  0.52%,  #052573 74%);
+    background: linear-gradient(315deg, #9C1DE7 0.52%, #052573 74%);
     transition: all .42s;
     text-decoration: none;
     margin-top: 2.25rem;
@@ -525,6 +549,7 @@ header {
     color: #052573;
     transform: scale(1.1);
 }
+
 .preguntas-container {
     height: 85vh;
     margin: 0;
@@ -541,7 +566,7 @@ header {
 /* Dos columnas principales*/
 .preguntas-content1 {
     width: 47%;
-    margin: auto; 
+    margin: auto;
 }
 
 .preguntas-text {
@@ -550,7 +575,7 @@ header {
 }
 
 /* PIE DE PAGINA */
-footer{
+footer {
     bottom: 0;
     left: 0;
     height: fit-content;
@@ -561,13 +586,13 @@ footer{
     flex-direction: column;
     background-color: var(--dark);
     color: white;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,37,115,1) 35%, rgba(156,29,231,1) 100%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(5, 37, 115, 1) 35%, rgba(156, 29, 231, 1) 100%);
     opacity: .9;
     margin-top: 40px;
 }
 
-.copyright-container{
+.copyright-container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -575,21 +600,21 @@ footer{
     border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.copyright{
+.copyright {
     font-size: 12px;
     opacity: 0.7;
     font-weight: 400;
     padding: 10px 0;
 }
 
-.footer-menus{
+.footer-menus {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 40%;
 }
 
-.footer-container{
+.footer-container {
     height: fit-content;
     width: 100%;
     padding: 3rem 6rem;
@@ -599,19 +624,20 @@ footer{
     align-items: flex-start;
 }
 
-.footer-content-container{
+.footer-content-container {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
 }
 
-footer .website-logo{
+footer .website-logo {
     margin-bottom: 1.2rem;
     font-size: calc(1vw + 20px);
 }
 
-.footer-info, .menu-item-footer{
+.footer-info,
+.menu-item-footer {
     margin: 0.2rem 0;
     opacity: 0.7;
     color: white;
@@ -619,18 +645,18 @@ footer .website-logo{
     transition: 0.5s;
 }
 
-.menu-item-footer:hover{
+.menu-item-footer:hover {
     opacity: 1;
 }
 
-.menu-title{
+.menu-title {
     font-size: var(--medium-text-font);
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 1.2rem;
 }
 
-.social-container{
+.social-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -638,7 +664,7 @@ footer .website-logo{
     width: 100%;
 }
 
-.social-link{
+.social-link {
     height: 100%;
     width: 30px;
     background-image: url('/static/images/FacebookBlanco.png');
@@ -648,15 +674,16 @@ footer .website-logo{
     background-repeat: no-repeat;
 }
 
-.social-link:hover{
+.social-link:hover {
     opacity: 0.7;
 }
 
-footer .social-link:nth-of-type(2){
+footer .social-link:nth-of-type(2) {
     background-image: url('/static/images/LinkedinBlanco.png');
 }
 
-footer .social-link:nth-of-type(3){/*Nth of type inside that container*/
+footer .social-link:nth-of-type(3) {
+    /*Nth of type inside that container*/
     background-image: url('/static/images/InstagramBlanco.png');
 }
 
@@ -671,14 +698,14 @@ footer .social-link:nth-of-type(3){/*Nth of type inside that container*/
 }
 
 /*MEDIA QUERY*/
-@media (max-width: 768px){
-    
-    .footer-container{
+@media (max-width: 768px) {
+
+    .footer-container {
         padding: 2rem;
         flex-direction: column;
     }
 
-    .footer-content-container{
+    .footer-content-container {
         width: 100%;
         padding: 2rem 0;
         border-bottom: 1px solid #2A2A2A;
@@ -686,15 +713,16 @@ footer .social-link:nth-of-type(3){/*Nth of type inside that container*/
         align-items: center;
     }
 
-    .footer-content-container:nth-of-type(1){
+    .footer-content-container:nth-of-type(1) {
         align-items: flex-start;
     }
-    .footer-content-container:nth-of-type(3){
+
+    .footer-content-container:nth-of-type(3) {
         border-bottom: none;
         padding-bottom: 0;
     }
 
-    .footer-menus{
+    .footer-menus {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -702,16 +730,301 @@ footer .social-link:nth-of-type(3){/*Nth of type inside that container*/
         border-bottom: 1px solid #2A2A2A;
     }
 
-    .footer-menus .footer-content-container:nth-of-type(1){
+    .footer-menus .footer-content-container:nth-of-type(1) {
         width: 45%;
         align-items: flex-start;
         border-bottom: none;
     }
-    .footer-menus .footer-content-container:nth-of-type(2){
+
+    .footer-menus .footer-content-container:nth-of-type(2) {
         width: 45%;
         align-items: flex-start;
         border-bottom: none;
     }
+}
+
+/* -------PREGUNTAS FRECUENTES------------------------------------------------------------------------------------------ */
+.preguntas-container h5 {
+    color: #052573;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.preguntas-container h1 {
+    font-size: 3.80rem;
+    font-weight: 700;
+    color: black;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.preguntas-container p {
+    font-size: 15px;
+    color: #6b6b6b;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    margin-bottom: 2.25rem;
+}
+
+
+.Frecuente-container {
+    margin: 0;
+    padding: 0;
+    /*font-family: Verdana, Geneva, sans-serif;*/
+    box-sizing: border-box;
+    height: 90vh;
+}
+
+/* ---- Contenido ----*/
+.Frecuente-container {
+    margin: 5% 5%;
+    display: flex;
+    height: 70vh;
+}
+
+/* Dos columnas principales*/
+.Frecuente-content1 {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.Frecuente-content2 {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 1%;
+}
+
+.containerPreguntas {
+    width: 100%;
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 4%;
+}
+
+.Frecuente-content2 .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1210px;
+}
+
+.Frecuente-content2 section.right .messageForm {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.Frecuente-content2 section.right .inputGroup {
+    margin: 16px 0px;
+    position: relative;
+}
+
+.messageForm .halfWidth {
+    flex-basis: 48%;
+}
+
+.messageForm .fullWidth {
+    flex-basis: 100%;
+}
+
+.messageForm input,
+.messageForm textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 2px 0px;
+    background-color: #fff;
+    color: black;
+    border: none;
+    border-bottom: 2px solid #666;
+    outline: none;
+}
+
+.messageForm textarea {
+    resize: none;
+    height: 160px;
+    display: block;
+}
+
+textarea::-webkit-scrollbar {
+    width: 5px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #052573;
+    border-radius: 15px;
+}
+
+.inputGroup label {
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    color: #888;
+    font-size: 16px;
+    transition: 0.4s;
+    pointer-events: none;
+}
+
+.inputGroup:nth-child(4) label {
+    top: 2px;
+}
+
+.inputGroup input:focus~label,
+.inputGroup textarea:focus~label,
+.inputGroup input:valid~label,
+.inputGroup textarea:valid~label {
+    transform: translateY(-30px);
+    font-size: 16px;
+}
+
+.inputGroup button {
+    display: inline-block;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    border-radius: 10px;
+    background: linear-gradient(315deg, #9C1DE7 0.52%, #052573 74%);
+    transition: all .42s;
+    text-decoration: none;
+    width: 210px;
+    border: none;
+    margin-top: 5px;
+}
+
+.inputGroup button:hover {
+    background: none;
+    border: 2px solid #9C1DE7;
+    color: #052573;
+    transform: scale(1.1);
+}
+
+@media(max-width: 1100px) {
+    .messageForm .halfWidth {
+        flex-basis: 100%;
+    }
+}
+
+@media(max-width: 900px) {
+    .containerPreguntas .row {
+        flex-wrap: wrap;
+    }
+
+    .row section.left,
+    .row section.right {
+        flex-basis: 100%;
+        margin: 0px;
+    }
+}
+
+.row section.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.row section.left {
+    flex-basis: 35%;
+    min-width: 320px;
+    margin-right: 60px;
+}
+
+.row section.right {
+    flex-basis: 60%;
+}
+
+section.left .contactTitle h2 {
+    position: relative;
+    font-size: 28px;
+    color: black;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+section.left .contactTitle h2::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background-color: #888;
+    top: 120%;
+    left: 0;
+}
+
+section.left .contactTitle h2::after {
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 3px;
+    background-color: #052573;
+    top: calc(120% - 1px);
+    left: 0;
+}
+
+section.left .contactTitle p {
+    font-size: 17px;
+    color: #052573;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    padding-bottom: 22px;
+}
+
+section.left .contactInfo {
+    margin-bottom: 16px;
+}
+
+.contactInfo .iconGroup {
+    display: flex;
+    align-items: center;
+    margin: 25px 0px;
+}
+
+.iconGroup .icon {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #9C1DE7;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+}
+
+.iconGroup .icon img {
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.phone {
+    width: 55%;
+    opacity: .4;
+}
+
+.email {
+    width: 65%;
+    opacity: .4;
+}
+
+.iconGroup .details span {
+    display: block;
+    color: #888;
+    font-weight: 500;
+}
+
+.iconGroup .details span:nth-child(1) {
+    text-transform: uppercase;
+    color: #ccc;
 }
 
 /* -------TUTORIAL CFDI PORTADA CURSO------------------------------------------------------------------------------------------ */
@@ -801,7 +1114,7 @@ h2.CFDI {
     display: flex;
     padding: 2%;
     margin-right: 3rem;
-    box-shadow: 0 0 0 4px  #fff, 0 6px 2px #ccc, 0 -6px 2px #ccc;
+    box-shadow: 0 0 0 4px #fff, 0 6px 2px #ccc, 0 -6px 2px #ccc;
     margin-bottom: 4%;
 }
 
@@ -1663,7 +1976,7 @@ h2.CFDI {
         height: 75px;
         width: 90%;
         margin-top: 20px;
-    }     
+    }
 
     /* Boton Home */
     .arrow__button {
@@ -1675,158 +1988,158 @@ h2.CFDI {
         background: none;
         width: 40px;
     }
-    
-     /* Boton Atras */
+
+    /* Boton Atras */
     .atras {
         bottom: 30px;
         left: 30px;
-        
+
         width: 50px;
         height: 50px;
     }
-    
+
     /* POSICION 0 */
     .pos0Factura {
-        
+
         bottom: 768px;
         left: 470px;
         width: 60px;
         height: 75px;
     }
-    
+
     /* POSICION 1 */
     .pos1Servicios {
-        
+
         width: 1215px;
         height: 40px;
         bottom: 852px;
         left: 250px;
     }
-    
+
     /* POSICION 2 */
     .pos2Servicio {
-        
+
         width: 500px;
         height: 30px;
         bottom: 550px;
         left: 260px;
     }
-    
+
     /* POSICION 3 */
     .pos3Ejecutar {
-       
+
         width: 242px;
         height: 42px;
         bottom: 110px;
         left: 820px;
     }
-    
+
     /* POSICION 4 */
     .pos4RFC {
-        
+
         width: 610px;
         height: 40px;
         bottom: 1440px;
         left: 470px;
         padding-left: 6px;
     }
-    
+
     .pos4Password {
-        
+
         width: 610px;
         height: 40px;
         bottom: 1368px;
         left: -145px;
         padding-left: 6px;
     }
-    
+
     .pos4Captcha {
-        
+
         width: 610px;
         height: 40px;
         bottom: 1185px;
         left: 470px;
         padding-left: 6px;
     }
-    
+
     .pos4Enviar {
-        
+
         width: 130px;
         height: 60px;
         bottom: 1080px;
         left: 330px;
     }
-    
+
     /* POSICION 5 */
     .pos5Engrane {
-        
+
         width: 40px;
         height: 40px;
         bottom: 840px;
         left: 1545px;
     }
-    
+
     /* POSICION 6 */
     .pos6Config {
-       
+
         width: 420px;
         height: 35px;
         bottom: 710px;
         left: 1160px;
     }
-    
+
     /* POSICION 7 */
     .pos7RFC {
-        
+
         width: 450px;
         height: 35px;
         bottom: 1097px;
         left: 160px;
     }
-    
+
     .pos7Nombre {
-        
+
         width: 900px;
         height: 35px;
         bottom: 1097px;
         left: 190px;
     }
-    
+
     .pos7Comercial {
-       
+
         width: 1395px;
         height: 40px;
         bottom: 1035px;
         left: 160px;
     }
-    
+
     .pos7Guardar {
-       
+
         width: 120px;
         height: 46px;
         bottom: 353px;
         left: 68px;
     }
-    
+
     /* Validación de registro de emisor */
     .validEngrane {
-    
-       width: 40px;
-       height: 40px;
-       bottom: 1420px;
-       left: 1545px;
+
+        width: 40px;
+        height: 40px;
+        bottom: 1420px;
+        left: 1545px;
     }
-    
+
     .validRFC {
-        
+
         width: 450px;
         height: 35px;
         bottom: 1143px;
         left: 160px;
     }
-    
+
     .validNombre {
-        
+
         width: 900px;
         height: 35px;
         bottom: 1143px;
@@ -1835,206 +2148,206 @@ h2.CFDI {
 
     /* POSICION 8 */
     .pos8RFC {
-   
-       width: 400px;
-       height: 35px;
-       bottom: 1135px;
-       left: 180px;
+
+        width: 400px;
+        height: 35px;
+        bottom: 1135px;
+        left: 180px;
     }
-    
+
     .pos8Nombre {
-        
+
         width: 600px;
         height: 35px;
         bottom: 1135px;
         left: 405px;
     }
-    
+
     .pos8Basica {
-        
+
         width: 420px;
         height: 35px;
         bottom: 1375px;
         left: 1160px;
     }
-    
+
     /* CAPTURA CORTA  ***EDITAR SI EL TAMAÑO NO CORRESPONDE***
     .capturaCortaProducto {
         width: 100%;
         height: 45%;
         display: block;
     }*/
-    
-    
+
+
     /* POSICION 9 */
     .pos9Selec {
-        
+
         width: 580px;
         height: 35px;
         bottom: 2440px;
         left: 180px;
     }
-    
+
     /* POSICION 10 */
     .pos10Regimen {
-        
+
         width: 580px;
         height: 25px;
         bottom: 2370px;
         left: 180px;
     }
-    
+
     /* POSICION 11 */
     .pos11Fav {
-        
+
         width: 40px;
         height: 35px;
         bottom: 2450px;
         left: 955px;
     }
-    
+
     /* POSICION 12 */
     .pos12Selec {
-        
+
         width: 588px;
         height: 35px;
         bottom: 2208px;
         left: 180px;
     }
-    
+
     /* POSICION 13 */
     .pos13Ingreso {
-       
+
         width: 580px;
         height: 25px;
         bottom: 2135px;
         left: 180px;
     }
-    
+
     /* POSICION 14 */
     .pos14Fav {
-        
+
         width: 40px;
         height: 35px;
         bottom: 2210px;
         left: 955px;
     }
-    
+
     /* POSICION 15*/
     .pos15Selec {
-        
+
         width: 588px;
         height: 35px;
         bottom: 1995px;
         left: 180px;
     }
-    
+
     /* POSICION 16 */
     .pos16Codigo {
-        
+
         width: 580px;
         height: 25px;
         bottom: 1930px;
         left: 180px;
     }
-    
+
     /* POSICION 17 */
     .pos17Fav {
-        
+
         width: 40px;
         height: 35px;
         bottom: 1997px;
         left: 955px;
     }
-    
+
     /* POSICION 18*/
     .pos18Selec {
-        
+
         width: 588px;
         height: 35px;
         bottom: 1800px;
         left: 180px;
     }
-    
+
     /* POSICION 19 */
     .pos19Peso {
-        
+
         width: 580px;
         height: 25px;
         bottom: 1735px;
         left: 180px;
     }
-    
+
     /* CAPTURA CORTA2       ***EDITAR SI EL TAMAÑO NO CORRESPONDE***
     .capturaCorta2 {
         width: 100%;
         height: 75%;
         display: block;
     }*/
-    
+
     /* POSICION 20 */
     .pos20Fav {
-        
+
         width: 40px;
         height: 35px;
         bottom: 1805px;
         left: 955px;
     }
-    
+
     /* POSICION 21*/
     .pos21Selec {
-        
+
         width: 588px;
         height: 35px;
         bottom: 1578px;
         left: 180px;
     }
-    
+
     /* POSICION 22 */
     .pos22Efectivo {
-        
+
         width: 580px;
         height: 25px;
         bottom: 1513px;
         left: 170px;
     }
-    
+
     /* POSICION 23 */
     .pos23Fav {
-        
+
         width: 40px;
         height: 35px;
         bottom: 1578px;
         left: 955px;
     }
-    
+
     /* POSICION 24*/
     .pos24Selec {
-        
+
         width: 588px;
         height: 35px;
         bottom: 1378px;
         left: 180px;
     }
-    
+
     /* POSICION 25 */
     .pos25Pago {
-        
+
         width: 580px;
         height: 25px;
         bottom: 1320px;
         left: 170px;
     }
-    
+
     /* POSICION 26 */
     .pos26Fav {
-     
+
         width: 40px;
         height: 35px;
         bottom: 1380px;
         left: 955px;
     }
-    
+
     /*      ***EDITAR EN CASO DE QUE LAS IMAGENES NO QUEDEN BIEN EN PORCENTAJE***
     /* CAPTURA CORTA3 
     .capturaCorta3 {
@@ -2049,55 +2362,55 @@ h2.CFDI {
         height: 35%;
         display: block;
     }*/
-    
+
     /* POSICION 27 */
     .pos27Engrane {
-  
+
         width: 40px;
         height: 40px;
         bottom: 2770px;
         left: 1545px;
     }
-    
+
     /* POSICION 28 */
     .pos28Avanzada {
-  
+
         width: 420px;
         height: 35px;
         bottom: 2680px;
         left: 1160px;
     }
-    
+
     /* POSICION 29 */
     .pos29Check {
-       
+
         width: 30px;
         height: 30px;
         bottom: 1968px;
         left: 725px;
     }
-    
+
     /* POSICION 29 */
     .pos30Check {
-   
+
         width: 30px;
         height: 30px;
         bottom: 1528px;
         left: 725px;
     }
-    
+
     /* POSICION 31 */
     .pos31Guardar {
-      
+
         width: 115px;
         height: 50px;
         bottom: 95px;
         left: 135px;
     }
-    
+
     /* POSICION 32 */
     .pos32Generar {
-    
+
         width: 110px;
         height: 40px;
         bottom: 2325px;
@@ -2106,12 +2419,12 @@ h2.CFDI {
 
     /* POSICION 33 */
     .pos33Nueva {
-     
+
         width: 265px;
         height: 25px;
         bottom: 2265px;
         left: 1150px;
     }
 
-    
+
 }
