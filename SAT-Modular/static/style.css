@@ -29,6 +29,7 @@ html {
     position: fixed;
     bottom: 30px;
     right: 30px;
+    text-align: left;
 }
 
 /* CONTENT IS CLOSE */
@@ -849,6 +850,10 @@ footer .social-link:nth-of-type(3) {
     display: block;
 }
 
+.messageForm .messageBox {
+    height: 60px;
+}
+
 textarea::-webkit-scrollbar {
     width: 5px;
 }
@@ -1025,6 +1030,241 @@ section.left .contactInfo {
 .iconGroup .details span:nth-child(1) {
     text-transform: uppercase;
     color: #ccc;
+}
+
+/* -------SOBRE NOSOTROS------------------------------------------------------------------------------------------ */
+.sobre-container {
+    width: 100%;
+
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.sobre-container1 {
+    width: 93%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+
+}
+
+.header {
+    width: 100%;
+    justify-content: left;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.header h1{
+    font-size: 3.80rem;
+    font-weight: 700;
+    color: black;
+    line-height: 1.2;
+    margin: 40px 2.2%;
+}
+
+.teams {
+    margin: 17px;
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: 0.4s;
+    box-sizing: border-box;
+    border: solid 2px #052473e1;
+}
+
+.teams:hover {
+    background: #9d1de738;
+    border-radius: 12px;
+    border: none;
+}
+
+.teams img {
+    width: 200px;
+    height: 200px;
+    margin: 7px;
+}
+
+.name {
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.desig {
+    font-style: italic;
+    color: #888;
+}
+
+.about {
+    margin: 20px 0;
+    font-weight: lighter;
+    color: #4e4e4e;
+}
+
+
+.social-links a {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    transition: .4s;
+    margin-right: 5px;
+}
+
+.social-links a:hover {
+    transform: scale(1.5);
+}
+
+.social-links img{
+    width: 75%;
+    height: 75%;
+    opacity: .4;
+}
+
+@media screen and (max-width: 600px) {
+    .teams {
+        max-width: 100%;
+    }
+}
+
+
+/* -------MENU TUTORIALES------------------------------------------------------------------------------------------ */
+.fullBody {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    min-height: 85vh;
+    display: grid;
+    place-items: center;
+}
+
+.title h1{
+    font-size: 2.80rem;
+    font-weight: 700;
+    color: black;
+    line-height: 1.2;
+}
+
+.tuto-container{
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tutos {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.tuto {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 40px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.tuto:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tuto-image {
+    width: 100%;
+    height: 60%;
+    display: grid;
+    place-items: center;
+}
+
+.tuto-image img {
+    width: 100%;
+}
+
+.nameCourse {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% auto;
+}
+
+.nameCourse h3 {
+    font-size: 2em;
+    text-transform: capitalize;
+    color: #1b2741;
+}
+
+.nameCourse span {
+    font-size: 1.5em;
+    color: #9C1DE7; 
+}
+
+.desciption {
+    width: 100%;
+    display: flex;
+    margin: 5% auto;
+    
+}
+
+.desciption p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.take {
+    width: 100%;
+    display: flex;
+    bottom: 20px;
+    right: 20px;
+    margin: 5% auto;
+}
+
+.take a{
+    text-decoration: none;
+    color: #ffeaed;
+}
+
+.take button {
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    background: linear-gradient(315deg, #9C1DE7 0.52%, #052573 74%);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.take button:hover {
+    transform: scale(1.1);
 }
 
 /* -------TUTORIAL CFDI PORTADA CURSO------------------------------------------------------------------------------------------ */
