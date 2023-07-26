@@ -5,38 +5,40 @@
 {% endblock %}
 
 {% block body %}
+<div class="fullBody">
+    <div class="tuto-container">
+       <div class="tutos">
+            <div class="tuto">
+                <div class="tuto-image">
+                    <img src="{{ url_for('static', filename='images/imgCFDI.png') }}" alt="CFDI">
+                </div>
+                <div class="nameCourse">
+                    <h3>CFDI</h3>
+                    <span>Gratis</span>
+                </div>
+                <div class="description">
+                    <p>Aprende a realizar tu comprobante de ingresos y egresos</p>
+                </div>
+                <div class="take">
+                    <button><a href="/CFDI">Comenzar</a></button> 
+                </div>
+            </div>
+            <div class="tuto">
+                <div class="tuto-image">
+                    <img src="{{ url_for('static', filename='images/imgDeclaracion.png') }}" alt="declaraciones">
+                </div>
+                <div class="nameCourse">
+                    <h3>Declaraciones</h3>
+                    <span>Gratis</span>
+                </div>
 
-    <div class="container">
-        <div class="content_left">
-            <h1 class="main_title">Tutorial CFDI Versión 4.0</h1>
-            <h2>Tutorial con Simulación para tus CFDI Versión 4.0</h2>
-            <button class="css-button-arrow--green"><a href="/CFDI">COMENZAR</a></button>
-        </div>
-        <div class="content_right">
-            <img src="">  <!-- Imagen uno orientada a la derecha -->
-        </div>
+                <p>Aprende a realizar tus declaraciones paso a paso de manera didactica</p>
+                <div class="take">
+                    <button><a href="/">Comenzar</a></button>
+                </div>
+            </div>
+       </div>
     </div>
-
-    <div class="container">
-        <div class="content_right">
-            <h1 class="main_title">Tutorial 2</h1>
-            <h2>!Aquí te enseñamos como hacer el segundo tutorial!</h2>
-            <button class="css-button-arrow--green"><a href="">COMENZAR</a></button>
-        </div>
-        <div class="content_left">
-            <img src="">    <!-- Imagen dos orientada a la izquierda -->
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="content_left">
-            <h1 class="main_title">Tutorial 3</h1>
-            <h2>!Aquí te enseñamos como hacer el tercer tutorial!</h2>
-            <button class="css-button-arrow--green"><a href="">COMENZAR</a></button>
-        </div>
-        <div class="content_right">
-            <img src="">   <!-- Imagen tres orientada a la derecha -->
-        </div>
-    </div>
+</div>
 
 {% endblock %}
