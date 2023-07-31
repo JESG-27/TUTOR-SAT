@@ -394,7 +394,19 @@ var config_avanzada_c4 = `
     <img class="captura" src="/static/images/CFDI/Config-avanzada-c4.png" alt="image">
     <img class="capturaCorta" src="/static/images/CFDI/Config-avanzada-pt2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Config-avanzada-pt3.png" alt="image">
-    <input class="pos33Nueva" type="button" onclick="siguiente(), actualizarTexto()" value="">
+    <input class="pos33Nueva" type="button" onclick="siguiente(), actualizarTexto(29)" value="">
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(28)">
+`;
+
+// Posición 34
+var nueva_factura = `
+<div class="tuto-window">
+    <img class="capturaCorta" src="/static/images/CFDI/Nueva-factura-pt1.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-pt2.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-pt3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Nueva-factura-pt4.png" alt="image">
+    <input type="button" onclick="siguiente(), actualizarTexto()" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(28)">
 `;
@@ -545,16 +557,21 @@ var opcion_generar = `
 Estos eran los unicos datos necesarios para la configuración avanzada, con esto puedes iniciar a generar tu factura. Haz click en "Generar" y selecciona la opción de "Nueva Factura"
 `;
 
+// Posicion 29
+var nueva_factura_inicio = `
+¡Vaz muy bien! Ahora te encuentras en el apartado para generar tu factura, si pones atención en la parte superior de este apartado se encuentran los datos que configuraste anteriormente
+`;
+
 var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor, config_datos_emisor_engrane, config_basica, config_basica_regimen_fiscal, 
     config_basica_c1, config_basica_c2, config_basica_c3, config_basica_c4, config_basica_c5, config_basica_c6, config_basica_c7, config_basica_c8,
     config_basica_pt2_c1, config_basica_pt2_c2, config_basica_pt2_c3, config_basica_pt2_c4, config_basica_pt2_c5, config_basica_pt2_c6, config_basica_pt2_c7, config_basica_pt2_c8, config_basica_pt2_c9, config_basica_c9,
-    config_avanzada, config_avanzada_c1, config_avanzada_c2, config_avanzada_c3, config_avanzada_c4]
+    config_avanzada, config_avanzada_c1, config_avanzada_c2, config_avanzada_c3, config_avanzada_c4, nueva_factura]
 
 var tutorial_text = [boton_factura_electronica, boton_servicios_facturacion, boton_facturacion_cuentas, boton_ejecutar_linea, login,
                     RFC_login, contrasena_login, captcha_login, datos_incorrectos,
                     engrane_opciones, opcion_datos_emisor, registro_emisor, nombre_razon_social, nombre_comercial, registro_emisor_guardado, opcion_basica,
                     config_basica_inicio, regimen_fiscal, favorito, tipo_de_factura, codigo_postal, moneda, forma_pago, metodo_pago, config_basica_fin,
-                    opcion_avanzada, serie_folio, factura_global, opcion_generar]
+                    opcion_avanzada, serie_folio, factura_global, opcion_generar, nueva_factura_inicio]
 
 
 // Actualizar textos de tutorial
