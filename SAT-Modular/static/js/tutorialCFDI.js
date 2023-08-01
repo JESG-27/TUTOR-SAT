@@ -425,9 +425,29 @@ var nueva_factura_c1 = `
         <option>Quincenal</option>
         <option>Mensual</option>
     </select>
+    <select onchange="">
+        <option selected>Seleccione..</option>
+        <option>Enero</option>
+        <option>Febrero</option>
+        <option>Marzo</option>
+        <option>Abril</option>
+        <option>Mayo</option>
+        <option>Junio</option>
+        <option>Julio</option>
+        <option>Agosto</option>
+        <option>Septiembre</option>
+        <option>Octubre</option>
+        <option>Noviembre</option>
+        <option>Diciembre</option>
+    </select>
+    
+    <select id="ano" onclick="anos_global()"></select>
+        
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(29)">
 `;
+
+
 
 // -------------------------------------------------------- Textos de guía --------------------------------------------------------
 // Posición 0
@@ -577,12 +597,16 @@ Estos eran los unicos datos necesarios para la configuración avanzada, con esto
 
 // Posicion 29
 var nueva_factura_inicio = `
+<<<<<<< Updated upstream
 ¡Vaz muy bien! Ahora te encuentras en el apartado para generar tu factura, si pones atención en la parte superior de este apartado se encuentran los datos que configuraste anteriormente. El siguiente paso es que selecciones el recuadro correspondiente a "Es una Factura Global"
 `;
 
 // Posicion 30
 var nueva_factura_global = `
 Con esto se desplegaron 3 campos que debes de llenar, comienza con el de "Periodicidad" en este caso selecciona mensual (Puedes generar una  factura como mínimo o varias al mes y no hay límite de importe)
+=======
+¡Vaz muy bien! Ahora te encuentras en el apartado para generar tu factura, si pones atención en la parte superior de este apartado se encuentran los datos que configuraste anteriormente, ahora solo es cuestion de ingresar los datos del cliente.
+>>>>>>> Stashed changes
 `;
 
 var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor, config_datos_emisor_engrane, config_basica, config_basica_regimen_fiscal, 
@@ -679,4 +703,17 @@ async function mostrar()
 {
     posicion = document.getElementById("paso").value
     document.getElementById("tutorialText").innerHTML = tutorial_text[posicion];
+}
+
+async function anos_global(){
+
+    select =  document.getElementById("ano");
+    console.log(select)
+    for(i = 2000; i <= 2025; i++){
+        option = document.createElement("option");
+        option.value = i;
+        option.text = i;
+        select.appendChild(option);
+    }
+
 }
