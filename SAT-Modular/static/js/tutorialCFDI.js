@@ -418,30 +418,56 @@ var nueva_factura_c1 = `
     <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-pt2.png" alt="image">
     <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Nueva-factura-pt4.png" alt="image">
-    <select onchange="">
-        <option selected>Seleccione..</option>
-        <option>Diario</option>
-        <option>Semanal</option>
-        <option>Quincenal</option>
-        <option>Mensual</option>
-    </select>
-    <select onchange="">
-        <option selected>Seleccione..</option>
-        <option>Enero</option>
-        <option>Febrero</option>
-        <option>Marzo</option>
-        <option>Abril</option>
-        <option>Mayo</option>
-        <option>Junio</option>
-        <option>Julio</option>
-        <option>Agosto</option>
-        <option>Septiembre</option>
-        <option>Octubre</option>
-        <option>Noviembre</option>
-        <option>Diciembre</option>
-    </select>
     
-    <select id="ano" onclick="anos_global()"></select>
+    <div class="facturaglobal">
+        <select onchange="">
+            <option selected>Seleccione..</option>
+            <option>Diario</option>
+            <option>Semanal</option>
+            <option>Quincenal</option>
+            <option>Mensual</option>
+        </select>
+        <select onchange="">
+            <option selected>Seleccione..</option>
+            <option>Enero</option>
+            <option>Febrero</option>
+            <option>Marzo</option>
+            <option>Abril</option>
+            <option>Mayo</option>
+            <option>Junio</option>
+            <option>Julio</option>
+            <option>Agosto</option>
+            <option>Septiembre</option>
+            <option>Octubre</option>
+            <option>Noviembre</option>
+            <option>Diciembre</option>
+        </select>
+        
+        <select id="ano" onclick="anos_global()"></select>
+    </div>
+
+    <div class="datoscliente">
+        <form>
+            <input class="" type="text" placeholder="" required onclick="" id="cliente" >
+            <input class="" type="password" placeholder="" required onclick="" id="razonsocial">
+            <select onchange="">
+                <option selected>Uso de la factura</option>
+                <option>uno</option>
+                <option>dos</option>
+                <option>tres</option>
+                <option>cuatro</option>
+            </select>
+            <input class="" type="text" placeholder="" required onclick="" id="correo">
+            <input class="" type="text" placeholder="" required onclick="" id="codigop">
+            <select onchange="">
+                <option selected>Régimen Fiscal</option>
+                <option>uno</option>
+                <option>dos</option>
+                <option>tres</option>
+                <option>cuatro</option>
+            </select>
+            </form>
+    </div>    
         
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(29)">
