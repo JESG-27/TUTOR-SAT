@@ -448,25 +448,55 @@ var nueva_factura_c1 = `
 
     <div class="datoscliente">
         <form>
-            <input class="" type="text" placeholder="" required onclick="" id="cliente" >
-            <input class="" type="password" placeholder="" required onclick="" id="razonsocial">
-            <select onchange="">
-                <option selected>Uso de la factura</option>
-                <option>uno</option>
-                <option>dos</option>
-                <option>tres</option>
-                <option>cuatro</option>
-            </select>
-            <input class="" type="text" placeholder="" required onclick="" id="correo">
-            <input class="" type="text" placeholder="" required onclick="" id="codigop">
-            <select onchange="">
-                <option selected>Régimen Fiscal</option>
-                <option>uno</option>
-                <option>dos</option>
-                <option>tres</option>
-                <option>cuatro</option>
-            </select>
-            </form>
+            <input class="" type="text" onclick="" onchange="cliente()" list="lista_clientes" id="clienteF">
+            <datalist id="lista_clientes">
+                <option value="XAXX010101000">
+                <option value="XEXX010101000">
+                <option value="Otro">
+            </datalist>
+            
+            <input class="" type="text" onclick="" id="razonsocial">
+
+            <input class="" type="text" onclick="" list="uso_factura">
+            <datalist id="uso_factura">
+                <option value="Adquisición de mercancías">
+                <option value="Aportaciones voluntarias al SAR">
+                <option value="Comunicaciones satelitales">
+                <option value="Comunicaciones telefónicas">
+                <option value="Construcciones">
+                <option value="Dados, troqueles, moldes, matrices y herramental">
+                <option value="Depósito en cuentas para el ahorro, primas que tengan como base planes de pensiones.">
+                <option value="Devoluciones, descuentos, bonificaciones">
+                <option value="Donativos">
+                <option value="Equipo de computo y accesorios">
+                <option value="Equipo de transporte">
+                <option value="Gastos de transportación escolar obligatoria.">
+                <option value="Gastos en general">
+                <option value="Gastos funerales">
+                <option value="Gastos médicos por incapacidad o discapacidad">
+                <option value="Honorarios médicos, dentales y gastos hospitalarios.">
+                <option value="Intereses reales efectivamente pagados por créditos hipotecarios (casa habitación).">
+                <option value="Mobilario y equipo de oficina por inversiones">
+                <option value="Nómina">
+                <option value="Otra maquinaria y equipo">
+                <option value="Pagos">
+                <option value="Pagos por servicios educativos (colegiaturas)">
+                <option value="Primas por seguros de gastos médicos.">
+                <option value="Sin efectos fiscales.">
+            </datalist>            
+
+            <input class="" type="email" onclick="" id="correo">
+
+            <input class="" type="numbre" onclick="" id="codigop">
+
+            <input class="" type="text" onclick="" list="regimen_fiscal">
+            <datalist id="regimen_fiscal">
+                <option value="Sin obligaciones fiscales">
+                <option value="Incorporación Fiscal">
+                <option value="Residentes en el Extranjero sin Establecimiento Permanente en México">
+            </datalist>
+
+        </form>
     </div>    
         
 </div>
@@ -723,6 +753,31 @@ async function val_registro_emisor(){
     }
 }
 
+// Factura CFDI
+
+// Cargar años
+async function anos_global()
+{
+    select =  document.getElementById("ano");
+    //console.log(select)
+    for(i = 2000; i <= 2025; i++){
+        option = document.createElement("option");
+        option.value = i;
+        option.text = i;
+        select.appendChild(option);
+    }
+}
+
+// Cliente frecuente
+async function cliente()
+{
+    rfc_cliente = document.getElementById("clienteF")
+    if (rfc_cliente.value = "XAXX010101000")
+    {
+        document.getElementById(razonsocial.value="PUBLICO EN GENERAL")
+    }
+}
+
 // Funciones para el desarrollo
 async function mover()
 {
@@ -737,15 +792,4 @@ async function mostrar()
     document.getElementById("tutorialText").innerHTML = tutorial_text[posicion];
 }
 
-async function anos_global(){
 
-    select =  document.getElementById("ano");
-    console.log(select)
-    for(i = 2000; i <= 2025; i++){
-        option = document.createElement("option");
-        option.value = i;
-        option.text = i;
-        select.appendChild(option);
-    }
-
-}
