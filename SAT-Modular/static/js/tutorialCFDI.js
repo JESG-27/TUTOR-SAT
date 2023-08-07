@@ -420,14 +420,14 @@ var nueva_factura_c1 = `
     <img class="captura" src="/static/images/CFDI/Nueva-factura-pt4.png" alt="image">
     
     <div class="facturaglobal">
-        <select onchange="">
+        <select onclick="actualizarTexto(30)">
             <option selected>Seleccione..</option>
             <option>Diario</option>
             <option>Semanal</option>
             <option>Quincenal</option>
             <option>Mensual</option>
         </select>
-        <select onchange="">
+        <select onclick="actualizarTexto(31)">
             <option selected>Seleccione..</option>
             <option>Enero</option>
             <option>Febrero</option>
@@ -443,7 +443,7 @@ var nueva_factura_c1 = `
             <option>Diciembre</option>
         </select>
         
-        <select id="ano" onclick="anos_global()"></select>
+        <select id="ano" onclick="anos_global(), actualizarTexto(32)"></select>
     </div>
 
     <div class="datoscliente">
@@ -623,16 +623,22 @@ Estos eran los unicos datos necesarios para la configuración avanzada, con esto
 
 // Posicion 29
 var nueva_factura_inicio = `
-<<<<<<< Updated upstream
 ¡Vaz muy bien! Ahora te encuentras en el apartado para generar tu factura, si pones atención en la parte superior de este apartado se encuentran los datos que configuraste anteriormente. El siguiente paso es que selecciones el recuadro correspondiente a "Es una Factura Global"
 `;
 
 // Posicion 30
 var nueva_factura_global = `
-Con esto se desplegaron 3 campos que debes de llenar, comienza con el de "Periodicidad" en este caso selecciona mensual (Puedes generar una  factura como mínimo o varias al mes y no hay límite de importe)
-=======
-¡Vaz muy bien! Ahora te encuentras en el apartado para generar tu factura, si pones atención en la parte superior de este apartado se encuentran los datos que configuraste anteriormente, ahora solo es cuestion de ingresar los datos del cliente.
->>>>>>> Stashed changes
+Con esto se desplegaron 3 campos que debes de llenar, comienza con el de "Periodicidad" en este caso selecciona mensual (Puedes generar una  factura como mínimo o varias al mes y no hay límite de importe). Al finalizar ingresa el mes correspondiente
+`;
+
+// Posicion 31
+var nueva_factura_global_mes = `
+Ingresa el mes correspondiente a esta factura al igual que el año en el siguiente apartado
+`;
+
+// Posicion 32
+var nueva_factura_global_anio = `
+Ingresa el año correspondiente a esta factura. Al finalizar el agregado de estos datos comienza con los "Datos del Cliente".
 `;
 
 var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor, config_datos_emisor_engrane, config_basica, config_basica_regimen_fiscal, 
@@ -646,7 +652,7 @@ var tutorial_text = [boton_factura_electronica, boton_servicios_facturacion, bot
                     engrane_opciones, opcion_datos_emisor, registro_emisor, nombre_razon_social, nombre_comercial, registro_emisor_guardado, opcion_basica,
                     config_basica_inicio, regimen_fiscal, favorito, tipo_de_factura, codigo_postal, moneda, forma_pago, metodo_pago, config_basica_fin,
                     opcion_avanzada, serie_folio, factura_global, opcion_generar, 
-                    nueva_factura_inicio, nueva_factura_global]
+                    nueva_factura_inicio, nueva_factura_global, nueva_factura_global_mes, nueva_factura_global_anio]
 
 
 // Actualizar textos de tutorial
