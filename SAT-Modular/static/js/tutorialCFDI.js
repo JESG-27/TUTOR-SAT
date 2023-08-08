@@ -448,16 +448,16 @@ var nueva_factura_c1 = `
 
     <div class="datoscliente">
         <form>
-            <input class="" type="text" onclick="" onchange="cliente()" list="lista_clientes" id="clienteF">
+            <input class="" type="text" onclick="actualizarTexto(33)" onchange="cliente()" list="lista_clientes" id="clienteF">
             <datalist id="lista_clientes">
                 <option value="XAXX010101000">
                 <option value="XEXX010101000">
                 <option value="Otro">
             </datalist>
             
-            <input class="" type="text" onclick="" id="razonsocial">
+            <input class="" type="text" onclick="actualizarTexto(34)" id="razonsocial">
 
-            <input class="" type="text" onclick="" list="uso_factura">
+            <input class="" type="text" onclick="actualizarTexto(35)" list="uso_factura">
             <datalist id="uso_factura">
                 <option value="Adquisición de mercancías">
                 <option value="Aportaciones voluntarias al SAR">
@@ -485,11 +485,11 @@ var nueva_factura_c1 = `
                 <option value="Sin efectos fiscales.">
             </datalist>            
 
-            <input class="" type="email" onclick="" id="correo">
+            <input class="" type="email" onclick="actualizarTexto(36)" id="correo">
 
-            <input class="" type="numbre" onclick="" id="codigop">
+            <input class="" type="numbre" onclick="actualizarTexto(37)" id="codigop">
 
-            <input class="" type="text" onclick="" list="regimen_fiscal">
+            <input class="" type="text" onclick="actualizarTexto(38)" list="regimen_fiscal">
             <datalist id="regimen_fiscal">
                 <option value="Sin obligaciones fiscales">
                 <option value="Incorporación Fiscal">
@@ -663,12 +663,41 @@ Con esto se desplegaron 3 campos que debes de llenar, comienza con el de "Period
 
 // Posicion 31
 var nueva_factura_global_mes = `
-Ingresa el mes correspondiente a esta factura al igual que el año en el siguiente apartado
+Ingresa el mes correspondiente a esta factura al igual que el año en el siguiente apartado.
 `;
 
 // Posicion 32
 var nueva_factura_global_anio = `
 Ingresa el año correspondiente a esta factura. Al finalizar el agregado de estos datos comienza con los "Datos del Cliente".
+`;
+
+// Posicion 33
+var nueva_factura_global_cliente = `
+En el apartado cliente se desplazaran algunos clientes que ya tenemos guardados, en este caso selecciona al cliente XAXX010101000 que es del público en general.
+`;
+
+// Posicion 34
+var nueva_factura_global_razon= `
+Podemos ver que este apartado fue autocompletado por PÚBLICO EN GENERAL debido al tipo de cliente que selecciono previamente.
+`;
+
+// Posicion 35
+var nueva_factura_global_uso = `
+En el apartado de uso de factura selecciona la opcion de SIN EFECTOS FISCALES.
+`;
+
+// Posicion 36
+var nueva_factura_global_correo = `
+En este apartado ingresa el correo electronico del cliente.
+`;
+// Posicion 37
+var nueva_factura_global_codigop = `
+El codigo postal fue autocompletado con la seleccion del cliente.
+`;
+
+// Posicion 38
+var nueva_factura_global_regimen = `
+Por ultimo para poder completar los datos del ciente en el campo Régimen Fiscal selecciona la opcion SIN OBLIGACIONES FISCALES.
 `;
 
 var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor, config_datos_emisor_engrane, config_basica, config_basica_regimen_fiscal, 
@@ -682,7 +711,8 @@ var tutorial_text = [boton_factura_electronica, boton_servicios_facturacion, bot
                     engrane_opciones, opcion_datos_emisor, registro_emisor, nombre_razon_social, nombre_comercial, registro_emisor_guardado, opcion_basica,
                     config_basica_inicio, regimen_fiscal, favorito, tipo_de_factura, codigo_postal, moneda, forma_pago, metodo_pago, config_basica_fin,
                     opcion_avanzada, serie_folio, factura_global, opcion_generar, 
-                    nueva_factura_inicio, nueva_factura_global, nueva_factura_global_mes, nueva_factura_global_anio]
+                    nueva_factura_inicio, nueva_factura_global, nueva_factura_global_mes, nueva_factura_global_anio,nueva_factura_global_cliente,nueva_factura_global_razon,nueva_factura_global_uso,nueva_factura_global_correo,nueva_factura_global_codigop,
+                    nueva_factura_global_regimen]
 
 
 // Actualizar textos de tutorial
@@ -775,6 +805,7 @@ async function cliente()
     if (rfc_cliente.value = "XAXX010101000")
     {
         document.getElementById(razonsocial.value="PUBLICO EN GENERAL")
+        document.getElementById(codigop.value="59699")
     }
 }
 
