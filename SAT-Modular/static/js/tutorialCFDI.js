@@ -402,11 +402,11 @@ var config_avanzada_c4 = `
 // Posición 34
 var nueva_factura = `
 <div class="tuto-window">
-    <img class="capturaCorta" src="/static/images/CFDI/Nueva-factura-pt1.png" alt="image">
-    <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-pt2.png" alt="image">
-    <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-pt3.png" alt="image">
+    <img class="capturaCorta2" src="/static/images/CFDI/Nueva-factura-pt1.png" alt="image">
+    <img class="capturaCortaCFDI" src="/static/images/CFDI/Nueva-factura-pt2.png" alt="image">
+    <img class="capturaCortaCFDI2" src="/static/images/CFDI/Nueva-factura-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Nueva-factura-pt4.png" alt="image">
-    <input type="button" onclick="siguiente(), actualizarTexto(30)" value="■">
+    <input  class="pos34Check" type="button" onclick="siguiente(), actualizarTexto(30)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(28)">
 `;
@@ -414,9 +414,9 @@ var nueva_factura = `
 // Posición 35
 var nueva_factura_c1 = `
 <div class="tuto-window">
-    <img class="capturaCorta" src="/static/images/CFDI/Nueva-factura-pt1-c1.png" alt="image">
-    <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-pt2.png" alt="image">
-    <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-pt3.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Nueva-factura-pt1-c1.png" alt="image">
+    <img class="capturaCortaCFDI" src="/static/images/CFDI/Nueva-factura-pt2.png" alt="image">
+    <img class="capturaCortaCFDI2" src="/static/images/CFDI/Nueva-factura-pt3.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Nueva-factura-pt4.png" alt="image">
     
     <div class="facturaglobal">
@@ -508,8 +508,8 @@ var nueva_factura_c1 = `
 // Posición 36
 var nueva_factura_c2 = `
 <div class="tuto-window">
-    <img class="capturaCorta" src="/static/images/CFDI/Nueva-factura-pt1-c1.png" alt="image">
-    <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-pt2.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Nueva-factura-pt1-c1.png" alt="image">
+    <img class="capturaCortaCFDI" src="/static/images/CFDI/Nueva-factura-pt2.png" alt="image">
     <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-agregar.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Nueva-factura-pt4.png" alt="image">
     
