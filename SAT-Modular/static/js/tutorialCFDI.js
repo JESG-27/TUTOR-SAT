@@ -497,7 +497,101 @@ var nueva_factura_c1 = `
             </datalist>
 
         </form>
-    </div>    
+    </div>   
+    
+    <input type="button" onclick="siguiente(), actualizarTexto(39)" value="agregar">
+        
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(29)">
+`;
+
+// Posición 36
+var nueva_factura_c2 = `
+<div class="tuto-window">
+    <img class="capturaCorta" src="/static/images/CFDI/Nueva-factura-pt1-c1.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-pt2.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-agregar.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Nueva-factura-pt4.png" alt="image">
+    
+    <div class="facturaglobal">
+        <select onclick="actualizarTexto(30)">
+            <option selected>Seleccione..</option>
+            <option>Diario</option>
+            <option>Semanal</option>
+            <option>Quincenal</option>
+            <option>Mensual</option>
+        </select>
+        <select onclick="actualizarTexto(31)">
+            <option selected>Seleccione..</option>
+            <option>Enero</option>
+            <option>Febrero</option>
+            <option>Marzo</option>
+            <option>Abril</option>
+            <option>Mayo</option>
+            <option>Junio</option>
+            <option>Julio</option>
+            <option>Agosto</option>
+            <option>Septiembre</option>
+            <option>Octubre</option>
+            <option>Noviembre</option>
+            <option>Diciembre</option>
+        </select>
+        
+        <select id="ano" onclick="anos_global(), actualizarTexto(32)"></select>
+    </div>
+
+    <div class="datoscliente">
+        <form>
+            <input class="" type="text" onclick="actualizarTexto(33)" onchange="cliente()" list="lista_clientes" id="clienteF">
+            <datalist id="lista_clientes">
+                <option value="XAXX010101000">
+                <option value="XEXX010101000">
+                <option value="Otro">
+            </datalist>
+            
+            <input class="" type="text" onclick="actualizarTexto(34)" id="razonsocial">
+
+            <input class="" type="text" onclick="actualizarTexto(35)" list="uso_factura">
+            <datalist id="uso_factura">
+                <option value="Adquisición de mercancías">
+                <option value="Aportaciones voluntarias al SAR">
+                <option value="Comunicaciones satelitales">
+                <option value="Comunicaciones telefónicas">
+                <option value="Construcciones">
+                <option value="Dados, troqueles, moldes, matrices y herramental">
+                <option value="Depósito en cuentas para el ahorro, primas que tengan como base planes de pensiones.">
+                <option value="Devoluciones, descuentos, bonificaciones">
+                <option value="Donativos">
+                <option value="Equipo de computo y accesorios">
+                <option value="Equipo de transporte">
+                <option value="Gastos de transportación escolar obligatoria.">
+                <option value="Gastos en general">
+                <option value="Gastos funerales">
+                <option value="Gastos médicos por incapacidad o discapacidad">
+                <option value="Honorarios médicos, dentales y gastos hospitalarios.">
+                <option value="Intereses reales efectivamente pagados por créditos hipotecarios (casa habitación).">
+                <option value="Mobilario y equipo de oficina por inversiones">
+                <option value="Nómina">
+                <option value="Otra maquinaria y equipo">
+                <option value="Pagos">
+                <option value="Pagos por servicios educativos (colegiaturas)">
+                <option value="Primas por seguros de gastos médicos.">
+                <option value="Sin efectos fiscales.">
+            </datalist>            
+
+            <input class="" type="email" onclick="actualizarTexto(36)" id="correo">
+
+            <input class="" type="numbre" onclick="actualizarTexto(37)" id="codigop">
+
+            <input class="" type="text" onclick="actualizarTexto(38)" list="regimen_fiscal">
+            <datalist id="regimen_fiscal">
+                <option value="Sin obligaciones fiscales">
+                <option value="Incorporación Fiscal">
+                <option value="Residentes en el Extranjero sin Establecimiento Permanente en México">
+            </datalist>
+
+        </form>
+    </div>   
         
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(29)">
@@ -700,11 +794,15 @@ var nueva_factura_global_regimen = `
 Por ultimo para poder completar los datos del ciente en el campo Régimen Fiscal selecciona la opcion SIN OBLIGACIONES FISCALES.
 `;
 
+// Posicion 39
+var nueva_factura_global_agregar = `
+Ahora es momento de agregar un producto o servicio, llena cada uno de los campos que se muestran en este apartado.
+`;
 var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor, config_datos_emisor_engrane, config_basica, config_basica_regimen_fiscal, 
     config_basica_c1, config_basica_c2, config_basica_c3, config_basica_c4, config_basica_c5, config_basica_c6, config_basica_c7, config_basica_c8,
     config_basica_pt2_c1, config_basica_pt2_c2, config_basica_pt2_c3, config_basica_pt2_c4, config_basica_pt2_c5, config_basica_pt2_c6, config_basica_pt2_c7, config_basica_pt2_c8, config_basica_pt2_c9, config_basica_c9,
     config_avanzada, config_avanzada_c1, config_avanzada_c2, config_avanzada_c3, config_avanzada_c4, 
-    nueva_factura, nueva_factura_c1]
+    nueva_factura, nueva_factura_c1,nueva_factura_c2]
 
 var tutorial_text = [boton_factura_electronica, boton_servicios_facturacion, boton_facturacion_cuentas, boton_ejecutar_linea, login,
                     RFC_login, contrasena_login, captcha_login, datos_incorrectos,
@@ -712,7 +810,7 @@ var tutorial_text = [boton_factura_electronica, boton_servicios_facturacion, bot
                     config_basica_inicio, regimen_fiscal, favorito, tipo_de_factura, codigo_postal, moneda, forma_pago, metodo_pago, config_basica_fin,
                     opcion_avanzada, serie_folio, factura_global, opcion_generar, 
                     nueva_factura_inicio, nueva_factura_global, nueva_factura_global_mes, nueva_factura_global_anio,nueva_factura_global_cliente,nueva_factura_global_razon,nueva_factura_global_uso,nueva_factura_global_correo,nueva_factura_global_codigop,
-                    nueva_factura_global_regimen]
+                    nueva_factura_global_regimen,nueva_factura_global_agregar]
 
 
 // Actualizar textos de tutorial
