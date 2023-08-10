@@ -420,14 +420,16 @@ var nueva_factura_c1 = `
     <img class="captura" src="/static/images/CFDI/Nueva-factura-pt4.png" alt="image">
     
     <div class="facturaglobal">
-        <select onclick="actualizarTexto(30)">
-            <option selected>Seleccione..</option>
-            <option>Diario</option>
-            <option>Semanal</option>
-            <option>Quincenal</option>
-            <option>Mensual</option>
-        </select>
-        <select onclick="actualizarTexto(31)">
+        <input class="" type="text" list="lista_periodicidad" onclick="actualizarTexto(30)" onchange="FacturaGlobal_DatosCliente(1)" id="periodicidad">
+        <datalist id="lista_periodicidad">
+            <option value="Diario">Diario</option>
+            <option value="Semanal">Semanal</option>
+            <option value="Quincenal">Quincenal</option>
+            <option value="Mensual">Mensual</option>
+        </datalist>
+
+        <input class="" type="text" list="lista_meses" onclick="actualizarTexto(31)" onchange="FacturaGlobal_DatosCliente(2)" id="mes">
+        <datalist id="lista_meses">
             <option selected>Seleccione..</option>
             <option>Enero</option>
             <option>Febrero</option>
@@ -436,28 +438,30 @@ var nueva_factura_c1 = `
             <option>Mayo</option>
             <option>Junio</option>
             <option>Julio</option>
-            <option>Agosto</option>
+            <option value="Agosto">Agosto</option>
             <option>Septiembre</option>
             <option>Octubre</option>
             <option>Noviembre</option>
             <option>Diciembre</option>
-        </select>
+        </datalist>
         
-        <select id="ano" onclick="anos_global(), actualizarTexto(32)"></select>
+        <input type="text" list="lista_anios" onclick="actualizarTexto(32), anios_global()" onchange="FacturaGlobal_DatosCliente(3)" id="anio">
+        <datalist id="lista_anios">
+        </datalis>
     </div>
 
     <div class="datoscliente">
         <form>
-            <input class="" type="text" onclick="actualizarTexto(33)" onchange="cliente()" list="lista_clientes" id="clienteF">
+            <input class="" type="text" onclick="actualizarTexto(33)" onchange="cliente()" list="lista_clientes" id="clienteF" onchange="FacturaGlobal_DatosCliente()">
             <datalist id="lista_clientes">
                 <option value="XAXX010101000">
                 <option value="XEXX010101000">
                 <option value="Otro">
             </datalist>
             
-            <input class="" type="text" onclick="actualizarTexto(34)" id="razonsocial">
+            <input class="" type="text" onclick="actualizarTexto(34)" id="razonsocial" onchange="FacturaGlobal_DatosCliente()">
 
-            <input class="" type="text" onclick="actualizarTexto(35)" list="uso_factura">
+            <input class="" type="text" onclick="actualizarTexto(35)" list="uso_factura" id="usofactura" onchange="FacturaGlobal_DatosCliente()">
             <datalist id="uso_factura">
                 <option value="Adquisición de mercancías">
                 <option value="Aportaciones voluntarias al SAR">
@@ -485,20 +489,21 @@ var nueva_factura_c1 = `
                 <option value="Sin efectos fiscales.">
             </datalist>            
 
-            <input class="" type="email" onclick="actualizarTexto(36)" id="correo">
+            <input class="" type="email" onclick="actualizarTexto(36)" id="correo" onchange="FacturaGlobal_DatosCliente()">
 
-            <input class="" type="numbre" onclick="actualizarTexto(37)" id="codigop">
+            <input class="" type="number" onclick="actualizarTexto(37)" id="codigop" onchange="FacturaGlobal_DatosCliente()">
 
-            <input class="" type="text" onclick="actualizarTexto(38)" list="regimen_fiscal">
+            <input class="" type="text" onclick="actualizarTexto(38)" list="regimen_fiscal" id="regimenfiscal" onchange="FacturaGlobal_DatosCliente(true)">
             <datalist id="regimen_fiscal">
                 <option value="Sin obligaciones fiscales">
                 <option value="Incorporación Fiscal">
                 <option value="Residentes en el Extranjero sin Establecimiento Permanente en México">
             </datalist>
-
+            
         </form>
     </div>   
-    
+            
+    <input type="hidden" id="datos" value="false">
     <input type="button" onclick="siguiente(), actualizarTexto(39)" value="agregar">
         
 </div>
@@ -512,91 +517,8 @@ var nueva_factura_c2 = `
     <img class="capturaCortaCFDI" src="/static/images/CFDI/Nueva-factura-pt2.png" alt="image">
     <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-agregar.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Nueva-factura-pt4.png" alt="image">
-    
-    <div class="facturaglobal">
-        <select onclick="actualizarTexto(30)">
-            <option selected>Seleccione..</option>
-            <option>Diario</option>
-            <option>Semanal</option>
-            <option>Quincenal</option>
-            <option>Mensual</option>
-        </select>
-        <select onclick="actualizarTexto(31)">
-            <option selected>Seleccione..</option>
-            <option>Enero</option>
-            <option>Febrero</option>
-            <option>Marzo</option>
-            <option>Abril</option>
-            <option>Mayo</option>
-            <option>Junio</option>
-            <option>Julio</option>
-            <option>Agosto</option>
-            <option>Septiembre</option>
-            <option>Octubre</option>
-            <option>Noviembre</option>
-            <option>Diciembre</option>
-        </select>
-        
-        <select id="ano" onclick="anos_global(), actualizarTexto(32)"></select>
-    </div>
-
-    <div class="datoscliente">
-        <form>
-            <input class="" type="text" onclick="actualizarTexto(33)" onchange="cliente()" list="lista_clientes" id="clienteF">
-            <datalist id="lista_clientes">
-                <option value="XAXX010101000">
-                <option value="XEXX010101000">
-                <option value="Otro">
-            </datalist>
-            
-            <input class="" type="text" onclick="actualizarTexto(34)" id="razonsocial">
-
-            <input class="" type="text" onclick="actualizarTexto(35)" list="uso_factura">
-            <datalist id="uso_factura">
-                <option value="Adquisición de mercancías">
-                <option value="Aportaciones voluntarias al SAR">
-                <option value="Comunicaciones satelitales">
-                <option value="Comunicaciones telefónicas">
-                <option value="Construcciones">
-                <option value="Dados, troqueles, moldes, matrices y herramental">
-                <option value="Depósito en cuentas para el ahorro, primas que tengan como base planes de pensiones.">
-                <option value="Devoluciones, descuentos, bonificaciones">
-                <option value="Donativos">
-                <option value="Equipo de computo y accesorios">
-                <option value="Equipo de transporte">
-                <option value="Gastos de transportación escolar obligatoria.">
-                <option value="Gastos en general">
-                <option value="Gastos funerales">
-                <option value="Gastos médicos por incapacidad o discapacidad">
-                <option value="Honorarios médicos, dentales y gastos hospitalarios.">
-                <option value="Intereses reales efectivamente pagados por créditos hipotecarios (casa habitación).">
-                <option value="Mobilario y equipo de oficina por inversiones">
-                <option value="Nómina">
-                <option value="Otra maquinaria y equipo">
-                <option value="Pagos">
-                <option value="Pagos por servicios educativos (colegiaturas)">
-                <option value="Primas por seguros de gastos médicos.">
-                <option value="Sin efectos fiscales.">
-            </datalist>            
-
-            <input class="" type="email" onclick="actualizarTexto(36)" id="correo">
-
-            <input class="" type="numbre" onclick="actualizarTexto(37)" id="codigop">
-
-            <input class="" type="text" onclick="actualizarTexto(38)" list="regimen_fiscal">
-            <datalist id="regimen_fiscal">
-                <option value="Sin obligaciones fiscales">
-                <option value="Incorporación Fiscal">
-                <option value="Residentes en el Extranjero sin Establecimiento Permanente en México">
-            </datalist>
-
-        </form>
-    </div>   
-        
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(29)">
 `;
-
 
 
 // -------------------------------------------------------- Textos de guía --------------------------------------------------------
@@ -752,27 +674,27 @@ var nueva_factura_inicio = `
 
 // Posicion 30
 var nueva_factura_global = `
-Con esto se desplegaron 3 campos que debes de llenar, comienza con el de "Periodicidad" en este caso selecciona mensual (Puedes generar una  factura como mínimo o varias al mes y no hay límite de importe). Al finalizar ingresa el mes correspondiente
+Con esto se desplegaron 3 campos que debes de llenar, comienza con el de "Periodicidad" en este caso selecciona "mensual" (Puedes generar una  factura como mínimo o varias al mes y no hay límite de importe). Al finalizar ingresa el mes correspondiente
 `;
 
 // Posicion 31
 var nueva_factura_global_mes = `
-Ingresa el mes correspondiente a esta factura al igual que el año en el siguiente apartado.
+Ingresa el mes correspondiente a esta factura el cual será "Agosto", de la misma forma el año en el siguiente apartado.
 `;
 
 // Posicion 32
 var nueva_factura_global_anio = `
-Ingresa el año correspondiente a esta factura. Al finalizar el agregado de estos datos comienza con los "Datos del Cliente".
+Ingresa el año correspondiente a esta factura, para este ejemplo será "2023". Al finalizar el agregado de estos datos comienza con los "Datos del Cliente".
 `;
 
 // Posicion 33
 var nueva_factura_global_cliente = `
-En el apartado cliente se desplazaran algunos clientes que ya tenemos guardados, en este caso selecciona al cliente XAXX010101000 que es del público en general.
+En el apartado cliente se desplazaran algunos clientes que ya tienes guardados o precargados, en este caso selecciona al cliente "XAXX010101000" que corresponde al de público en general.
 `;
 
 // Posicion 34
 var nueva_factura_global_razon= `
-Podemos ver que este apartado fue autocompletado por PÚBLICO EN GENERAL debido al tipo de cliente que selecciono previamente.
+Cuando seleccionaste al cliente este apartado fue autocompletado por PÚBLICO EN GENERAL.
 `;
 
 // Posicion 35
@@ -782,27 +704,29 @@ En el apartado de uso de factura selecciona la opcion de SIN EFECTOS FISCALES.
 
 // Posicion 36
 var nueva_factura_global_correo = `
-En este apartado ingresa el correo electronico del cliente.
+En este apartado ingresa el correo electronico del cliente, como ejemplo agrega "cliente@mail.com".
 `;
+
 // Posicion 37
 var nueva_factura_global_codigop = `
-El codigo postal fue autocompletado con la seleccion del cliente.
+El codigo postal también fue autocompletado con la seleccion del cliente.
 `;
 
 // Posicion 38
 var nueva_factura_global_regimen = `
-Por ultimo para poder completar los datos del ciente en el campo Régimen Fiscal selecciona la opcion SIN OBLIGACIONES FISCALES.
+Por ultimo para poder completar los datos del ciente en el campo "Régimen Fiscal" selecciona la opcion SIN OBLIGACIONES FISCALES.
 `;
 
 // Posicion 39
 var nueva_factura_global_agregar = `
 Ahora es momento de agregar un producto o servicio, llena cada uno de los campos que se muestran en este apartado.
 `;
+
 var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor, config_datos_emisor_engrane, config_basica, config_basica_regimen_fiscal, 
     config_basica_c1, config_basica_c2, config_basica_c3, config_basica_c4, config_basica_c5, config_basica_c6, config_basica_c7, config_basica_c8,
     config_basica_pt2_c1, config_basica_pt2_c2, config_basica_pt2_c3, config_basica_pt2_c4, config_basica_pt2_c5, config_basica_pt2_c6, config_basica_pt2_c7, config_basica_pt2_c8, config_basica_pt2_c9, config_basica_c9,
     config_avanzada, config_avanzada_c1, config_avanzada_c2, config_avanzada_c3, config_avanzada_c4, 
-    nueva_factura, nueva_factura_c1,nueva_factura_c2]
+    nueva_factura, nueva_factura_c1, nueva_factura_c2]
 
 var tutorial_text = [boton_factura_electronica, boton_servicios_facturacion, boton_facturacion_cuentas, boton_ejecutar_linea, login,
                     RFC_login, contrasena_login, captcha_login, datos_incorrectos,
@@ -815,7 +739,7 @@ var tutorial_text = [boton_factura_electronica, boton_servicios_facturacion, bot
 
 // Actualizar textos de tutorial
 async function actualizarTexto(pos){
-    document.getElementById("tutorialText").innerHTML = tutorial_text[pos];
+    document.getElementById("tutorialText").innerHTML = tutorial_text[pos]
 }
 
 // Regresar al paso anterior
@@ -829,7 +753,7 @@ async function anterior()
 async function siguiente(){
     contador = contador + 1
     console.log(contador)
-    document.getElementById("tuto-window").innerHTML = HTML_text[contador];
+    document.getElementById("tuto-window").innerHTML = HTML_text[contador]
 }
 
 // Validación de inicio de sesión
@@ -884,15 +808,17 @@ async function val_registro_emisor(){
 // Factura CFDI
 
 // Cargar años
-async function anos_global()
+async function anios_global()
 {
-    select =  document.getElementById("ano");
-    //console.log(select)
-    for(i = 2000; i <= 2025; i++){
-        option = document.createElement("option");
-        option.value = i;
-        option.text = i;
-        select.appendChild(option);
+    lista_anios =  document.getElementById("lista_anios");
+    if (lista_anios.children.length <= 0)
+    {
+        for(i = 2000; i <= 2025; i++){
+            option = document.createElement("option");
+            option.value = i;
+            option.text = i;
+            lista_anios.appendChild(option);
+        }
     }
 }
 
@@ -904,6 +830,57 @@ async function cliente()
     {
         document.getElementById(razonsocial.value="PUBLICO EN GENERAL")
         document.getElementById(codigop.value="59699")
+    }
+}
+
+// Validación de datos ingresados inicialmente
+async function FacturaGlobal_DatosCliente(campo)
+{
+    clienteF = document.getElementById("clienteF").value
+    razonsocial = document.getElementById("razonsocial").value
+    razonsocial = document.getElementById("usofactura").value
+    correo = document.getElementById("correo").value
+    codigop = document.getElementById("codigop").value
+    codigop = document.getElementById("codigop").value
+    codigop = document.getElementById("regimenfiscal").value
+    
+    switch (campo)
+    {
+        case 1:
+            periodicidad = document.getElementById("periodicidad").value
+            if (periodicidad == "Mensual")
+            {
+                document.getElementById("periodicidad").setAttribute("readonly", "")
+            }
+            else
+            {
+                document.getElementById("tutorialText").innerHTML = "Al parecer elegiste la periodicidad incorrecta, recuerda que aquí estas aprendiendo"
+            }
+        break
+
+        case 2:
+            mes = document.getElementById("mes").value
+            if (mes == "Agosto")
+            {
+                document.getElementById("mes").setAttribute("readonly", "")
+            }
+            else
+            {
+                document.getElementById("tutorialText").innerHTML = "Al parecer elegiste el mes incorrecto, recuerda que aquí estas aprendiendo"
+            }
+        break
+
+        case 3:
+            anio = document.getElementById("anio").value
+            if (anio == "2023")
+            {
+                document.getElementById("anio").setAttribute("readonly", "")
+            }
+            else
+            {
+                document.getElementById("tutorialText").innerHTML = "Al parecer elegiste el año incorrecto, recuerda que aquí estas aprendiendo"
+            }
+        break
     }
 }
 
@@ -920,5 +897,3 @@ async function mostrar()
     posicion = document.getElementById("paso").value
     document.getElementById("tutorialText").innerHTML = tutorial_text[posicion];
 }
-
-
