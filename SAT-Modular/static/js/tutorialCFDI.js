@@ -445,23 +445,16 @@ var nueva_factura_c1 = `
             <option>Diciembre</option>
         </datalist>
         
-        <input type="text" list="lista_anios" onclick="actualizarTexto(32), anios_global()" onchange="FacturaGlobal_DatosCliente(3)" id="anio">
-        <datalist id="lista_anios">
-        </datalis>
+        <input type="text" onclick="actualizarTexto(32)" onchange="FacturaGlobal_DatosCliente(3)" id="anio">
     </div>
 
     <div class="datoscliente">
         <form>
-            <input class="" type="text" onclick="actualizarTexto(33)" onchange="cliente()" list="lista_clientes" id="clienteF" onchange="FacturaGlobal_DatosCliente()">
-            <datalist id="lista_clientes">
-                <option value="XAXX010101000">
-                <option value="XEXX010101000">
-                <option value="Otro">
-            </datalist>
+            <input class="" type="text" onclick="actualizarTexto(33)" onchange="FacturaGlobal_DatosCliente(4)" id="clienteF" onkeyup="this.value = this.value.toUpperCase();">
             
-            <input class="" type="text" onclick="actualizarTexto(34)" id="razonsocial" onchange="FacturaGlobal_DatosCliente()">
+            <input class="" type="text" onclick="actualizarTexto(34)" id="razonsocial">
 
-            <input class="" type="text" onclick="actualizarTexto(35)" list="uso_factura" id="usofactura" onchange="FacturaGlobal_DatosCliente()">
+            <input class="" type="text" onclick="actualizarTexto(35)" list="uso_factura" id="usofactura" onchange="FacturaGlobal_DatosCliente(5)">
             <datalist id="uso_factura">
                 <option value="Adquisición de mercancías">
                 <option value="Aportaciones voluntarias al SAR">
@@ -489,12 +482,12 @@ var nueva_factura_c1 = `
                 <option value="Sin efectos fiscales.">
             </datalist>            
 
-            <input class="" type="email" onclick="actualizarTexto(36)" id="correo" onchange="FacturaGlobal_DatosCliente()">
+            <input class="" type="email" onclick="actualizarTexto(36)" id="correo" onchange="FacturaGlobal_DatosCliente(6)">
 
-            <input class="" type="number" onclick="actualizarTexto(37)" id="codigop" onchange="FacturaGlobal_DatosCliente()">
+            <input class="" type="number" onclick="actualizarTexto(37)" id="codigop">
 
-            <input class="" type="text" onclick="actualizarTexto(38)" list="regimen_fiscal" id="regimenfiscal" onchange="FacturaGlobal_DatosCliente(true)">
-            <datalist id="regimen_fiscal">
+            <input class="" type="text" onclick="actualizarTexto(38)" list="lista_regimen_fiscal" id="regimenfiscal" onchange="FacturaGlobal_DatosCliente(7)">
+            <datalist id="lista_regimen_fiscal">
                 <option value="Sin obligaciones fiscales">
                 <option value="Incorporación Fiscal">
                 <option value="Residentes en el Extranjero sin Establecimiento Permanente en México">
@@ -503,8 +496,7 @@ var nueva_factura_c1 = `
         </form>
     </div>   
             
-    <input type="hidden" id="datos" value="false">
-    <input type="button" onclick="siguiente(), actualizarTexto(39)" value="agregar">
+    <input type="hidden" onclick="siguiente(), actualizarTexto()" value="agregar" id="botonAgregar">
         
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(29)">
@@ -689,7 +681,7 @@ Ingresa el año correspondiente a esta factura, para este ejemplo será "2023". 
 
 // Posicion 33
 var nueva_factura_global_cliente = `
-En el apartado cliente se desplazaran algunos clientes que ya tienes guardados o precargados, en este caso selecciona al cliente "XAXX010101000" que corresponde al de público en general.
+En el apartado cliente ingresa al cliente "XAXX010101000" que corresponde al de público en general.
 `;
 
 // Posicion 34
@@ -719,7 +711,7 @@ Por ultimo para poder completar los datos del ciente en el campo "Régimen Fisca
 
 // Posicion 39
 var nueva_factura_global_agregar = `
-Ahora es momento de agregar un producto o servicio, llena cada uno de los campos que se muestran en este apartado.
+Ya completaste todos estos datos, ahora hay que seguir con agregar un producto, haz click en el botón de "Agregar".
 `;
 
 var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor, config_datos_emisor_engrane, config_basica, config_basica_regimen_fiscal, 
@@ -807,21 +799,6 @@ async function val_registro_emisor(){
 
 // Factura CFDI
 
-// Cargar años
-async function anios_global()
-{
-    lista_anios =  document.getElementById("lista_anios");
-    if (lista_anios.children.length <= 0)
-    {
-        for(i = 2000; i <= 2025; i++){
-            option = document.createElement("option");
-            option.value = i;
-            option.text = i;
-            lista_anios.appendChild(option);
-        }
-    }
-}
-
 // Cliente frecuente
 async function cliente()
 {
@@ -834,53 +811,131 @@ async function cliente()
 }
 
 // Validación de datos ingresados inicialmente
+var validacion_complete = 0
 async function FacturaGlobal_DatosCliente(campo)
-{
-    clienteF = document.getElementById("clienteF").value
-    razonsocial = document.getElementById("razonsocial").value
-    razonsocial = document.getElementById("usofactura").value
-    correo = document.getElementById("correo").value
-    codigop = document.getElementById("codigop").value
-    codigop = document.getElementById("codigop").value
-    codigop = document.getElementById("regimenfiscal").value
-    
+{   
     switch (campo)
     {
         case 1:
-            periodicidad = document.getElementById("periodicidad").value
-            if (periodicidad == "Mensual")
+            periodicidad = document.getElementById("periodicidad")
+            if (periodicidad.value == "Mensual" && periodicidad.hasAttribute("readonly") == false)
             {
                 document.getElementById("periodicidad").setAttribute("readonly", "")
+                validacion_complete += 1
             }
             else
             {
-                document.getElementById("tutorialText").innerHTML = "Al parecer elegiste la periodicidad incorrecta, recuerda que aquí estas aprendiendo"
+                if (periodicidad.hasAttribute("readonly") == false)
+                {
+                    document.getElementById("tutorialText").innerHTML = "Al parecer elegiste la periodicidad incorrecta, recuerda que aquí estas aprendiendo"
+                }
             }
         break
 
         case 2:
-            mes = document.getElementById("mes").value
-            if (mes == "Agosto")
+            mes = document.getElementById("mes")
+            if (mes.value == "Agosto" && mes.hasAttribute("readonly") == false)
             {
                 document.getElementById("mes").setAttribute("readonly", "")
+                validacion_complete += 1
             }
             else
             {
-                document.getElementById("tutorialText").innerHTML = "Al parecer elegiste el mes incorrecto, recuerda que aquí estas aprendiendo"
+                if (mes.hasAttribute("readonly") == false)
+                {
+                    document.getElementById("tutorialText").innerHTML = "Al parecer elegiste el mes incorrecto, recuerda que aquí estas aprendiendo"
+                }
             }
         break
 
         case 3:
-            anio = document.getElementById("anio").value
-            if (anio == "2023")
+            anio = document.getElementById("anio")
+            if (anio.value == "2023" && anio.hasAttribute("readonly") == false)
             {
                 document.getElementById("anio").setAttribute("readonly", "")
+                validacion_complete += 1
             }
             else
             {
-                document.getElementById("tutorialText").innerHTML = "Al parecer elegiste el año incorrecto, recuerda que aquí estas aprendiendo"
+                if (mes.hasAttribute("readonly") == false)
+                {
+                    document.getElementById("tutorialText").innerHTML = "Al parecer elegiste el año incorrecto, recuerda que aquí estas aprendiendo"
+                }
             }
         break
+
+        case 4:
+            clienteF = document.getElementById("clienteF")
+            if (clienteF.value == "XAXX010101000" && clienteF.hasAttribute("readonly") == false)
+            {
+                document.getElementById("razonsocial").value = "PUBLICO EN GENERAL"
+                document.getElementById("codigop").value = "59699"
+                document.getElementById("clienteF").setAttribute("readonly", "")
+                document.getElementById("razonsocial").setAttribute("readonly", "")
+                document.getElementById("codigop").setAttribute("readonly", "")
+                validacion_complete += 1
+            }
+            else
+            {
+                if (mes.hasAttribute("readonly") == false)
+                {
+                    document.getElementById("tutorialText").innerHTML = "Ingresaste el RFC del cliente de manera incorrecta, vuelve a intentarlo"
+                }
+            }
+        break
+
+        case 5:
+            usofactura = document.getElementById("usofactura")
+            if (usofactura.value == "Sin efectos fiscales." && usofactura.hasAttribute("readonly") == false)
+            {
+                document.getElementById("usofactura").setAttribute("readonly", "")
+                validacion_complete += 1
+            }
+            else
+            {
+                if (usofactura.hasAttribute("readonly") == false)
+                {
+                    document.getElementById("tutorialText").innerHTML = "No seleccionaste la opción correcta, que bien que esta es una simulación"
+                }
+            }
+        break
+
+        case 6:
+            correo = document.getElementById("correo")
+            if (correo.value == "cliente@mail.com" && correo.hasAttribute("readonly") == false)
+            {
+                document.getElementById("correo").setAttribute("readonly", "")
+                validacion_complete += 1
+            }
+            else
+            {
+                if (correo.hasAttribute("readonly") == false)
+                {
+                    document.getElementById("tutorialText").innerHTML = "Cometiste un error, a todos nos a pasado. Intenta escribir el correo de nuevo"
+                }
+            }
+        break
+
+        case 7:
+            regimenfiscal = document.getElementById("regimenfiscal")
+            if (regimenfiscal.value == "Sin obligaciones fiscales" && regimenfiscal.hasAttribute("readonly") == false)
+            {
+                document.getElementById("regimenfiscal").setAttribute("readonly", "")
+                validacion_complete += 1
+            }
+            else
+            {
+                if (regimenfiscal.hasAttribute("readonly") == false)
+                {
+                    document.getElementById("tutorialText").innerHTML = "Vaya no elegiste el regimen correcto y es muy importante"
+                }
+            }
+        break
+    }
+    if (validacion_complete == 7)
+    {
+        actualizarTexto(39)
+        document.getElementById("botonAgregar").setAttribute("type", "button")
     }
 }
 
