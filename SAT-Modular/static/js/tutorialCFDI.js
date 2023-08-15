@@ -420,17 +420,18 @@ var nueva_factura_c1 = `
     <img class="captura" src="/static/images/CFDI/Nueva-factura-pt4.png" alt="image">
     
     <div class="facturaglobal">
-        <input class="" type="text" list="lista_periodicidad" onclick="actualizarTexto(30)" onchange="FacturaGlobal_DatosCliente(1)" id="periodicidad">
+        <input class="pos35Per" type="text" list="lista_periodicidad" onclick="actualizarTexto(30)" onchange="FacturaGlobal_DatosCliente(1)" id="periodicidad">
         <datalist id="lista_periodicidad">
+            <option selected class="pos35Pos" >Seleccione...</option>
             <option value="Diario">Diario</option>
             <option value="Semanal">Semanal</option>
             <option value="Quincenal">Quincenal</option>
             <option value="Mensual">Mensual</option>
         </datalist>
 
-        <input class="" type="text" list="lista_meses" onclick="actualizarTexto(31)" onchange="FacturaGlobal_DatosCliente(2)" id="mes">
+        <input class="pos35Mes" type="text" list="lista_meses" onclick="actualizarTexto(31)" onchange="FacturaGlobal_DatosCliente(2)" id="mes">
         <datalist id="lista_meses">
-            <option selected>Seleccione..</option>
+            <option selected class="pos35Pos" >Seleccione...</option>
             <option>Enero</option>
             <option>Febrero</option>
             <option>Marzo</option>
@@ -445,16 +446,16 @@ var nueva_factura_c1 = `
             <option>Diciembre</option>
         </datalist>
         
-        <input type="text" onclick="actualizarTexto(32)" onchange="FacturaGlobal_DatosCliente(3)" id="anio">
+        <input type="text" class="pos35Anio" onclick="actualizarTexto(32)" onchange="FacturaGlobal_DatosCliente(3)" id="anio">
     </div>
 
     <div class="datoscliente">
         <form>
-            <input class="" type="text" onclick="actualizarTexto(33)" onchange="FacturaGlobal_DatosCliente(4)" id="clienteF" onkeyup="this.value = this.value.toUpperCase();">
+            <input class="pos35Cliente"  type="text" onclick="actualizarTexto(33)" onchange="FacturaGlobal_DatosCliente(4)" id="clienteF" onkeyup="this.value = this.value.toUpperCase();">
             
-            <input class="" type="text" onclick="actualizarTexto(34)" id="razonsocial">
+            <input class="pos35Razon"  type="text" onclick="actualizarTexto(34)" id="razonsocial">
 
-            <input class="" type="text" onclick="actualizarTexto(35)" list="uso_factura" id="usofactura" onchange="FacturaGlobal_DatosCliente(5)">
+            <input class="pos35Uso" type="text" onclick="actualizarTexto(35)" list="uso_factura" id="usofactura" onchange="FacturaGlobal_DatosCliente(5)">
             <datalist id="uso_factura">
                 <option value="Adquisición de mercancías">
                 <option value="Aportaciones voluntarias al SAR">
@@ -482,11 +483,11 @@ var nueva_factura_c1 = `
                 <option value="Sin efectos fiscales.">
             </datalist>            
 
-            <input class="" type="email" onclick="actualizarTexto(36)" id="correo" onchange="FacturaGlobal_DatosCliente(6)">
+            <input class="pos35Email" type="email" onclick="actualizarTexto(36)" id="correo" onchange="FacturaGlobal_DatosCliente(6)">
 
-            <input class="" type="number" onclick="actualizarTexto(37)" id="codigop">
+            <input class="pos35Codigo" type="text" onclick="actualizarTexto(37)" id="codigop">
 
-            <input class="" type="text" onclick="actualizarTexto(38)" list="lista_regimen_fiscal" id="regimenfiscal" onchange="FacturaGlobal_DatosCliente(7)">
+            <input class="pos35CReg" type="text" onclick="actualizarTexto(38)" list="lista_regimen_fiscal" id="regimenfiscal" onchange="FacturaGlobal_DatosCliente(7)">
             <datalist id="lista_regimen_fiscal">
                 <option value="Sin obligaciones fiscales">
                 <option value="Incorporación Fiscal">
@@ -496,7 +497,7 @@ var nueva_factura_c1 = `
         </form>
     </div>   
             
-    <input type="hidden" onclick="siguiente(), actualizarTexto()" value="agregar" id="botonAgregar">
+    <input type="hidden" class="pos35Agregar" onclick="siguiente(), actualizarTexto()" value="" id="botonAgregar">
         
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(29)">
