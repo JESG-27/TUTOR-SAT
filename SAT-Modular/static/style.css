@@ -1474,7 +1474,6 @@ h2.CFDI {
     height: 60px;
     width: 80%;
     background-color: #581B98;
-    position: relative;
     padding: 0 15px 0 15px;
     border-bottom: 4px solid rgb(243, 243, 244);
     margin: auto;
@@ -2233,6 +2232,207 @@ h2.CFDI {
 
 
 /* POSICION 35 */
+.pos35Per {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 916px;
+    left: 114px;
+    padding-left: 6px;
+    color:#666;
+}
+
+.pos35Per:focus {
+    outline: none;
+}
+
+.pos35Pos opcion {
+    background-color: #fff;
+}  
+
+.pos35Mes {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 916px;
+    left: 146px;
+    padding-left: 6px;
+    color:#666;
+}
+
+.pos35Mes:focus {
+    outline: none;
+}
+
+.pos35Pos opcion {
+    background-color: #fff;
+}  
+
+.pos35Anio {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 916px;
+    left: 176px;
+    padding-left: 6px;
+    color:#666;
+}
+
+.pos35Anio:focus {
+    outline: none;
+}
+
+.pos35Anio:valid {
+    background-color: #fff;
+}
+
+.pos35Cliente {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 831px;
+    left: 114px;
+    padding-left: 6px;
+    color:#666;
+}
+
+.pos35Cliente:focus {
+    outline: none;
+}
+
+.pos35Cliente:valid {
+    background-color: #fff;
+}
+
+.pos35Razon {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 831px;
+    left: 144px;
+    padding-left: 6px;
+    color:#666;
+}
+
+.pos35Razon:focus {
+    outline: none;
+}
+
+.pos35Razon:valid {
+    background-color: #fff;
+}
+
+.pos35Uso {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 831px;
+    left: 174px;
+    padding-left: 6px;
+    color:#666;
+}
+
+.pos35Uso:focus {
+    outline: none;
+}
+
+.pos35Email {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 778px;
+    left: -633px;
+    padding-left: 6px;
+    color:#666;
+}
+
+.pos35Email:focus {
+    outline: none;
+}
+
+.pos35Email:valid {
+    background-color: #fff;
+}
+
+.pos35Codigo {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 801px;
+    left: 393px;
+    padding-left: 6px;
+    color:#666;
+}
+
+.pos35Codigo:focus {
+    outline: none;
+}
+
+.pos35Codigo:valid {
+    background-color: #fff;
+}
+
+.pos35CReg {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 748px;
+    left: 145px;
+    padding-left: 6px;
+    color:#666;
+}
+
+.pos35CReg:focus {
+    outline: none;
+}
+
+.pos35Agregar {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 80px;
+    height: 40px;
+    bottom: 695px;
+    left: 105px;
+}
 
 
 /* Large screens ---------------------------------------------------------------------------------*/
