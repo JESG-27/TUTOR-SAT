@@ -438,8 +438,8 @@ var nueva_factura_c1 = `
             <option>Abril</option>
             <option>Mayo</option>
             <option>Junio</option>
-            <option>Julio</option>
-            <option value="Agosto">Agosto</option>
+            <option value="Julio">Julio</option>
+            <option>Agosto</option>
             <option>Septiembre</option>
             <option>Octubre</option>
             <option>Noviembre</option>
@@ -506,11 +506,29 @@ var nueva_factura_c1 = `
 // Posición 36
 var nueva_factura_c2 = `
 <div class="tuto-window">
-    <img class="captura" src="/static/images/CFDI/Nueva-factura-pt1-c1.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/Nueva-factura-pt1-c2.png" alt="image">
     <img class="capturaCortaCFDI" src="/static/images/CFDI/Nueva-factura-pt2.png" alt="image">
-    <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-agregar.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-pt3-c1.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-pt3-c1-pt2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Nueva-factura-pt4.png" alt="image">
+
+    <div class="agregar-producto">
+        <form>
+            <input class="" type="text" onclick="actualizarTexto()" id="descripcion">
+            <input class="" type="text" onclick="actualizarTexto()" id="prodServi">
+            <input class="" type="text" onclick="actualizarTexto()" id="unidadMed">
+            <input class="" type="number" onclick="actualizarTexto()" id="cantidad">
+            <input class="" type="number" onclick="actualizarTexto()" id="valorUni">
+            <input class="" type="number" onclick="actualizarTexto()" id="importe">
+            <input class="" type="number" onclick="actualizarTexto()" id="descuento">
+            <input class="" type="text" onclick="actualizarTexto()" id="objImpuesto">
+            <input class="" type="text" onclick="actualizarTexto()" id="numeroIden">
+        </form>
+    </div>
+
 </div>
+
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(30)">
 `;
 
 
@@ -672,7 +690,7 @@ Con esto se desplegaron 3 campos que debes de llenar, comienza con el de "Period
 
 // Posicion 31
 var nueva_factura_global_mes = `
-Ingresa el mes correspondiente a esta factura el cual será "Agosto", de la misma forma el año en el siguiente apartado.
+Ingresa el mes correspondiente a esta factura el cual será "Julio", de la misma forma el año en el siguiente apartado.
 `;
 
 // Posicion 32
@@ -835,7 +853,7 @@ async function FacturaGlobal_DatosCliente(campo)
 
         case 2:
             mes = document.getElementById("mes")
-            if (mes.value == "Agosto" && mes.hasAttribute("readonly") == false)
+            if (mes.value == "Julio" && mes.hasAttribute("readonly") == false)
             {
                 document.getElementById("mes").setAttribute("readonly", "")
                 validacion_complete += 1
