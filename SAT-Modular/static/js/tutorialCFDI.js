@@ -497,7 +497,7 @@ var nueva_factura_c1 = `
         </form>
     </div>   
             
-    <input type="hidden" class="pos35Agregar" onclick="siguiente(), actualizarTexto()" value="" id="botonAgregar">
+    <input type="hidden" class="pos35Agregar" onclick="siguiente(), actualizarTexto(40)" value="" id="botonAgregar">
         
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(29)">
@@ -512,17 +512,48 @@ var nueva_factura_c2 = `
     <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-pt3-c1-pt2.png" alt="image">
     <img class="captura" src="/static/images/CFDI/Nueva-factura-pt4.png" alt="image">
 
+    <div class="facturaglobal">
+        <input type="text" class="" onclick="actualizarTexto(32)" id="anio" readonly="" value="2023">
+    </div>
+
+    <div class="datoscliente">
+        <input class=""  type="text" onclick="actualizarTexto(33)" id="clienteF" readonly="" value="XAXX010101000">
+        <input class=""  type="text" onclick="actualizarTexto(34)" id="razonsocial" readonly="" value="PUBLICO EN GENERAL">
+        <input class="" type="text" onclick="actualizarTexto(35)" id="usofactura" readonly="" value="Sin efectos fiscales.">
+        <input class="" type="email" onclick="actualizarTexto(36)" id="correo" readonly="" value="cliente@mail.com">
+        <input class="" type="text" onclick="actualizarTexto(37)" id="codigop" readonly="" value="59699">
+        <input class="" type="text" onclick="actualizarTexto(38)" id="regimenfiscal" readonly="" value="Sin obligaciones fiscales">
+    </div>
+
     <div class="agregar-producto">
         <form>
-            <input class="" type="text" onclick="actualizarTexto()" id="descripcion">
-            <input class="" type="text" onclick="actualizarTexto()" id="prodServi">
-            <input class="" type="text" onclick="actualizarTexto()" id="unidadMed">
-            <input class="" type="number" onclick="actualizarTexto()" id="cantidad">
-            <input class="" type="number" onclick="actualizarTexto()" id="valorUni">
-            <input class="" type="number" onclick="actualizarTexto()" id="importe">
-            <input class="" type="number" onclick="actualizarTexto()" id="descuento">
-            <input class="" type="text" onclick="actualizarTexto()" id="objImpuesto">
-            <input class="" type="text" onclick="actualizarTexto()" id="numeroIden">
+            <input class="" type="text" onclick="actualizarTexto(40)" id="descripcion" onkeyup="this.value = this.value.toUpperCase();">
+            
+            <input class="" type="text" onclick="actualizarTexto(41)" id="prodServi" list="lista_producto_servicio">
+            <datalist id="lista_producto_servicio">
+                <option value="Público en general">01010101 Público en general</option>
+            </datalist>
+
+            <input class="" type="text" onclick="actualizarTexto(42)" id="unidadMed" list="lista_unidad_medida">
+            <datalist id="lista_unidad_medida">
+                <option value="Actividad">
+                <option value="Unidad activa">
+                <option value="Actual 360">
+            </datalist>
+
+            <input class="" type="number" onclick="actualizarTexto(43)" id="cantidad">
+            <input class="" type="number" onclick="actualizarTexto(44)" id="valorUni">
+            <input class="" type="number" onclick="actualizarTexto(45)" id="importe" readonly="">
+            <input class="" type="number" onclick="actualizarTexto(46)" id="descuento" readonly="">
+
+            <input class="" type="text" onclick="actualizarTexto(47)" id="objImpuesto" list="lista_impuesto">
+            <datalist id="lista_impuesto">
+                <option>No objeto de impuesto</option>
+                <option value="Si objeto de impuesto">Si objeto de impuesto</option>
+                <option>No objeto de impuesto y no obligación desglose</option>
+            </datalist>
+
+            <input class="" type="text" onclick="actualizarTexto(48)" id="numeroIden">
         </form>
     </div>
 
@@ -733,6 +764,51 @@ var nueva_factura_global_agregar = `
 Ya completaste todos estos datos, ahora hay que seguir con agregar un producto, haz click en el botón de "Agregar".
 `;
 
+// Posicion 40
+var descripcion_producto = `
+En este campo se debe registrar la descripción del bien o servicio propio de la empresa por cada concepto. Agrega en el campo "venta"
+`;
+
+// Posicion 41
+var producto_servicio = `
+En este campo se debe registrar una clave que permita clasificar los conceptos del comprobante como productos o servicios. De igual forma que en el cliente, aquí será para público en general y su clave correspondiente es "01010101"
+`;
+
+// Posicion 42
+var unidad_medida = `
+En este campo se puede registrar la unidad de medida del bien o servicio propio de la operación del emisor, aplicable para la cantidad expresada en cada concepto. En este campo debes de agregar la unidad de "Actividad".
+`;
+
+// Posicion 43
+var cantidad = `
+En este campo se debe registrar la cantidad de bienes o servicios que correspondan a cada concepto, puede contener de cero hasta seis decimales. Para este ejemplo agrega un "1".
+`;
+
+// Posicion 44
+var valor_unitario = `
+En este campo se debe registrar el valor o precio unitario del bien o servicio por cada concepto, el cual puede contener de cero hasta seis decimales. Para este ejemplo agrega "1500"
+`;
+
+// Posicion 45
+var importe = `
+Se debe registrar el importe total de los bienes o servicios de cada concepto. Debe ser equivalente al resultado de multiplicar la cantidad por el valor unitario expresado en el concepto, el cual debe ser calculado por el sistema
+`;
+
+// Posicion 46
+var descuento = `
+Se puede registrar el importe de los descuentos aplicables a cada concepto, debe tener hasta la cantidad de decimales que tenga registrado en el campo importe del concepto y debe ser menor o igual al campo Importe. En este caso no es necesario que agregues un descuento.
+`;
+
+// Posicion 47
+var objeto_impuesto = `
+Se debe registrar la clave correspondiente para indicar si la operación comercial es objeto o no de impuesto. Selcciona "Si objeto de impuesto".
+`;
+
+// Posicion 48 
+var numero_identificacion = `
+En este campo se puede registrar el número de parte, identificador del producto o del servicio, la clave de producto o servicio, SKU (número de referencia) o equivalente, propia de la operación del contribuyente. En este caso ingresa "EJEMPLO01"
+`;
+
 var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor, config_datos_emisor_engrane, config_basica, config_basica_regimen_fiscal, 
     config_basica_c1, config_basica_c2, config_basica_c3, config_basica_c4, config_basica_c5, config_basica_c6, config_basica_c7, config_basica_c8,
     config_basica_pt2_c1, config_basica_pt2_c2, config_basica_pt2_c3, config_basica_pt2_c4, config_basica_pt2_c5, config_basica_pt2_c6, config_basica_pt2_c7, config_basica_pt2_c8, config_basica_pt2_c9, config_basica_c9,
@@ -744,8 +820,9 @@ var tutorial_text = [boton_factura_electronica, boton_servicios_facturacion, bot
                     engrane_opciones, opcion_datos_emisor, registro_emisor, nombre_razon_social, nombre_comercial, registro_emisor_guardado, opcion_basica,
                     config_basica_inicio, regimen_fiscal, favorito, tipo_de_factura, codigo_postal, moneda, forma_pago, metodo_pago, config_basica_fin,
                     opcion_avanzada, serie_folio, factura_global, opcion_generar, 
-                    nueva_factura_inicio, nueva_factura_global, nueva_factura_global_mes, nueva_factura_global_anio,nueva_factura_global_cliente,nueva_factura_global_razon,nueva_factura_global_uso,nueva_factura_global_correo,nueva_factura_global_codigop,
-                    nueva_factura_global_regimen,nueva_factura_global_agregar]
+                    nueva_factura_inicio, nueva_factura_global, nueva_factura_global_mes, nueva_factura_global_anio,nueva_factura_global_cliente,
+                    nueva_factura_global_razon,nueva_factura_global_uso,nueva_factura_global_correo,nueva_factura_global_codigop, nueva_factura_global_regimen, nueva_factura_global_agregar,
+                    descripcion_producto, producto_servicio, unidad_medida, cantidad, valor_unitario, importe, descuento, objeto_impuesto, numero_identificacion]
 
 
 // Actualizar textos de tutorial

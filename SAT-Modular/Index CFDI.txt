@@ -44,4 +44,4 @@ config_avanzada_c3           (32) - opcion_generar                (28)
 config_avanzada_c4           (33) - opcion_generar                (28)
 nueva_factura                (34) - nueva_factura_inico           (29)
 nueva_factura_c1             (35) - nueva_factura_global          (30-39)
-nueva_factura_c2             (36) - 
+nueva_factura_c2             (36) - descripcion_producto          (40-48)
