@@ -510,6 +510,7 @@ var nueva_factura_c2 = `
     <img class="capturaCortaCFDI" src="/static/images/CFDI/Nueva-factura-pt2.png" alt="image">
     <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-pt3-c1.png" alt="image">
     <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-pt3-c1-pt2.png" alt="image">
+    <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-impuestos.png" alt="image" id="sugImpuesto" hidden>
     <img class="captura" src="/static/images/CFDI/Nueva-factura-pt4.png" alt="image">
 
     <div class="facturaglobal">
@@ -527,33 +528,33 @@ var nueva_factura_c2 = `
 
     <div class="agregar-producto">
         <form>
-            <input class="" type="text" onclick="actualizarTexto(40)" id="descripcion" onkeyup="this.value = this.value.toUpperCase();">
+            <input class="" type="text" onclick="actualizarTexto(40)" id="descripcion" onkeyup="this.value = this.value.toUpperCase();" onchange="datosProducto('descripcion','prodServi')">
             
-            <input class="" type="text" onclick="actualizarTexto(41)" id="prodServi" list="lista_producto_servicio">
+            <input class="" type="text" onclick="actualizarTexto(41)" id="prodServi" list="lista_producto_servicio" hidden onchange="datosProducto('prodServi','unidadMed')">
             <datalist id="lista_producto_servicio">
                 <option value="Público en general">01010101 Público en general</option>
             </datalist>
 
-            <input class="" type="text" onclick="actualizarTexto(42)" id="unidadMed" list="lista_unidad_medida">
+            <input class="" type="text" onclick="actualizarTexto(42)" id="unidadMed" list="lista_unidad_medida" hidden onchange="datosProducto('unidadMed','cantidad')">
             <datalist id="lista_unidad_medida">
                 <option value="Actividad">
                 <option value="Unidad activa">
                 <option value="Actual 360">
             </datalist>
 
-            <input class="" type="number" onclick="actualizarTexto(43)" id="cantidad">
-            <input class="" type="number" onclick="actualizarTexto(44)" id="valorUni">
+            <input class="" type="number" onclick="actualizarTexto(43)" id="cantidad" hidden onchange="datosProducto('cantidad','valorUni')">
+            <input class="" type="number" onclick="actualizarTexto(44)" id="valorUni" hidden onchange="datosProducto('valorUni','importe')">
             <input class="" type="number" onclick="actualizarTexto(45)" id="importe" readonly="">
             <input class="" type="number" onclick="actualizarTexto(46)" id="descuento" readonly="">
 
-            <input class="" type="text" onclick="actualizarTexto(47)" id="objImpuesto" list="lista_impuesto">
+            <input class="" type="text" onclick="actualizarTexto(47)" id="objImpuesto" list="lista_impuesto" hidden onchange="datosProducto('objImpuesto','numeroIden')">
             <datalist id="lista_impuesto">
                 <option>No objeto de impuesto</option>
                 <option value="Si objeto de impuesto">Si objeto de impuesto</option>
                 <option>No objeto de impuesto y no obligación desglose</option>
             </datalist>
 
-            <input class="" type="text" onclick="actualizarTexto(48)" id="numeroIden">
+            <input class="" type="text" onclick="actualizarTexto(48)" id="numeroIden" hidden onchange="datosProducto('numeroIden','guardar')">
         </form>
     </div>
 
@@ -1032,6 +1033,64 @@ async function FacturaGlobal_DatosCliente(campo)
     {
         actualizarTexto(39)
         document.getElementById("botonAgregar").setAttribute("type", "button")
+    }
+}
+
+// Validación agregar producto
+async function datosProducto(actual, siguiente)
+{
+    inputActual = document.getElementById(actual)
+    inputSiguiente = document.getElementById(siguiente)
+
+    console.log(inputActual.value)
+    
+    if (actual == 'descripcion' && inputActual.value == "VENTA")
+    {
+        inputActual.setAttribute("readonly", "")
+        inputSiguiente.removeAttribute("hidden")
+        document.getElementById("tutorialText").innerHTML = "Continua en el campo de Producto o Servicio"
+    }
+    else if (actual == 'prodServi' && inputActual.value == "Público en general")
+    {
+        inputActual.setAttribute("readonly", "")
+        inputSiguiente.removeAttribute("hidden")
+        document.getElementById("tutorialText").innerHTML = "Continua en el campo de Unidad de Medida"
+    }
+    else if (actual == 'unidadMed' && inputActual.value == "Actividad")
+    {
+        inputActual.setAttribute("readonly", "")
+        inputSiguiente.removeAttribute("hidden")
+        document.getElementById("tutorialText").innerHTML = "Continua en el campo de cantidad"
+    }
+    else if (actual == 'cantidad' && inputActual.value == "1")
+    {
+        inputActual.setAttribute("readonly", "")
+        inputSiguiente.removeAttribute("hidden")
+        document.getElementById("tutorialText").innerHTML = "Continua en el campo de valor"
+    }
+    else if (actual == 'valorUni' && inputActual.value == "1500")
+    {
+        inputActual.setAttribute("readonly", "")
+        inputSiguiente.value = "1500"
+        document.getElementById("tutorialText").innerHTML = "Continua en el campo de objeto de impuesto"
+        document.getElementById("objImpuesto").removeAttribute("hidden")
+    }
+    else if (actual == 'objImpuesto' && inputActual.value == "Si objeto de impuesto")
+    {
+        inputActual.setAttribute("readonly", "")
+        inputSiguiente.removeAttribute("hidden")
+        document.getElementById("tutorialText").innerHTML = "Continua en el campo de número de identificación"
+        document.getElementById("sugImpuesto").removeAttribute("hidden")
+    }
+    else if (actual == 'numeroIden' && inputActual.value == "EJEMPLO01")
+    {
+        inputActual.setAttribute("readonly", "")
+        // inputSiguiente.removeAttribute("hidden")
+        // document.getElementById("tutorialText").innerHTML = "Continua en el campo de número de identificación"
+    }
+    else
+    {
+        document.getElementById("tutorialText").innerHTML = "Parece que cometiste un error, a todos nos a pasado. Intenta escribir el valor de nuevo"
     }
 }
 
