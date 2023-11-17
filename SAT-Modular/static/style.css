@@ -1536,7 +1536,7 @@ h2.CFDI {
     background: none;
     border: none;
     bottom: 454px;
-    left: 277px;
+    left: 287px;
     width: 55px;
     height: 65px;
 }
@@ -2434,6 +2434,144 @@ h2.CFDI {
     left: 105px;
 }
 
+/* POSICIPN 36 */
+.pos36Anio {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 1871px;
+    left: 670px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos36Anio:focus {
+    outline: none;
+}
+
+.pos36Anio:valid {
+    background-color: #fff;
+}
+
+.pos36RFC {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 1786px;
+    left: 112px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos36RFC:focus {
+    outline: none;
+}
+
+.pos36RFC:valid {
+    background-color: #fff;
+}
+
+.pos36Pub {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 1786px;
+    left: 140px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos36Pub:focus {
+    outline: none;
+}
+
+.pos36Pub:valid {
+    background-color: #fff;
+} 
+
+.pos36Cor {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 1734px;
+    right: 565px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos36Cor:focus {
+    outline: none;
+}
+
+.pos36Cor:valid {
+    background-color: #fff;
+}
+
+.pos36Cod {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 1756px;
+    left: 389px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos36Cod:focus {
+    outline: none;
+}
+
+.pos36Cod:valid {
+    background-color: #fff;
+}
+
+.pos36Reg {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 1703px;
+    left: 140px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos36Reg:focus {
+    outline: none;
+}
+
+.pos36Reg:valid {
+    background-color: #fff;
+}
 
 /* Large screens ---------------------------------------------------------------------------------*/
 @media only screen and (min-width : 1920px) {
