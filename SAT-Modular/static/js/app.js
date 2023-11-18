@@ -53,12 +53,21 @@ class Chatbox {
         let msg1 = { name: "User", message: text1 }
         this.messages.push(msg1);
 
-        fetch($SCRIPT_ROOT + '/predict', {
+        // fetch($SCRIPT_ROOT + '/predict', {
+        //     method: 'POST',
+        //     body: JSON.stringify({ message: text1 }),
+        //     mode: 'cors',
+        //     headers: {
+        //       'Content-Type': 'application/json'
+        //     },
+        //   })
+          fetch('http://127.0.0.1:5001/predict', {
             method: 'POST',
             body: JSON.stringify({ message: text1 }),
             mode: 'cors',
             headers: {
-              'Content-Type': 'application/json'
+                'Access-Control-Allow-Origin':'http://127.0.0.1:5001/predict',
+                'Content-Type': 'application/json'
             },
           })
           .then(r => r.json())
