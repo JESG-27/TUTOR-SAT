@@ -508,53 +508,55 @@ var nueva_factura_c2 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Nueva-factura-pt1-c2.png" alt="image">
     <img class="capturaCortaCFDI" src="/static/images/CFDI/Nueva-factura-pt2.png" alt="image">
-    <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-pt3-c1.png" alt="image">
-    <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-pt3-c1-pt2.png" alt="image">
-    <img class="capturaCortaProducto" src="/static/images/CFDI/Nueva-factura-impuestos.png" alt="image" id="sugImpuesto" hidden>
-    <img class="captura" src="/static/images/CFDI/Nueva-factura-pt4.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Nueva-factura-pt3-c1.png" alt="image">
+    <!-- <img class="captura" src="/static/images/CFDI/Nueva-factura-impuestos.png" alt="image" id="sugImpuesto" hidden> -->
+    <img class="capturaCorta" src="/static/images/CFDI/Nueva-factura-pt3-c1-pt2.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Nueva-factura-pt4.png" alt="image">
+    <img class="capturaCorta2" src="/static/images/CFDI/Nueva-factura-pt5.png" alt="image">
 
     <div class="facturaglobal">
-        <input type="text" class="" onclick="actualizarTexto(32)" id="anio" readonly="" value="2023">
+        <input type="text" class="pos36Anio" onclick="actualizarTexto(32)" id="anio" readonly="" value="2023">
     </div>
 
     <div class="datoscliente">
-        <input class=""  type="text" onclick="actualizarTexto(33)" id="clienteF" readonly="" value="XAXX010101000">
-        <input class=""  type="text" onclick="actualizarTexto(34)" id="razonsocial" readonly="" value="PUBLICO EN GENERAL">
-        <input class="" type="text" onclick="actualizarTexto(35)" id="usofactura" readonly="" value="Sin efectos fiscales.">
-        <input class="" type="email" onclick="actualizarTexto(36)" id="correo" readonly="" value="cliente@mail.com">
-        <input class="" type="text" onclick="actualizarTexto(37)" id="codigop" readonly="" value="59699">
-        <input class="" type="text" onclick="actualizarTexto(38)" id="regimenfiscal" readonly="" value="Sin obligaciones fiscales">
+        <input class="pos36RFC"  type="text" onclick="actualizarTexto(33)" id="clienteF" readonly="" value="XAXX010101000">
+        <input class="pos36Pub"  type="text" onclick="actualizarTexto(34)" id="razonsocial" readonly="" value="PUBLICO EN GENERAL">
+        <input class="pos36AFis" type="text" onclick="actualizarTexto(35)" id="usofactura" readonly="" value="Sin efectos fiscales.">
+        <input class="pos36Cor" type="email" onclick="actualizarTexto(36)" id="correo" readonly="" value="cliente@mail.com">
+        <input class="pos36Cod" type="text" onclick="actualizarTexto(37)" id="codigop" readonly="" value="59699">
+        <input class="pos36Reg" type="text" onclick="actualizarTexto(38)" id="regimenfiscal" readonly="" value="Sin obligaciones fiscales">
     </div>
 
     <div class="agregar-producto">
         <form>
-            <input class="" type="text" onclick="actualizarTexto(40)" id="descripcion" onkeyup="this.value = this.value.toUpperCase();" onchange="datosProducto('descripcion','prodServi')">
+            <input class="pos36Des" type="text" onclick="actualizarTexto(40)" id="descripcion" onkeyup="this.value = this.value.toUpperCase();" onchange="datosProducto('descripcion','prodServi')">
             
-            <input class="" type="text" onclick="actualizarTexto(41)" id="prodServi" list="lista_producto_servicio" hidden onchange="datosProducto('prodServi','unidadMed')">
+            <input class="pos36Ser" type="text" onclick="actualizarTexto(41)" id="prodServi" list="lista_producto_servicio" hidden onchange="datosProducto('prodServi','unidadMed')">
             <datalist id="lista_producto_servicio">
                 <option value="Público en general">01010101 Público en general</option>
             </datalist>
 
-            <input class="" type="text" onclick="actualizarTexto(42)" id="unidadMed" list="lista_unidad_medida" hidden onchange="datosProducto('unidadMed','cantidad')">
+            <input class="pos36Uni" type="text" onclick="actualizarTexto(42)" id="unidadMed" list="lista_unidad_medida" hidden onchange="datosProducto('unidadMed','cantidad')">
             <datalist id="lista_unidad_medida">
                 <option value="Actividad">
                 <option value="Unidad activa">
                 <option value="Actual 360">
             </datalist>
 
-            <input class="" type="number" onclick="actualizarTexto(43)" id="cantidad" hidden onchange="datosProducto('cantidad','valorUni')">
-            <input class="" type="number" onclick="actualizarTexto(44)" id="valorUni" hidden onchange="datosProducto('valorUni','importe')">
-            <input class="" type="number" onclick="actualizarTexto(45)" id="importe" readonly="">
-            <input class="" type="number" onclick="actualizarTexto(46)" id="descuento" readonly="">
+            <input class="pos36Can" type="number" onclick="actualizarTexto(43)" id="cantidad" hidden onchange="datosProducto('cantidad','valorUni')">
+            <input class="pos36Val" type="number" onclick="actualizarTexto(44)" id="valorUni" hidden onchange="datosProducto('valorUni','importe')">
+            <input class="pos36Imp" type="number" onclick="actualizarTexto(45)" value="0.00" id="importe" readonly="">
+            <input class="pos36Dcu" type="number" onclick="actualizarTexto(46)" id="descuento" readonly="">
 
-            <input class="" type="text" onclick="actualizarTexto(47)" id="objImpuesto" list="lista_impuesto" hidden onchange="datosProducto('objImpuesto','numeroIden')">
+            <input class="pos36Ito" type="text" onclick="actualizarTexto(47)" id="objImpuesto" list="lista_impuesto" hidden onchange="datosProducto('objImpuesto','numeroIden')">
             <datalist id="lista_impuesto">
                 <option>No objeto de impuesto</option>
                 <option value="Si objeto de impuesto">Si objeto de impuesto</option>
                 <option>No objeto de impuesto y no obligación desglose</option>
             </datalist>
 
-            <input class="" type="text" onclick="actualizarTexto(48)" id="numeroIden" hidden onchange="datosProducto('numeroIden','guardar')">
+            <input class="pos36Ide" type="text" onclick="actualizarTexto(48)" id="numeroIden" hidden onchange="datosProducto('numeroIden','guardar')">
+            
         </form>
     </div>
 
@@ -1107,3 +1109,11 @@ async function mostrar()
     posicion = document.getElementById("paso").value
     document.getElementById("tutorialText").innerHTML = tutorial_text[posicion];
 }
+
+// Boton fondo
+const btnClick = document.querySelector('.pos36Che');
+
+btnClick.addEventListener('click', function onClick() {
+    btnClick.style.backgroundColor = 'salmon';
+    btnClick.style.color = 'white';
+});
