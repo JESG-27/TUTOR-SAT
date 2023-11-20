@@ -2201,7 +2201,7 @@ h2.CFDI {
     width: 265px;
     height: 25px;
     bottom: 1339px;
-    left: 703px;
+    left: 692px;
 }
 
 /* POSICION 34 */
@@ -2443,8 +2443,8 @@ h2.CFDI {
     border: none;
     width: 245px;
     height: 20px;
-    bottom: 1871px;
-    left: 670px;
+    bottom: 2084px;
+    left: 671px;
     padding-left: 10px;
     font-size: 12PX;
     color:#666;
@@ -2466,7 +2466,7 @@ h2.CFDI {
     border: none;
     width: 245px;
     height: 20px;
-    bottom: 1786px;
+    bottom: 1998px;
     left: 112px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2489,7 +2489,7 @@ h2.CFDI {
     border: none;
     width: 245px;
     height: 20px;
-    bottom: 1786px;
+    bottom: 1998px;
     left: 140px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2512,8 +2512,8 @@ h2.CFDI {
     border: none;
     width: 245px;
     height: 20px;
-    bottom: 1734px;
-    right: 565px;
+    bottom: 1945px;
+    left: -636px;
     padding-left: 10px;
     font-size: 12PX;
     color:#666;
@@ -2535,7 +2535,7 @@ h2.CFDI {
     border: none;
     width: 245px;
     height: 20px;
-    bottom: 1756px;
+    bottom: 1967px;
     left: 389px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2558,7 +2558,7 @@ h2.CFDI {
     border: none;
     width: 245px;
     height: 20px;
-    bottom: 1703px;
+    bottom: 1914px;
     left: 140px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2572,6 +2572,234 @@ h2.CFDI {
 .pos36Reg:valid {
     background-color: #fff;
 }
+
+.pos36AFis {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 1997px;
+    left: 172px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos36AFis:focus {
+    outline: none;
+}
+
+.pos36AFis:valid {
+    background-color: #fff;
+}
+
+.pos36Des {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 179px;
+    height: 20px;
+    bottom: 1800px;
+    left: 127px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos36Des:focus {
+    outline: none;
+}
+
+.pos36Des:valid {
+    background-color: #fff;
+}
+
+.pos36Ser {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 179px;
+    height: 20px;
+    bottom: 1800px;
+    left: 145px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos36Ser:focus {
+    outline: none;
+}
+
+.pos36Ser:valid {
+    background-color: #fff;
+}
+
+.pos36Uni {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 179px;
+    height: 20px;
+    bottom: 1800px;
+    left: 165px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos36Uni:focus {
+    outline: none;
+}
+
+.pos36Uni:valid {
+    background-color: #fff;
+}
+
+.pos36Can {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 179px;
+    height: 20px;
+    bottom: 1745px;
+    left: -422px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos36Can:focus {
+    outline: none;
+}
+
+.pos36Can:valid {
+    background-color: #fff;
+}
+
+.pos36Val {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 179px;
+    height: 20px;
+    bottom: 1745px;
+    left: -404px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos36Val:focus {
+    outline: none;
+}
+
+.pos36Val:valid {
+    background-color: #fff;
+}
+
+.pos36Imp {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: #eee;
+    border: none;
+    width: 179px;
+    height: 20px;
+    bottom: 1767px;
+    left: 531px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos36Imp:focus {
+    outline: none;
+}
+
+.pos36Imp:valid {
+    background-color: #eee;
+}
+
+.pos36Dcu {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 179px;
+    height: 20px;
+    bottom: 1768px;
+    left: 550px;
+    padding-left: 10px;
+    font-size: 12PX;
+    background-color: #fff;
+}
+
+.pos36Dcu:focus {
+    outline: none;
+}
+
+.pos36Ito {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background-color: none;
+    border: none;
+    width: 179px;
+    height: 20px;
+    bottom: 1713px;
+    right: 239px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos36Ito:focus {
+    outline: none;
+}
+
+.pos36Ito:valid {
+    background-color: #fff;
+}
+
+.pos36Ide {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 179px;
+    height: 20px;
+    bottom: 1713px;
+    right: 220px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos36Ide:focus {
+    outline: none;
+}
+
+.pos36Ide:valid {
+    background-color: #fff;
+}
+
+
 
 /* Large screens ---------------------------------------------------------------------------------*/
 @media only screen and (min-width : 1920px) {
