@@ -10,9 +10,9 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 # --------------------------------------  Chatbot  --------------------------------------
 @app.route('/')
 def home():
-    return ("Chatbot Server")
+    return render_template('home.html')
 
-@app.route('/predict', methods=['GET','POST'])
+@app.route('/predict', methods=['POST'])
 @cross_origin()
 def predict():
     if request.method == 'POST':
