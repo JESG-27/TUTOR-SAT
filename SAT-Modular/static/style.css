@@ -1563,7 +1563,7 @@ h2.CFDI {
     border: none;
     width: 740px;
     height: 30px;
-    bottom: 327px;
+    bottom: 345px;
     left: 155px;
 }
 
@@ -1576,7 +1576,7 @@ h2.CFDI {
     border: none;
     width: 170px;
     height: 39px;
-    bottom: 70px;
+    bottom: 80px;
     left: 503px;
 }
 
@@ -1591,7 +1591,7 @@ h2.CFDI {
     height: 28px;
     bottom: 851px;
     left: 295px;
-    padding-left: 6px;
+    padding-left: 8px;
 }
 
 .pos4RFC:focus {
@@ -1612,7 +1612,7 @@ h2.CFDI {
     height: 28px;
     bottom: 807px;
     left: -60px;
-    padding-left: 6px;
+    padding-left: 8px;
 }
 
 .pos4Password:focus {
@@ -1634,7 +1634,7 @@ h2.CFDI {
     height: 28px;
     bottom: 655px;
     left: -415px;
-    padding-left: 6px;
+    padding-left: 8px;
 }
 
 .pos4Captcha:focus {
