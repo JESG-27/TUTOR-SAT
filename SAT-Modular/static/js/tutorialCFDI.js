@@ -417,7 +417,7 @@ var nueva_factura_c1 = `
     <img class="captura" src="/static/images/CFDI/Nueva-factura-pt1-c1.png" alt="image">
     <img class="capturaCortaCFDI" src="/static/images/CFDI/Nueva-factura-pt2.png" alt="image">
     <img class="capturaCortaCFDI2" src="/static/images/CFDI/Nueva-factura-pt3.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Nueva-factura-pt4.png" alt="image">
+    <img class="captura" src="/static/images/CFDI/36-P4.png" alt="image">
     
     <div class="facturaglobal">
         <input class="pos35Per" type="text" list="lista_periodicidad" onclick="actualizarTexto(30)" onchange="FacturaGlobal_DatosCliente(1)" id="periodicidad">
@@ -531,31 +531,31 @@ var nueva_factura_c2 = `
         <form>
             <input class="pos36Des" type="text" onclick="actualizarTexto(40)" id="descripcion" onkeyup="this.value = this.value.toUpperCase();" onchange="datosProducto('descripcion','prodServi')">
             
-            <input class="pos36Ser" type="text" onclick="actualizarTexto(41)" id="prodServi" list="lista_producto_servicio" hidden onchange="datosProducto('prodServi','unidadMed')">
+            <input class="pos36Ser" type="text" onclick="actualizarTexto(41)" id="prodServi" list="lista_producto_servicio" onchange="datosProducto('prodServi','unidadMed')">
             <datalist id="lista_producto_servicio">
                 <option value="Público en general">01010101 Público en general</option>
             </datalist>
 
-            <input class="pos36Uni" type="text" onclick="actualizarTexto(42)" id="unidadMed" list="lista_unidad_medida" hidden onchange="datosProducto('unidadMed','cantidad')">
+            <input class="pos36Uni" type="text" onclick="actualizarTexto(42)" id="unidadMed" list="lista_unidad_medida" onchange="datosProducto('unidadMed','cantidad')">
             <datalist id="lista_unidad_medida">
                 <option value="Actividad">
                 <option value="Unidad activa">
                 <option value="Actual 360">
             </datalist>
 
-            <input class="pos36Can" type="number" onclick="actualizarTexto(43)" id="cantidad" hidden onchange="datosProducto('cantidad','valorUni')">
-            <input class="pos36Val" type="number" onclick="actualizarTexto(44)" id="valorUni" hidden onchange="datosProducto('valorUni','importe')">
+            <input class="pos36Can" type="number" onclick="actualizarTexto(43)" id="cantidad" onchange="datosProducto('cantidad','valorUni')">
+            <input class="pos36Val" type="number" onclick="actualizarTexto(44)" id="valorUni" onchange="datosProducto('valorUni','importe')">
             <input class="pos36Imp" type="number" onclick="actualizarTexto(45)" value="0.00" id="importe" readonly="">
             <input class="pos36Dcu" type="number" onclick="actualizarTexto(46)" id="descuento" readonly="">
 
-            <input class="pos36Ito" type="text" onclick="actualizarTexto(47)" id="objImpuesto" list="lista_impuesto" hidden onchange="datosProducto('objImpuesto','numeroIden')">
+            <input class="pos36Ito" type="text" onclick="actualizarTexto(47)" id="objImpuesto" list="lista_impuesto" onchange="datosProducto('objImpuesto','numeroIden')">
             <datalist id="lista_impuesto">
                 <option>No objeto de impuesto</option>
                 <option value="Si objeto de impuesto">Si objeto de impuesto</option>
                 <option>No objeto de impuesto y no obligación desglose</option>
             </datalist>
 
-            <input class="pos36Ide" type="text" onclick="actualizarTexto(48)" id="numeroIden" hidden onchange="datosProducto('numeroIden','guardar')">
+            <input class="pos36Ide" type="text" onclick="actualizarTexto(48)" id="numeroIden" onchange="datosProducto('numeroIden','guardar')">
             
         </form>
     </div>
@@ -1049,25 +1049,25 @@ async function datosProducto(actual, siguiente)
     if (actual == 'descripcion' && inputActual.value == "VENTA")
     {
         inputActual.setAttribute("readonly", "")
-        inputSiguiente.removeAttribute("hidden")
+        document.getElementById("prodServi").style.display="inline-block";
         document.getElementById("tutorialText").innerHTML = "Continua en el campo de Producto o Servicio"
     }
     else if (actual == 'prodServi' && inputActual.value == "Público en general")
     {
         inputActual.setAttribute("readonly", "")
-        inputSiguiente.removeAttribute("hidden")
+        inputSiguiente.style.display="inline-block";
         document.getElementById("tutorialText").innerHTML = "Continua en el campo de Unidad de Medida"
     }
     else if (actual == 'unidadMed' && inputActual.value == "Actividad")
     {
         inputActual.setAttribute("readonly", "")
-        inputSiguiente.removeAttribute("hidden")
+        inputSiguiente.style.display="inline-block";
         document.getElementById("tutorialText").innerHTML = "Continua en el campo de cantidad"
     }
     else if (actual == 'cantidad' && inputActual.value == "1")
     {
         inputActual.setAttribute("readonly", "")
-        inputSiguiente.removeAttribute("hidden")
+        inputSiguiente.style.display="inline-block";
         document.getElementById("tutorialText").innerHTML = "Continua en el campo de valor"
     }
     else if (actual == 'valorUni' && inputActual.value == "1500")
@@ -1075,19 +1075,20 @@ async function datosProducto(actual, siguiente)
         inputActual.setAttribute("readonly", "")
         inputSiguiente.value = "1500"
         document.getElementById("tutorialText").innerHTML = "Continua en el campo de objeto de impuesto"
-        document.getElementById("objImpuesto").removeAttribute("hidden")
+        document.getElementById("importe").style.display="inline-block";
+        document.getElementById("descuento").style.display="inline-block";
+        document.getElementById("objImpuesto").style.display="inline-block";
     }
     else if (actual == 'objImpuesto' && inputActual.value == "Si objeto de impuesto")
     {
         inputActual.setAttribute("readonly", "")
-        inputSiguiente.removeAttribute("hidden")
         document.getElementById("tutorialText").innerHTML = "Continua en el campo de número de identificación"
-        document.getElementById("sugImpuesto").removeAttribute("hidden")
+        document.getElementById("numeroIden").style.display="inline-block";
     }
     else if (actual == 'numeroIden' && inputActual.value == "EJEMPLO01")
     {
         inputActual.setAttribute("readonly", "")
-        // inputSiguiente.removeAttribute("hidden")
+        // inputSiguiente.style.display="inline-block";
         // document.getElementById("tutorialText").innerHTML = "Continua en el campo de número de identificación"
     }
     else
@@ -1110,10 +1111,3 @@ async function mostrar()
     document.getElementById("tutorialText").innerHTML = tutorial_text[posicion];
 }
 
-// Boton fondo
-const btnClick = document.querySelector('.pos36Che');
-
-btnClick.addEventListener('click', function onClick() {
-    btnClick.style.backgroundColor = 'salmon';
-    btnClick.style.color = 'white';
-});
