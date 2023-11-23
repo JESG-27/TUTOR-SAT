@@ -2619,8 +2619,8 @@ h2.CFDI {
     background-color: #fff;
 }
 
-.pos36Ser {
-    display: inline-block;
+#prodServi{
+    display: none;
     position: relative;
     cursor: pointer;
     background: none;
@@ -2632,18 +2632,20 @@ h2.CFDI {
     padding-left: 10px;
     font-size: 12PX;
     color:#666;
+    
 }
 
-.pos36Ser:focus {
+#prodServi:focus {
     outline: none;
 }
 
-.pos36Ser:valid {
+#prodServi:valid {
     background-color: #fff;
 }
 
-.pos36Uni {
-    display: inline-block;
+
+#unidadMed {
+    display: none;
     position: relative;
     cursor: pointer;
     background: none;
@@ -2657,16 +2659,16 @@ h2.CFDI {
     color:#666;
 }
 
-.pos36Uni:focus {
+#unidadMed:focus {
     outline: none;
 }
 
-.pos36Uni:valid {
+#unidadMed:valid {
     background-color: #fff;
 }
 
-.pos36Can {
-    display: inline-block;
+#cantidad {
+    display: none;
     position: relative;
     cursor: pointer;
     background: none;
@@ -2680,16 +2682,16 @@ h2.CFDI {
     color:#666;
 }
 
-.pos36Can:focus {
+#cantidad:focus {
     outline: none;
 }
 
-.pos36Can:valid {
+#cantidad:valid {
     background-color: #fff;
 }
 
-.pos36Val {
-    display: inline-block;
+#valorUni {
+    display: none;
     position: relative;
     cursor: pointer;
     background: none;
@@ -2703,16 +2705,16 @@ h2.CFDI {
     color:#666;
 }
 
-.pos36Val:focus {
+#valorUni:focus {
     outline: none;
 }
 
-.pos36Val:valid {
+#valorUni:valid {
     background-color: #fff;
 }
 
-.pos36Imp {
-    display: inline-block;
+#importe {
+    display: none;
     position: relative;
     cursor: pointer;
     background: #eee;
@@ -2726,16 +2728,16 @@ h2.CFDI {
     color:#666;
 }
 
-.pos36Imp:focus {
+#importe:focus {
     outline: none;
 }
 
-.pos36Imp:valid {
+#importe:valid {
     background-color: #eee;
 }
 
-.pos36Dcu {
-    display: inline-block;
+#descuento {
+    display: none;
     position: relative;
     cursor: pointer;
     background: none;
@@ -2749,12 +2751,16 @@ h2.CFDI {
     background-color: #fff;
 }
 
-.pos36Dcu:focus {
+#descuento:focus {
     outline: none;
 }
 
-.pos36Ito {
-    display: inline-block;
+#descuento:valid {
+    background-color: #fff;
+}
+
+#objImpuesto {
+    display: none;
     position: relative;
     cursor: pointer;
     background-color: none;
@@ -2762,22 +2768,22 @@ h2.CFDI {
     width: 179px;
     height: 20px;
     bottom: 1713px;
-    right: 239px;
+    left: 20px;
     padding-left: 10px;
     font-size: 12PX;
     color:#666;
 }
 
-.pos36Ito:focus {
+#objImpuesto:focus {
     outline: none;
 }
 
-.pos36Ito:valid {
+#objImpuesto:valid {
     background-color: #fff;
 }
 
-.pos36Ide {
-    display: inline-block;
+#numeroIden {
+    display: none;
     position: relative;
     cursor: pointer;
     background: none;
@@ -2785,21 +2791,19 @@ h2.CFDI {
     width: 179px;
     height: 20px;
     bottom: 1713px;
-    right: 220px;
+    left: 220px;
     padding-left: 10px;
     font-size: 12PX;
     color:#666;
 }
 
-.pos36Ide:focus {
+#numeroIden:focus {
     outline: none;
 }
 
-.pos36Ide:valid {
+#numeroIden:valid {
     background-color: #fff;
 }
-
-
 
 /* Large screens ---------------------------------------------------------------------------------*/
 @media only screen and (min-width : 1920px) {
