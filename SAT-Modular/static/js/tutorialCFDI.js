@@ -510,9 +510,9 @@ var nueva_factura_c2 = `
     <img class="captura" src="/static/images/CFDI/Nueva-factura-pt1-c2.png" alt="image">
     <img class="capturaCortaCFDI" src="/static/images/CFDI/Nueva-factura-pt2.png" alt="image">
     <img class="capturaCorta" src="/static/images/CFDI/Nueva-factura-pt3-c1.png" alt="image">
-    <!-- <img class="captura" src="/static/images/CFDI/Nueva-factura-impuestos.png" alt="image" id="sugImpuesto" hidden> -->
+    <img class="captura" src="/static/images/CFDI/Nueva-factura-impuestos.png" alt="image" id="sugImpuesto">
     <img class="capturaCorta" src="/static/images/CFDI/Nueva-factura-pt3-c1-pt2.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Nueva-factura-pt4.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Nueva-factura-pt4.png" alt="image" id="imgfinal">
     <img class="capturaCorta2" src="/static/images/CFDI/Nueva-factura-pt5.png" alt="image">
 
     <div class="facturaglobal">
@@ -556,8 +556,10 @@ var nueva_factura_c2 = `
                 <option>No objeto de impuesto y no obligación desglose</option>
             </datalist>
 
-            <input class="pos36Ide" type="text" onclick="actualizarTexto(48)" id="numeroIden" onchange="datosProducto('numeroIden','guardar')">
-            
+            <input class="pos36Ide" type="text" onclick="actualizarTexto(48)" id="numeroIden" onchange="datosProducto('numeroIden','tasa')">
+            <input class="pos36Iva" type="button" onclick="imagen(1);actualizarTexto(49)" id="tasa">
+            <input class="pos36Gua" type="button" onclick="imagen(2);actualizarTexto(50)" id="save">
+
         </form>
     </div>
 
@@ -813,6 +815,16 @@ var numero_identificacion = `
 En este campo se puede registrar el número de parte, identificador del producto o del servicio, la clave de producto o servicio, SKU (número de referencia) o equivalente, propia de la operación del contribuyente. En este caso ingresa "EJEMPLO01"
 `;
 
+// Posicion 49
+var tasa= `
+Se actualizo a la tasa de iva correspondiente, es hora de guardar los datos
+`;
+
+// Posicion 50
+var guardar= `
+Datos guardados con exito, ahora veras una actualizacion con la venta que agregaste.
+`;
+
 var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor, config_datos_emisor_engrane, config_basica, config_basica_regimen_fiscal, 
     config_basica_c1, config_basica_c2, config_basica_c3, config_basica_c4, config_basica_c5, config_basica_c6, config_basica_c7, config_basica_c8,
     config_basica_pt2_c1, config_basica_pt2_c2, config_basica_pt2_c3, config_basica_pt2_c4, config_basica_pt2_c5, config_basica_pt2_c6, config_basica_pt2_c7, config_basica_pt2_c8, config_basica_pt2_c9, config_basica_c9,
@@ -826,7 +838,7 @@ var tutorial_text = [boton_factura_electronica, boton_servicios_facturacion, bot
                     opcion_avanzada, serie_folio, factura_global, opcion_generar, 
                     nueva_factura_inicio, nueva_factura_global, nueva_factura_global_mes, nueva_factura_global_anio,nueva_factura_global_cliente,
                     nueva_factura_global_razon,nueva_factura_global_uso,nueva_factura_global_correo,nueva_factura_global_codigop, nueva_factura_global_regimen, nueva_factura_global_agregar,
-                    descripcion_producto, producto_servicio, unidad_medida, cantidad, valor_unitario, importe, descuento, objeto_impuesto, numero_identificacion]
+                    descripcion_producto, producto_servicio, unidad_medida, cantidad, valor_unitario, importe, descuento, objeto_impuesto, numero_identificacion,tasa,guardar]
 
 
 // Actualizar textos de tutorial
@@ -1042,6 +1054,7 @@ async function FacturaGlobal_DatosCliente(campo)
 // Validación agregar producto
 async function datosProducto(actual, siguiente)
 {
+    //let img = document.getElementById("sugImpuesto");
     inputActual = document.getElementById(actual)
     inputSiguiente = document.getElementById(siguiente)
 
@@ -1089,14 +1102,33 @@ async function datosProducto(actual, siguiente)
     else if (actual == 'numeroIden' && inputActual.value == "EJEMPLO01")
     {
         inputActual.setAttribute("readonly", "")
-        // inputSiguiente.style.display="inline-block";
-        // document.getElementById("tutorialText").innerHTML = "Continua en el campo de número de identificación"
+        document.getElementById("tutorialText").innerHTML = "Es momento de configurar el IVA a cobrar, da click en el apartado de 'Tasa' debajo de el IVA cobrado"
+        document.getElementById("tasa").style.display="inline-block";
+        
     }
     else
     {
         document.getElementById("tutorialText").innerHTML = "Parece que cometiste un error, a todos nos a pasado. Intenta escribir el valor de nuevo"
     }
 }
+
+//Cambiar imagen de iva cobrado
+async function imagen(value){
+
+    console.log(value)
+    if (value == 1){
+
+        img = document.getElementById("sugImpuesto");
+        img.src = "static/images/CFDI/Impuesto 2.png";
+
+    }else if (value == 2){
+
+        img = document.getElementById("imgfinal");
+        img.src = "static/images/CFDI/Final.png";
+    }
+}
+
+
 
 // Funciones para el desarrollo
 async function mover()

@@ -2619,6 +2619,30 @@ h2.CFDI {
     background-color: #fff;
 }
 
+.pos36Iva{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    bottom: 1600px;
+    left: 136px;
+}
+
+.pos36Gua{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    bottom: 900px;
+    left: 136px;
+}
+
 #prodServi{
     display: none;
     position: relative;
