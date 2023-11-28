@@ -7,7 +7,7 @@ import datetime
 
 flag = True
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-with open('intents.json', 'r') as f:
+with open('intents.json', 'r', encoding='utf-8') as f:
     intents = json.load(f)
 
 FILE = 'data.pth'
@@ -75,7 +75,7 @@ def get_response(msg):
     if prob.item() > 0.85:
         for intent in intents['intents']:
             if tag == intent['tag']:
-               return random.choice(intent['responses'])
+                return random.choice(intent['responses'])
             '''
             if tag == "despedida":
                 break
