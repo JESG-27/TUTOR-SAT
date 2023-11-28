@@ -60,7 +60,7 @@
         "e.firma"
       ],
       "responses": [
-        "La e.firma el conjunto de datos y caracteres que te identifica al realizar trámites y servicios por internet en el SAT, así como en otras Dependencias, Entidades Federativas, Municipios y la iniciativa privada. \nTu e.firma es única, es un archivo seguro y cifrado, que tiene la validez de una firma autógrafa. \nPara tramitarla es en cualquier oficina del SAT que preste el servicio e.firma de Personas Físicas, con previa cita registrada en el Portal del SAT."
+        "La e.firma el conjunto de datos y caracteres que te identifica al realizar trámites y servicios por internet en el SAT, así como en otras Dependencias, Entidades Federativas, Municipios y la iniciativa privada. <br>Tu e.firma es única, es un archivo seguro y cifrado, que tiene la validez de una firma autógrafa. <br>Para tramitarla es en cualquier oficina del SAT que preste el servicio e.firma de Personas Físicas, con previa cita registrada en el Portal del SAT."
       ]
     },
     {
@@ -138,7 +138,7 @@
         "pagina"
       ],
       "responses": [
-        "Este es el portal del SAT: \nhttps://www.sat.gob.mx/home"
+        "Este es el portal del SAT: <br>https://www.sat.gob.mx/home"
       ]
     },
     {
@@ -153,7 +153,7 @@
         "¿Con que ingreso al portal"
       ],
       "responses": [
-        "Hay dos maneras de autenticarse para ingresar al portal. \nOpción 1: Con contraseña, para lo cual se requiere el RFC a 13 posiciones, tu contraseña y capturar el captcha. \nOpción 2: Con firma electrónica (e.firma), para lo cual se requieren los archivos .cer y .key, la contraseña de clave privada y el RFC a 13 posiciones."
+        "Hay dos maneras de autenticarse para ingresar al portal. <br>Opción 1: Con contraseña, para lo cual se requiere el RFC a 13 posiciones, tu contraseña y capturar el captcha. <br>Opción 2: Con firma electrónica (e.firma), para lo cual se requieren los archivos .cer y .key, la contraseña de clave privada y el RFC a 13 posiciones."
       ]
     },
     {
@@ -237,7 +237,7 @@
         "¿Que uso de CDFI utilizo?"
       ],
       "responses": [
-        "Estos son los 5 CFDI más usados: \nG03: Gastos en general \nG01: Adquisición de mercancías \nD01: Honorarios médicos, dentales y gastos hospitalarios \nD07: Pagos por servicios educativos (colegiaturas) \nG02: Devoluciones, descuentos o bonificaciones"
+        "Estos son los 5 CFDI más usados: <br>G03: Gastos en general <br>G01: Adquisición de mercancías <br>D01: Honorarios médicos, dentales y gastos hospitalarios <br>D07: Pagos por servicios educativos (colegiaturas) <br>G02: Devoluciones, descuentos o bonificaciones"
       ]
     },
     {
@@ -251,7 +251,7 @@
         "usos CDFI en Regimen simplificado de confianza"
       ],
       "responses": [
-        "Los uso de CFDI que aplican para el Régimen Simplificado de Confianza son: \nG01:Adquisición de mercancías \nG02:Devoluciones, descuentos o bonificaciones. \nG03: Gastos en general. \nI01:Construcciones. \nI02:Mobiliario y equipo de oficina por inversiones. \nI03: Equipo de transporte \nI04: Equipo de computo y accesorios. \nI05: Dados, troqueles, moldes, matrices y herramental. \nI06: Comunicaciones telefónicas. \nI07: Comunicaciones satelitales. \n I08:Otra maquinaria y equipo. \n S01:Sin efectos fiscales. \n CP01: Pagos"
+        "Los uso de CFDI que aplican para el Régimen Simplificado de Confianza son: <br>G01:Adquisición de mercancías <br>G02:Devoluciones, descuentos o bonificaciones. <br>G03: Gastos en general. <br>I01:Construcciones. <br>I02:Mobiliario y equipo de oficina por inversiones. <br>I03: Equipo de transporte <br>I04: Equipo de computo y accesorios. <br>I05: Dados, troqueles, moldes, matrices y herramental. <br>I06: Comunicaciones telefónicas. <br>I07: Comunicaciones satelitales. <br> I08:Otra maquinaria y equipo. <br> S01:Sin efectos fiscales. <br> CP01: Pagos"
       ]
     },
     {
@@ -288,7 +288,7 @@
         "¿Cuales son las oficionas del SAT"
       ],
       "responses": [
-        "Módulo ADSC Jalisco «1» Guadalajara \nDirección: Avenida de las Américas núm. 833, P.B., entre Florencia y Colomos, Col, Jesús García, 44656, Guadalajara, Jalisco \nHorario: Lunes a Jueves de 08:00 a 16:00 y Viernes de 08:00 a 15:00 hrs. \nTeléfono: 55 6272 2728 \n Módulo ADSC Jalisco «2» Guadalajara Sur \n Dirección: Av. Lázaro Cárdenas núm. 2305, Col. Las Torres, 44920, Guadalajara, Jalisco. \n Planta G  Comercial Abastos. \n Horario: Lunes a Jueves de 08:30 a 16:00 y Viernes de 08:30 a 15:00 hrs. \n Teléfono: 33 3880 9700 \n Módulo ADSC Jalisco «3» Zapopan \n Dirección: Av. Central núm. 735, col. Residencial Pnte., c.p. 45136, Zapopan, Jalisco. \n Horario: Lunes a Jueves de 08:00 a 16:00 y Viernes de 08:30 a 15:00 hrs. \n Teléfono: 33 3836 2000 \n MST Lagos de Moreno \n Dirección: San Modesto #50, Fraccionamiento La Palma, Lagos de Moreno, Jalisco, como referencia se puede señalar a un costado del edificio UNIRSE \n Horario: Lunes a Viernes de 8:30 a 14:30 hrs.\n Teléfono: 55 627 22 728 \nMST Ocotlán\nDirección: Av. Universidad núm. 950, locales del 55 al 58, Plaza San Felipe, entre Ecuador y del Obrero, Col. Centro, 47810, Ocotlán, Jalisco.\nHorario: Lunes a Viernes de 8:30 a 14:30 hrs. \nTeléfono: 55 627 22 728 \n MST Puerto Vallarta \n Dirección: Av. Francisco Villa núm. 1292, p.b., edif. Aralias, entre av. Pavorreal y av. Los Tules, col. Las Aralias, c.p. 48328, Puerto Vallarta, Jalisco. \n Horario: Lunes a Jueves de 08:30 a 16:00 hrs. y Viernes de 8:30 a 15:00 hrs. \n Teléfono: 55 627 22 728 \n MST Tepatitlán \n Dirección: Blvd. Anacleto González Flores, 323 Local B, Plaza Vizcaya, Col. Del Carmen, 47690, Tepatitlán de Morelos, Jalisco. \n Horario: Lunes a Viernes de 8:30 a 14:30 hrs. \n Teléfono: 55 627 22 728"
+        "Módulo ADSC Jalisco «1» Guadalajara <br>Dirección: Avenida de las Américas núm. 833, P.B., entre Florencia y Colomos, Col, Jesús García, 44656, Guadalajara, Jalisco <br>Horario: Lunes a Jueves de 08:00 a 16:00 y Viernes de 08:00 a 15:00 hrs. <br>Teléfono: 55 6272 2728 <br> Módulo ADSC Jalisco «2» Guadalajara Sur <br> Dirección: Av. Lázaro Cárdenas núm. 2305, Col. Las Torres, 44920, Guadalajara, Jalisco. <br> Planta G  Comercial Abastos. <br> Horario: Lunes a Jueves de 08:30 a 16:00 y Viernes de 08:30 a 15:00 hrs. <br> Teléfono: 33 3880 9700 <br> Módulo ADSC Jalisco «3» Zapopan <br> Dirección: Av. Central núm. 735, col. Residencial Pnte., c.p. 45136, Zapopan, Jalisco. <br> Horario: Lunes a Jueves de 08:00 a 16:00 y Viernes de 08:30 a 15:00 hrs. <br> Teléfono: 33 3836 2000 <br> MST Lagos de Moreno <br> Dirección: San Modesto #50, Fraccionamiento La Palma, Lagos de Moreno, Jalisco, como referencia se puede señalar a un costado del edificio UNIRSE <br> Horario: Lunes a Viernes de 8:30 a 14:30 hrs.<br> Teléfono: 55 627 22 728 <br>MST Ocotlán<br>Dirección: Av. Universidad núm. 950, locales del 55 al 58, Plaza San Felipe, entre Ecuador y del Obrero, Col. Centro, 47810, Ocotlán, Jalisco.<br>Horario: Lunes a Viernes de 8:30 a 14:30 hrs. <br>Teléfono: 55 627 22 728 <br> MST Puerto Vallarta <br> Dirección: Av. Francisco Villa núm. 1292, p.b., edif. Aralias, entre av. Pavorreal y av. Los Tules, col. Las Aralias, c.p. 48328, Puerto Vallarta, Jalisco. <br> Horario: Lunes a Jueves de 08:30 a 16:00 hrs. y Viernes de 8:30 a 15:00 hrs. <br> Teléfono: 55 627 22 728 <br> MST Tepatitlán <br> Dirección: Blvd. Anacleto González Flores, 323 Local B, Plaza Vizcaya, Col. Del Carmen, 47690, Tepatitlán de Morelos, Jalisco. <br> Horario: Lunes a Viernes de 8:30 a 14:30 hrs. <br> Teléfono: 55 627 22 728"
       ]
     },
     {
@@ -299,7 +299,56 @@
         "¿Que impuestos se pagan en el SAT?"
       ],
       "responses": [
-        "Los impuestos más importantes son: \nImpuesto Sobre la Renta (ISR) \nImpuesto al Valor Agregado (IVA) \nImpuesto Especial sobre Producción y Servicios (IEPS) \nImpuesto sobre Automóviles Nuevos (ISAN) \nImpuesto Empresarial a Tasa Única (IETU) \nImpuesto a los Depósitos en Efectivo (IDE)"
+        "Los impuestos más importantes son: <br>Impuesto Sobre la Renta (ISR) <br>Impuesto al Valor Agregado (IVA) <br>Impuesto Especial sobre Producción y Servicios (IEPS) <br>Impuesto sobre Automóviles Nuevos (ISAN) <br>Impuesto Empresarial a Tasa Única (IETU) <br>Impuesto a los Depósitos en Efectivo (IDE)"
+      ]
+    },
+    {
+      "tag": "RFC",
+      "patterns": [
+        "¿Que es RFC?",
+        "¿Tengo RFC?",
+        "¿Como tramito mi RFC?"
+      ],
+      "responses": [
+        "El RFC es una clave única alfanumérica compuesta de 13 letras y números para personas físicas y para personas morales es de 12 elementos.<br> Es un documento oficial que identifica a los contribuyentes y permite realizar declaraciones de impuestos y trámites con el Gobierno. Para obtenerlo, se necesita la CURP, la identificación oficial vigente y una cita en las oficinas del SAT. <br>Si quieres obtener tu RFC puedes consultarlo en el siguiente enlace <br> <a href = 'https://www.sat.gob.mx/tramites/28753/obten-tu-rfc-con-la-clave-unica-de-registro-de-poblacion-curp'> Click aquí</a>"
+      ]
+    },
+    {
+      "tag": "emisor",
+      "patterns": [
+        "¿Que es emisor?",
+        "¿Debo de tener un emisor?",
+        "Datos de emisor",
+        "emisor",
+        "Registro de emisor"
+      ],
+      "responses": [
+        "El Emisor de una Factura es el responsable de generar y emitir el comprobante fiscal al momento de realizar una transacción.<br>En este nodo se debe expresar la información del contribuyenteque emite el comprobante fiscal"
+      ]
+    },
+    {
+      "tag": "razonSocial",
+      "patterns": [
+        "¿Que es la razon social?",
+        "¿Cual es mi razon social?",
+        "razon social",
+        "nombre"
+      ],
+      "responses": [
+        "La razon social hace referencia a un concepto que nombra socialmente y fiscalmente un ente comercial. Por lo regular se solicita como Nombre y debes registrar el nombre, denominación o razón social inscrito en el RFC del emisor del comprobante."
+      ]
+    },
+    {
+      "tag": "tipoFactura",
+      "patterns": [
+        "¿Que es el tipo de factura?",
+        "¿Que tipo de factura debo de seleccionar?",
+        "¿Cual es el tipo de comprobante?",
+        "tipo de factura",
+        "tipo de comprobante"
+      ],
+      "responses": [
+        "El tipo de factura o tipo de comprobante hace referencia al tipo de CFDI, existen 4 tipos: <br>Ingreso<br>Se emite siempre que se efectúa una venta, ya que su principal objetivo es demostrar los ingresos de los contribuyentes ante la autoridad fiscal.<br>Egreso<br>Ampara las salidas de dinero de tu empresa como devoluciones, bonos y descuentos y también se pueden emplear para corregir o restar un comprobante de ingresos<br>Traslado<br>Antes conocido como carta de transporte, es un documento donde se encuentran declaradas todas y cada una de las mercancías que van a ser transportadas.<br>Pago<br>Debe emitirse en las operaciones con pagos con parcialidades o cuando al momento de expedir el comprobante fiscal no se recibe el pago"
       ]
     }
   ]
