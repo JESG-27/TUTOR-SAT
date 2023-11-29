@@ -138,7 +138,7 @@
         "pagina"
       ],
       "responses": [
-        "Este es el portal del SAT: <br>https://www.sat.gob.mx/home"
+        "Este es el portal del SAT: <br><a href='https://www.sat.gob.mx/home'>Click aquí</a>"
       ]
     },
     {
@@ -288,7 +288,7 @@
         "¿Cuales son las oficionas del SAT"
       ],
       "responses": [
-        "Módulo ADSC Jalisco «1» Guadalajara <br>Dirección: Avenida de las Américas núm. 833, P.B., entre Florencia y Colomos, Col, Jesús García, 44656, Guadalajara, Jalisco <br>Horario: Lunes a Jueves de 08:00 a 16:00 y Viernes de 08:00 a 15:00 hrs. <br>Teléfono: 55 6272 2728 <br> Módulo ADSC Jalisco «2» Guadalajara Sur <br> Dirección: Av. Lázaro Cárdenas núm. 2305, Col. Las Torres, 44920, Guadalajara, Jalisco. <br> Planta G  Comercial Abastos. <br> Horario: Lunes a Jueves de 08:30 a 16:00 y Viernes de 08:30 a 15:00 hrs. <br> Teléfono: 33 3880 9700 <br> Módulo ADSC Jalisco «3» Zapopan <br> Dirección: Av. Central núm. 735, col. Residencial Pnte., c.p. 45136, Zapopan, Jalisco. <br> Horario: Lunes a Jueves de 08:00 a 16:00 y Viernes de 08:30 a 15:00 hrs. <br> Teléfono: 33 3836 2000 <br> MST Lagos de Moreno <br> Dirección: San Modesto #50, Fraccionamiento La Palma, Lagos de Moreno, Jalisco, como referencia se puede señalar a un costado del edificio UNIRSE <br> Horario: Lunes a Viernes de 8:30 a 14:30 hrs.<br> Teléfono: 55 627 22 728 <br>MST Ocotlán<br>Dirección: Av. Universidad núm. 950, locales del 55 al 58, Plaza San Felipe, entre Ecuador y del Obrero, Col. Centro, 47810, Ocotlán, Jalisco.<br>Horario: Lunes a Viernes de 8:30 a 14:30 hrs. <br>Teléfono: 55 627 22 728 <br> MST Puerto Vallarta <br> Dirección: Av. Francisco Villa núm. 1292, p.b., edif. Aralias, entre av. Pavorreal y av. Los Tules, col. Las Aralias, c.p. 48328, Puerto Vallarta, Jalisco. <br> Horario: Lunes a Jueves de 08:30 a 16:00 hrs. y Viernes de 8:30 a 15:00 hrs. <br> Teléfono: 55 627 22 728 <br> MST Tepatitlán <br> Dirección: Blvd. Anacleto González Flores, 323 Local B, Plaza Vizcaya, Col. Del Carmen, 47690, Tepatitlán de Morelos, Jalisco. <br> Horario: Lunes a Viernes de 8:30 a 14:30 hrs. <br> Teléfono: 55 627 22 728"
+        "Existen diversas oficinas a las que puedes acudir, todo depende de tu ubicación. Puedes consultar la más cercana en el siguiente link <a href = 'https://www.sat.gob.mx/empresas/directorio-nacional-de-modulos-de-servicios-tributarios'>Click aquí</a>"
       ]
     },
     {
