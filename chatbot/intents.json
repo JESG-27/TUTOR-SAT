@@ -350,6 +350,60 @@
       "responses": [
         "El tipo de factura o tipo de comprobante hace referencia al tipo de CFDI, existen 4 tipos: <br>Ingreso<br>Se emite siempre que se efectúa una venta, ya que su principal objetivo es demostrar los ingresos de los contribuyentes ante la autoridad fiscal.<br>Egreso<br>Ampara las salidas de dinero de tu empresa como devoluciones, bonos y descuentos y también se pueden emplear para corregir o restar un comprobante de ingresos<br>Traslado<br>Antes conocido como carta de transporte, es un documento donde se encuentran declaradas todas y cada una de las mercancías que van a ser transportadas.<br>Pago<br>Debe emitirse en las operaciones con pagos con parcialidades o cuando al momento de expedir el comprobante fiscal no se recibe el pago"
       ]
+    },
+    {
+      "tag": "moneda",
+      "patterns": [
+        "¿Que es el tipo de moneda?",
+        "¿Que moneda debo seleccionar?",
+        "¿Cual es el tipo de moneda mas utilizado?",
+        "moneda",
+        "tipo de moneda"
+      ],
+      "responses": [
+        "La moneda es utilizada para expresar los montos, cuando se usa moneda nacional se registra MXN, conforme con la especificación ISO 4217."
+      ]
+    },
+    {
+      "tag": "pagoSolaExhibicion",
+      "patterns": [
+        "¿Que es un pago de una sola exhibicion?",
+        "¿Por que se selecciona el pago de una sola exhibicion?",
+        "¿Cual es la clave de pago en una sola exhibicion?",
+        "¿Que significa PUE?",
+        "pago sola exhibicion",
+        "PUE"
+      ],
+      "responses": [
+        "En el método de pago se debe registrar la clave que corresponda depende si se paga en una sola exhibición o en parcialidades <br>Se debe registrar la clave PUE (Pago en una sola exhibición), cuando se realice dicho pago al momento de emitir el comprobante."
+      ]
+    },
+    {
+      "tag": "generarFacturas",
+      "patterns": [
+        "¿Cuantas facturas puedo generar?",
+        "¿Puedo generar más de una factura?",
+        "¿Cual es la cantidad minima de facturas?",
+        "numero de facturas",
+        "cuantas facturas",
+        "más facturas"
+      ],
+      "responses": [
+        "Cuando preguntas sobre cuantas facturas puedes generar te refieres a la periodicidad de la factura, puedes generar una factura como mínimo o varias al mes y no hay límite de importe"
+      ]
+    },
+    {
+      "tag": "publicoGeneral",
+      "patterns": [
+        "¿Que es el publico general?",
+        "¿Quien es el publico general?",
+        "¿Cual es la clave de publico general?",
+        "publico general",
+        "clave publico general"
+      ],
+      "responses": [
+        "La factura al público en general engloba operaciones realizadas en un determinado periodo de tiempo, cuando se te solicita en el apartado cliente se ingresa al cliente XAXX010101000 que corresponde a la clave de público en general."
+      ]
     }
   ]
 }
