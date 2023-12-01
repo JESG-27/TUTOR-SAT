@@ -280,12 +280,11 @@
     {
       "tag": "oficinas",
       "patterns": [
-        "",
         "¿En donde se situan las oficinas del sat?",
         "Oficinas del SAT",
         "Oficinas de hacienda",
         "¿A donde puedo ir para aclaraciones?",
-        "¿Cuales son las oficionas del SAT"
+        "¿Cuales son las oficionas del SAT?"
       ],
       "responses": [
         "Existen diversas oficinas a las que puedes acudir, todo depende de tu ubicación. Puedes consultar la más cercana en el siguiente link <a href = 'https://www.sat.gob.mx/empresas/directorio-nacional-de-modulos-de-servicios-tributarios'>Click aquí</a>"
