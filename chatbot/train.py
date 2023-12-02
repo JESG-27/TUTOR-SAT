@@ -42,10 +42,10 @@ y_train =  np.array(y_train)
 
 # Hyper-parameters 
 num_epochs = 1000
-batch_size = 8
+batch_size = 20
 learning_rate = 0.001
 input_size = len(X_train[0])
-hidden_size = 8
+hidden_size = int(input_size * 1.25)
 output_size = len(tags)
 
 class ChatDataset(Dataset):
