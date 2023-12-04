@@ -2443,7 +2443,7 @@ h2.CFDI {
     border: none;
     width: 245px;
     height: 20px;
-    bottom: 2084px;
+    bottom: 2216px;
     left: 671px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2466,7 +2466,7 @@ h2.CFDI {
     border: none;
     width: 245px;
     height: 20px;
-    bottom: 1998px;
+    bottom: 2128px;
     left: 112px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2489,8 +2489,8 @@ h2.CFDI {
     border: none;
     width: 245px;
     height: 20px;
-    bottom: 1998px;
-    left: 140px;
+    bottom: 2128px;
+    left: 142px;
     padding-left: 10px;
     font-size: 12PX;
     color:#666;
@@ -2512,7 +2512,7 @@ h2.CFDI {
     border: none;
     width: 245px;
     height: 20px;
-    bottom: 1945px;
+    bottom: 2077px;
     left: -636px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2535,8 +2535,8 @@ h2.CFDI {
     border: none;
     width: 245px;
     height: 20px;
-    bottom: 1967px;
-    left: 389px;
+    bottom: 2099px;
+    left: 391px;
     padding-left: 10px;
     font-size: 12PX;
     color:#666;
@@ -2558,8 +2558,8 @@ h2.CFDI {
     border: none;
     width: 245px;
     height: 20px;
-    bottom: 1914px;
-    left: 140px;
+    bottom: 2047px;
+    left: 141px;
     padding-left: 10px;
     font-size: 12PX;
     color:#666;
@@ -2581,8 +2581,8 @@ h2.CFDI {
     border: none;
     width: 245px;
     height: 20px;
-    bottom: 1997px;
-    left: 172px;
+    bottom: 2130px;
+    left: 173px;
     padding-left: 10px;
     font-size: 12PX;
     color:#666;
@@ -2604,7 +2604,7 @@ h2.CFDI {
     border: none;
     width: 179px;
     height: 20px;
-    bottom: 1800px;
+    bottom: 1932px;
     left: 127px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2651,7 +2651,7 @@ h2.CFDI {
     border: none;
     width: 179px;
     height: 20px;
-    bottom: 1800px;
+    bottom: 1932px;
     left: 145px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2676,7 +2676,7 @@ h2.CFDI {
     border: none;
     width: 179px;
     height: 20px;
-    bottom: 1800px;
+    bottom: 1932px;
     left: 165px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2699,7 +2699,7 @@ h2.CFDI {
     border: none;
     width: 179px;
     height: 20px;
-    bottom: 1745px;
+    bottom: 1878px;
     left: -422px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2722,7 +2722,7 @@ h2.CFDI {
     border: none;
     width: 179px;
     height: 20px;
-    bottom: 1745px;
+    bottom: 1878px;
     left: -404px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2745,8 +2745,8 @@ h2.CFDI {
     border: none;
     width: 179px;
     height: 20px;
-    bottom: 1767px;
-    left: 531px;
+    bottom: 1899px;
+    left: 532px;
     padding-left: 10px;
     font-size: 12PX;
     color:#666;
@@ -2768,7 +2768,7 @@ h2.CFDI {
     border: none;
     width: 179px;
     height: 20px;
-    bottom: 1768px;
+    bottom: 1899px;
     left: 550px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2791,8 +2791,8 @@ h2.CFDI {
     border: none;
     width: 179px;
     height: 20px;
-    bottom: 1713px;
-    left: 20px;
+    bottom: 1846px;
+    right: 239px;
     padding-left: 10px;
     font-size: 12PX;
     color:#666;
@@ -2814,8 +2814,8 @@ h2.CFDI {
     border: none;
     width: 179px;
     height: 20px;
-    bottom: 1713px;
-    left: 220px;
+    bottom: 1866px;
+    right:  220px;
     padding-left: 10px;
     font-size: 12PX;
     color:#666;
@@ -2827,6 +2827,30 @@ h2.CFDI {
 
 #numeroIden:valid {
     background-color: #fff;
+}
+
+#tasa {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 10px;
+    height: 10px;
+    bottom: 1681px;
+    right: 567px;
+}
+
+#save {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 75px;
+    height: 36px;
+    bottom: 929px;
+    right: 636px;
 }
 
 /* Large screens ---------------------------------------------------------------------------------*/
