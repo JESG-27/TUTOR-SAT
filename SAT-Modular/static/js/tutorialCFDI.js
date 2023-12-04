@@ -532,7 +532,7 @@ var nueva_factura_c2 = `
         <form>
             <input class="pos36Des" type="text" onclick="actualizarTexto(40)" id="descripcion" onkeyup="this.value = this.value.toUpperCase();" onchange="datosProducto('descripcion','prodServi')">
             
-            <input class="pos36Ser" type="text" onclick="actualizarTexto(41)" id="prodServi" list="lista_producto_servicio" onchange="datosProducto('prodServi','unidadMed')">
+            <input class="" type="text" onclick="actualizarTexto(41)" id="prodServi" list="lista_producto_servicio" onchange="datosProducto('prodServi','unidadMed')">
             <datalist id="lista_producto_servicio">
                 <option value="Público en general">01010101 Público en general</option>
             </datalist>
@@ -544,21 +544,21 @@ var nueva_factura_c2 = `
                 <option value="Actual 360">
             </datalist>
 
-            <input class="pos36Can" type="number" onclick="actualizarTexto(43)" id="cantidad" onchange="datosProducto('cantidad','valorUni')">
-            <input class="pos36Val" type="number" onclick="actualizarTexto(44)" id="valorUni" onchange="datosProducto('valorUni','importe')">
-            <input class="pos36Imp" type="number" onclick="actualizarTexto(45)" value="0.00" id="importe" readonly="">
-            <input class="pos36Dcu" type="number" onclick="actualizarTexto(46)" id="descuento" readonly="">
+            <input class="" type="number" onclick="actualizarTexto(43)" id="cantidad" onchange="datosProducto('cantidad','valorUni')">
+            <input class="" type="number" onclick="actualizarTexto(44)" id="valorUni" onchange="datosProducto('valorUni','importe')">
+            <input class="" type="number" onclick="actualizarTexto(45)" value="0.00" id="importe" readonly="">
+            <input class="" type="number" onclick="actualizarTexto(46)" id="descuento" readonly="">
 
-            <input class="pos36Ito" type="text" onclick="actualizarTexto(47)" id="objImpuesto" list="lista_impuesto" onchange="datosProducto('objImpuesto','numeroIden')">
+            <input class="" type="text" onclick="actualizarTexto(47)" id="objImpuesto" list="lista_impuesto" onchange="datosProducto('objImpuesto','numeroIden')">
             <datalist id="lista_impuesto">
                 <option>No objeto de impuesto</option>
                 <option value="Si objeto de impuesto">Si objeto de impuesto</option>
                 <option>No objeto de impuesto y no obligación desglose</option>
             </datalist>
 
-            <input class="pos36Ide" type="text" onclick="actualizarTexto(48)" id="numeroIden" onchange="datosProducto('numeroIden','tasa')">
-            <input class="pos36Iva" type="button" onclick="imagen(1);actualizarTexto(49)" id="tasa">
-            <input class="pos36Gua" type="button" onclick="imagen(2);actualizarTexto(50)" id="save">
+            <input class="" type="text" onclick="actualizarTexto(48)" id="numeroIden" onchange="datosProducto('numeroIden','tasa')">
+            <input class="" type="button" onclick="imagen(1);actualizarTexto(49)" id="tasa">
+            <input class="" type="button" onclick="imagen(2);actualizarTexto(50)" id="save">
 
         </form>
     </div>
@@ -1098,12 +1098,16 @@ async function datosProducto(actual, siguiente)
         inputActual.setAttribute("readonly", "")
         document.getElementById("tutorialText").innerHTML = "Continua en el campo de número de identificación"
         document.getElementById("numeroIden").style.display="inline-block";
+        document.getElementById("importe").style.bottom = "1919px";
+        document.getElementById("descuento").style.bottom = "1919px";
+        document.getElementById("objImpuesto").style.bottom = "1866px";
+        document.getElementById("tasa").style.display="inline-block";
+        document.getElementById("save").style.display="inline-block";
     }
     else if (actual == 'numeroIden' && inputActual.value == "EJEMPLO01")
     {
         inputActual.setAttribute("readonly", "")
         document.getElementById("tutorialText").innerHTML = "Es momento de configurar el IVA a cobrar, da click en el apartado de 'Tasa' debajo de el IVA cobrado"
-        document.getElementById("tasa").style.display="inline-block";
         
     }
     else
