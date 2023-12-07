@@ -2619,19 +2619,7 @@ h2.CFDI {
     background-color: #fff;
 }
 
-.pos36Iva{
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    background: none;
-    border: none;
-    width: 30px;
-    height: 30px;
-    bottom: 1600px;
-    left: 136px;
-}
-
-.pos36Gua{
+.pos37sellar{
     display: inline-block;
     position: relative;
     cursor: pointer;
@@ -2640,7 +2628,7 @@ h2.CFDI {
     width: 30px;
     height: 30px;
     bottom: 900px;
-    left: 136px;
+    left: 400px;
 }
 
 #prodServi{
@@ -2853,6 +2841,146 @@ h2.CFDI {
     right: 636px;
 }
 
+#key {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    bottom: 900px;
+    left: 400px;
+}
+
+#fiel {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    bottom: 900px;
+    left: 400px;
+}
+
+#abrir {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    bottom: 900px;
+    left: 400px;
+}
+
+#cer {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    bottom: 900px;
+    left: 400px;
+}
+
+#fiel2 {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    bottom: 900px;
+    left: 400px;
+}
+
+#abrir2 {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    bottom: 900px;
+    left: 400px;
+}
+
+#clave {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 280px;
+    height: 28px;
+    bottom: 691px;
+    left: 100px;
+    text-align: center;
+}
+
+#conf {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    bottom: 900px;
+    left: 400px;
+}
+
+#fir {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    bottom: 900px;
+    left: 400px;
+}
+
+#desc {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    bottom: 900px;
+    left: 400px;
+}
+
+#vista {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    bottom: 900px;
+    left: 400px;
+}
+
+/* #numeroIden:focus {
+    outline: none;
+}
+
+#numeroIden:valid {
+    background-color: #fff;
+} */
 /* Large screens ---------------------------------------------------------------------------------*/
 @media only screen and (min-width : 1920px) {
     .tuto-window {

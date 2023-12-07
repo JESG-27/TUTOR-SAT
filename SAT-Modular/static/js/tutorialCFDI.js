@@ -557,8 +557,8 @@ var nueva_factura_c2 = `
             </datalist>
 
             <input class="" type="text" onclick="actualizarTexto(48)" id="numeroIden" onchange="datosProducto('numeroIden','tasa')">
-            <input class="" type="button" onclick="imagen(1);actualizarTexto(49)" id="tasa">
-            <input class="" type="button" onclick="imagen(2);actualizarTexto(50)" id="save">
+            <input class="" type="button" onclick="imagen('sugImpuesto','static/images/CFDI/Impuesto 2.png');actualizarTexto(49)" id="tasa">
+            <input class="" type="button" onclick="siguiente();actualizarTexto(50)" id="save">
 
         </form>
     </div>
@@ -566,6 +566,66 @@ var nueva_factura_c2 = `
 </div>
 
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(30)">
+`;
+
+var nueva_factura_c3 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Nueva-factura-pt1-c2.png" alt="image">
+    <img class="capturaCortaCFDI" src="/static/images/CFDI/Nueva-factura-pt2.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Final.png" alt="image"3>
+    <img class="capturaCorta2" src="/static/images/CFDI/Nueva-factura-pt5.png" alt="image">
+
+    <div class="facturaglobal">
+        <input type="text" class="pos36Anio" onclick="actualizarTexto(32)" id="anio" readonly="" value="2023">
+    </div>
+
+    <div class="datoscliente">
+        <input class="pos36RFC"  type="text" onclick="actualizarTexto(33)" id="clienteF" readonly="" value="XAXX010101000">
+        <input class="pos36Pub"  type="text" onclick="actualizarTexto(34)" id="razonsocial" readonly="" value="PUBLICO EN GENERAL">
+        <input class="pos36AFis" type="text" onclick="actualizarTexto(35)" id="usofactura" readonly="" value="Sin efectos fiscales.">
+        <input class="pos36Cor" type="email" onclick="actualizarTexto(36)" id="correo" readonly="" value="cliente@mail.com">
+        <input class="pos36Cod" type="text" onclick="actualizarTexto(37)" id="codigop" readonly="" value="59699">
+        <input class="pos36Reg" type="text" onclick="actualizarTexto(38)" id="regimenfiscal" readonly="" value="Sin obligaciones fiscales">
+    </div>
+
+    <input class="pos37sellar" type="button" onclick="siguiente();actualizarTexto(51)" value="SELLAR">
+
+</div>
+
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(31)">
+`;
+
+var nueva_factura_c4 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/Factura.png" alt="image" id="firma">
+    <img class="capturaCorta2" src="/static/images/CFDI/FacturaFinalAbajo.png" alt="image">
+
+    
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura2.png');factura('key','fiel');actualizarTexto(52)" id="key" value="busc">
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura3.png');factura('fiel','abrir');actualizarTexto(52)" id="fiel" value="fiel">
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura4.png');factura('abrir','cer');actualizarTexto(52)" id="abrir" value="abrir" >
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura5.png');factura('cer','fiel2');actualizarTexto(52)" id="cer" value="cer">
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura6.png');factura('fiel2','abrir2');actualizarTexto(52)" id="fiel2" value="fiel2" >
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura7.png');factura('abrir2','clave');actualizarTexto(52)" id="abrir2" value="abrir2" >
+    <input class="" type="password" onclick="actualizarTexto(48);" id="clave">
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura8.png');factura('conf','clave');actualizarTexto(52)" id="conf">
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/FacturaFinal.png');factura('fir','desc');actualizarTexto(52)" id="fir">
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/FacturaFinal2.png');factura('desc','');actualizarTexto(52)" id="desc">
+    <input class="" type="button" onclick="siguiente();actualizarTexto(52)" id="vista">
+   
+
+</div>
+
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(32)">
+`;
+
+var nueva_factura_c5 = `
+<div class="tuto-window">
+    <img class="captura" src="/static/images/CFDI/FacturaVistazo.png" alt="image">
+    
+</div>
+
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(32)">
 `;
 
 
@@ -822,14 +882,19 @@ Se actualizo a la tasa de iva correspondiente, es hora de guardar los datos
 
 // Posicion 50
 var guardar= `
-Datos guardados con exito, ahora veras una actualizacion con la venta que agregaste.
+Datos guardados con exito, es hora de sellar la factura.
+`;
+
+// Posicion 51
+var sellar= `
+Una vez dado click en sellar 
 `;
 
 var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor, config_datos_emisor_engrane, config_basica, config_basica_regimen_fiscal, 
     config_basica_c1, config_basica_c2, config_basica_c3, config_basica_c4, config_basica_c5, config_basica_c6, config_basica_c7, config_basica_c8,
     config_basica_pt2_c1, config_basica_pt2_c2, config_basica_pt2_c3, config_basica_pt2_c4, config_basica_pt2_c5, config_basica_pt2_c6, config_basica_pt2_c7, config_basica_pt2_c8, config_basica_pt2_c9, config_basica_c9,
     config_avanzada, config_avanzada_c1, config_avanzada_c2, config_avanzada_c3, config_avanzada_c4, 
-    nueva_factura, nueva_factura_c1, nueva_factura_c2]
+    nueva_factura, nueva_factura_c1, nueva_factura_c2,nueva_factura_c3,nueva_factura_c4,nueva_factura_c5]
 
 var tutorial_text = [boton_factura_electronica, boton_servicios_facturacion, boton_facturacion_cuentas, boton_ejecutar_linea, login,
                     RFC_login, contrasena_login, captcha_login, datos_incorrectos,
@@ -838,7 +903,7 @@ var tutorial_text = [boton_factura_electronica, boton_servicios_facturacion, bot
                     opcion_avanzada, serie_folio, factura_global, opcion_generar, 
                     nueva_factura_inicio, nueva_factura_global, nueva_factura_global_mes, nueva_factura_global_anio,nueva_factura_global_cliente,
                     nueva_factura_global_razon,nueva_factura_global_uso,nueva_factura_global_correo,nueva_factura_global_codigop, nueva_factura_global_regimen, nueva_factura_global_agregar,
-                    descripcion_producto, producto_servicio, unidad_medida, cantidad, valor_unitario, importe, descuento, objeto_impuesto, numero_identificacion,tasa,guardar]
+                    descripcion_producto, producto_servicio, unidad_medida, cantidad, valor_unitario, importe, descuento, objeto_impuesto, numero_identificacion,tasa,guardar,sellar]
 
 
 // Actualizar textos de tutorial
@@ -1054,7 +1119,6 @@ async function FacturaGlobal_DatosCliente(campo)
 // Validación agregar producto
 async function datosProducto(actual, siguiente)
 {
-    //let img = document.getElementById("sugImpuesto");
     inputActual = document.getElementById(actual)
     inputSiguiente = document.getElementById(siguiente)
 
@@ -1116,23 +1180,84 @@ async function datosProducto(actual, siguiente)
     }
 }
 
-//Cambiar imagen de iva cobrado
-async function imagen(value){
+// botones de factura
+async function factura(actual, siguiente)
+{
+    inputActual = document.getElementById(actual)
+    inputSiguiente = document.getElementById(siguiente)
 
-    console.log(value)
-    if (value == 1){
+    console.log(inputActual.value)
+    console.log("Funcion entro")
+    if (actual == 'key')
+    {
+        console.log("Aqui tambien entro")
+        document.getElementById("key").style.display="none";
+        document.getElementById("fiel").style.display="inline-block";
+        document.getElementById("tutorialText").innerHTML = "Ahora da click en el archivo 10"
+    }else if (actual == 'fiel'){
 
-        img = document.getElementById("sugImpuesto");
-        img.src = "static/images/CFDI/Impuesto 2.png";
+        console.log("Aqui tambien entro 2")
+        document.getElementById("fiel").style.display="none";
+        document.getElementById("abrir").style.display="inline-block";
+        document.getElementById("tutorialText").innerHTML = "Ahora da click en el archivo 11"
+   
+    }else if (actual == 'abrir'){
 
-    }else if (value == 2){
+        console.log("Aqui tambien entro 3")
+        document.getElementById("abrir").style.display="none";
+        document.getElementById("cer").style.display="inline-block";
+        document.getElementById("tutorialText").innerHTML = "Ahora da click en el archivo 12"
+    }else if (actual == 'cer'){
 
-        img = document.getElementById("imgfinal");
-        img.src = "static/images/CFDI/Final.png";
+        console.log("Aqui tambien entro 4")
+        document.getElementById("cer").style.display="none";
+        document.getElementById("fiel2").style.display="inline-block";
+        document.getElementById("tutorialText").innerHTML = "Ahora da click en el archivo 13"
+    }else if (actual == 'fiel2'){
+
+        console.log("Aqui tambien entro 5")
+        document.getElementById("fiel2").style.display="none";
+        document.getElementById("abrir2").style.display="inline-block";
+        document.getElementById("tutorialText").innerHTML = "Ahora da click en el archivo 14"
+    }else if (actual == 'abrir2'){
+
+        console.log("Aqui tambien entro 6")
+        document.getElementById("abrir2").style.display="none";
+        document.getElementById("clave").style.display="inline-block";
+        document.getElementById("conf").style.display="inline-block";
+        document.getElementById("tutorialText").innerHTML = "Ahora da click en el archivo 15"
+    }else if (actual == 'conf'){
+
+        console.log("Aqui tambien entro 7")
+        inputSiguiente.setAttribute("readonly", "")
+        document.getElementById("conf").style.display="none";
+        document.getElementById("fir").style.display="inline-block";
+        document.getElementById("tutorialText").innerHTML = "Ahora da click en el archivo 16"
+    }else if (actual == 'fir'){
+
+        console.log("Aqui tambien entro 8")
+        document.getElementById("fir").style.display="none";
+        document.getElementById("clave").style.display="none";
+        document.getElementById("desc").style.display="inline-block";
+        document.getElementById("tutorialText").innerHTML = "Ahora da click en el archivo 17"
+    }else if (actual == 'desc'){
+
+        console.log("Aqui tambien entro 8")
+        document.getElementById("desc").style.display="none";
+        document.getElementById("vista").style.display="inline-block";
+        document.getElementById("tutorialText").innerHTML = "Ahora da click en el archivo 18"
+    }else{
+
+        document.getElementById("tutorialText").innerHTML = "Parece que cometiste un error, a todos nos a pasado. Intenta escribir el valor de nuevo"
     }
+
 }
 
-
+//Cambiar imagen de iva cobrado
+async function imagen(id,nuv){
+    img = document.getElementById(id);
+    img.src = nuv;
+}
 
 // Funciones para el desarrollo
 async function mover()
