@@ -601,17 +601,17 @@ var nueva_factura_c4 = `
     <img class="capturaCorta2" src="/static/images/CFDI/FacturaFinalAbajo.png" alt="image">
 
     
-    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura2.png');factura('key','fiel');actualizarTexto(52)" id="key" value="busc">
-    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura3.png');factura('fiel','abrir');actualizarTexto(52)" id="fiel" value="fiel">
-    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura4.png');factura('abrir','cer');actualizarTexto(52)" id="abrir" value="abrir" >
-    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura5.png');factura('cer','fiel2');actualizarTexto(52)" id="cer" value="cer">
-    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura6.png');factura('fiel2','abrir2');actualizarTexto(52)" id="fiel2" value="fiel2" >
-    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura7.png');factura('abrir2','clave');actualizarTexto(52)" id="abrir2" value="abrir2" >
-    <input class="" type="password" onclick="actualizarTexto(48);" id="clave">
-    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura8.png');factura('conf','clave');actualizarTexto(52)" id="conf">
-    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/FacturaFinal.png');factura('fir','desc');actualizarTexto(52)" id="fir">
-    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/FacturaFinal2.png');factura('desc','');actualizarTexto(52)" id="desc">
-    <input class="" type="button" onclick="siguiente();actualizarTexto(52)" id="vista">
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura2.png');ocultarinput('key');mostrarinput('fiel');actualizarTexto(52)" id="key" value="busc">
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura3.png');ocultarinput('fiel');mostrarinput('abrir');actualizarTexto(53)" id="fiel" value="fiel">
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura4.png');ocultarinput('abrir');mostrarinput('cer');actualizarTexto(54)" id="abrir" value="abrir" >
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura5.png');ocultarinput('cer');mostrarinput('fiel2');actualizarTexto(55)" id="cer" value="cer">
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura6.png');ocultarinput('fiel2');mostrarinput('abrir2');actualizarTexto(56)" id="fiel2" value="fiel2" >
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura7.png');ocultarinput('abrir2');mostrarinput('clave');mostrarinput('conf');actualizarTexto(57)" id="abrir2" value="abrir2" >
+    <input class="" type="password" onclick="actualizarTexto(58)" id="clave">
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura8.png');ocultarinput('conf');mostrarinput('fir');actualizarTexto(59)" id="conf">
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/FacturaFinal.png');ocultarinput('fir');ocultarinput('clave');mostrarinput('desc');actualizarTexto(60)" id="fir">
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/FacturaFinal2.png');ocultarinput('desc');mostrarinput('vista');actualizarTexto(61)" id="desc">
+    <input class="" type="button" onclick="siguiente();actualizarTexto(62)" id="vista">
    
 
 </div>
@@ -877,7 +877,7 @@ En este campo se puede registrar el número de parte, identificador del producto
 
 // Posicion 49
 var tasa= `
-Se actualizo a la tasa de iva correspondiente, es hora de guardar los datos
+Finalmente da clic en el botón Guardar para que sea cargado el producto, verifica en el recuadro Totales el importe final de tu factura si está correcto.
 `;
 
 // Posicion 50
@@ -887,7 +887,62 @@ Datos guardados con exito, es hora de sellar la factura.
 
 // Posicion 51
 var sellar= `
-Una vez dado click en sellar 
+Una vez dado click en sellar, es hora de firmar el comprobante. Ve al apartado de buscar la clave privada. 
+`;
+
+// Posicion 52
+var key= `
+Selecciona la clave privada
+`;
+
+// Posicion 53
+var fiel= `
+Ahora presiona abrir para asignarlo al campo.
+`;
+
+// Posicion 54
+var abrir= `
+Seguimos con el certificado, presiona buscar.
+`;
+
+// Posicion 55
+var cer= `
+Selecciona el certificado.
+`;
+
+// Posicion 56
+var fiel2= `
+Ahora presiona abrir para asignarlo al campo.
+`;
+
+// Posicion 57
+var abrir2= `
+Ahora coloca tu contraseña de clave privada.
+`;
+
+// Posicion 58
+var pass= `
+Aqui colocaras la contraseña otorgada xxxxxxxxx, una vez colocada es presionar el boton confirmar. 
+`;
+
+// Posicion 59
+var conf= `
+Una vez confirmado presiona firmar.
+`;
+
+// Posicion 60
+var fir= `
+En el apartado de acciones descarga tu factura final.
+`;
+
+// Posicion 61
+var desc= `
+Abre el archivo PDF que aparece en el apartado de descargas.
+`;
+
+// Posicion 62
+var pdf= `
+Este documento es el que te generar a la hora de sellar, este es el comprobante. 
 `;
 
 var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor, config_datos_emisor_engrane, config_basica, config_basica_regimen_fiscal, 
@@ -903,7 +958,8 @@ var tutorial_text = [boton_factura_electronica, boton_servicios_facturacion, bot
                     opcion_avanzada, serie_folio, factura_global, opcion_generar, 
                     nueva_factura_inicio, nueva_factura_global, nueva_factura_global_mes, nueva_factura_global_anio,nueva_factura_global_cliente,
                     nueva_factura_global_razon,nueva_factura_global_uso,nueva_factura_global_correo,nueva_factura_global_codigop, nueva_factura_global_regimen, nueva_factura_global_agregar,
-                    descripcion_producto, producto_servicio, unidad_medida, cantidad, valor_unitario, importe, descuento, objeto_impuesto, numero_identificacion,tasa,guardar,sellar]
+                    descripcion_producto, producto_servicio, unidad_medida, cantidad, valor_unitario, importe, descuento, objeto_impuesto, numero_identificacion,tasa,guardar,sellar,
+                    key,fiel,abrir,cer,fiel2,abrir2,pass,conf,fir,desc,pdf]
 
 
 // Actualizar textos de tutorial
@@ -1180,77 +1236,21 @@ async function datosProducto(actual, siguiente)
     }
 }
 
-// botones de factura
-async function factura(actual, siguiente)
-{
-    inputActual = document.getElementById(actual)
-    inputSiguiente = document.getElementById(siguiente)
+// MOSTRAR INPUT
+async function mostrarinput(id){
 
-    console.log(inputActual.value)
-    console.log("Funcion entro")
-    if (actual == 'key')
-    {
-        console.log("Aqui tambien entro")
-        document.getElementById("key").style.display="none";
-        document.getElementById("fiel").style.display="inline-block";
-        document.getElementById("tutorialText").innerHTML = "Ahora da click en el archivo 10"
-    }else if (actual == 'fiel'){
+    inputActual = document.getElementById(id)
+    inputActual.style.display="inline-block";
 
-        console.log("Aqui tambien entro 2")
-        document.getElementById("fiel").style.display="none";
-        document.getElementById("abrir").style.display="inline-block";
-        document.getElementById("tutorialText").innerHTML = "Ahora da click en el archivo 11"
-   
-    }else if (actual == 'abrir'){
-
-        console.log("Aqui tambien entro 3")
-        document.getElementById("abrir").style.display="none";
-        document.getElementById("cer").style.display="inline-block";
-        document.getElementById("tutorialText").innerHTML = "Ahora da click en el archivo 12"
-    }else if (actual == 'cer'){
-
-        console.log("Aqui tambien entro 4")
-        document.getElementById("cer").style.display="none";
-        document.getElementById("fiel2").style.display="inline-block";
-        document.getElementById("tutorialText").innerHTML = "Ahora da click en el archivo 13"
-    }else if (actual == 'fiel2'){
-
-        console.log("Aqui tambien entro 5")
-        document.getElementById("fiel2").style.display="none";
-        document.getElementById("abrir2").style.display="inline-block";
-        document.getElementById("tutorialText").innerHTML = "Ahora da click en el archivo 14"
-    }else if (actual == 'abrir2'){
-
-        console.log("Aqui tambien entro 6")
-        document.getElementById("abrir2").style.display="none";
-        document.getElementById("clave").style.display="inline-block";
-        document.getElementById("conf").style.display="inline-block";
-        document.getElementById("tutorialText").innerHTML = "Ahora da click en el archivo 15"
-    }else if (actual == 'conf'){
-
-        console.log("Aqui tambien entro 7")
-        inputSiguiente.setAttribute("readonly", "")
-        document.getElementById("conf").style.display="none";
-        document.getElementById("fir").style.display="inline-block";
-        document.getElementById("tutorialText").innerHTML = "Ahora da click en el archivo 16"
-    }else if (actual == 'fir'){
-
-        console.log("Aqui tambien entro 8")
-        document.getElementById("fir").style.display="none";
-        document.getElementById("clave").style.display="none";
-        document.getElementById("desc").style.display="inline-block";
-        document.getElementById("tutorialText").innerHTML = "Ahora da click en el archivo 17"
-    }else if (actual == 'desc'){
-
-        console.log("Aqui tambien entro 8")
-        document.getElementById("desc").style.display="none";
-        document.getElementById("vista").style.display="inline-block";
-        document.getElementById("tutorialText").innerHTML = "Ahora da click en el archivo 18"
-    }else{
-
-        document.getElementById("tutorialText").innerHTML = "Parece que cometiste un error, a todos nos a pasado. Intenta escribir el valor de nuevo"
+    if (id == 'fir'){
+        document.getElementById("clave").setAttribute("readonly", "")
     }
+}
+// OCULTAR INPUT
+async function ocultarinput(id){
 
+    inputActual = document.getElementById(id)
+    inputActual.style.display="none";
 }
 
 //Cambiar imagen de iva cobrado
