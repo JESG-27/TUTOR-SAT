@@ -1039,6 +1039,7 @@ async function val_login(){
     }
 }
 
+// Validar contraseña de clave privada 
 async function contrasenaAviso(){
     contrasena = document.getElementById('contrasena')
 
