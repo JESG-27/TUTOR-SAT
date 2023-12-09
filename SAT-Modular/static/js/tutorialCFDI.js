@@ -50,8 +50,7 @@ var Login1 = `
             <input class="pos4RFC" type="text" placeholder="" required onclick="actualizarTexto(5)" id="RFC" onkeyup="this.value = this.value.toUpperCase();">
             <input class="pos4Password" type="password" placeholder="" required onclick="actualizarTexto(6)" id="contrasena">
             <input class="pos4Captcha" type="text" placeholder="" required onclick="actualizarTexto(7)" id="captcha">
-            <!-- <input class="pos4Enviar" type="button" onclick="val_login()" value="Enviar"> -->
-            <input class="pos4Enviar" type="button" onclick="siguiente(), actualizarTexto(9)" value="">
+            <input class="pos4Enviar" type="button" onclick="val_login()">
         </form>
     </div>    
 </div>
@@ -568,6 +567,7 @@ var nueva_factura_c2 = `
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(30)">
 `;
 
+// Posición 37
 var nueva_factura_c3 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Nueva-factura-pt1-c2.png" alt="image">
@@ -595,6 +595,7 @@ var nueva_factura_c3 = `
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(31)">
 `;
 
+// Posición 38
 var nueva_factura_c4 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Factura.png" alt="image" id="firma">
@@ -619,6 +620,7 @@ var nueva_factura_c4 = `
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(32)">
 `;
 
+// Posición 39
 var nueva_factura_c5 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/FacturaVistazo.png" alt="image">
@@ -652,7 +654,7 @@ Puedes ver información referente a la facturación, para comenzar haz click en 
 
 // Posición 4
 var login = `
-Aquí se realiza el inicio de sesión, como entraste desde "Mis cuentas" no se requiere al e.firma
+Aquí se realiza el inicio de sesión, como entraste desde "Mis cuentas" no se requiere al e.firma en esta parte, aunque si la necesitaras para firmar el aviso de privacidad.
 `;
 
 // Posición 5
@@ -892,42 +894,42 @@ Una vez dado click en sellar, es hora de firmar el comprobante. Ve al apartado d
 
 // Posicion 52
 var key= `
-Selecciona la clave privada
+Selecciona la clave privada, que es el archivo llamado Claveprivada_FIEL_
 `;
 
 // Posicion 53
 var fiel= `
-Ahora presiona abrir para asignarlo al campo.
+Ahora presiona abrir para cargarla en el campo correspondiente.
 `;
 
 // Posicion 54
 var abrir= `
-Seguimos con el certificado, presiona buscar.
+Ahora seguimos con el certificado, presiona buscar en su apartado.
 `;
 
 // Posicion 55
 var cer= `
-Selecciona el certificado.
+De igual forma este archivo se encuentra en tu USB de la e.firma, selecciona el certificado que es el archivo con la nomenclatura .cer.
 `;
 
 // Posicion 56
 var fiel2= `
-Ahora presiona abrir para asignarlo al campo.
+Ahora presiona abrir para que se cargue el certificado en el campo necesario.
 `;
 
 // Posicion 57
 var abrir2= `
-Ahora coloca tu contraseña de clave privada.
+Ahora debes de colocar tu contraseña de clave privada. Para este ejemplo será sat-sim, pero recuerda que tus contraseñas deben de ser fuertes.
 `;
 
 // Posicion 58
 var pass= `
-Aqui colocaras la contraseña otorgada xxxxxxxxx, una vez colocada es presionar el boton confirmar. 
+Aqui colocaras la contraseña otorgada (para este ejemplo: sat-sim). Al final presiona en el botón confirmar.
 `;
 
 // Posicion 59
 var conf= `
-Una vez confirmado presiona firmar.
+Una vez confirmado se necesita de firmar. Presiona el boton Firmar.
 `;
 
 // Posicion 60
@@ -945,6 +947,21 @@ var pdf= `
 Este documento es el que te generar a la hora de sellar, este es el comprobante. 
 `;
 
+// Posicion 63
+var avisoTermCond = `
+Este aviso de Terminos y Condiciones solo se mostrará la primera vez que realices este proceso, leelo con atención y agrega la información correspondiente. El RFC se llena de manera automática y lo primero que debes agregar es tu Clave Privada (.key). Esta debe de estar en la USB donde debes de tener tu e.firma, haz click en "Buscar".
+`;
+
+// Posicion 64
+var carpetaFiel = `
+Desde la USB de tu e.firma ubica la carpeta nombrada FIEL_ y seleccionala.
+`;
+
+// Posicion 65
+var avisoCompleto = `
+Con esto se queda confirmado y firmado tu aviso de Terminos y Condiciones. Esto solo será la primera vez que realices una factura o a menos que los terminos cambien. Presiona en Siguiente.
+`;
+
 var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor, config_datos_emisor_engrane, config_basica, config_basica_regimen_fiscal, 
     config_basica_c1, config_basica_c2, config_basica_c3, config_basica_c4, config_basica_c5, config_basica_c6, config_basica_c7, config_basica_c8,
     config_basica_pt2_c1, config_basica_pt2_c2, config_basica_pt2_c3, config_basica_pt2_c4, config_basica_pt2_c5, config_basica_pt2_c6, config_basica_pt2_c7, config_basica_pt2_c8, config_basica_pt2_c9, config_basica_c9,
@@ -959,7 +976,7 @@ var tutorial_text = [boton_factura_electronica, boton_servicios_facturacion, bot
                     nueva_factura_inicio, nueva_factura_global, nueva_factura_global_mes, nueva_factura_global_anio,nueva_factura_global_cliente,
                     nueva_factura_global_razon,nueva_factura_global_uso,nueva_factura_global_correo,nueva_factura_global_codigop, nueva_factura_global_regimen, nueva_factura_global_agregar,
                     descripcion_producto, producto_servicio, unidad_medida, cantidad, valor_unitario, importe, descuento, objeto_impuesto, numero_identificacion,tasa,guardar,sellar,
-                    key,fiel,abrir,cer,fiel2,abrir2,pass,conf,fir,desc,pdf]
+                    key, fiel, abrir, cer, fiel2, abrir2, pass, conf, fir, desc, pdf, avisoTermCond, carpetaFiel, avisoCompleto]
 
 
 // Actualizar textos de tutorial
@@ -986,11 +1003,31 @@ async function val_login(){
     RFC = document.getElementById("RFC").value
     contrasena = document.getElementById("contrasena").value
     captcha = document.getElementById("captcha").value
-
-    if (RFC == "ABCD123456XXX" && contrasena == "sat-sim" && captcha == "RP6VTL")
+    // RFC == "ABCD123456XXX" && contrasena == "sat-sim" && captcha == "RP6VTL"
+    if (true)
     {
-        siguiente()
-        actualizarTexto(9)
+        document.getElementById("tuto-window").innerHTML = `
+        <div class="tuto-window">
+            <img class="" src="/static/images/CFDI/FirmaEncabezado.png" alt="image">
+            <img class="" src="/static/images/CFDI/Aviso1.png" alt="image">
+            <img class="" src="/static/images/CFDI/Aviso2.png" alt="image">
+            <img class="" src="/static/images/CFDI/Aviso3.png" alt="image" id="aviso3">
+            
+            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma1.png'); ocultarinput('buscarKey'); mostrarinput('Fiel_'); actualizarTexto(64)" id="buscarKey" value="buscar Key">
+            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma2.png'); ocultarinput('Fiel_'); mostrarinput('claveprivada'); actualizarTexto(52)" id="Fiel_" value="Fiel_">
+            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma3.png'); ocultarinput('claveprivada'); mostrarinput('abrir.key'); actualizarTexto(53)" id="claveprivada" value="claveprivada">
+            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma4.png'); ocultarinput('abrir.key'); mostrarinput('buscarCer'); actualizarTexto(54)" id="abrir.key" value="abrir.key" >
+            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma5.png'); ocultarinput('buscarCer'); mostrarinput('.cer'); actualizarTexto(55)" id="buscarCer" value="buscar Cer" >
+            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma6.png'); ocultarinput('.cer'); mostrarinput('abrir.cer'); actualizarTexto(56)" id=".cer" value=".cer" >
+            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma7.png'); ocultarinput('abrir.cer'); mostrarinput('contrasena'); actualizarTexto(57)" id="abrir.cer" value="abrir.cer" >
+            <input class="" type="password" onclick="actualizarTexto(58)" onchange="contrasenaAviso()" id="contrasena">
+            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma8.png'); ocultarinput('confirmar'); mostrarinput('firmarAviso'); actualizarTexto(59)" id="confirmar" value="confirmar">
+            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma9.png'); ocultarinput('firmarAviso'); mostrarinput('TermCondiSiguiente'); actualizarTexto(65)" id="firmarAviso" value="Firmar">
+            <input class="" type="button" onclick="siguiente(); actualizarTexto(9)" id="TermCondiSiguiente" value="Siguiente">
+        </div>
+        <input class="atras" type="button" onclick="anterior(), siguiente(), actualizarTexto(4)">
+        `;
+        actualizarTexto(63)
     }
 
     else
@@ -999,6 +1036,21 @@ async function val_login(){
         document.getElementById("RFC").value = ""
         document.getElementById("contrasena").value = ""
         document.getElementById("captcha").value = ""
+    }
+}
+
+async function contrasenaAviso(){
+    contrasena = document.getElementById('contrasena')
+
+    if (contrasena.value == "sat-sim")
+    {
+        contrasena.setAttribute("readonly", "")
+        mostrarinput('confirmar')
+        document.getElementById("tutorialText").innerHTML = "Perfecto, presiona en Confirmar"
+    }
+    else
+    {
+        document.getElementById("tutorialText").innerHTML = "Parece que cometiste un error, a todos nos a pasado. Intenta escribir la contraseña de nuevo"
     }
 }
 
@@ -1253,8 +1305,8 @@ async function ocultarinput(id){
     inputActual.style.display="none";
 }
 
-//Cambiar imagen de iva cobrado
-async function imagen(id,nuv){
+// Cambiar imagen
+async function imagen(id, nuv){
     img = document.getElementById(id);
     img.src = nuv;
 }
