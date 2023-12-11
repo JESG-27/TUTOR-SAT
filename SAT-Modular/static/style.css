@@ -2619,17 +2619,6 @@ h2.CFDI {
     background-color: #fff;
 }
 
-.pos37sellar{
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    background: none;
-    border: none;
-    width: 30px;
-    height: 30px;
-    bottom: 900px;
-    left: 400px;
-}
 
 #prodServi{
     display: none;
@@ -2847,10 +2836,10 @@ h2.CFDI {
     cursor: pointer;
     background: none;
     border: none;
-    width: 30px;
+    width: 70px;
     height: 30px;
-    bottom: 900px;
-    left: 400px;
+    bottom: 655px;
+    left: 770px;
 }
 
 #fiel {
@@ -2859,10 +2848,10 @@ h2.CFDI {
     cursor: pointer;
     background: none;
     border: none;
-    width: 30px;
-    height: 30px;
-    bottom: 900px;
-    left: 400px;
+    width: 370px;
+    height: 20px;
+    bottom: 841px;
+    left: 150px;
 }
 
 #abrir {
@@ -2871,22 +2860,22 @@ h2.CFDI {
     cursor: pointer;
     background: none;
     border: none;
-    width: 30px;
-    height: 30px;
-    bottom: 900px;
-    left: 400px;
+    width: 76px;
+    height: 23px;
+    bottom: 619px;
+    left: 371px;
 }
 
 #cer {
-    display: none;
+    display: inline-block;
     position: relative;
     cursor: pointer;
     background: none;
     border: none;
-    width: 30px;
+    width: 70px;
     height: 30px;
-    bottom: 900px;
-    left: 400px;
+    bottom: 607px;
+    left: 770px;
 }
 
 #fiel2 {
@@ -2974,14 +2963,185 @@ h2.CFDI {
     left: 400px;
 }
 
-/* #numeroIden:focus {
+/* POSICION 37 */
+.pos37sellar{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 72px;
+    height: 30px;
+    bottom: 615px;
+    left: 250px;
+}
+
+.pos37Anio {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 1077px;
+    left: 671px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos37Anio:focus {
     outline: none;
 }
 
-#numeroIden:valid {
+.pos37Anio:valid {
     background-color: #fff;
-} */
-/* Large screens ---------------------------------------------------------------------------------*/
+}
+
+.pos37RFC {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 991px;
+    left: 112px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos37RFC:focus {
+    outline: none;
+}
+
+.pos37RFC:valid {
+    background-color: #fff;
+}
+
+.pos37Pub {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 991px;
+    left: 142px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos37Pub:focus {
+    outline: none;
+}
+
+.pos37Pub:valid {
+    background-color: #fff;
+} 
+
+.pos37AFis {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 991px;
+    left: 173px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos37AFis:focus {
+    outline: none;
+}
+
+.pos37AFis:valid {
+    background-color: #fff;
+}
+
+.pos37Cor {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 938px;
+    left: -636px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos37Cor:focus {
+    outline: none;
+}
+
+.pos37Cor:valid {
+    background-color: #fff;
+}
+
+.pos37Cod {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 960px;
+    left: 391px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos37Cod:focus {
+    outline: none;
+}
+
+.pos37Cod:valid {
+    background-color: #fff;
+}
+
+.pos37Reg {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 908px;
+    left: 141px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.pos37Reg:focus {
+    outline: none;
+}
+
+.pos37Reg:valid {
+    background-color: #fff;
+}
+
+/* POSICION 38 */
+
+
+
+/* Large screens -----------------------------------------------------------------------------------------------*/
 @media only screen and (min-width : 1920px) {
     .tuto-window {
         height: 900px;
