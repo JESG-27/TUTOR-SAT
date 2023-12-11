@@ -572,23 +572,23 @@ var nueva_factura_c3 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Nueva-factura-pt1-c2.png" alt="image">
     <img class="capturaCortaCFDI" src="/static/images/CFDI/Nueva-factura-pt2.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Final.png" alt="image"3>
+    <img class="capturaCorta3" src="/static/images/CFDI/Final.png" alt="image"3>
     <img class="capturaCorta2" src="/static/images/CFDI/Nueva-factura-pt5.png" alt="image">
 
     <div class="facturaglobal">
-        <input type="text" class="pos36Anio" onclick="actualizarTexto(32)" id="anio" readonly="" value="2023">
+        <input type="text" class="pos37Anio" onclick="actualizarTexto(32)" id="anio" readonly="" value="2023">
     </div>
 
     <div class="datoscliente">
-        <input class="pos36RFC"  type="text" onclick="actualizarTexto(33)" id="clienteF" readonly="" value="XAXX010101000">
-        <input class="pos36Pub"  type="text" onclick="actualizarTexto(34)" id="razonsocial" readonly="" value="PUBLICO EN GENERAL">
-        <input class="pos36AFis" type="text" onclick="actualizarTexto(35)" id="usofactura" readonly="" value="Sin efectos fiscales.">
-        <input class="pos36Cor" type="email" onclick="actualizarTexto(36)" id="correo" readonly="" value="cliente@mail.com">
-        <input class="pos36Cod" type="text" onclick="actualizarTexto(37)" id="codigop" readonly="" value="59699">
-        <input class="pos36Reg" type="text" onclick="actualizarTexto(38)" id="regimenfiscal" readonly="" value="Sin obligaciones fiscales">
+        <input class="pos37RFC"  type="text" onclick="actualizarTexto(33)" id="clienteF" readonly="" value="XAXX010101000">
+        <input class="pos37Pub"  type="text" onclick="actualizarTexto(34)" id="razonsocial" readonly="" value="PUBLICO EN GENERAL">
+        <input class="pos37AFis" type="text" onclick="actualizarTexto(35)" id="usofactura" readonly="" value="Sin efectos fiscales.">
+        <input class="pos37Cor" type="email" onclick="actualizarTexto(36)" id="correo" readonly="" value="cliente@mail.com">
+        <input class="pos37Cod" type="text" onclick="actualizarTexto(37)" id="codigop" readonly="" value="59699">
+        <input class="pos37Reg" type="text" onclick="actualizarTexto(38)" id="regimenfiscal" readonly="" value="Sin obligaciones fiscales">
     </div>
 
-    <input class="pos37sellar" type="button" onclick="siguiente();actualizarTexto(51)" value="SELLAR">
+    <input class="pos37sellar" type="button" onclick="siguiente();actualizarTexto(51)" value="">
 
 </div>
 
@@ -602,12 +602,12 @@ var nueva_factura_c4 = `
     <img class="capturaCorta2" src="/static/images/CFDI/FacturaFinalAbajo.png" alt="image">
 
     
-    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura2.png');ocultarinput('key');mostrarinput('fiel');actualizarTexto(52)" id="key" value="busc">
-    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura3.png');ocultarinput('fiel');mostrarinput('abrir');actualizarTexto(53)" id="fiel" value="fiel">
-    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura4.png');ocultarinput('abrir');mostrarinput('cer');actualizarTexto(54)" id="abrir" value="abrir" >
-    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura5.png');ocultarinput('cer');mostrarinput('fiel2');actualizarTexto(55)" id="cer" value="cer">
-    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura6.png');ocultarinput('fiel2');mostrarinput('abrir2');actualizarTexto(56)" id="fiel2" value="fiel2" >
-    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura7.png');ocultarinput('abrir2');mostrarinput('clave');mostrarinput('conf');actualizarTexto(57)" id="abrir2" value="abrir2" >
+    <input class="pos38Bus" type="button" onclick="imagen('firma','/static/images/CFDI/Factura2.png');ocultarinput('key');mostrarinput('fiel');actualizarTexto(52)" id="key" value="">
+    <input class="pos38Fiel" type="button" onclick="imagen('firma','/static/images/CFDI/Factura3.png');ocultarinput('fiel');mostrarinput('abrir');actualizarTexto(53)" id="fiel" value="">
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura4.png');ocultarinput('abrir');mostrarinput('cer');actualizarTexto(54)" id="abrir" value="" >
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura5.png');ocultarinput('cer');mostrarinput('fiel2');actualizarTexto(55)" id="cer" value="">
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura6.png');ocultarinput('fiel2');mostrarinput('abrir2');actualizarTexto(56)" id="fiel2" value="" >
+    <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura7.png');ocultarinput('abrir2');mostrarinput('clave');mostrarinput('conf');actualizarTexto(57)" id="abrir2" value="" >
     <input class="" type="password" onclick="actualizarTexto(58)" id="clave">
     <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/Factura8.png');ocultarinput('conf');mostrarinput('fir');actualizarTexto(59)" id="conf">
     <input class="" type="button" onclick="imagen('firma','/static/images/CFDI/FacturaFinal.png');ocultarinput('fir');ocultarinput('clave');mostrarinput('desc');actualizarTexto(60)" id="fir">
