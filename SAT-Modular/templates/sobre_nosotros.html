@@ -80,7 +80,7 @@
                     </div>
                     <div class="details">
                         <span>Email</span>
-                        <span>modularSATSIM@gmail.com</span>
+                        <span>satsimdev@gmail.com</span>
                     </div>
                 </div>
 
@@ -88,32 +88,34 @@
     </div>
     <div class="Frecuente-content2 right">
         <section class="col right">
-            <form class="messageForm">
+            <form class="messageForm" action="https://formsubmit.co/satsimdev@gmail.com" method="POST">
 
                 <div class="inputGroup halfWidth">
-                    <input type="text" name="" required="required">
+                    <input type="text" name="name" required="required">
                     <label>Nombre Completo</label>
                 </div>
 
                 <div class="inputGroup halfWidth">
-                    <input type="text" name="" required="required">
+                    <input type="email" name="" required="required">
                     <label>Email</label>
                 </div>
 
                 <div class="inputGroup fullWidth">
-                    <input type="text" name="" required="required">
+                    <input type="text" name="subject" required="required">
                     <label>Asunto</label>
                 </div>
 
                 <div class="inputGroup fullWidth">
-                    <textarea required="required"></textarea>
+                    <textarea required="required" name="message"></textarea>
                     <label>Mensaje</label>
                 </div>
 
                 <div class="inputGroup fullWidth">
-                    <button>Contactar</button>
+                    <button type="submit">Contactar</button>
                 </div>
 
+                <input type="hidden" name="_next" value="http://localhost:5000/sobre_nosotros">
+                <input type="hidden" name="_captcha" value="false">
             </form>
     </div>
 </div>
