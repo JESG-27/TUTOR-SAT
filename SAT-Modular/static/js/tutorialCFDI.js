@@ -48,7 +48,7 @@ var Login1 = `
     <div class="sesion">
         <form>
             <input class="pos4RFC" type="text" placeholder="" required onclick="actualizarTexto(5)" id="RFC" onkeyup="this.value = this.value.toUpperCase();">
-            <input class="pos4Password" type="password" placeholder="" required onclick="actualizarTexto(6)" id="contrasena">
+            <input class="pos4Password" type="password" placeholder="" required onclick="actualizarTexto(6)" id="contrasenaLogin">
             <input class="pos4Captcha" type="text" placeholder="" required onclick="actualizarTexto(7)" id="captcha">
             <input class="pos4Enviar" type="button" onclick="val_login()">
         </form>
@@ -654,7 +654,7 @@ Puedes ver información referente a la facturación, para comenzar haz click en 
 
 // Posición 4
 var login = `
-Aquí se realiza el inicio de sesión, como entraste desde "Mis cuentas" no se requiere al e.firma en esta parte, aunque si la necesitaras para firmar el aviso de privacidad.
+Aquí se realiza el inicio de sesión, no se requiere al e.firma en esta parte, aunque si la necesitaras para firmar el aviso de privacidad.
 `;
 
 // Posición 5
@@ -924,7 +924,7 @@ Ahora debes de colocar tu contraseña de clave privada. Para este ejemplo será 
 
 // Posicion 58
 var pass= `
-Aqui colocaras la contraseña otorgada (para este ejemplo: sat-sim). Al final presiona en el botón confirmar.
+Aqui colocaras la contraseña de la e.firma (para este ejemplo: sat-sim). Recuerda que esta contraseña fue la que definiste al tramitar tu e.firma.
 `;
 
 // Posicion 59
@@ -934,7 +934,7 @@ Una vez confirmado se necesita de firmar. Presiona el boton Firmar.
 
 // Posicion 60
 var fir= `
-En el apartado de acciones descarga tu factura final.
+En el apartado de acciones selecciona el primer icono para descargar tu factura final.
 `;
 
 // Posicion 61
@@ -1001,19 +1001,19 @@ async function siguiente(){
 // Validación de inicio de sesión
 async function val_login(){
     RFC = document.getElementById("RFC").value
-    contrasena = document.getElementById("contrasena").value
+    contrasena = document.getElementById("contrasenaLogin").value
     captcha = document.getElementById("captcha").value
     // RFC == "ABCD123456XXX" && contrasena == "sat-sim" && captcha == "RP6VTL"
     if (true)
     {
         document.getElementById("tuto-window").innerHTML = `
         <div class="tuto-window">
-            <img class="" src="/static/images/CFDI/FirmaEncabezado.png" alt="image">
-            <img class="" src="/static/images/CFDI/Aviso1.png" alt="image">
-            <img class="" src="/static/images/CFDI/Aviso2.png" alt="image">
-            <img class="" src="/static/images/CFDI/Aviso3.png" alt="image" id="aviso3">
-            
-            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma1.png'); ocultarinput('buscarKey'); mostrarinput('Fiel_'); actualizarTexto(64)" id="buscarKey" value="buscar Key">
+            <img class="capturaNav" src="/static/images/CFDI/FirmaEncabezado.png" alt="image">
+            <img class="captura" src="/static/images/CFDI/Aviso1.png" alt="image">
+            <img class="capturaCorta3" src="/static/images/CFDI/Aviso2.png" alt="image">
+            <img class="captura" src="/static/images/CFDI/Aviso3.png" alt="image" id="aviso3">
+
+            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma1.png'); ocultarinput('buscarKey'); mostrarinput('Fiel_'); actualizarTexto(64)" id="buscarKey" value="">
             <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma2.png'); ocultarinput('Fiel_'); mostrarinput('claveprivada'); actualizarTexto(52)" id="Fiel_" value="Fiel_">
             <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma3.png'); ocultarinput('claveprivada'); mostrarinput('abrir.key'); actualizarTexto(53)" id="claveprivada" value="claveprivada">
             <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma4.png'); ocultarinput('abrir.key'); mostrarinput('buscarCer'); actualizarTexto(54)" id="abrir.key" value="abrir.key" >
@@ -1047,6 +1047,7 @@ async function contrasenaEfirma(contrasena,inpsiguiente){
     {
         contrasena.setAttribute("readonly", "")
         mostrarinput(inpsiguiente)
+        document.getElementById("contrasena").style.bottom = "714px";
         document.getElementById("tutorialText").innerHTML = "Perfecto, presiona en Confirmar"
     }
     else
@@ -1321,4 +1322,3 @@ async function mostrar()
     posicion = document.getElementById("paso").value
     document.getElementById("tutorialText").innerHTML = tutorial_text[posicion];
 }
-
