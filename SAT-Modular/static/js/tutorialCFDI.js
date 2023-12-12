@@ -624,6 +624,7 @@ var nueva_factura_c4 = `
 var nueva_factura_c5 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/FacturaVistazo.png" alt="image">
+    <button><a href="/tutoriales">Terminar</a></button> 
     
 </div>
 
@@ -934,17 +935,17 @@ Una vez confirmado se necesita de firmar. Presiona el boton Firmar.
 
 // Posicion 60
 var fir= `
-En el apartado de acciones selecciona el primer icono para descargar tu factura final.
+Una vez firmado nos vamos al apartado de acciones donde se descargará un archivo, ignoralo de momento y para más facilidad da click el la flecha debajo de el texto "acciones", ahí te descargará un archivo PDF.
 `;
 
 // Posicion 61
 var desc= `
-Abre el archivo PDF que aparece en el apartado de descargas.
+En tu apartado de descargaras encontrarás un archivo con extencion PDF, ese será nuestro archivo final con el comprofante de la factura da click en "Abrir archivo".
 `;
 
 // Posicion 62
 var pdf= `
-Este documento es el que te generar a la hora de sellar, este es el comprobante. 
+Finalmente tenemos nuestro comprobante, este es un ejemplo de un documento real, ahora presiona terminar para para regresar a nuestro apartado de tutoriales. 
 `;
 
 // Posicion 63
