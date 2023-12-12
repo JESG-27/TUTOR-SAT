@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, redirect
+from googleSheets import questionInsert
 from werkzeug.wrappers import response
 from chat import get_response
 
@@ -10,12 +11,12 @@ def homepage():
    return render_template('inicio.html')
 
 # --------------------------------------  Chatbot  --------------------------------------
-@app.post('/predict')
-def predict():
-    text = request.get_json().get('message')
-    response = get_response(text)
-    message = {"answer": response}
-    return jsonify(message)
+# @app.post('/predict')
+# def predict():
+#     text = request.get_json().get('message')
+#     response = get_response(text)
+#     message = {"answer": response}
+#     return jsonify(message)
 
 # --------------------------------------  Tutoriales  --------------------------------------
 @app.route('/tutoriales')
@@ -37,9 +38,18 @@ def tutorialCFDI():
     return render_template('CFDI/tutorialCFDI.html')
 
 # --------------------------------------  Preguntas Frecuentes  --------------------------------------
-@app.route('/preguntas-frecuentes')
+@app.route('/preguntas-frecuentes', methods=['GET', 'POST'])
 def preguntas():
-    return render_template('preguntas.html')
+    if (request.method == 'GET'):
+        return render_template('preguntas.html')
+    elif (request.method == 'POST'):
+        name = request.form['name']
+        email = request.form['email']
+        subject = request.form['subject']
+        question = request.form['question']
+        
+        questionInsert(email, name, subject, question)
+        return redirect('preguntas-frecuentes')
 
 
 # --------------------------------------  Sobre nosotros  --------------------------------------
