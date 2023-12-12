@@ -4,6 +4,7 @@ import torch
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 import datetime
+from googleSheets import chatbotInsert
 
 flag = True
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -77,10 +78,11 @@ def get_response(msg):
         for intent in intents['intents']:
             if tag == intent['tag']:
                 return random.choice(intent['responses'])
-            '''
-            if tag == "despedida":
-                break
-            '''
+    elif prob.item() > 0.65:
+        for intent in intents['intents']:
+            if tag == intent['tag']:
+                chatbotInsert(tag, msg)
+                return "No te entendí muy bien, pero guardaré tu pregunta para contestarla despues"
     return "Perdón, no te entiendo."
 
 if __name__ == "__main__":
