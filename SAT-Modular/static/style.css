@@ -2867,7 +2867,7 @@ h2.CFDI {
 }
 
 #cer {
-    display: inline-block;
+    display: none;
     position: relative;
     cursor: pointer;
     background: none;
@@ -2902,7 +2902,7 @@ h2.CFDI {
     left: 400px;
 }
 
-#clave {
+#contrasena {
     display: none;
     position: relative;
     cursor: pointer;
