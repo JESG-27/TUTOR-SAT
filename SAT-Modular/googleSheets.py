@@ -1,7 +1,6 @@
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
-import datetime
 
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 KEY = 'key.json'
