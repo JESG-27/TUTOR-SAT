@@ -1,0 +1,15 @@
+{% extends 'Declaraciones/layoutDeclaraciones.html' %}
+
+{% block head %}
+<title>Declaraciones - Tutorial</title>
+{% endblock %}
+
+{% block body %}
+<div class="tutorial_text_header2" id="tuto-window">
+    <div class="tuto-window">
+        <img class="" src="{{ url_for('static', filename='images/Declaraciones/SAT-Inicio-pt1.png') }}" alt="image">
+        <img class="" src="{{ url_for('static', filename='images/Declaraciones/SAT-Inicio-pt2.png') }}" alt="image">
+        <input class="" type="button" onclick="siguiente(), actualizarTexto(1)" value="Declaraciones">
+    </div>
+</div>
+{% endblock %}

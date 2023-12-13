@@ -13,9 +13,15 @@ def homepage():
 def tutorial():
     return render_template('tutoriales.html')
 
+# ------------------- Declaraciones -------------------
 @app.route('/declaraciones')
 def declaraciones():
     return render_template('declaraciones.html')
+
+# ------------------- Declaraciones Tutorial -------------------
+@app.route('/Declaraciones-tutorial')
+def tutorialDeclaraciones():
+    return render_template('Declaraciones/tutorialDeclaraciones.html')
 
 # ------------------- CFDI -------------------
 @app.route('/CFDI')
