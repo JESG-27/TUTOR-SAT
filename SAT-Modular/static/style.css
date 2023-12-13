@@ -2830,6 +2830,180 @@ h2.CFDI {
     right: 636px;
 }
 
+/* POSICION 37 */
+#anio {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 1077px;
+    left: 671px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+.anio:focus {
+    outline: none;
+}
+
+#anio:valid {
+    background-color: #fff;
+}
+
+#clienteF {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 990px;
+    left: 112px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+#clienteF:focus {
+    outline: none;
+}
+
+#clienteF:valid {
+    background-color: #fff;
+}
+
+#razonsocial {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 990px;
+    left: 142px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+#razonsocial:focus {
+    outline: none;
+}
+
+#razonsocial:valid {
+    background-color: #fff;
+} 
+
+#correo {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 938px;
+    left: -636px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+#correo:focus {
+    outline: none;
+}
+
+#correo:valid {
+    background-color: #fff;
+}
+
+#codigop {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 960px;
+    left: 391px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+#codigop:focus {
+    outline: none;
+}
+
+#codigop:valid {
+    background-color: #fff;
+}
+
+#regimenfiscal {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 908px;
+    left: 141px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+#regimenfiscal:focus {
+    outline: none;
+}
+
+#regimenfiscal:valid {
+    background-color: #fff;
+}
+
+#usofactura {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    bottom: 991px;
+    left: 173px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+}
+
+#usofactura:focus {
+    outline: none;
+}
+
+#usofactura:valid {
+    background-color: #fff;
+}
+
+.pos37sellar {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 70px;
+    height: 31px;
+    bottom: 615px;
+    left: 250px;
+}
+
 /* POSICION 38 */
 #key {
     display: inline-block;
@@ -2992,7 +3166,165 @@ h2.CFDI {
     left: 761px;
 }
 
+#Fiel_ {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 380px;
+    height: 15px;
+    bottom: 432px;
+    left: 151px;
+}
 
+#claveprivada {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 380px;
+    height: 15px;
+    bottom: 446px;
+    left: 151px;
+}
+
+#abrirkey {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 70px;
+    height: 19px;
+    bottom: 224px;
+    left: 375px;
+}
+
+#buscarCer {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 70px;
+    height: 30px;
+    bottom: 193px;
+    left: 762px;
+}
+
+#cer_ {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 380px;
+    height: 15px;
+    bottom: 445px;
+    left: 151px;
+}
+
+#abrircer {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 70px;
+    height: 19px;
+    bottom: 224px;
+    left: 375px;
+}
+
+
+#contrasena2 {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 650px;
+    height: 18px;
+    bottom: 301px;
+    left: 97px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#contrasena2:focus {
+    outline: none;
+}
+
+#contrasena2:valid {
+    background-color: none;
+}
+
+#confirmar {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 90px;
+    height: 30px;
+    bottom: 158px;
+    left: 25px;
+}
+
+#firmarAviso {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 66px;
+    height: 30px;
+    bottom: 158px;
+    left: 112px;
+}
+
+#TermCondiSiguiente {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 78px;
+    height: 30px;
+    bottom: 152px;
+    left: 32px;
+}
+
+/* POSICION 39 */
+.terminar {
+    display: flex;
+    margin: 0 auto;
+    border: none;
+    padding: 15px 0px;
+}
+
+.terminar a {
+    display: inline-block;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    border-radius: 10px;
+    background: linear-gradient(315deg, #9C1DE7 0.52%, #052573 74%);
+    transition: all .42s;
+    text-decoration: none;
+}
+
+.terminar a:hover {
+    background: none;
+    border: 2px solid #9C1DE7;
+    color: #052573;
+    
+}
 
 /* Large screens -----------------------------------------------------------------------------------------------*/
 @media only screen and (min-width : 1920px) {
