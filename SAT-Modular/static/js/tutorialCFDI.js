@@ -624,7 +624,7 @@ var nueva_factura_c4 = `
 var nueva_factura_c5 = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/FacturaVistazo.png" alt="image">
-    <button><a href="/tutoriales">Terminar</a></button> 
+    <button class="terminar"><a href="/tutoriales">Terminar</a></button> 
     
 </div>
 
@@ -1015,16 +1015,16 @@ async function val_login(){
             <img class="captura" src="/static/images/CFDI/Aviso3.png" alt="image" id="aviso3">
 
             <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma1.png'); ocultarinput('buscarKey'); mostrarinput('Fiel_'); actualizarTexto(64)" id="buscarKey" value="">
-            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma2.png'); ocultarinput('Fiel_'); mostrarinput('claveprivada'); actualizarTexto(52)" id="Fiel_" value="Fiel_">
-            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma3.png'); ocultarinput('claveprivada'); mostrarinput('abrir.key'); actualizarTexto(53)" id="claveprivada" value="claveprivada">
-            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma4.png'); ocultarinput('abrir.key'); mostrarinput('buscarCer'); actualizarTexto(54)" id="abrir.key" value="abrir.key" >
-            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma5.png'); ocultarinput('buscarCer'); mostrarinput('.cer'); actualizarTexto(55)" id="buscarCer" value="buscar Cer" >
-            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma6.png'); ocultarinput('.cer'); mostrarinput('abrir.cer'); actualizarTexto(56)" id=".cer" value=".cer" >
-            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma7.png'); ocultarinput('abrir.cer'); mostrarinput('contrasena'); actualizarTexto(57)" id="abrir.cer" value="abrir.cer" >
-            <input class="" type="password" onclick="actualizarTexto(58)" onchange="contrasenaEfirma('contrasena','confirmar')" id="contrasena">
-            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma8.png'); ocultarinput('confirmar'); mostrarinput('firmarAviso'); actualizarTexto(59)" id="confirmar" value="confirmar">
-            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma9.png'); ocultarinput('firmarAviso'); mostrarinput('TermCondiSiguiente'); actualizarTexto(65)" id="firmarAviso" value="Firmar">
-            <input class="" type="button" onclick="siguiente(); actualizarTexto(9)" id="TermCondiSiguiente" value="Siguiente">
+            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma2.png'); ocultarinput('Fiel_'); mostrarinput('claveprivada'); actualizarTexto(52)" id="Fiel_" value="">
+            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma3.png'); ocultarinput('claveprivada'); mostrarinput('abrirkey'); actualizarTexto(53)" id="claveprivada" value="">
+            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma4.png'); ocultarinput('abrirkey'); mostrarinput('buscarCer'); actualizarTexto(54)" id="abrirkey" value="" >
+            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma5.png'); ocultarinput('buscarCer'); mostrarinput('cer_'); actualizarTexto(55)" id="buscarCer" value="" >
+            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma6.png'); ocultarinput('cer_'); mostrarinput('abrircer'); actualizarTexto(56)" id="cer_" value="" >
+            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma7.png'); ocultarinput('abrircer'); mostrarinput('contrasena2'); actualizarTexto(57)" id="abrircer" value="" >
+            <input class="" type="password" onclick="actualizarTexto(58)" onchange="contrasenaEfirma('contrasena2','confirmar')" id="contrasena2">
+            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma8.png'); ocultarinput('confirmar'); mostrarinput('firmarAviso'); actualizarTexto(59)" id="confirmar" value="">
+            <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma9.png'); ocultarinput('firmarAviso'); mostrarinput('TermCondiSiguiente'); actualizarTexto(65)" id="firmarAviso" value="">
+            <input class="" type="button" onclick="siguiente(); actualizarTexto(9)" id="TermCondiSiguiente" value="">
         </div>
         <input class="atras" type="button" onclick="anterior(), siguiente(), actualizarTexto(4)">
         `;
@@ -1035,7 +1035,7 @@ async function val_login(){
     {
         actualizarTexto(8)
         document.getElementById("RFC").value = ""
-        document.getElementById("contrasena").value = ""
+        document.getElementById("contrasenaLogin").value = ""
         document.getElementById("captcha").value = ""
     }
 }
