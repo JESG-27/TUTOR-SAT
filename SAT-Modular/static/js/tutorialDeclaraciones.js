@@ -23,19 +23,43 @@ async function siguiente(){
 async function mostrarinput(id){
 
     inputActual = document.getElementById(id)
-    inputActual.style.display="inline-block";
+    inputActual.style.display="inline-block"
 }
 // OCULTAR INPUT
 async function ocultarinput(id){
 
     inputActual = document.getElementById(id)
-    inputActual.style.display="none";
+    inputActual.style.display="none"
 }
 
 // Cambiar imagen
 async function imagen(id, nuv){
-    img = document.getElementById(id);
-    img.src = nuv;
+    img = document.getElementById(id)
+    img.src = nuv
+}
+
+// Login
+async function login(id){
+    inputActual = document.getElementById(id)
+
+    if (id == "RFC_login" && inputActual.value == "ABCD123456XXX"){
+        inputActual.setAttribute("readonly", " ")
+        document.getElementById("tutorialText").innerHTML = "Perfecto, continua con la contraseña"
+        mostrarinput('contrasena_login')
+    }
+    else if (id == "contrasena_login" && inputActual.value == "sat-sim"){
+        inputActual.setAttribute("readonly", " ")
+        document.getElementById("tutorialText").innerHTML = "Muy bien, por último ingresa el captcha"
+        mostrarinput('captcha_login')
+    }
+    else if (id == "captcha_login" && inputActual.value == "2XRJ4Z"){
+        inputActual.setAttribute("readonly", " ")
+        document.getElementById("tutorialText").innerHTML = "Con esto se completan los datos de inicio, haz click en enviar"
+        mostrarinput('enviar_login')
+    }
+    else{
+        document.getElementById("tutorialText").innerHTML = "Parece que cometiste un error, lo bueno es que estas aprendiendo ingresolo nuevamente"
+    }
 }
 
 // Funciones para el desarrollo
