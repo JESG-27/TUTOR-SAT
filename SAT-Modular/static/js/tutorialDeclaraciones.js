@@ -58,7 +58,31 @@ async function login(id){
         mostrarinput('enviar_login')
     }
     else{
-        document.getElementById("tutorialText").innerHTML = "Parece que cometiste un error, lo bueno es que estas aprendiendo ingresolo nuevamente"
+        document.getElementById("tutorialText").innerHTML = "Parece que cometiste un error, lo bueno es que estas aprendiendo ingresalo nuevamente"
+    }
+}
+
+// Validar valores
+async function Validar_numero(id,siguiente,idimg,img){
+    inputActual = document.getElementById(id)
+    //console.log(siguiente)
+
+    if (inputActual.value == "0" && id == "dec_devo_bonif_por_copropiedad" ){
+
+        inputActual.setAttribute("readonly", " ")
+        document.getElementById("tutorialText").innerHTML = "Perfecto, presiona cerrar para ir al siguiente apartado"
+        imagen(idimg, img)
+        mostrarinput(siguiente)
+
+    }else if (inputActual.value == "0" && id == "importe_adicional" ){
+
+        inputActual.setAttribute("readonly", " ")
+        document.getElementById("tutorialText").innerHTML = "Perfecto, presiona guardar para ir al siguiente apartado"
+        imagen(idimg, img)
+        mostrarinput(siguiente)
+
+    }else{
+        document.getElementById("tutorialText").innerHTML = "Parece que cometiste un error, lo bueno es que estas aprendiendo ingresalo nuevamente"
     }
 }
 
