@@ -3167,7 +3167,19 @@ h2.CFDI {
 }
 
 #Fiel_ {
-    display: inline-block;
+    display: none;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 380px;
+    height: 15px;
+    bottom: 418px;
+    left: 151px;
+}
+
+#claveprivada {
+    display: none;
     position: relative;
     cursor: pointer;
     background: none;
@@ -3178,63 +3190,51 @@ h2.CFDI {
     left: 151px;
 }
 
-#claveprivada {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    background: none;
-    border: none;
-    width: 380px;
-    height: 15px;
-    bottom: 446px;
-    left: 151px;
-}
-
 #abrirkey {
-    display: inline-block;
+    display: none;
     position: relative;
     cursor: pointer;
     background: none;
     border: none;
     width: 70px;
     height: 19px;
-    bottom: 224px;
+    bottom: 213px;
     left: 375px;
 }
 
 #buscarCer {
-    display: inline-block;
+    display: none;
     position: relative;
     cursor: pointer;
     background: none;
     border: none;
     width: 70px;
     height: 30px;
-    bottom: 193px;
-    left: 762px;
+    bottom: 191px;
+    left: 761px;
 }
 
 #cer_ {
-    display: inline-block;
+    display: none;
     position: relative;
     cursor: pointer;
     background: none;
     border: none;
     width: 380px;
     height: 15px;
-    bottom: 445px;
+    bottom: 431px;
     left: 151px;
 }
 
 #abrircer {
-    display: inline-block;
+    display: none;
     position: relative;
     cursor: pointer;
     background: none;
     border: none;
     width: 70px;
     height: 19px;
-    bottom: 224px;
+    bottom: 213px;
     left: 375px;
 }
 
@@ -3247,7 +3247,7 @@ h2.CFDI {
     border: none;
     width: 650px;
     height: 18px;
-    bottom: 301px;
+    bottom: 287px;
     left: 97px;
     text-align: left;
     padding-left: 10px;
@@ -3262,31 +3262,31 @@ h2.CFDI {
 }
 
 #confirmar {
-    display: inline-block;
+    display: none;
     position: relative;
     cursor: pointer;
     background: none;
     border: none;
     width: 90px;
     height: 30px;
-    bottom: 158px;
+    bottom: 144px;
     left: 25px;
 }
 
 #firmarAviso {
-    display: inline-block;
+    display: none;
     position: relative;
     cursor: pointer;
     background: none;
     border: none;
     width: 66px;
     height: 30px;
-    bottom: 158px;
+    bottom: 144px;
     left: 112px;
 }
 
 #TermCondiSiguiente {
-    display: inline-block;
+    display:none;
     position: relative;
     cursor: pointer;
     background: none;
@@ -3295,35 +3295,6 @@ h2.CFDI {
     height: 30px;
     bottom: 152px;
     left: 32px;
-}
-
-/* POSICION 39 */
-.terminar {
-    display: flex;
-    margin: 0 auto;
-    border: none;
-    padding: 15px 0px;
-}
-
-.terminar a {
-    display: inline-block;
-    color: #fff;
-    font-size: .8rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: capitalize;
-    padding: 12px 30px;
-    border-radius: 10px;
-    background: linear-gradient(315deg, #9C1DE7 0.52%, #052573 74%);
-    transition: all .42s;
-    text-decoration: none;
-}
-
-.terminar a:hover {
-    background: none;
-    border: 2px solid #9C1DE7;
-    color: #052573;
-    
 }
 
 /* Large screens -----------------------------------------------------------------------------------------------*/
