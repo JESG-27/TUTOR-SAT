@@ -199,17 +199,17 @@ Con esto queda completada la configuración de tu declaración, los aspectos de 
 
 // Posición 14
 var decla_isr_inicio = `
-Ahora seleccionaremos el primer apartado. Iremso a ISR simplificaco de confianza. Persona física .
+Ahora seleccionaremos el primer apartado. Irémos a ISR simplificaco de confianza. Persona física.
 `;
 
 // Posición 15
 var copropiedad = `
-Iniciemos con la declaracion, en primer lugar indicaremos si los ingresos son obtenidos a través de copropiedad. Si no sabes lo que significa recuerda preguntar a nuestro asistente virtual. .
+Iniciemos con la declaración, en primér lugar indicaremos si los ingresos son obtenidos a través de copropiedad. Si no sabes lo que significa recuerda preguntar a nuestro asistente virtual.
 `;
 
 // Posición 16
 var seleccion_input_copropiedad = `
-En este caso seleccionaremos la opcion de "no", no fueron obtenidos a través de copropiedad.
+En este caso seleccionaremos la opcion de "No", ya que no fueron obtenidos a través de copropiedad.
 `;
 
 // Posición 17
@@ -219,22 +219,22 @@ Ahora veremos el apartado de ingresos efectivamente cobrados.
 
 // Posición 18
 var facturas_vigentes = `
-En este apartado te mostrará las facturas vigentes al mes de la factura, en este caso en diciembre tenemos 0 facturas vigentes, de igual forma nuestro total es 0. Presiona cerrar para regresar a la parte anterior.
+En este apartado se te mostraran las facturas vigentes al mes de la factura, en este caso en diciembre tenemos 0 facturas vigentes, de igual forma nuestro total es 0. Presiona cerrar para regresar a la parte anterior.
 `;
 
 // Posición 19
 var desc_dev_bonif= `
-Bien, ahora iremos a la parte de Descuentos, devoluciones y bonificaciones, le daremos click para ver lo que sigue.
+Bien, ahora iremos a la parte de Descuentos, devoluciones y bonificaciones, le daremos click para continuar.
 `;
 
 // Posición 20
 var desc_dev_bonif_2= `
-Aquí podremos analizar si tenemos algun tipo de devolucion,descuentos o devoluciones, da click en el apartado con contorno rojo.
+Aquí podremos analizar si tenemos algun tipo de devolucion, descuentos o bonificaciones, da click en el apartado con contorno rojo.
 `;
 
 // Posición 21
 var txt_desc_dev_bonif= `
-Aqui pondremos 0 para indicar que no tenemos ningun descuento ni bonificacion.
+Aqui pondremos 0 para indicar que no tenemos ningun descuento ni bonificación.
 `;
 
 // Posición 22
@@ -249,12 +249,12 @@ Aquí indicaremos cualquier tipo de actividad que no se haya registrado su CFDI 
 
 // Posición 24
 var ingreso_adicional_3= `
-En el apartado de Concepto selecionaremos uno, presionaremos el apartado de seleccionar.
+En el apartado de Concepto seleccionaremos uno, presiona el apartado de seleccionar.
 `;
 
 // Posición 25
 var ingreso_adicional_4= `
-Para este ejemplo no contaremos con ingresos adicionales por lo que le daremos en el apartado de " Sin ingresos adicionales "
+Para este ejemplo no contaremos con ingresos adicionales por lo que le daremos en el apartado de " Sin ingresos adicionales ".
 `;
 
 // Posición 26
@@ -271,6 +271,7 @@ Pondremos un 0 dando a entender que claramente no tuvimos ingresos adicionales y
 var ingreso_adicional_7= `
 Ahora cerremos este apartado.
 `;
+
 // HTML de tutorial
 var HTML_text_declaraciones = [SAT_inicio, declaraciones, presenta_declaracion, login_declaraciones, 
                                 inicio_declaraciones,declaracion_isr,isr_pt1,isr_pt2,isr_pt3]
