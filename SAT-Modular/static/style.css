@@ -3239,17 +3239,16 @@ h2.CFDI {
     left: 375px;
 }
 
-
 #contrasena2 {
     display: none;
-    position: relative;
+    position: absolute;
     cursor: pointer;
     background: none;
     border: none;
     width: 650px;
     height: 18px;
-    bottom: 287px;
-    left: 97px;
+    bottom: 303px;
+    left: 236px;
     text-align: left;
     padding-left: 10px;
 }
@@ -3270,8 +3269,8 @@ h2.CFDI {
     border: none;
     width: 90px;
     height: 30px;
-    bottom: 144px;
-    left: 25px;
+    bottom: 158px;
+    left: 680px;
 }
 
 #firmarAviso {
@@ -3282,8 +3281,8 @@ h2.CFDI {
     border: none;
     width: 66px;
     height: 30px;
-    bottom: 144px;
-    left: 112px;
+    bottom: 158px;
+    left: 768px;
 }
 
 #TermCondiSiguiente {
@@ -3292,10 +3291,10 @@ h2.CFDI {
     cursor: pointer;
     background: none;
     border: none;
-    width: 78px;
+    width: 80px;
     height: 30px;
     bottom: 152px;
-    left: 32px;
+    left: 685px;
 }
 
 /* Large screens -----------------------------------------------------------------------------------------------*/
