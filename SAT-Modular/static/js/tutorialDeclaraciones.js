@@ -73,15 +73,29 @@ async function Validar_numero(id,siguiente,idimg,img){
         document.getElementById("tutorialText").innerHTML = "Perfecto, presiona cerrar para ir al siguiente apartado"
         imagen(idimg, img)
         mostrarinput(siguiente)
-
-    }else if (inputActual.value == "0" && id == "importe_adicional" ){
+    }
+    else if (inputActual.value == "0" && id == "importe_disminuir" ){
 
         inputActual.setAttribute("readonly", " ")
         document.getElementById("tutorialText").innerHTML = "Perfecto, presiona guardar para ir al siguiente apartado"
         imagen(idimg, img)
         mostrarinput(siguiente)
+    }
+    else if (inputActual.value == "0" && id == "importe_adicional" ){
 
-    }else{
+        inputActual.setAttribute("readonly", " ")
+        document.getElementById("tutorialText").innerHTML = "Perfecto, presiona guardar para ir al siguiente apartado"
+        imagen(idimg, img)
+        mostrarinput(siguiente)
+    }
+    else if (inputActual.value == "2597" && id == "total_ingresos" ){
+
+        inputActual.setAttribute("readonly", " ")
+        document.getElementById("tutorialText").innerHTML = "Perfecto, presiona guardar para ir al siguiente apartado"
+        imagen(idimg, img)
+        mostrarinput(siguiente)
+    }
+    else{
         document.getElementById("tutorialText").innerHTML = "Parece que cometiste un error, lo bueno es que estas aprendiendo ingresalo nuevamente"
     }
 }

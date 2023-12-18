@@ -55,8 +55,8 @@ var inicio_declaraciones = `
         <input class="" type="button" onclick="ocultarinput('presentar_decla'), mostrarinput('periodicidad_decla'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion.png'), actualizarTexto(9)" id="presentar_decla" value="Presentar declaración">
         <input class="" type="button" onclick="ocultarinput('periodicidad_decla'), mostrarinput('periodicidad_mensual'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion-c1.png'), actualizarTexto(10)" id="periodicidad_decla" value="Periodicidad" style="display : none">
         <input class="" type="button" onclick="ocultarinput('periodicidad_mensual'), mostrarinput('periodo_decla'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion-c2.png'), actualizarTexto(11)" id="periodicidad_mensual" value="Mensual" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('periodo_decla'), mostrarinput('periodo_diciembre'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion-c3.png')" id="periodo_decla" value="Periodo" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('periodo_diciembre'), mostrarinput('tipo_declaracion'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion-c4.png'), actualizarTexto(12)" id="periodo_diciembre" value="Diciembre" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('periodo_decla'), mostrarinput('periodo_noviembre'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion-c3.png')" id="periodo_decla" value="Periodo" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('periodo_noviembre'), mostrarinput('tipo_declaracion'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion-c4.png'), actualizarTexto(12)" id="periodo_noviembre" value="Noviembre" style="display : none">
         <input class="" type="button" onclick="ocultarinput('tipo_declaracion'), mostrarinput('tipo_normal'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion-c5.png')" id="tipo_declaracion" value="Tipo declaración" style="display : none">
         <input class="" type="button" onclick="ocultarinput('tipo_normal'), mostrarinput('siguiente_decla'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion-c6.png'), actualizarTexto(13)" id="tipo_normal" value="Normal" style="display : none">
         <input class="" type="button" onclick="siguiente(),actualizarTexto(14)" id="siguiente_decla" value="Siguiente" style="display : none">
@@ -102,14 +102,13 @@ var isr_pt2 = `
 <img class="" src="/static/images/Declaraciones/Declaraciones-isr-pt2-c1.png" alt="image" id="img_isr_simp_pt2">
     
     <div class="">
-        <input class="" type="button" onclick="ocultarinput('mostrar_ingresos'), mostrarinput('agregar_ingresos'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c2.png'), actualizarTexto(23)" id="mostrar_ingresos" value="mostrar">
-        <input class="" type="button" onclick="ocultarinput('agregar_ingresos'), mostrarinput('seleccionar_ingresos'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c3.png'), actualizarTexto(24)" id="agregar_ingresos" value="agregar" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('seleccionar_ingresos'), mostrarinput('sin_ingreso_adicional'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c4.png'), actualizarTexto(25)" id="seleccionar_ingresos" value="seleccionar" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('sin_ingreso_adicional'), mostrarinput('importe_adicional'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c5.png'), actualizarTexto(26)" id="sin_ingreso_adicional" value="sin ingreso adicional" style="display : none">
-        <input class="" type="text" onclick="actualizarTexto(27)" onchange="Validar_numero('importe_adicional','guardar_sin_ingreso_adicional','img_isr_simp_pt2','/static/images/Declaraciones/Declaraciones-isr-pt2-c6.png')" id="importe_adicional" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('guardar_sin_ingreso_adicional'),mostrarinput('cerrar_ingreso'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c7.png'), actualizarTexto(28)" id="guardar_sin_ingreso_adicional" value="Guardar" style="display : none">
-        <input class="" type="button" onclick="siguiente(),actualizarTexto()" id="cerrar_ingreso" value="cerrar" style="display : none"  > 
-
+        <input class="" type="button" onclick="ocultarinput('mostrar_ingresos_disminuir'), mostrarinput('agregar_ingresos_disminuir'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c2.png'), actualizarTexto(23)" id="mostrar_ingresos_disminuir" value="mostrar">
+        <input class="" type="button" onclick="ocultarinput('agregar_ingresos_disminuir'), mostrarinput('seleccionar_ingresos_disminuir'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c3.png'), actualizarTexto(24)" id="agregar_ingresos_disminuir" value="agregar" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('seleccionar_ingresos_disminuir'), mostrarinput('sin_ingreso_disminuir'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c4.png'), actualizarTexto(25)" id="seleccionar_ingresos_disminuir" value="seleccionar" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('sin_ingreso_disminuir'), mostrarinput('importe_disminuir'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c5.png'), actualizarTexto(26)" id="sin_ingreso_disminuir" value="sin ingreso a disminuir" style="display : none">
+        <input class="" type="text" onclick="actualizarTexto(27)" onchange="Validar_numero('importe_disminuir','guardar_sin_ingreso_disminuir','img_isr_simp_pt2','/static/images/Declaraciones/Declaraciones-isr-pt2-c6.png')" id="importe_disminuir" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('guardar_sin_ingreso_disminuir'),mostrarinput('cerrar_ingreso_disminuir'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c7.png'), actualizarTexto(28)" id="guardar_sin_ingreso_disminuir" value="Guardar" style="display : none">
+        <input class="" type="button" onclick="siguiente(),actualizarTexto(29)" id="cerrar_ingreso_disminuir" value="cerrar" style="display : none"  > 
     </div>
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(15)">
@@ -118,13 +117,37 @@ var isr_pt2 = `
 // Posición 8
 var isr_pt3 = `
 <div class="tuto-window">
-<img class="" src="/static/images/Declaraciones/Declaraciones-isr-pt3-c1.png" alt="image" id="img_isr_simp_pt2">
+    <img class="" src="/static/images/Declaraciones/Declaraciones-isr-pt3-c1.png" alt="image" id="img_isr_simp_pt3">
     
     <div class="">
-    
+        <input class="" type="button" onclick="ocultarinput('mostrar_ingresos_adicionales'), mostrarinput('agregar_ingresos_adicionales'),imagen('img_isr_simp_pt3', '/static/images/Declaraciones/Declaraciones-isr-pt3-c2.png'), actualizarTexto(30)" id="mostrar_ingresos_adicionales" value="mostrar">
+        <input class="" type="button" onclick="ocultarinput('agregar_ingresos_adicionales'), mostrarinput('seleccionar_ingresos_adicionales'),imagen('img_isr_simp_pt3', '/static/images/Declaraciones/Declaraciones-isr-pt3-c3.png'), actualizarTexto(24)" id="agregar_ingresos_adicionales" value="agregar" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('seleccionar_ingresos_adicionales'), mostrarinput('sin_ingreso_adicional'),imagen('img_isr_simp_pt3', '/static/images/Declaraciones/Declaraciones-isr-pt3-c4.png'), actualizarTexto(31)" id="seleccionar_ingresos_adicionales" value="seleccionar" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('sin_ingreso_adicional'), mostrarinput('importe_adicional'),imagen('img_isr_simp_pt3', '/static/images/Declaraciones/Declaraciones-isr-pt3-c5.png'), actualizarTexto(26)" id="sin_ingreso_adicional" value="sin ingreso adicional" style="display : none">
+        <input class="" type="text" onclick="actualizarTexto(32)" onchange="Validar_numero('importe_adicional','guardar_sin_ingreso_adicional','img_isr_simp_pt3','/static/images/Declaraciones/Declaraciones-isr-pt3-c6.png')" id="importe_adicional" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('guardar_sin_ingreso_adicional'),mostrarinput('cerrar_ingreso_adicional'),imagen('img_isr_simp_pt3', '/static/images/Declaraciones/Declaraciones-isr-pt3-c7.png'), actualizarTexto(28)" id="guardar_sin_ingreso_adicional" value="Guardar" style="display : none">
+        <input class="" type="button" onclick="siguiente(),actualizarTexto(33)" id="cerrar_ingreso_adicional" value="cerrar" style="display : none"  >  
     </div>
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(22)">
+`;
+
+// Posición 9
+var isr_pt4 = `
+<div class="tuto-window">
+    <img class="" src="/static/images/Declaraciones/Declaraciones-isr-pt4-c1.png" alt="image" id="img_isr_simp_pt4">
+    
+    <div class="">
+        <input class="" type="button" onclick="ocultarinput('mostrar_ingresos_totales'), mostrarinput('agregar_ingresos_totales'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c2.png'), actualizarTexto(34)" id="mostrar_ingresos_totales" value="mostrar">
+        <input class="" type="button" onclick="ocultarinput('agregar_ingresos_totales'), mostrarinput('seleccionar_ingresos_totales'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c3.png'), actualizarTexto(24)" id="agregar_ingresos_totales" value="agregar" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('seleccionar_ingresos_totales'), mostrarinput('actividad_empresarial'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c4.png'), actualizarTexto(35)" id="seleccionar_ingresos_totales" value="seleccionar" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('actividad_empresarial'), mostrarinput('total_ingresos'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c5.png'), actualizarTexto(26)" id="actividad_empresarial" value="Actividad Empresarial" style="display : none">
+        <input class="" type="text" onclick="actualizarTexto(36)" onchange="Validar_numero('total_ingresos','guardar_ingreso_total','img_isr_simp_pt4','/static/images/Declaraciones/Declaraciones-isr-pt4-c6.png')" id="total_ingresos" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('guardar_ingreso_total'),mostrarinput('cerrar_ingreso_total'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c7.png'), actualizarTexto(28)" id="guardar_ingreso_total" value="Guardar" style="display : none">
+        <input class="" type="button" onclick="siguiente(), actualizarTexto()" id="cerrar_ingreso_total" value="cerrar" style="display : none"  >   
+    </div>
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(29)">
 `;
 
 // ----------------------------------------------- Tutorial text -----------------------------------------------
@@ -184,7 +207,7 @@ En el apartado de periodicidad selecciona la opción de "Mensual" que es la que 
 
 // Posición 11
 var configuracion_decla_periodo = `
-Ahora el siguiente paso es seleccionar el Periodo, haz click en el y en el mes de Diciembre.
+Ahora el siguiente paso es seleccionar el Periodo, haz click en el y selecciona el mes de Noviembre que corresponderá a este tutorial.
 `;
 
 // Posición 12
@@ -219,12 +242,12 @@ Ahora veremos el apartado de ingresos efectivamente cobrados.
 
 // Posición 18
 var facturas_vigentes = `
-En este apartado se te mostraran las facturas vigentes al mes de la factura, en este caso en diciembre tenemos 0 facturas vigentes, de igual forma nuestro total es 0. Presiona cerrar para regresar a la parte anterior.
+En este apartado se te mostraran las facturas vigentes al mes de la factura, en este caso en el mes seleccionado tenemos 2,597 en facturas vigentes, de igual forma nuestro total es de 2,597. Presiona cerrar para regresar a la parte anterior.
 `;
 
 // Posición 19
 var desc_dev_bonif= `
-Bien, ahora iremos a la parte de Descuentos, devoluciones y bonificaciones, le daremos click para continuar.
+Bien, ahora iremos a la parte de Descuentos, devoluciones y bonificaciones, le daremos click para CAPTURAR.
 `;
 
 // Posición 20
@@ -238,46 +261,89 @@ Aqui pondremos 0 para indicar que no tenemos ningun descuento ni bonificación.
 `;
 
 // Posición 22
-var ingreso_adicional_1= `
-Ahora vamos a la parte de ingresos adicionales, este es el penultimo apartado antes de terminar la seccion de ingresos.
+var disminuir_ingresos = `
+El siguiente paso es configurar los ingresos a disminuir, selecciona la opción de CAPTURAR.
 `;
 
-// Posición 23
-var ingreso_adicional_2= `
-Aquí indicaremos cualquier tipo de actividad que no se haya registrado su CFDI correspondiente o no tenga un prellenado. Daremos click en agregar.
+// Posicón 23
+var agregar_disminuir_ingreso = `
+Se nos marca una advertencia debido a que por lo menos debe de haber un registro, por lo que para agregarlo haz click en el botón.
 `;
 
 // Posición 24
-var ingreso_adicional_3= `
+var seleccionar_concepto= `
 En el apartado de Concepto seleccionaremos uno, presiona el apartado de seleccionar.
 `;
 
 // Posición 25
-var ingreso_adicional_4= `
-Para este ejemplo no contaremos con ingresos adicionales por lo que le daremos en el apartado de " Sin ingresos adicionales ".
+var concepto_disminuir = `
+El concepto que vas a seleccionar es el de "Sin ingresos a disminuir" ya que no reportaremos algunos, pero en caso de ser necesario deberas seleccionar la opción correspondiente.
 `;
 
 // Posición 26
-var ingreso_adicional_5= `
+var seleccionar_importe = `
 Nos iremos a la seccion donde dice importe.
 `;
 
 // Posición 27
-var ingreso_adicional_6= `
+var importe_disminuir = `
+Como anteriormente seleccionaste la opción de sin ingresos a disminuir, el importe debe de ser 0.
+`;
+
+// Posición 28
+var cerrar_apartado = `
+Con los datos ya ingresados ahora cerremos este apartado.
+`;
+
+// Posición 29
+var ingreso_adicional_1= `
+Ahora vamos a la parte de ingresos adicionales, este es el penultimo apartado antes de terminar la seccion de ingresos.
+`;
+
+// Posición 30
+var ingreso_adicional_2= `
+Aquí indicaremos cualquier tipo de actividad que no se haya registrado su CFDI correspondiente o no tenga un prellenado. Daremos click en agregar.
+`;
+
+// Posición 31
+var ingreso_adicional_3= `
+Para este ejemplo no contaremos con ingresos adicionales por lo que le daremos en el apartado de " Sin ingresos adicionales ".
+`;
+
+// Posición 32
+var ingreso_adicional_4= `
 Pondremos un 0 dando a entender que claramente no tuvimos ingresos adicionales y seguiremos con los siguientes pasos.
 `;
 
-// Posición 27
-var ingreso_adicional_7= `
-Ahora cerremos este apartado.
+// Posición 33
+var ingresos_totales = `
+La última sección del apartado de ingresos es la del total de ingresos efectivamente cobrados, por lo que debes de hacer click en CAPTURAR
+`;
+
+// Posición 34
+var ingresos_totales_2 = `
+Al igual que en las secciones pasadas puedes ver la advertencia en rojo ya que no hay ningún monto agregado, selecciona la opción de AGREGAR.
+`;
+
+// Posición 35
+var ingresos_totales_3 = `
+Los conceptos siempre seran dependiendo la declaración, para este ejemplo utilizaremos el de "Actividad empresarial".
+`;
+
+// Posición 36
+var ingresos_totales_4 = `
+El importe será el total de los ingresos por lo que debes de ingresar: 2597.
 `;
 
 // HTML de tutorial
 var HTML_text_declaraciones = [SAT_inicio, declaraciones, presenta_declaracion, login_declaraciones, 
-                                inicio_declaraciones,declaracion_isr,isr_pt1,isr_pt2,isr_pt3]
+                                inicio_declaraciones,declaracion_isr,
+                                isr_pt1,isr_pt2,isr_pt3, isr_pt4]
 
 // Texto de guía tutorial
 var tutorial_text_declaraciones = [inicio, RSC, opcion_RSC, iniciar_declaracion, login_tutorial, RFC_login, contrasena_login, captcha_login,
                                 presentar_declaracion, configuracion_decla, configuracion_decla_periodicidad, configuracion_decla_periodo, configuracion_decla_tipo, configuracion_decla_final,decla_isr_inicio,
-                                copropiedad,seleccion_input_copropiedad,ingresos_efectivamente_cobrados_mostrar,facturas_vigentes,desc_dev_bonif,desc_dev_bonif_2,txt_desc_dev_bonif,ingreso_adicional_1,
-                                ingreso_adicional_2,ingreso_adicional_3,ingreso_adicional_4,ingreso_adicional_5,ingreso_adicional_6,ingreso_adicional_7]
+                                copropiedad,seleccion_input_copropiedad,ingresos_efectivamente_cobrados_mostrar,facturas_vigentes,desc_dev_bonif,desc_dev_bonif_2,txt_desc_dev_bonif,
+                                disminuir_ingresos, agregar_disminuir_ingreso, seleccionar_concepto, concepto_disminuir, seleccionar_importe, importe_disminuir, cerrar_apartado,
+                                ingreso_adicional_1,ingreso_adicional_2,ingreso_adicional_3, ingreso_adicional_4,
+                                ingresos_totales, ingresos_totales_2, ingresos_totales_3, ingresos_totales_4]
