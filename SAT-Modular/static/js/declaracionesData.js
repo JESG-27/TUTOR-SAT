@@ -150,6 +150,65 @@ var isr_pt4 = `
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(29)">
 `;
 
+// Posición 10
+var isr_pt5 = `
+<div class="tuto-window">
+    <img class="" src="/static/images/Declaraciones/Declaraciones-isr-pt5-c1.png" alt="image" id="img_isr_simp_pt5">
+    
+    <div class="">
+        <input class="" type="button" onclick="ocultarinput('determinacion'), mostrarinput('mostrar_isr_retenido'),imagen('img_isr_simp_pt5', '/static/images/Declaraciones/Declaraciones-isr-pt5-c2.png'), actualizarTexto()" id="determinacion" value="determinacion">
+        <input class="" type="button" onclick="ocultarinput('mostrar_isr_retenido'), mostrarinput('isr_retenido_valor'),imagen('img_isr_simp_pt5', '/static/images/Declaraciones/Declaraciones-isr-pt5-c3.png'), actualizarTexto()" id="mostrar_isr_retenido" value="mostrar" style="display : none">
+        <input class="" type="text" onclick="actualizarTexto()" onchange="Validar_numero('isr_retenido_valor','cerar_isr_retenido','img_isr_simp_pt5','/static/images/Declaraciones/Declaraciones-isr-pt5-c4.png')" id="isr_retenido_valor" style="display : none">
+        <input class="" type="button" onclick="siguiente(), actualizarTexto()" id="cerar_isr_retenido" value="cerrar" style="display : none"  >
+    </div>
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(29)">
+`;
+
+// Posición 11
+var isr_pt6 = `
+<div class="tuto-window">
+    <img class="" src="/static/images/Declaraciones/Declaraciones-isr-pt6-c1_1.png" alt="image" id="img_isr_simp_pt6_1" style="display : none">
+    <img class="" src="/static/images/Declaraciones/Declaraciones-isr-pt6-c1_2.png" alt="image" id="img_isr_simp_pt6_2">
+    
+    <div class="">
+        <input class="" type="button" onclick="ocultarinput('pago'), mostrarinput('img_isr_simp_pt6_1'),mostrarinput('compensaciones_aplicar'),imagen('img_isr_simp_pt6_2', '/static/images/Declaraciones/Declaraciones-isr-pt6-c2.png'), actualizarTexto()" id="pago" value="Pago">
+        <input class="" type="button" onclick="ocultarinput('compensaciones_aplicar'), mostrarinput('no_compensaciones_aplicar'),imagen('img_isr_simp_pt6_2', '/static/images/Declaraciones/Declaraciones-isr-pt6-c3.png'), actualizarTexto()" id="compensaciones_aplicar" value="Selecciona" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('no_compensaciones_aplicar'), mostrarinput('guardar_isr'),imagen('img_isr_simp_pt6_2', '/static/images/Declaraciones/Declaraciones-isr-pt6-c4.png'), actualizarTexto()" id="no_compensaciones_aplicar" value="NO" style="display : none">
+        <input class="" type="button" onclick="siguiente(), actualizarTexto()" id="guardar_isr" value="Guardar" style="display : none"  >
+
+    </div>
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(29)">
+`;
+// Posición 12
+var isr_final = `
+<div class="tuto-window">
+    <img class="" src="/static/images/Declaraciones/Declaraciones-iva-c1.png" alt="image" id="img_iva_pt1">
+    
+    <div class="">
+        <input class="" type="button" onclick="siguiente(), actualizarTexto()" id="iva_simplificado" value="iva simplificado" >
+
+    </div>
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(29)">
+`;
+
+// Posición 13
+var iva_pt1 = `
+<div class="tuto-window">
+    <img class="" src="/static/images/Declaraciones/Declaraciones-iva-header.png" alt="image" id="img_iva_header">
+    <img class="" src="/static/images/Declaraciones/Declaraciones-iva-c2.png" alt="image" id="img_iva_pt2">
+    
+    <div class="">
+        <input class="" type="button" onclick="ocultarinput('mostrar_iva_simp'),ocultarinput('img_iva_header'),mostrarinput(''),imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-c3.png'), actualizarTexto()" id="mostrar_iva_simp" value="mostrar">
+        <input class="" type="button" onclick="ocultarinput(''),mostrarinput(''),imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-c4.png'), actualizarTexto()" id="mostrar_iva_simp" value="mostrar" style="display : none">
+
+    </div>
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(29)">
+`;
+
 // ----------------------------------------------- Tutorial text -----------------------------------------------
 // Posición 0
 var inicio = `
@@ -338,7 +397,7 @@ El importe será el total de los ingresos por lo que debes de ingresar: 2597.
 // HTML de tutorial
 var HTML_text_declaraciones = [SAT_inicio, declaraciones, presenta_declaracion, login_declaraciones, 
                                 inicio_declaraciones,declaracion_isr,
-                                isr_pt1,isr_pt2,isr_pt3, isr_pt4]
+                                isr_pt1,isr_pt2,isr_pt3, isr_pt4,isr_pt5,isr_pt6,isr_final,iva_pt1]
 
 // Texto de guía tutorial
 var tutorial_text_declaraciones = [inicio, RSC, opcion_RSC, iniciar_declaracion, login_tutorial, RFC_login, contrasena_login, captcha_login,

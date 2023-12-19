@@ -95,6 +95,13 @@ async function Validar_numero(id,siguiente,idimg,img){
         imagen(idimg, img)
         mostrarinput(siguiente)
     }
+    else if (inputActual.value == "0" && id == "isr_retenido_valor" ){
+
+        inputActual.setAttribute("readonly", " ")
+        document.getElementById("tutorialText").innerHTML = "Perfecto, presiona cerrar para ir al siguiente apartado"
+        imagen(idimg, img)
+        mostrarinput(siguiente)
+    }
     else{
         document.getElementById("tutorialText").innerHTML = "Parece que cometiste un error, lo bueno es que estas aprendiendo ingresalo nuevamente"
     }
