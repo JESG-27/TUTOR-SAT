@@ -144,7 +144,7 @@ var isr_pt4 = `
         <input class="" type="button" onclick="ocultarinput('actividad_empresarial'), mostrarinput('total_ingresos'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c5.png'), actualizarTexto(26)" id="actividad_empresarial" value="Actividad Empresarial" style="display : none">
         <input class="" type="text" onclick="actualizarTexto(36)" onchange="Validar_numero('total_ingresos','guardar_ingreso_total','img_isr_simp_pt4','/static/images/Declaraciones/Declaraciones-isr-pt4-c6.png')" id="total_ingresos" style="display : none">
         <input class="" type="button" onclick="ocultarinput('guardar_ingreso_total'),mostrarinput('cerrar_ingreso_total'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c7.png'), actualizarTexto(28)" id="guardar_ingreso_total" value="Guardar" style="display : none">
-        <input class="" type="button" onclick="siguiente(), actualizarTexto()" id="cerrar_ingreso_total" value="cerrar" style="display : none"  >   
+        <input class="" type="button" onclick="siguiente(), actualizarTexto(37)" id="cerrar_ingreso_total" value="cerrar" style="display : none"  >   
     </div>
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(29)">
@@ -156,10 +156,10 @@ var isr_pt5 = `
     <img class="" src="/static/images/Declaraciones/Declaraciones-isr-pt5-c1.png" alt="image" id="img_isr_simp_pt5">
     
     <div class="">
-        <input class="" type="button" onclick="ocultarinput('determinacion'), mostrarinput('mostrar_isr_retenido'),imagen('img_isr_simp_pt5', '/static/images/Declaraciones/Declaraciones-isr-pt5-c2.png'), actualizarTexto()" id="determinacion" value="determinacion">
-        <input class="" type="button" onclick="ocultarinput('mostrar_isr_retenido'), mostrarinput('isr_retenido_valor'),imagen('img_isr_simp_pt5', '/static/images/Declaraciones/Declaraciones-isr-pt5-c3.png'), actualizarTexto()" id="mostrar_isr_retenido" value="mostrar" style="display : none">
-        <input class="" type="text" onclick="actualizarTexto()" onchange="Validar_numero('isr_retenido_valor','cerar_isr_retenido','img_isr_simp_pt5','/static/images/Declaraciones/Declaraciones-isr-pt5-c4.png')" id="isr_retenido_valor" style="display : none">
-        <input class="" type="button" onclick="siguiente(), actualizarTexto()" id="cerar_isr_retenido" value="cerrar" style="display : none"  >
+        <input class="" type="button" onclick="ocultarinput('determinacion'), mostrarinput('mostrar_isr_retenido'),imagen('img_isr_simp_pt5', '/static/images/Declaraciones/Declaraciones-isr-pt5-c2.png'), actualizarTexto(38)" id="determinacion" value="determinacion">
+        <input class="" type="button" onclick="ocultarinput('mostrar_isr_retenido'), mostrarinput('isr_retenido_valor'),imagen('img_isr_simp_pt5', '/static/images/Declaraciones/Declaraciones-isr-pt5-c3.png'), actualizarTexto(39)" id="mostrar_isr_retenido" value="mostrar" style="display : none">
+        <input class="" type="text" onclick="actualizarTexto(40)" onchange="Validar_numero('isr_retenido_valor','cerar_isr_retenido','img_isr_simp_pt5','/static/images/Declaraciones/Declaraciones-isr-pt5-c4.png')" id="isr_retenido_valor" style="display : none">
+        <input class="" type="button" onclick="siguiente(), actualizarTexto(41)" id="cerar_isr_retenido" value="cerrar" style="display : none"  >
     </div>
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(29)">
@@ -172,10 +172,10 @@ var isr_pt6 = `
     <img class="" src="/static/images/Declaraciones/Declaraciones-isr-pt6-c1_2.png" alt="image" id="img_isr_simp_pt6_2">
     
     <div class="">
-        <input class="" type="button" onclick="ocultarinput('pago'), mostrarinput('img_isr_simp_pt6_1'),mostrarinput('compensaciones_aplicar'),imagen('img_isr_simp_pt6_2', '/static/images/Declaraciones/Declaraciones-isr-pt6-c2.png'), actualizarTexto()" id="pago" value="Pago">
-        <input class="" type="button" onclick="ocultarinput('compensaciones_aplicar'), mostrarinput('no_compensaciones_aplicar'),imagen('img_isr_simp_pt6_2', '/static/images/Declaraciones/Declaraciones-isr-pt6-c3.png'), actualizarTexto()" id="compensaciones_aplicar" value="Selecciona" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('no_compensaciones_aplicar'), mostrarinput('guardar_isr'),imagen('img_isr_simp_pt6_2', '/static/images/Declaraciones/Declaraciones-isr-pt6-c4.png'), actualizarTexto()" id="no_compensaciones_aplicar" value="NO" style="display : none">
-        <input class="" type="button" onclick="siguiente(), actualizarTexto()" id="guardar_isr" value="Guardar" style="display : none"  >
+        <input class="" type="button" onclick="ocultarinput('pago'), mostrarinput('img_isr_simp_pt6_1'),mostrarinput('compensaciones_aplicar'),imagen('img_isr_simp_pt6_2', '/static/images/Declaraciones/Declaraciones-isr-pt6-c2.png'), actualizarTexto(42)" id="pago" value="Pago">
+        <input class="" type="button" onclick="ocultarinput('compensaciones_aplicar'), mostrarinput('no_compensaciones_aplicar'),imagen('img_isr_simp_pt6_2', '/static/images/Declaraciones/Declaraciones-isr-pt6-c3.png'), actualizarTexto(43)" id="compensaciones_aplicar" value="Selecciona" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('no_compensaciones_aplicar'), mostrarinput('guardar_isr'),imagen('img_isr_simp_pt6_2', '/static/images/Declaraciones/Declaraciones-isr-pt6-c4.png'), actualizarTexto(44)" id="no_compensaciones_aplicar" value="NO" style="display : none">
+        <input class="" type="button" onclick="siguiente(), actualizarTexto(45)" id="guardar_isr" value="Guardar" style="display : none"  >
 
     </div>
 </div>
@@ -187,7 +187,7 @@ var isr_final = `
     <img class="" src="/static/images/Declaraciones/Declaraciones-iva-c1.png" alt="image" id="img_iva_pt1">
     
     <div class="">
-        <input class="" type="button" onclick="siguiente(), actualizarTexto()" id="iva_simplificado" value="iva simplificado" >
+        <input class="" type="button" onclick="siguiente(), actualizarTexto(46)" id="iva_simplificado" value="iva simplificado" >
 
     </div>
 </div>
@@ -394,6 +394,51 @@ var ingresos_totales_4 = `
 El importe será el total de los ingresos por lo que debes de ingresar: 2597.
 `;
 
+// Posición 37
+var determinacion = `
+Excelente, terminamos el apartado de ingresos, es momento de movernos a la seccion de determinación.
+`;
+
+// Posición 38
+var isr_retenido_morales = `
+Aquí volvemos a observar el monto final ingresado en la seccion anterior, ahora nos enfocaremos en la parte resaltada en rojo, iremos a " ver detalles " del ISR retenido por personas morales. Recuerda que 
+si no sabes el significado puesdes recurrir a nuestro asistente virtual
+`;
+
+// Posición 39
+var isr_retenido_ventana = `
+Aquí tenemos el ISR retenido del mes, en la casilla marcada con rojo para este ejemplo, indicaremos que no tenemos ISR retenido. Dirígete a ese apartado.
+`;
+
+// Posición 40
+var texto_isr_retenido = `
+Aquí, como lo mencionamos anteriormente, no agregaremos ISR retenido, por lo que colocaremos un 0 para continuar. 
+`;
+
+// Posición 41
+var apartado_pago = `
+Finalizamos la seccion número 2 del ISR simplificado de confianza, por último iremos a la seccion de pago.
+`;
+
+// Posición 42
+var compensaciones_aplicar = `
+Aquí nos inicará con la casilla en rojo las compensaciones por aplicar, de la misma forma para este ejemplo indicaremos que no tenemos ninguna compensacion, para ello en primer lugar da click en seleccionar.
+`;
+
+// Posición 43
+var no_compensaciones_aplicar = `
+Una vez estando en la zona de seleccion, como lo indicamos anteriormente le pondremos que "no".
+`;
+
+// Posición 44
+var final_guardar_isr = `
+Perfecto, para finalizar el ISR simplificado de confianza, da click en guardar, justo en la parte superior derecha.
+`;
+
+// Posición 45
+var inicio_iva_simplificado = `
+Momento de continuar con la siguiente parte de la declaracion, seleccionaremos el IVA simplificado de confianza.
+`;
 // HTML de tutorial
 var HTML_text_declaraciones = [SAT_inicio, declaraciones, presenta_declaracion, login_declaraciones, 
                                 inicio_declaraciones,declaracion_isr,
@@ -405,4 +450,5 @@ var tutorial_text_declaraciones = [inicio, RSC, opcion_RSC, iniciar_declaracion,
                                 copropiedad,seleccion_input_copropiedad,ingresos_efectivamente_cobrados_mostrar,facturas_vigentes,desc_dev_bonif,desc_dev_bonif_2,txt_desc_dev_bonif,
                                 disminuir_ingresos, agregar_disminuir_ingreso, seleccionar_concepto, concepto_disminuir, seleccionar_importe, importe_disminuir, cerrar_apartado,
                                 ingreso_adicional_1,ingreso_adicional_2,ingreso_adicional_3, ingreso_adicional_4,
-                                ingresos_totales, ingresos_totales_2, ingresos_totales_3, ingresos_totales_4]
+                                ingresos_totales, ingresos_totales_2, ingresos_totales_3, ingresos_totales_4,determinacion,isr_retenido_morales,isr_retenido_ventana,
+                                texto_isr_retenido,apartado_pago,compensaciones_aplicar,no_compensaciones_aplicar,final_guardar_isr,inicio_iva_simplificado]
