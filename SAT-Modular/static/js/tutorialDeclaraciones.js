@@ -67,24 +67,10 @@ async function Validar_numero(id,siguiente,idimg,img){
     inputActual = document.getElementById(id)
     //console.log(siguiente)
 
-    if (inputActual.value == "0" && id == "dec_devo_bonif_por_copropiedad" ){
+    if (inputActual.value == "0" && (id == "dec_devo_bonif_por_copropiedad" || id == "importe_disminuir" || id == "importe_adicional" || id == "isr_retenido_valor" || id == "IVA_acreditable_2")){
 
         inputActual.setAttribute("readonly", " ")
         document.getElementById("tutorialText").innerHTML = "Perfecto, presiona cerrar para ir al siguiente apartado"
-        imagen(idimg, img)
-        mostrarinput(siguiente)
-    }
-    else if (inputActual.value == "0" && id == "importe_disminuir" ){
-
-        inputActual.setAttribute("readonly", " ")
-        document.getElementById("tutorialText").innerHTML = "Perfecto, presiona guardar para ir al siguiente apartado"
-        imagen(idimg, img)
-        mostrarinput(siguiente)
-    }
-    else if (inputActual.value == "0" && id == "importe_adicional" ){
-
-        inputActual.setAttribute("readonly", " ")
-        document.getElementById("tutorialText").innerHTML = "Perfecto, presiona guardar para ir al siguiente apartado"
         imagen(idimg, img)
         mostrarinput(siguiente)
     }
@@ -95,10 +81,9 @@ async function Validar_numero(id,siguiente,idimg,img){
         imagen(idimg, img)
         mostrarinput(siguiente)
     }
-    else if (inputActual.value == "0" && id == "isr_retenido_valor" ){
-
+    else if (inputActual.value == "207" && id == "IVA_acreditable"){
         inputActual.setAttribute("readonly", " ")
-        document.getElementById("tutorialText").innerHTML = "Perfecto, presiona cerrar para ir al siguiente apartado"
+        document.getElementById("tutorialText").innerHTML = "Perfecto, ahora continua con el IVA acreditable por activades mixtas"
         imagen(idimg, img)
         mostrarinput(siguiente)
     }

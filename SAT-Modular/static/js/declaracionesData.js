@@ -162,7 +162,7 @@ var isr_pt5 = `
         <input class="" type="button" onclick="siguiente(), actualizarTexto(41)" id="cerar_isr_retenido" value="cerrar" style="display : none"  >
     </div>
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(29)">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(33)">
 `;
 
 // Posición 11
@@ -179,7 +179,7 @@ var isr_pt6 = `
 
     </div>
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(29)">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(37)">
 `;
 // Posición 12
 var isr_final = `
@@ -191,7 +191,7 @@ var isr_final = `
 
     </div>
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(29)">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(41)">
 `;
 
 // Posición 13
@@ -201,12 +201,47 @@ var iva_pt1 = `
     <img class="" src="/static/images/Declaraciones/Declaraciones-iva-c2.png" alt="image" id="img_iva_pt2">
     
     <div class="">
-        <input class="" type="button" onclick="ocultarinput('mostrar_iva_simp'),ocultarinput('img_iva_header'),mostrarinput(''),imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-c3.png'), actualizarTexto()" id="mostrar_iva_simp" value="mostrar">
-        <input class="" type="button" onclick="ocultarinput(''),mostrarinput(''),imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-c4.png'), actualizarTexto()" id="mostrar_iva_simp" value="mostrar" style="display : none">
-
+        <input class="" type="button" onclick="ocultarinput('mostrar_iva_simp'),ocultarinput('img_iva_header'),mostrarinput('IVA_acreditable'),imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-c3.png'), actualizarTexto(47)" id="mostrar_iva_simp" value="Capturar">
+        <input class="" type="text" onclick="actualizarTexto(48)" onchange="Validar_numero('IVA_acreditable', 'IVA_acreditable_2', 'img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-c4.png')" id="IVA_acreditable" style="display : none">
+        <input class="" type="text" onclick="actualizarTexto(49)" onchange="Validar_numero('IVA_acreditable_2', 'cerrar_IVA_acreditable', 'img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-c5.png')" id="IVA_acreditable_2" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('cerrar_IVA_acreditable'), ocultarinput('IVA_acreditable'), ocultarinput('IVA_acreditable_2'),imagen('img_iva_header','/static/images/Declaraciones/Declaraciones-iva-header-2.png'), imagen('img_iva_pt2','/static/images/Declaraciones/Declaraciones-iva-c6.png'), mostrarinput('img_iva_header'), mostrarinput('pago_IVA'), actualizarTexto(50)" id="cerrar_IVA_acreditable" value="CERRAR" style="display : none">
+        <input class="" type="button" onclick="siguiente(), actualizarTexto(51)" id="pago_IVA" value="Pago" style="display : none">
     </div>
 </div>
-<input class="atras" type="button" onclick="anterior(), actualizarTexto(29)">
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(45)">
+`;
+
+// Posición 14
+var iva_pt2 = `
+<div class="tuto-window">
+    <img class="" src="/static/images/Declaraciones/Declaraciones-iva-header-pago.png" alt="image" id="img_iva_header">
+    <img class="" src="/static/images/Declaraciones/Declaraciones-iva-pago-c1.png" alt="image" id="img_iva_pt2">
+    
+    <div class="">
+        <input class="" type="button" onclick="ocultarinput('compensacion'), mostrarinput('compensacion_no'), imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-pago-c2.png')" id="compensacion" value="Seleccionar">
+        <input class="" type="button" onclick="ocultarinput('compensacion_no'), mostrarinput('estimulos'), imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-pago-c3.png'), actualizarTexto(52)" id="compensacion_no" value="No" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('estimulos'), mostrarinput('estimulos_no'), imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-pago-c4.png')" id="estimulos" value="Seleccionar" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('estimulos_no'), mostrarinput('guardar_iva'), imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-pago-c5.png'), actualizarTexto(53)" id="estimulos_no" value="No" style="display : none">
+        <input class="" type="button" onclick="siguiente(), actualizarTexto(54)" id="guardar_iva" value="guardar" style="display : none">
+    </div>
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(46)">
+`;
+
+// Posición 15
+var finalizar_declaracion = `
+<div class="tuto-window">
+    <img class="" src="/static/images/Declaraciones/Declaraciones-iva-header-pago.png" alt="image" id="img_iva_header">
+    <img class="" src="/static/images/Declaraciones/Declaraciones-completa-c1.png" alt="image" id="img_iva_pt2">
+    
+    <div class="">
+        <input class="" type="button" onclick="ocultarinput('enviar_declaracion'), mostrarinput('si_declaracion'), imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-completa-c2.png'), actualizarTexto(55)" id="enviar_declaracion" value="Enviar Declaración">
+        <input class="" type="button" onclick="ocultarinput('si_declaracion'), mostrarinput('descargar'), imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-completa-c3.png'), actualizarTexto(56)" id="si_declaracion" value="Si" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('descargar'), mostrarinput('finalizar'), imagen('img_iva_header', '/static/images/Declaraciones/Declaraciones-completa-header.png')" id="descargar" value="DESCARGAR" style="display : none">
+        <button class="" id="finalizar" style="display : none"><a href="/tutoriales">Finalizar</a></button> 
+    </div>
+</div>
+<input class="atras" type="button" onclick="anterior(), actualizarTexto(51)">
 `;
 
 // ----------------------------------------------- Tutorial text -----------------------------------------------
@@ -439,10 +474,66 @@ Perfecto, para finalizar el ISR simplificado de confianza, da click en guardar, 
 var inicio_iva_simplificado = `
 Momento de continuar con la siguiente parte de la declaracion, seleccionaremos el IVA simplificado de confianza.
 `;
+
+// Posición 46
+var iva_acreditable = `
+En la declaracón del IVA se han llenado algunos datos basados en el ISR, por lo que no tendrás que modificar mucho. El principal que podemos ver remarcado en rojo es IVA acreditable del periodo, seleciona la opción de "CAPTURAR".
+`;
+
+// Posición 47
+var iva_acreditable_actividades = `
+El IVA acreditable es el impuesto efectivamente pagado en gastos realizados (compras y gastos) que cumplan con los requisitos fiscales (estrictamente indispensables). En este campo de actividades gravadas agrega 207. Este número siempre es calculado en base a la tasa.
+`;
+
+// Posición 48
+var iva_actividades_gravadas = `
+Los 207 que vas a agregar lo puedes calcular <a href='http://www.calculadorasat.com/calcular-iva' target="_blank">aquí</a> agregando la cantidad de 2597 y un porcentaje del 8 %.
+`;
+
+// Posición 49
+var iva_actividades_mixtas = `
+Aquí se captura el IVA pagado de actividades que no estén identificadas como gravadas. Para este ejemplo agrega un 0.
+`;
+
+// Posición 50
+var iva_pago = `
+Perfecto, hasta ahora muy sencillo ¿Verdad?, continua en la pestaña de "Pago".
+`;
+
+// Posición 51
+var iva_pago_compensaciones = `
+Aquí en el apartado de Pago puedes que los datos ya se han cargado, solo tienes que especificar compensaciones por aplicar. Se puede incluir compensaciones a las que se tiene derecho, por lo que deberás de capturarlos en las ventanas correspondientes. Para este ejemplo solo se marcará como "No".
+`;
+
+// Posición 52
+var iva_pago_estimulos = `
+De igual forma los para los estimulos selecciona la opción de "No".
+`;
+
+// Posición 53
+var iva_completado = `
+Con estos simples pasos se concluye la parte de IVA simplificado de confianza, haz click en "GUARDAR" para no perder tus cambios.
+`;
+
+// Posición 54
+var enviar_declaracion = `
+Ya tienes concluída la declaración de ambas obligaciones, puedes ver el monto a pagar. Para completar tu declaración haz click en "ENVIAR DECLARACIÓN".
+`;
+
+// Posición 55
+var si_enviar = `
+Lee con atención el texto y selecciona la opción de "SÍ".
+`;
+
+// Posición 56
+var acuse_recibo = `
+Este es el documento que se genera, es tu acuse de recibo. Para no perderlo selecciona la opción de descargar y de esta forma obtendras este archivo en PDF.
+`;
+
 // HTML de tutorial
 var HTML_text_declaraciones = [SAT_inicio, declaraciones, presenta_declaracion, login_declaraciones, 
                                 inicio_declaraciones,declaracion_isr,
-                                isr_pt1,isr_pt2,isr_pt3, isr_pt4,isr_pt5,isr_pt6,isr_final,iva_pt1]
+                                isr_pt1,isr_pt2,isr_pt3, isr_pt4,isr_pt5,isr_pt6,isr_final,iva_pt1, iva_pt2, finalizar_declaracion]
 
 // Texto de guía tutorial
 var tutorial_text_declaraciones = [inicio, RSC, opcion_RSC, iniciar_declaracion, login_tutorial, RFC_login, contrasena_login, captcha_login,
@@ -451,4 +542,6 @@ var tutorial_text_declaraciones = [inicio, RSC, opcion_RSC, iniciar_declaracion,
                                 disminuir_ingresos, agregar_disminuir_ingreso, seleccionar_concepto, concepto_disminuir, seleccionar_importe, importe_disminuir, cerrar_apartado,
                                 ingreso_adicional_1,ingreso_adicional_2,ingreso_adicional_3, ingreso_adicional_4,
                                 ingresos_totales, ingresos_totales_2, ingresos_totales_3, ingresos_totales_4,determinacion,isr_retenido_morales,isr_retenido_ventana,
-                                texto_isr_retenido,apartado_pago,compensaciones_aplicar,no_compensaciones_aplicar,final_guardar_isr,inicio_iva_simplificado]
+                                texto_isr_retenido,apartado_pago,compensaciones_aplicar,no_compensaciones_aplicar,final_guardar_isr,
+                                inicio_iva_simplificado, iva_acreditable, iva_acreditable_actividades, iva_actividades_gravadas, iva_actividades_mixtas, iva_pago, iva_pago_compensaciones, iva_pago_estimulos, iva_completado,
+                                enviar_declaracion, si_enviar, acuse_recibo]
