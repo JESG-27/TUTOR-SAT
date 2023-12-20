@@ -108,9 +108,9 @@ var config_datos_emisor_engrane = `
 var config_basica = `
 <div class="tuto-window">
     <img class="captura" src="/static/images/CFDI/Config-basica.png" alt="image">
-    <img class="capturaCorta" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
+    <img class="capturaCorta" id="img65" src="/static/images/CFDI/Config-basica-pt2.png" alt="image">
     <img class="capturaCortaProducto" src="/static/images/CFDI/Config-basica-pt3.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
+    <img class="captura"  id="imgAviso" src="/static/images/CFDI/Config-basica-pt4.png" alt="image">
     <input class="pos9Selec" type="button" onclick="siguiente(), actualizarTexto(17)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(15)">
@@ -405,7 +405,7 @@ var nueva_factura = `
     <img class="capturaCorta2" src="/static/images/CFDI/Nueva-factura-pt1.png" alt="image">
     <img class="capturaCortaCFDI" src="/static/images/CFDI/Nueva-factura-pt2.png" alt="image">
     <img class="capturaCortaCFDI2" src="/static/images/CFDI/Nueva-factura-pt3.png" alt="image">
-    <img class="captura" src="/static/images/CFDI/Nueva-factura-pt4.png" alt="image">
+    <img class="capturaCorta" src="/static/images/CFDI/Nueva-factura-pt4.png" alt="image">
     <input  class="pos34Check" type="button" onclick="siguiente(), actualizarTexto(30)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(28)">
@@ -449,7 +449,7 @@ var nueva_factura_c1 = `
         <input type="text" class="pos35Anio" onclick="actualizarTexto(32)" onchange="FacturaGlobal_DatosCliente(3)" id="anio">
     </div>
 
-    <div class="datoscliente">
+    <div id="pos35" class="datoscliente">
         <form>
             <input class="pos35Cliente"  type="text" onclick="actualizarTexto(33)" onchange="FacturaGlobal_DatosCliente(4)" id="clienteF" onkeyup="this.value = this.value.toUpperCase();">
             
@@ -1010,8 +1010,8 @@ async function val_login(){
         document.getElementById("tuto-window").innerHTML = `
         <div class="tuto-window">
             <img class="capturaNav" src="/static/images/CFDI/FirmaEncabezado.png" alt="image">
-            <img class="captura" src="/static/images/CFDI/Aviso1.png" alt="image">
-            <img class="capturaCorta3" src="/static/images/CFDI/Aviso2.png" alt="image">
+            <img class="captura" id="imgAviso" src="/static/images/CFDI/Aviso1.png" alt="image">
+            <img class="capturaCorta3" id="imgAviso2" src="/static/images/CFDI/Aviso2.png" alt="image">
             <img class="captura" src="/static/images/CFDI/Aviso3.png" alt="image" id="aviso3">
 
             <input class="" type="button" onclick="imagen('aviso3','/static/images/CFDI/Firma1.png'); ocultarinput('buscarKey'); mostrarinput('Fiel_'); actualizarTexto(64)" id="buscarKey" value="">
