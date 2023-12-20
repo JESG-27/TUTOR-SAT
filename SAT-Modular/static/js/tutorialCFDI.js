@@ -446,7 +446,7 @@ var nueva_factura_c1 = `
             <option>Diciembre</option>
         </datalist>
         
-        <input type="text" class="pos35Anio" onclick="actualizarTexto(32)" onchange="FacturaGlobal_DatosCliente(3)" id="anio">
+        <input type="text" class="pos35Anio" onclick="actualizarTexto(32)" onchange="FacturaGlobal_DatosCliente(3)" id="anio_factura_global">
     </div>
 
     <div id="pos35" class="datoscliente">
@@ -1137,10 +1137,10 @@ async function FacturaGlobal_DatosCliente(campo)
         break
 
         case 3:
-            anio = document.getElementById("anio")
+            anio = document.getElementById("anio_factura_global")
             if (anio.value == "2023" && anio.hasAttribute("readonly") == false)
             {
-                document.getElementById("anio").setAttribute("readonly", "")
+                document.getElementById("anio_factura_global").setAttribute("readonly", "")
                 validacion_complete += 1
             }
             else
