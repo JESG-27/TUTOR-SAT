@@ -2227,7 +2227,7 @@ h2.CFDI {
     border: none;
     width: 30px;
     height: 30px;
-    bottom: 914px;
+    bottom: 726px;
     left: 136px;
 }
 
@@ -2264,7 +2264,7 @@ h2.CFDI {
     width: 245px;
     height: 20px;
     bottom: 916px;
-    left: 146px;
+    left: 145px;
     padding-left: 6px;
     color:#666;
 }
@@ -2277,7 +2277,7 @@ h2.CFDI {
     background-color: #fff;
 }  
 
-.pos35Anio {
+#anioPos35 {
     display: inline-block;
     position: relative;
     cursor: pointer;
@@ -2291,149 +2291,19 @@ h2.CFDI {
     color:#666;
 }
 
-.pos35Anio:focus {
+#anioPos35:focus {
     outline: none;
 }
 
-.pos35Anio:valid {
+#anioPos35:valid {
     background-color: #fff;
 }
 
-.pos35Cliente {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    background: none;
-    border: none;
-    width: 245px;
-    height: 20px;
-    bottom: 831px;
-    left: 114px;
-    padding-left: 6px;
-    color:#666;
+
+#pos35 {
+    padding-top: 158px;
 }
 
-.pos35Cliente:focus {
-    outline: none;
-}
-
-.pos35Cliente:valid {
-    background-color: #fff;
-}
-
-.pos35Razon {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    background: none;
-    border: none;
-    width: 245px;
-    height: 20px;
-    bottom: 831px;
-    left: 144px;
-    padding-left: 6px;
-    color:#666;
-}
-
-.pos35Razon:focus {
-    outline: none;
-}
-
-.pos35Razon:valid {
-    background-color: #fff;
-}
-
-.pos35Uso {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    background-color: #fff;
-    border: none;
-    width: 245px;
-    height: 20px;
-    bottom: 831px;
-    left: 174px;
-    padding-left: 6px;
-    color:#666;
-}
-
-.pos35Uso:focus {
-    outline: none;
-}
-
-.pos35Email {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    background: none;
-    border: none;
-    width: 245px;
-    height: 20px;
-    bottom: 778px;
-    left: -633px;
-    padding-left: 6px;
-    color:#666;
-}
-
-.pos35Email:focus {
-    outline: none;
-}
-
-.pos35Email:valid {
-    background-color: #fff;
-}
-
-.pos35Codigo {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    background: none;
-    border: none;
-    width: 245px;
-    height: 20px;
-    bottom: 801px;
-    left: 393px;
-    padding-left: 6px;
-    color:#666;
-}
-
-.pos35Codigo:focus {
-    outline: none;
-}
-
-.pos35Codigo:valid {
-    background-color: #fff;
-}
-
-.pos35CReg {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    background-color: #fff;
-    border: none;
-    width: 245px;
-    height: 20px;
-    bottom: 748px;
-    left: 145px;
-    padding-left: 6px;
-    color:#666;
-}
-
-.pos35CReg:focus {
-    outline: none;
-}
-
-.pos35Agregar {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    background: none;
-    border: none;
-    width: 80px;
-    height: 40px;
-    bottom: 695px;
-    left: 105px;
-}
 
 /* POSICIPN 36 */
 .pos36Anio {
@@ -3247,7 +3117,7 @@ h2.CFDI {
     border: none;
     width: 650px;
     height: 18px;
-    bottom: 303px;
+    bottom: 285px;
     left: 236px;
     text-align: left;
     padding-left: 10px;
@@ -3299,14 +3169,18 @@ h2.CFDI {
 
 /* Large screens -----------------------------------------------------------------------------------------------*/
 @media only screen and (min-width : 1920px) {
+    .name-course {
+        font-size: 14px;
+    }
+    
     .tuto-window {
-        height: 900px;
-        width: 90%;
+        height: 850px;
+        width: 85%;
     }
 
     .tutorial_text_header {
         height: 75px;
-        width: 90%;
+        width: 85%;
         margin-top: 20px;
     }
 
@@ -3330,31 +3204,36 @@ h2.CFDI {
         height: 50px;
     }
 
+    .capturaCorta {
+        height: 60%;
+    }
+
+    .captura {
+        height: 95%;
+    }
+
     /* POSICION 0 */
     .pos0Factura {
-
-        bottom: 768px;
-        left: 470px;
-        width: 60px;
-        height: 75px;
+        bottom: 700px;
+        left: 435px;
+        width: 80px;
+        height: 95px;
     }
 
     /* POSICION 1 */
     .pos1Servicios {
-
-        width: 1215px;
+        width: 1150px;
         height: 40px;
-        bottom: 852px;
-        left: 250px;
+        bottom: 768px;
+        left: 230px;
     }
 
     /* POSICION 2 */
     .pos2Servicio {
-
         width: 500px;
         height: 30px;
-        bottom: 550px;
-        left: 260px;
+        bottom: 496px;
+        left: 257px;
     }
 
     /* POSICION 3 */
@@ -3362,401 +3241,454 @@ h2.CFDI {
 
         width: 242px;
         height: 42px;
-        bottom: 110px;
-        left: 820px;
+        bottom: 115px;
+        left: 770px;
     }
 
     /* POSICION 4 */
     .pos4RFC {
-
-        width: 610px;
-        height: 40px;
-        bottom: 1440px;
-        left: 470px;
-        padding-left: 6px;
+        width: 585px;
+        height: 45px;
+        bottom: 1297px;
+        left: 439px;
+        padding-left: 14px;
+        font-size: 24px;
     }
 
     .pos4Password {
-
-        width: 610px;
-        height: 40px;
-        bottom: 1368px;
-        left: -145px;
-        padding-left: 6px;
+        width: 585px;
+        height: 45px;
+        bottom: 1231px;
+        left: -152px;
+        padding-left: 14px;
+        font-size: 24px;
     }
 
     .pos4Captcha {
-
-        width: 610px;
-        height: 40px;
-        bottom: 1185px;
-        left: 470px;
-        padding-left: 6px;
+        width: 585px;
+        height: 45px;
+        bottom: 1075px;
+        left: 439px;
+        padding-left: 14px;
+        font-size: 24px;
     }
 
     .pos4Enviar {
-
         width: 130px;
         height: 60px;
-        bottom: 1080px;
-        left: 330px;
+        bottom: 980px;
+        left: 303px;
+    }
+
+    /*AVISO*/
+    #imgAviso {
+        height: 80%;
+    }
+
+    #imgAviso2 {
+        height: 60%;
     }
 
     /* POSICION 5 */
     .pos5Engrane {
-
-        width: 40px;
+        width: 50px;
         height: 40px;
-        bottom: 840px;
-        left: 1545px;
+        bottom: 753px;
+        left: 1450px;
     }
 
     /* POSICION 6 */
     .pos6Config {
-
         width: 420px;
         height: 35px;
-        bottom: 710px;
-        left: 1160px;
+        bottom: 712px;
+        left: 1090px;
     }
 
     /* POSICION 7 */
     .pos7RFC {
-
-        width: 450px;
+        width: 408px;
         height: 35px;
-        bottom: 1097px;
+        bottom: 980px;
         left: 160px;
+        font-size: 18px;
+        color: #666;
     }
 
     .pos7Nombre {
-
-        width: 900px;
+        width: 852px;
         height: 35px;
-        bottom: 1097px;
-        left: 190px;
+        bottom: 980px;
+        left: 192px;
+        font-size: 18px;
+        color: #666;
     }
 
     .pos7Comercial {
-
-        width: 1395px;
-        height: 40px;
-        bottom: 1035px;
+        width: 1294px;
+        height: 30px;
+        bottom: 934px;
         left: 160px;
+        font-size: 18px;
+        color: #666;
     }
 
     .pos7Guardar {
-
-        width: 120px;
+        width: 113px;
         height: 46px;
-        bottom: 353px;
-        left: 68px;
+        bottom: 325px;
+        left: 83px;
     }
 
     /* Validación de registro de emisor */
     .validEngrane {
-
-        width: 40px;
+        width: 50px;
         height: 40px;
-        bottom: 1420px;
-        left: 1545px;
+        bottom: 1343px;
+        left: 1450px;
     }
 
     .validRFC {
-
-        width: 450px;
+        width: 408px;
         height: 35px;
-        bottom: 1143px;
+        bottom: 1080px;
         left: 160px;
+        font-size: 18px;
+        color: #666;
     }
 
     .validNombre {
-
-        width: 900px;
+        width: 852px;
         height: 35px;
-        bottom: 1143px;
-        left: 190px;
+        bottom: 1080px;
+        left: 192px;
+        font-size: 18px;
+        color: #666;
     }
 
     /* POSICION 8 */
     .pos8RFC {
-
-        width: 400px;
+        width: 408px;
         height: 35px;
-        bottom: 1135px;
-        left: 180px;
+        bottom: 1021px;
+        left: 160px;
+        font-size: 18px;
+        color: #666;
     }
 
     .pos8Nombre {
-
-        width: 600px;
+        width: 852px;
         height: 35px;
-        bottom: 1135px;
-        left: 405px;
+        bottom: 1021px;
+        left: 192px;
+        font-size: 18px;
+        color: #666;
     }
 
     .pos8Basica {
-
         width: 420px;
         height: 35px;
-        bottom: 1375px;
-        left: 1160px;
+        bottom: 1222px;
+        left: 1089px;
     }
 
-    /* CAPTURA CORTA  ***EDITAR SI EL TAMAÑO NO CORRESPONDE***
-    .capturaCortaProducto {
-        width: 100%;
-        height: 45%;
-        display: block;
-    }*/
 
-
-    /* POSICION 9 */
+    /* POSICION 9 */ 
     .pos9Selec {
+        width: 563px;
+        height: 38px;
+        bottom: 2029px;
+        left: 163px;
+    }
 
-        width: 580px;
-        height: 35px;
-        bottom: 2440px;
-        left: 180px;
+    #img65 {
+        height: 65%;
+    }
+
+    .capturaCortaProducto {
+        height: 35%;
     }
 
     /* POSICION 10 */
     .pos10Regimen {
-
-        width: 580px;
-        height: 25px;
-        bottom: 2370px;
-        left: 180px;
+        width: 563px;
+        height: 28px;
+        bottom: 2049px;
+        left: 163px;
     }
 
     /* POSICION 11 */
     .pos11Fav {
-
         width: 40px;
         height: 35px;
-        bottom: 2450px;
-        left: 955px;
+        bottom: 2125px;
+        left: 900px;
     }
 
     /* POSICION 12 */
     .pos12Selec {
-
-        width: 588px;
+        width: 563px;
         height: 35px;
-        bottom: 2208px;
-        left: 180px;
+        bottom: 1899px;
+        left: 164px;
     }
 
     /* POSICION 13 */
     .pos13Ingreso {
-
-        width: 580px;
+        width: 563px;
         height: 25px;
-        bottom: 2135px;
-        left: 180px;
+        bottom: 1835px;
+        left: 164px;
     }
 
     /* POSICION 14 */
     .pos14Fav {
-
         width: 40px;
         height: 35px;
-        bottom: 2210px;
-        left: 955px;
+        bottom: 1905px;
+        left: 900px;
     }
 
     /* POSICION 15*/
     .pos15Selec {
-
-        width: 588px;
+        width: 563px;
         height: 35px;
-        bottom: 1995px;
-        left: 180px;
+        bottom: 1710px;
+        left: 164px;
     }
 
     /* POSICION 16 */
     .pos16Codigo {
-
-        width: 580px;
+        width: 563px;
         height: 25px;
-        bottom: 1930px;
-        left: 180px;
+        bottom: 1653px;
+        left: 164px;
     }
 
     /* POSICION 17 */
     .pos17Fav {
-
         width: 40px;
         height: 35px;
-        bottom: 1997px;
-        left: 955px;
+        bottom: 1717px;
+        left: 900px;
     }
 
     /* POSICION 18*/
     .pos18Selec {
-
-        width: 588px;
+        width: 563px;
         height: 35px;
-        bottom: 1800px;
-        left: 180px;
+        bottom: 1538px;
+        left: 164px;
     }
 
     /* POSICION 19 */
     .pos19Peso {
-
         width: 580px;
         height: 25px;
-        bottom: 1735px;
-        left: 180px;
+        bottom: 1593px;
+        left: 164px;
     }
-
-    /* CAPTURA CORTA2       ***EDITAR SI EL TAMAÑO NO CORRESPONDE***
-    .capturaCorta2 {
-        width: 100%;
-        height: 75%;
-        display: block;
-    }*/
 
     /* POSICION 20 */
     .pos20Fav {
-
         width: 40px;
         height: 35px;
-        bottom: 1805px;
-        left: 955px;
+        bottom: 1663px;
+        left: 900px;
     }
 
     /* POSICION 21*/
     .pos21Selec {
-
-        width: 588px;
+        width: 563px;
         height: 35px;
-        bottom: 1578px;
-        left: 180px;
+        bottom: 1448px;
+        left: 164px;
     }
 
     /* POSICION 22 */
     .pos22Efectivo {
-
         width: 580px;
         height: 25px;
-        bottom: 1513px;
-        left: 170px;
+        bottom: 1385px;
+        left: 167px;
     }
 
     /* POSICION 23 */
     .pos23Fav {
-
         width: 40px;
         height: 35px;
-        bottom: 1578px;
-        left: 955px;
+        bottom: 1450px;
+        left: 900px;
     }
 
     /* POSICION 24*/
     .pos24Selec {
-
-        width: 588px;
+        width: 563px;
         height: 35px;
-        bottom: 1378px;
-        left: 180px;
+        bottom: 1260px;
+        left: 164px;
     }
 
     /* POSICION 25 */
     .pos25Pago {
-
         width: 580px;
         height: 25px;
-        bottom: 1320px;
-        left: 170px;
+        bottom: 1206px;
+        left: 167px;
     }
 
     /* POSICION 26 */
     .pos26Fav {
-
         width: 40px;
         height: 35px;
-        bottom: 1380px;
-        left: 955px;
+        bottom: 1266px;
+        left: 900px;
     }
-
-    /*      ***EDITAR EN CASO DE QUE LAS IMAGENES NO QUEDEN BIEN EN PORCENTAJE***
-    /* CAPTURA CORTA3 
-    .capturaCorta3 {
-        width: 100%;
-        height: 80%;
-        display: block;
-    }
-    
-    /* CAPTURA CORTA PRODUCTO 2 
-    .capturaCortaProducto2 {
-        width: 100%;
-        height: 35%;
-        display: block;
-    }*/
 
     /* POSICION 27 */
     .pos27Engrane {
-
-        width: 40px;
+        width: 50px;
         height: 40px;
-        bottom: 2770px;
-        left: 1545px;
+        bottom: 2537px;
+        left: 1450px;
     }
 
     /* POSICION 28 */
     .pos28Avanzada {
-
         width: 420px;
         height: 35px;
-        bottom: 2680px;
-        left: 1160px;
+        bottom: 2454px;
+        left: 1087px;
     }
 
     /* POSICION 29 */
     .pos29Check {
-
         width: 30px;
         height: 30px;
-        bottom: 1968px;
-        left: 725px;
+        bottom: 1755px;
+        left: 684px;
     }
 
-    /* POSICION 29 */
+    /* POSICION 30 */
     .pos30Check {
-
         width: 30px;
         height: 30px;
-        bottom: 1528px;
-        left: 725px;
+        bottom: 1360px;
+        left: 684px;
     }
 
     /* POSICION 31 */
     .pos31Guardar {
-
         width: 115px;
         height: 50px;
-        bottom: 95px;
-        left: 135px;
+        bottom: 93px;
+        left: 122px;
     }
 
     /* POSICION 32 */
     .pos32Generar {
-
         width: 110px;
         height: 40px;
-        bottom: 2325px;
-        left: 1410px;
+        bottom: 2073px;
+        left: 1323px;
     }
 
     /* POSICION 33 */
     .pos33Nueva {
-
-        width: 265px;
-        height: 25px;
-        bottom: 2265px;
-        left: 1150px;
+        width: 403px;
+        height: 35px;
+        bottom: 2022px;
+        left: 1035px;
     }
 
+    /* POSICION 34 */
+    .pos34Check {
+        width: 30px;
+        height: 30px;
+        bottom: 1112px;
+        left: 212px;
+    }    
 
+        /* POSICION 35 
+    .pos35Per {
+        width: 372px;
+        height: 33px;
+        bottom: 1504px;
+        left: 168px;
+        padding-left: 9px;
+        font-size: 18px;
+    }
+
+    .pos35Mes {
+        width: 372px;
+        height: 33px;
+        bottom: 1504px;
+        left: 212px;
+        padding-left: 9px;
+        font-size: 18px;
+    }  
+
+    .pos35Anio {
+        width: 372px;
+        height: 33px;
+        bottom: 1504px;
+        left: 212px;
+        padding-left: 9px;
+        font-size: 18px;
+    }
+
+    .pos35Cliente {
+        width: 245px;
+        height: 20px;
+        bottom: 831px;
+        left: 114px;
+        padding-left: 6px;
+    }
+
+    .pos35Razon {
+        width: 245px;
+        height: 20px;
+        bottom: 831px;
+        left: 144px;
+        padding-left: 6px;
+    }
+
+    .pos35Uso {
+        width: 245px;
+        height: 20px;
+        bottom: 831px;
+        left: 174px;
+        padding-left: 6px;
+    }
+
+    .pos35Email {
+        width: 245px;
+        height: 20px;
+        bottom: 778px;
+        left: -633px;
+        padding-left: 6px;
+    }
+
+    .pos35Codigo {
+        width: 245px;
+        height: 20px;
+        bottom: 801px;
+        left: 393px;
+        padding-left: 6px;
+    }
+
+    .pos35CReg {
+        width: 245px;
+        height: 20px;
+        bottom: 748px;
+        left: 145px;
+        padding-left: 6px;
+    }
+
+    .pos35Agregar {
+        width: 80px;
+        height: 40px;
+        bottom: 695px;
+        left: 105px;
+    }*/
 }
