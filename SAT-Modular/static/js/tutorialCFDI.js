@@ -449,53 +449,55 @@ var nueva_factura_c1 = `
         <input type="text" class="pos35Anio" onclick="actualizarTexto(32)" onchange="FacturaGlobal_DatosCliente(3)" id="anio_factura_global">
     </div>
 
-    <div id="pos35" class="datoscliente">
-        <form>
-            <input class="pos35Cliente"  type="text" onclick="actualizarTexto(33)" onchange="FacturaGlobal_DatosCliente(4)" id="clienteF" onkeyup="this.value = this.value.toUpperCase();">
-            
-            <input class="pos35Razon"  type="text" onclick="actualizarTexto(34)" id="razonsocial">
+    <div class="espacio0">
+        <div id="pos35" class="datoscliente">
+                <form>
+                    <input class="pos35Cliente"  type="text" onclick="actualizarTexto(33)" onchange="FacturaGlobal_DatosCliente(4)" id="clienteF" onkeyup="this.value = this.value.toUpperCase();">
+                    
+                    <input class="pos35Razon"  type="text" onclick="actualizarTexto(34)" id="razonsocial">
 
-            <input class="pos35Uso" type="text" onclick="actualizarTexto(35)" list="uso_factura" id="usofactura" onchange="FacturaGlobal_DatosCliente(5)">
-            <datalist id="uso_factura">
-                <option value="Adquisición de mercancías">
-                <option value="Aportaciones voluntarias al SAR">
-                <option value="Comunicaciones satelitales">
-                <option value="Comunicaciones telefónicas">
-                <option value="Construcciones">
-                <option value="Dados, troqueles, moldes, matrices y herramental">
-                <option value="Depósito en cuentas para el ahorro, primas que tengan como base planes de pensiones.">
-                <option value="Devoluciones, descuentos, bonificaciones">
-                <option value="Donativos">
-                <option value="Equipo de computo y accesorios">
-                <option value="Equipo de transporte">
-                <option value="Gastos de transportación escolar obligatoria.">
-                <option value="Gastos en general">
-                <option value="Gastos funerales">
-                <option value="Gastos médicos por incapacidad o discapacidad">
-                <option value="Honorarios médicos, dentales y gastos hospitalarios.">
-                <option value="Intereses reales efectivamente pagados por créditos hipotecarios (casa habitación).">
-                <option value="Mobilario y equipo de oficina por inversiones">
-                <option value="Nómina">
-                <option value="Otra maquinaria y equipo">
-                <option value="Pagos">
-                <option value="Pagos por servicios educativos (colegiaturas)">
-                <option value="Primas por seguros de gastos médicos.">
-                <option value="Sin efectos fiscales.">
-            </datalist>            
+                    <input class="pos35Uso" type="text" onclick="actualizarTexto(35)" list="uso_factura" id="usofactura" onchange="FacturaGlobal_DatosCliente(5)">
+                    <datalist id="uso_factura">
+                        <option value="Adquisición de mercancías">
+                        <option value="Aportaciones voluntarias al SAR">
+                        <option value="Comunicaciones satelitales">
+                        <option value="Comunicaciones telefónicas">
+                        <option value="Construcciones">
+                        <option value="Dados, troqueles, moldes, matrices y herramental">
+                        <option value="Depósito en cuentas para el ahorro, primas que tengan como base planes de pensiones.">
+                        <option value="Devoluciones, descuentos, bonificaciones">
+                        <option value="Donativos">
+                        <option value="Equipo de computo y accesorios">
+                        <option value="Equipo de transporte">
+                        <option value="Gastos de transportación escolar obligatoria.">
+                        <option value="Gastos en general">
+                        <option value="Gastos funerales">
+                        <option value="Gastos médicos por incapacidad o discapacidad">
+                        <option value="Honorarios médicos, dentales y gastos hospitalarios.">
+                        <option value="Intereses reales efectivamente pagados por créditos hipotecarios (casa habitación).">
+                        <option value="Mobilario y equipo de oficina por inversiones">
+                        <option value="Nómina">
+                        <option value="Otra maquinaria y equipo">
+                        <option value="Pagos">
+                        <option value="Pagos por servicios educativos (colegiaturas)">
+                        <option value="Primas por seguros de gastos médicos.">
+                        <option value="Sin efectos fiscales.">
+                    </datalist>            
 
-            <input class="pos35Email" type="email" onclick="actualizarTexto(36)" id="correo" onchange="FacturaGlobal_DatosCliente(6)">
+                    <input class="pos35Email" type="email" onclick="actualizarTexto(36)" id="correo" onchange="FacturaGlobal_DatosCliente(6)">
 
-            <input class="pos35Codigo" type="text" onclick="actualizarTexto(37)" id="codigop">
+                    <input class="pos35Codigo" type="text" onclick="actualizarTexto(37)" id="codigop">
 
-            <input class="pos35CReg" type="text" onclick="actualizarTexto(38)" list="lista_regimen_fiscal" id="regimenfiscal" onchange="FacturaGlobal_DatosCliente(7)">
-            <datalist id="lista_regimen_fiscal">
-                <option value="Sin obligaciones fiscales">
-                <option value="Incorporación Fiscal">
-                <option value="Residentes en el Extranjero sin Establecimiento Permanente en México">
-            </datalist>
-            
-        </form>
-    </div>   
+                    <input class="pos35CReg" type="text" onclick="actualizarTexto(38)" list="lista_regimen_fiscal" id="regimenfiscal" onchange="FacturaGlobal_DatosCliente(7)">
+                    <datalist id="lista_regimen_fiscal">
+                        <option value="Sin obligaciones fiscales">
+                        <option value="Incorporación Fiscal">
+                        <option value="Residentes en el Extranjero sin Establecimiento Permanente en México">
+                    </datalist>
+                    
+                </form>
+            </div>   
+    </div>
             
     <input type="hidden" class="pos35Agregar" onclick="siguiente(), actualizarTexto(40)" value="" id="botonAgregar">
         
@@ -514,17 +516,19 @@ var nueva_factura_c2 = `
     <img class="capturaCorta" src="/static/images/CFDI/Nueva-factura-pt4.png" alt="image" id="imgfinal">
     <img class="capturaCorta2" src="/static/images/CFDI/Nueva-factura-pt5.png" alt="image">
 
-    <div class="facturaglobal">
-        <input type="text" class="pos36Anio" onclick="actualizarTexto(32)" id="anio" readonly="" value="2023">
-    </div>
+    <div class="espacio1">
+        <div class="facturaglobal">
+                <input type="text" class="pos36Anio" onclick="actualizarTexto(32)" id="anio" readonly="" value="2023">
+            </div>
 
-    <div class="datoscliente">
-        <input class="pos36RFC"  type="text" onclick="actualizarTexto(33)" id="clienteF" readonly="" value="XAXX010101000">
-        <input class="pos36Pub"  type="text" onclick="actualizarTexto(34)" id="razonsocial" readonly="" value="PUBLICO EN GENERAL">
-        <input class="pos36AFis" type="text" onclick="actualizarTexto(35)" id="usofactura" readonly="" value="Sin efectos fiscales.">
-        <input class="pos36Cor" type="email" onclick="actualizarTexto(36)" id="correo" readonly="" value="cliente@mail.com">
-        <input class="pos36Cod" type="text" onclick="actualizarTexto(37)" id="codigop" readonly="" value="59699">
-        <input class="pos36Reg" type="text" onclick="actualizarTexto(38)" id="regimenfiscal" readonly="" value="Sin obligaciones fiscales">
+            <div class="datoscliente">
+                <input class="pos36RFC"  type="text" onclick="actualizarTexto(33)" id="clienteF" readonly="" value="XAXX010101000">
+                <input class="pos36Pub"  type="text" onclick="actualizarTexto(34)" id="razonsocial" readonly="" value="PUBLICO EN GENERAL">
+                <input class="pos36AFis" type="text" onclick="actualizarTexto(35)" id="usofactura" readonly="" value="Sin efectos fiscales.">
+                <input class="pos36Cor" type="email" onclick="actualizarTexto(36)" id="correo" readonly="" value="cliente@mail.com">
+                <input class="pos36Cod" type="text" onclick="actualizarTexto(37)" id="codigop" readonly="" value="59699">
+                <input class="pos36Reg" type="text" onclick="actualizarTexto(38)" id="regimenfiscal" readonly="" value="Sin obligaciones fiscales">
+            </div>
     </div>
 
     <div class="agregar-producto">
@@ -575,17 +579,19 @@ var nueva_factura_c3 = `
     <img class="capturaCorta3" src="/static/images/CFDI/Final.png" alt="image"3>
     <img class="capturaCorta2" src="/static/images/CFDI/Nueva-factura-pt5.png" alt="image">
 
-    <div class="facturaglobal">
-        <input type="text" class="pos37Anio" onclick="actualizarTexto(32)" id="anio" readonly="" value="2023">
-    </div>
+    <div class="espacio2">
+        <div class="facturaglobal">
+            <input type="text" class="pos37Anio" onclick="actualizarTexto(32)" id="anio" readonly="" value="2023">
+        </div>
 
-    <div class="datoscliente">
-        <input class="pos37RFC"  type="text" onclick="actualizarTexto(33)" id="clienteF" readonly="" value="XAXX010101000">
-        <input class="pos37Pub"  type="text" onclick="actualizarTexto(34)" id="razonsocial" readonly="" value="PUBLICO EN GENERAL">
-        <input class="pos37AFis" type="text" onclick="actualizarTexto(35)" id="usofactura" readonly="" value="Sin efectos fiscales.">
-        <input class="pos37Cor" type="email" onclick="actualizarTexto(36)" id="correo" readonly="" value="cliente@mail.com">
-        <input class="pos37Cod" type="text" onclick="actualizarTexto(37)" id="codigop" readonly="" value="59699">
-        <input class="pos37Reg" type="text" onclick="actualizarTexto(38)" id="regimenfiscal" readonly="" value="Sin obligaciones fiscales">
+        <div class="datoscliente">
+            <input class="pos37RFC"  type="text" onclick="actualizarTexto(33)" id="clienteF" readonly="" value="XAXX010101000">
+            <input class="pos37Pub"  type="text" onclick="actualizarTexto(34)" id="razonsocial" readonly="" value="PUBLICO EN GENERAL">
+            <input class="pos37AFis" type="text" onclick="actualizarTexto(35)" id="usofactura" readonly="" value="Sin efectos fiscales.">
+            <input class="pos37Cor" type="email" onclick="actualizarTexto(36)" id="correo" readonly="" value="cliente@mail.com">
+            <input class="pos37Cod" type="text" onclick="actualizarTexto(37)" id="codigop" readonly="" value="59699">
+            <input class="pos37Reg" type="text" onclick="actualizarTexto(38)" id="regimenfiscal" readonly="" value="Sin obligaciones fiscales">
+        </div>
     </div>
 
     <input class="pos37sellar" type="button" onclick="siguiente();actualizarTexto(51)" value="">
@@ -679,7 +685,7 @@ Los datos ingresados no son correctos, intentalo nuevamente
 `;
 
 // Posición 9
-var engrane_opciones =`
+var engrane_opciones = `
 Ahora haz click en el engrane de configuración de la parte superior derecha
 `;
 
@@ -804,7 +810,7 @@ En el apartado cliente ingresa al cliente "XAXX010101000" que corresponde al de 
 `;
 
 // Posicion 34
-var nueva_factura_global_razon= `
+var nueva_factura_global_razon = `
 Cuando seleccionaste al cliente este apartado fue autocompletado por PÚBLICO EN GENERAL.
 `;
 
@@ -879,72 +885,72 @@ En este campo se puede registrar el número de parte, identificador del producto
 `;
 
 // Posicion 49
-var tasa= `
+var tasa = `
 Finalmente da clic en el botón Guardar para que sea cargado el producto, verifica en el recuadro Totales el importe final de tu factura si está correcto.
 `;
 
 // Posicion 50
-var guardar= `
+var guardar = `
 Datos guardados con exito, es hora de sellar la factura.
 `;
 
 // Posicion 51
-var sellar= `
+var sellar = `
 Una vez dado click en sellar, es hora de firmar el comprobante. Ve al apartado de buscar la clave privada. 
 `;
 
 // Posicion 52
-var key= `
+var key = `
 Selecciona la clave privada, que es el archivo llamado Claveprivada_FIEL_
 `;
 
 // Posicion 53
-var fiel= `
+var fiel = `
 Ahora presiona abrir para cargarla en el campo correspondiente.
 `;
 
 // Posicion 54
-var abrir= `
+var abrir = `
 Ahora seguimos con el certificado, presiona buscar en su apartado.
 `;
 
 // Posicion 55
-var cer= `
+var cer = `
 De igual forma este archivo se encuentra en tu USB de la e.firma, selecciona el certificado que es el archivo con la nomenclatura .cer.
 `;
 
 // Posicion 56
-var fiel2= `
+var fiel2 = `
 Ahora presiona abrir para que se cargue el certificado en el campo necesario.
 `;
 
 // Posicion 57
-var abrir2= `
+var abrir2 = `
 Ahora debes de colocar tu contraseña de clave privada. Para este ejemplo será sat-sim, pero recuerda que tus contraseñas deben de ser fuertes.
 `;
 
 // Posicion 58
-var pass= `
+var pass = `
 Aqui colocaras la contraseña de la e.firma (para este ejemplo: sat-sim). Recuerda que esta contraseña fue la que definiste al tramitar tu e.firma.
 `;
 
 // Posicion 59
-var conf= `
+var conf = `
 Una vez confirmado se necesita de firmar. Presiona el boton Firmar.
 `;
 
 // Posicion 60
-var fir= `
+var fir = `
 Una vez firmado nos vamos al apartado de acciones donde se descargará un archivo, ignoralo de momento y para más facilidad da click el la flecha debajo de el texto "acciones", ahí te descargará un archivo PDF.
 `;
 
 // Posicion 61
-var desc= `
+var desc = `
 En tu apartado de descargaras encontrarás un archivo con extencion PDF, ese será nuestro archivo final con el comprofante de la factura da click en "Abrir archivo".
 `;
 
 // Posicion 62
-var pdf= `
+var pdf = `
 Finalmente tenemos nuestro comprobante, este es un ejemplo de un documento real, ahora presiona terminar para para regresar a nuestro apartado de tutoriales. 
 `;
 
@@ -963,50 +969,48 @@ var avisoCompleto = `
 Con esto se queda confirmado y firmado tu aviso de Terminos y Condiciones. Esto solo será la primera vez que realices una factura o a menos que los terminos cambien. Presiona en Siguiente.
 `;
 
-var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor, config_datos_emisor_engrane, config_basica, config_basica_regimen_fiscal, 
+var HTML_text = [SAT_inicio0, SAT_inicio1, SAT_inicio2, SAT_inicio3, Login1, config_pt1, config_pt2, config_datos_emisor, config_datos_emisor_engrane, config_basica, config_basica_regimen_fiscal,
     config_basica_c1, config_basica_c2, config_basica_c3, config_basica_c4, config_basica_c5, config_basica_c6, config_basica_c7, config_basica_c8,
     config_basica_pt2_c1, config_basica_pt2_c2, config_basica_pt2_c3, config_basica_pt2_c4, config_basica_pt2_c5, config_basica_pt2_c6, config_basica_pt2_c7, config_basica_pt2_c8, config_basica_pt2_c9, config_basica_c9,
-    config_avanzada, config_avanzada_c1, config_avanzada_c2, config_avanzada_c3, config_avanzada_c4, 
-    nueva_factura, nueva_factura_c1, nueva_factura_c2,nueva_factura_c3,nueva_factura_c4,nueva_factura_c5]
+    config_avanzada, config_avanzada_c1, config_avanzada_c2, config_avanzada_c3, config_avanzada_c4,
+    nueva_factura, nueva_factura_c1, nueva_factura_c2, nueva_factura_c3, nueva_factura_c4, nueva_factura_c5]
 
 var tutorial_text = [boton_factura_electronica, boton_servicios_facturacion, boton_facturacion_cuentas, boton_ejecutar_linea, login,
-                    RFC_login, contrasena_login, captcha_login, datos_incorrectos,
-                    engrane_opciones, opcion_datos_emisor, registro_emisor, nombre_razon_social, nombre_comercial, registro_emisor_guardado, opcion_basica,
-                    config_basica_inicio, regimen_fiscal, favorito, tipo_de_factura, codigo_postal, moneda, forma_pago, metodo_pago, config_basica_fin,
-                    opcion_avanzada, serie_folio, factura_global, opcion_generar, 
-                    nueva_factura_inicio, nueva_factura_global, nueva_factura_global_mes, nueva_factura_global_anio,nueva_factura_global_cliente,
-                    nueva_factura_global_razon,nueva_factura_global_uso,nueva_factura_global_correo,nueva_factura_global_codigop, nueva_factura_global_regimen, nueva_factura_global_agregar,
-                    descripcion_producto, producto_servicio, unidad_medida, cantidad, valor_unitario, importe, descuento, objeto_impuesto, numero_identificacion,tasa,guardar,sellar,
-                    key, fiel, abrir, cer, fiel2, abrir2, pass, conf, fir, desc, pdf, avisoTermCond, carpetaFiel, avisoCompleto]
+    RFC_login, contrasena_login, captcha_login, datos_incorrectos,
+    engrane_opciones, opcion_datos_emisor, registro_emisor, nombre_razon_social, nombre_comercial, registro_emisor_guardado, opcion_basica,
+    config_basica_inicio, regimen_fiscal, favorito, tipo_de_factura, codigo_postal, moneda, forma_pago, metodo_pago, config_basica_fin,
+    opcion_avanzada, serie_folio, factura_global, opcion_generar,
+    nueva_factura_inicio, nueva_factura_global, nueva_factura_global_mes, nueva_factura_global_anio, nueva_factura_global_cliente,
+    nueva_factura_global_razon, nueva_factura_global_uso, nueva_factura_global_correo, nueva_factura_global_codigop, nueva_factura_global_regimen, nueva_factura_global_agregar,
+    descripcion_producto, producto_servicio, unidad_medida, cantidad, valor_unitario, importe, descuento, objeto_impuesto, numero_identificacion, tasa, guardar, sellar,
+    key, fiel, abrir, cer, fiel2, abrir2, pass, conf, fir, desc, pdf, avisoTermCond, carpetaFiel, avisoCompleto]
 
 
 // Actualizar textos de tutorial
-async function actualizarTexto(pos){
+async function actualizarTexto(pos) {
     document.getElementById("tutorialText").innerHTML = tutorial_text[pos]
 }
 
 // Regresar al paso anterior
-async function anterior()
-{
+async function anterior() {
     contador = contador - 2
     siguiente();
 }
 
 // Continuar al paso siguiente
-async function siguiente(){
+async function siguiente() {
     contador = contador + 1
     console.log(contador)
     document.getElementById("tuto-window").innerHTML = HTML_text[contador]
 }
 
 // Validación de inicio de sesión
-async function val_login(){
+async function val_login() {
     RFC = document.getElementById("RFC").value
     contrasena = document.getElementById("contrasenaLogin").value
     captcha = document.getElementById("captcha").value
     // RFC == "ABCD123456XXX" && contrasena == "sat-sim" && captcha == "RP6VTL"
-    if (true)
-    {
+    if (true) {
         document.getElementById("tuto-window").innerHTML = `
         <div class="tuto-window">
             <img class="capturaNav" src="/static/images/CFDI/FirmaEncabezado.png" alt="image">
@@ -1031,8 +1035,7 @@ async function val_login(){
         actualizarTexto(63)
     }
 
-    else
-    {
+    else {
         actualizarTexto(8)
         document.getElementById("RFC").value = ""
         document.getElementById("contrasenaLogin").value = ""
@@ -1041,28 +1044,25 @@ async function val_login(){
 }
 
 // Validar contraseña de clave privada 
-async function contrasenaEfirma(contrasena,inpsiguiente){
+async function contrasenaEfirma(contrasena, inpsiguiente) {
     contrasena = document.getElementById(contrasena)
 
-    if (contrasena.value == "sat-sim")
-    {
+    if (contrasena.value == "sat-sim") {
         contrasena.setAttribute("readonly", "")
         mostrarinput(inpsiguiente)
         document.getElementById("contrasena").style.bottom = "714px";
         document.getElementById("tutorialText").innerHTML = "Perfecto, presiona en Confirmar"
     }
-    else
-    {
+    else {
         document.getElementById("tutorialText").innerHTML = "Parece que cometiste un error, a todos nos a pasado. Intenta escribir la contraseña de nuevo"
     }
 }
 
 // Validación de registro de emisor
-async function val_registro_emisor(){
+async function val_registro_emisor() {
     RFC = document.getElementById("RFC").value
     nombre = document.getElementById("nombre").value
-    if (RFC == "ABCD123456XXX" && nombre == "NOMBRE LEGAL")
-    {
+    if (RFC == "ABCD123456XXX" && nombre == "NOMBRE LEGAL") {
         actualizarTexto(14)
         document.getElementById("tuto-window").innerHTML = `
         <div class="tuto-window">
@@ -1077,8 +1077,7 @@ async function val_registro_emisor(){
         <input class="atras" type="button" onclick="anterior(), actualizarTexto(10)" value="">
         `;
     }
-    else
-    {
+    else {
         actualizarTexto(8)
         document.getElementById("RFC").value = ""
         document.getElementById("nombre").value = ""
@@ -1088,74 +1087,60 @@ async function val_registro_emisor(){
 // Factura CFDI
 
 // Cliente frecuente
-async function cliente()
-{
+async function cliente() {
     rfc_cliente = document.getElementById("clienteF")
-    if (rfc_cliente.value = "XAXX010101000")
-    {
-        document.getElementById(razonsocial.value="PUBLICO EN GENERAL")
-        document.getElementById(codigop.value="59699")
+    if (rfc_cliente.value = "XAXX010101000") {
+        document.getElementById(razonsocial.value = "PUBLICO EN GENERAL")
+        document.getElementById(codigop.value = "59699")
     }
 }
 
 // Validación de datos ingresados inicialmente
 var validacion_complete = 0
-async function FacturaGlobal_DatosCliente(campo)
-{   
-    switch (campo)
-    {
+async function FacturaGlobal_DatosCliente(campo) {
+    switch (campo) {
         case 1:
             periodicidad = document.getElementById("periodicidad")
-            if (periodicidad.value == "Mensual" && periodicidad.hasAttribute("readonly") == false)
-            {
+            if (periodicidad.value == "Mensual" && periodicidad.hasAttribute("readonly") == false) {
                 document.getElementById("periodicidad").setAttribute("readonly", "")
                 validacion_complete += 1
             }
-            else
-            {
-                if (periodicidad.hasAttribute("readonly") == false)
-                {
+            else {
+                if (periodicidad.hasAttribute("readonly") == false) {
                     document.getElementById("tutorialText").innerHTML = "Al parecer elegiste la periodicidad incorrecta, recuerda que aquí estas aprendiendo"
                 }
             }
-        break
+            break
 
         case 2:
             mes = document.getElementById("mes")
-            if (mes.value == "Julio" && mes.hasAttribute("readonly") == false)
-            {
+            if (mes.value == "Julio" && mes.hasAttribute("readonly") == false) {
                 document.getElementById("mes").setAttribute("readonly", "")
                 validacion_complete += 1
             }
-            else
-            {
-                if (mes.hasAttribute("readonly") == false)
-                {
+            else {
+                if (mes.hasAttribute("readonly") == false) {
                     document.getElementById("tutorialText").innerHTML = "Al parecer elegiste el mes incorrecto, recuerda que aquí estas aprendiendo"
                 }
             }
-        break
+            break
 
         case 3:
             anio = document.getElementById("anio_factura_global")
-            if (anio.value == "2023" && anio.hasAttribute("readonly") == false)
-            {
+            if (anio.value == "2023" && anio.hasAttribute("readonly") == false) {
                 document.getElementById("anio_factura_global").setAttribute("readonly", "")
                 validacion_complete += 1
             }
-            else
-            {
-                if (mes.hasAttribute("readonly") == false)
-                {
+            else {
+                if (mes.hasAttribute("readonly") == false) {
                     document.getElementById("tutorialText").innerHTML = "Al parecer elegiste el año incorrecto, recuerda que aquí estas aprendiendo"
                 }
             }
-        break
+            break
 
         case 4:
             clienteF = document.getElementById("clienteF")
-            if (clienteF.value == "XAXX010101000" && clienteF.hasAttribute("readonly") == false)
-            {
+            if (clienteF.value == "XAXX010101000" && clienteF.hasAttribute("readonly") == false) {
                 document.getElementById("razonsocial").value = "PUBLICO EN GENERAL"
                 document.getElementById("codigop").value = "59699"
                 document.getElementById("clienteF").setAttribute("readonly", "")
@@ -1163,163 +1148,140 @@ async function FacturaGlobal_DatosCliente(campo)
                 document.getElementById("codigop").setAttribute("readonly", "")
                 validacion_complete += 1
             }
-            else
-            {
-                if (mes.hasAttribute("readonly") == false)
-                {
+            else {
+                if (mes.hasAttribute("readonly") == false) {
                     document.getElementById("tutorialText").innerHTML = "Ingresaste el RFC del cliente de manera incorrecta, vuelve a intentarlo"
                 }
             }
-        break
+            break
 
         case 5:
             usofactura = document.getElementById("usofactura")
-            if (usofactura.value == "Sin efectos fiscales." && usofactura.hasAttribute("readonly") == false)
-            {
+            if (usofactura.value == "Sin efectos fiscales." && usofactura.hasAttribute("readonly") == false) {
                 document.getElementById("usofactura").setAttribute("readonly", "")
                 validacion_complete += 1
             }
-            else
-            {
-                if (usofactura.hasAttribute("readonly") == false)
-                {
+            else {
+                if (usofactura.hasAttribute("readonly") == false) {
                     document.getElementById("tutorialText").innerHTML = "No seleccionaste la opción correcta, que bien que esta es una simulación"
                 }
             }
-        break
+            break
 
         case 6:
             correo = document.getElementById("correo")
-            if (correo.value == "cliente@mail.com" && correo.hasAttribute("readonly") == false)
-            {
+            if (correo.value == "cliente@mail.com" && correo.hasAttribute("readonly") == false) {
                 document.getElementById("correo").setAttribute("readonly", "")
                 validacion_complete += 1
             }
-            else
-            {
-                if (correo.hasAttribute("readonly") == false)
-                {
+            else {
+                if (correo.hasAttribute("readonly") == false) {
                     document.getElementById("tutorialText").innerHTML = "Cometiste un error, a todos nos a pasado. Intenta escribir el correo de nuevo"
                 }
             }
-        break
+            break
 
         case 7:
             regimenfiscal = document.getElementById("regimenfiscal")
-            if (regimenfiscal.value == "Sin obligaciones fiscales" && regimenfiscal.hasAttribute("readonly") == false)
-            {
+            if (regimenfiscal.value == "Sin obligaciones fiscales" && regimenfiscal.hasAttribute("readonly") == false) {
                 document.getElementById("regimenfiscal").setAttribute("readonly", "")
                 validacion_complete += 1
             }
-            else
-            {
-                if (regimenfiscal.hasAttribute("readonly") == false)
-                {
+            else {
+                if (regimenfiscal.hasAttribute("readonly") == false) {
                     document.getElementById("tutorialText").innerHTML = "Vaya no elegiste el regimen correcto y es muy importante"
                 }
             }
-        break
+            break
     }
-    if (validacion_complete == 7)
-    {
+    if (validacion_complete == 7) {
         actualizarTexto(39)
         document.getElementById("botonAgregar").setAttribute("type", "button")
     }
 }
 
 // Validación agregar producto
-async function datosProducto(actual, siguiente)
-{
+async function datosProducto(actual, siguiente) {
     inputActual = document.getElementById(actual)
     inputSiguiente = document.getElementById(siguiente)
 
     console.log(inputActual.value)
-    
-    if (actual == 'descripcion' && inputActual.value == "VENTA")
-    {
+
+    if (actual == 'descripcion' && inputActual.value == "VENTA") {
         inputActual.setAttribute("readonly", "")
-        document.getElementById("prodServi").style.display="inline-block";
+        document.getElementById("prodServi").style.display = "inline-block";
         document.getElementById("tutorialText").innerHTML = "Continua en el campo de Producto o Servicio"
     }
-    else if (actual == 'prodServi' && inputActual.value == "Público en general")
-    {
+    else if (actual == 'prodServi' && inputActual.value == "Público en general") {
         inputActual.setAttribute("readonly", "")
-        inputSiguiente.style.display="inline-block";
+        inputSiguiente.style.display = "inline-block";
         document.getElementById("tutorialText").innerHTML = "Continua en el campo de Unidad de Medida"
     }
-    else if (actual == 'unidadMed' && inputActual.value == "Actividad")
-    {
+    else if (actual == 'unidadMed' && inputActual.value == "Actividad") {
         inputActual.setAttribute("readonly", "")
-        inputSiguiente.style.display="inline-block";
+        inputSiguiente.style.display = "inline-block";
         document.getElementById("tutorialText").innerHTML = "Continua en el campo de cantidad"
     }
-    else if (actual == 'cantidad' && inputActual.value == "1")
-    {
+    else if (actual == 'cantidad' && inputActual.value == "1") {
         inputActual.setAttribute("readonly", "")
-        inputSiguiente.style.display="inline-block";
+        inputSiguiente.style.display = "inline-block";
         document.getElementById("tutorialText").innerHTML = "Continua en el campo de valor"
     }
-    else if (actual == 'valorUni' && inputActual.value == "1500")
-    {
+    else if (actual == 'valorUni' && inputActual.value == "1500") {
         inputActual.setAttribute("readonly", "")
         inputSiguiente.value = "1500"
         document.getElementById("tutorialText").innerHTML = "Continua en el campo de objeto de impuesto"
-        document.getElementById("importe").style.display="inline-block";
-        document.getElementById("descuento").style.display="inline-block";
-        document.getElementById("objImpuesto").style.display="inline-block";
+        document.getElementById("importe").style.display = "inline-block";
+        document.getElementById("descuento").style.display = "inline-block";
+        document.getElementById("objImpuesto").style.display = "inline-block";
     }
-    else if (actual == 'objImpuesto' && inputActual.value == "Si objeto de impuesto")
-    {
+    else if (actual == 'objImpuesto' && inputActual.value == "Si objeto de impuesto") {
         inputActual.setAttribute("readonly", "")
         document.getElementById("tutorialText").innerHTML = "Continua en el campo de número de identificación"
-        document.getElementById("numeroIden").style.display="inline-block";
-        document.getElementById("importe").style.bottom = "1919px";
-        document.getElementById("descuento").style.bottom = "1919px";
-        document.getElementById("objImpuesto").style.bottom = "1866px";
-        document.getElementById("tasa").style.display="inline-block";
-        document.getElementById("save").style.display="inline-block";
+        document.getElementById("numeroIden").style.display = "inline-block";
+        document.getElementById("importe").style.bottom = "2053px";
+        document.getElementById("descuento").style.bottom = "2053px";
+        document.getElementById("objImpuesto").style.bottom = "1999px";
+        document.getElementById("tasa").style.display = "inline-block";
+        document.getElementById("save").style.display = "inline-block";
     }
-    else if (actual == 'numeroIden' && inputActual.value == "EJEMPLO01")
-    {
+    else if (actual == 'numeroIden' && inputActual.value == "EJEMPLO01") {
         inputActual.setAttribute("readonly", "")
         document.getElementById("tutorialText").innerHTML = "Es momento de configurar el IVA a cobrar, da click en el apartado de 'Tasa' debajo de el IVA cobrado"
-        
+
     }
-    else
-    {
+    else {
         document.getElementById("tutorialText").innerHTML = "Parece que cometiste un error, a todos nos a pasado. Intenta escribir el valor de nuevo"
     }
 }
 
 // MOSTRAR INPUT
-async function mostrarinput(id){
+async function mostrarinput(id) {
 
     inputActual = document.getElementById(id)
-    inputActual.style.display="inline-block";
+    inputActual.style.display = "inline-block";
 }
 // OCULTAR INPUT
-async function ocultarinput(id){
+async function ocultarinput(id) {
 
     inputActual = document.getElementById(id)
-    inputActual.style.display="none";
+    inputActual.style.display = "none";
 }
 
 // Cambiar imagen
-async function imagen(id, nuv){
+async function imagen(id, nuv) {
     img = document.getElementById(id);
     img.src = nuv;
 }
 
 // Funciones para el desarrollo
-async function mover()
-{
+async function mover() {
     posicion = document.getElementById("paso").value
     contador = parseInt(posicion)
     document.getElementById("tuto-window").innerHTML = HTML_text[posicion];
 }
 
-async function mostrar()
-{
+async function mostrar() {
     posicion = document.getElementById("paso").value
     document.getElementById("tutorialText").innerHTML = tutorial_text[posicion];
 }
