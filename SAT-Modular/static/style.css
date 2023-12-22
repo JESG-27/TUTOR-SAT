@@ -2231,7 +2231,6 @@ h2.CFDI {
     left: 136px;
 }
 
-
 /* POSICION 35 */
 .pos35Per {
     display: inline-block;
@@ -2264,7 +2263,7 @@ h2.CFDI {
     width: 245px;
     height: 20px;
     bottom: 916px;
-    left: 145px;
+    left: 146px;
     padding-left: 6px;
     color:#666;
 }
@@ -2277,7 +2276,7 @@ h2.CFDI {
     background-color: #fff;
 }  
 
-#anioPos35 {
+#anio_factura_global {
     display: inline-block;
     position: relative;
     cursor: pointer;
@@ -2291,182 +2290,35 @@ h2.CFDI {
     color:#666;
 }
 
-#anioPos35:focus {
+#anio_factura_global:focus {
     outline: none;
 }
 
-#anioPos35:valid {
+#anio_factura_global:valid {
     background-color: #fff;
 }
 
-
-#pos35 {
-    padding-top: 158px;
+.espacio0 {
+    position: relative;
+    height: 200px;
+    bottom: 915px;
+    z-index: 0;
+    padding: 0px 85px;
 }
 
-
-/* POSICIPN 36 */
-.pos36Anio {
+.pos35Agregar {
     display: inline-block;
     position: relative;
     cursor: pointer;
     background: none;
     border: none;
-    width: 245px;
-    height: 20px;
-    bottom: 2216px;
-    left: 671px;
-    padding-left: 10px;
-    font-size: 12PX;
-    color:#666;
+    width: 80px;
+    height: 40px;
+    bottom: 851px;
+    left: 105px;
 }
 
-.pos36Anio:focus {
-    outline: none;
-}
-
-.pos36Anio:valid {
-    background-color: #fff;
-}
-
-.pos36RFC {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    background: none;
-    border: none;
-    width: 245px;
-    height: 20px;
-    bottom: 2128px;
-    left: 112px;
-    padding-left: 10px;
-    font-size: 12PX;
-    color:#666;
-}
-
-.pos36RFC:focus {
-    outline: none;
-}
-
-.pos36RFC:valid {
-    background-color: #fff;
-}
-
-.pos36Pub {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    background: none;
-    border: none;
-    width: 245px;
-    height: 20px;
-    bottom: 2128px;
-    left: 142px;
-    padding-left: 10px;
-    font-size: 12PX;
-    color:#666;
-}
-
-.pos36Pub:focus {
-    outline: none;
-}
-
-.pos36Pub:valid {
-    background-color: #fff;
-} 
-
-.pos36Cor {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    background: none;
-    border: none;
-    width: 245px;
-    height: 20px;
-    bottom: 2077px;
-    left: -636px;
-    padding-left: 10px;
-    font-size: 12PX;
-    color:#666;
-}
-
-.pos36Cor:focus {
-    outline: none;
-}
-
-.pos36Cor:valid {
-    background-color: #fff;
-}
-
-.pos36Cod {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    background: none;
-    border: none;
-    width: 245px;
-    height: 20px;
-    bottom: 2099px;
-    left: 391px;
-    padding-left: 10px;
-    font-size: 12PX;
-    color:#666;
-}
-
-.pos36Cod:focus {
-    outline: none;
-}
-
-.pos36Cod:valid {
-    background-color: #fff;
-}
-
-.pos36Reg {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    background: none;
-    border: none;
-    width: 245px;
-    height: 20px;
-    bottom: 2047px;
-    left: 141px;
-    padding-left: 10px;
-    font-size: 12PX;
-    color:#666;
-}
-
-.pos36Reg:focus {
-    outline: none;
-}
-
-.pos36Reg:valid {
-    background-color: #fff;
-}
-
-.pos36AFis {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    background: none;
-    border: none;
-    width: 245px;
-    height: 20px;
-    bottom: 2130px;
-    left: 173px;
-    padding-left: 10px;
-    font-size: 12PX;
-    color:#666;
-}
-
-.pos36AFis:focus {
-    outline: none;
-}
-
-.pos36AFis:valid {
-    background-color: #fff;
-}
-
+/* POSICION 36 */
 .pos36Des {
     display: inline-block;
     position: relative;
@@ -2475,7 +2327,7 @@ h2.CFDI {
     border: none;
     width: 179px;
     height: 20px;
-    bottom: 1932px;
+    bottom: 2067px;
     left: 127px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2499,7 +2351,7 @@ h2.CFDI {
     border: none;
     width: 179px;
     height: 20px;
-    bottom: 1932px;
+    bottom: 2067px;
     left: 145px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2524,7 +2376,7 @@ h2.CFDI {
     border: none;
     width: 179px;
     height: 20px;
-    bottom: 1932px;
+    bottom: 2067px;
     left: 165px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2547,7 +2399,7 @@ h2.CFDI {
     border: none;
     width: 179px;
     height: 20px;
-    bottom: 1878px;
+    bottom: 2011px;
     left: -422px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2570,7 +2422,7 @@ h2.CFDI {
     border: none;
     width: 179px;
     height: 20px;
-    bottom: 1878px;
+    bottom: 2011px;
     left: -404px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2593,7 +2445,7 @@ h2.CFDI {
     border: none;
     width: 179px;
     height: 20px;
-    bottom: 1899px;
+    bottom: 2033px;
     left: 532px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2616,7 +2468,7 @@ h2.CFDI {
     border: none;
     width: 179px;
     height: 20px;
-    bottom: 1899px;
+    bottom: 2033px;
     left: 550px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2639,7 +2491,7 @@ h2.CFDI {
     border: none;
     width: 179px;
     height: 20px;
-    bottom: 1846px;
+    bottom: 1978px;
     right: 239px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2662,7 +2514,7 @@ h2.CFDI {
     border: none;
     width: 179px;
     height: 20px;
-    bottom: 1866px;
+    bottom: 2001px;
     right:  220px;
     padding-left: 10px;
     font-size: 12PX;
@@ -2685,7 +2537,7 @@ h2.CFDI {
     border: none;
     width: 10px;
     height: 10px;
-    bottom: 1681px;
+    bottom: 1815px;
     right: 567px;
 }
 
@@ -2697,24 +2549,30 @@ h2.CFDI {
     border: none;
     width: 75px;
     height: 36px;
-    bottom: 929px;
-    right: 636px;
+    bottom: 1062px;
+    right: 637px;
+}
+
+.espacio1 {
+    position: relative;
+    height: 200px;
+    bottom: 2216px;
+    z-index: 0;
+    padding: 0px 85px;
 }
 
 /* POSICION 37 */
 #anio {
-    display: inline-block;
-    position: relative;
     cursor: pointer;
     background: none;
     border: none;
     width: 245px;
     height: 20px;
-    bottom: 1077px;
-    left: 671px;
     padding-left: 10px;
     font-size: 12PX;
     color:#666;
+    margin-left: 585px;
+    margin-bottom: 2px;
 }
 
 .anio:focus {
@@ -2726,18 +2584,16 @@ h2.CFDI {
 }
 
 #clienteF {
-    display: inline-block;
-    position: relative;
     cursor: pointer;
     background: none;
     border: none;
     width: 245px;
     height: 20px;
-    bottom: 990px;
-    left: 112px;
     padding-left: 10px;
     font-size: 12PX;
     color:#666;
+    margin-left: 27px;
+   
 }
 
 #clienteF:focus {
@@ -2748,19 +2604,40 @@ h2.CFDI {
     background-color: #fff;
 }
 
-#razonsocial {
-    display: inline-block;
-    position: relative;
+#usofactura {
     cursor: pointer;
     background: none;
     border: none;
     width: 245px;
     height: 20px;
-    bottom: 990px;
-    left: 142px;
     padding-left: 10px;
     font-size: 12PX;
     color:#666;
+    margin-left: 30px;
+    margin-top: 85px;
+    margin-bottom: 31px;
+    
+}
+
+#usofactura:focus {
+    outline: none;
+}
+
+#usofactura:valid {
+    background-color: #fff;
+}
+
+
+#razonsocial {
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 245px;
+    height: 20px;
+    padding-left: 10px;
+    font-size: 12PX;
+    color:#666;
+    margin-left: 30px;
 }
 
 #razonsocial:focus {
@@ -2771,19 +2648,17 @@ h2.CFDI {
     background-color: #fff;
 } 
 
-#correo {
-    display: inline-block;
-    position: relative;
+#correo { 
     cursor: pointer;
     background: none;
     border: none;
     width: 245px;
     height: 20px;
-    bottom: 938px;
-    left: -636px;
     padding-left: 10px;
     font-size: 12PX;
     color:#666;
+    margin-left: 27px;
+    margin-bottom: 31px;
 }
 
 #correo:focus {
@@ -2795,18 +2670,16 @@ h2.CFDI {
 }
 
 #codigop {
-    display: inline-block;
-    position: relative;
+    
     cursor: pointer;
     background: none;
     border: none;
     width: 245px;
     height: 20px;
-    bottom: 960px;
-    left: 391px;
     padding-left: 10px;
     font-size: 12PX;
     color:#666;
+    margin-left: 30px;
 }
 
 #codigop:focus {
@@ -2818,18 +2691,16 @@ h2.CFDI {
 }
 
 #regimenfiscal {
-    display: inline-block;
-    position: relative;
     cursor: pointer;
     background: none;
     border: none;
     width: 245px;
     height: 20px;
-    bottom: 908px;
-    left: 141px;
+    
     padding-left: 10px;
     font-size: 12PX;
     color:#666;
+    margin-left: 306px;
 }
 
 #regimenfiscal:focus {
@@ -2840,27 +2711,12 @@ h2.CFDI {
     background-color: #fff;
 }
 
-#usofactura {
-    display: inline-block;
+.espacio2 {
     position: relative;
-    cursor: pointer;
-    background: none;
-    border: none;
-    width: 245px;
-    height: 20px;
-    bottom: 991px;
-    left: 173px;
-    padding-left: 10px;
-    font-size: 12PX;
-    color:#666;
-}
-
-#usofactura:focus {
-    outline: none;
-}
-
-#usofactura:valid {
-    background-color: #fff;
+    height: 200px;
+    bottom: 1077px;
+    z-index: 0;
+    padding: 0px 85px;
 }
 
 .pos37sellar {
@@ -2871,7 +2727,7 @@ h2.CFDI {
     border: none;
     width: 70px;
     height: 31px;
-    bottom: 615px;
+    bottom: 748px;
     left: 250px;
 }
 
@@ -3165,6 +3021,34 @@ h2.CFDI {
     height: 30px;
     bottom: 152px;
     left: 685px;
+}
+
+/* POSICION 39 */
+.terminar {
+    display: flex;
+    margin: 0 auto;
+    border: none;
+    padding: 15px 0px;
+}
+
+.terminar a {
+    display: inline-block;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    border-radius: 10px;
+    background: linear-gradient(315deg, #9C1DE7 0.52%, #052573 74%);
+    transition: all .42s;
+    text-decoration: none;
+}
+
+.terminar a:hover {
+    background: none;
+    border: 2px solid #9C1DE7;
+    color: #052573;
 }
 
 /* Large screens -----------------------------------------------------------------------------------------------*/
@@ -3609,86 +3493,310 @@ h2.CFDI {
         left: 212px;
     }    
 
-        /* POSICION 35 
+        /* POSICION 35 */
     .pos35Per {
         width: 372px;
-        height: 33px;
-        bottom: 1504px;
-        left: 168px;
-        padding-left: 9px;
+        height: 30px;
+        bottom: 1421px;
         font-size: 18px;
+        padding-left: 18px;
+        left: 167px;
     }
 
     .pos35Mes {
         width: 372px;
-        height: 33px;
-        bottom: 1504px;
-        left: 212px;
-        padding-left: 9px;
+        height: 30px;
+        bottom: 1421px;
         font-size: 18px;
-    }  
+        padding-left: 18px;
+        left: 211px;
+    }
 
-    .pos35Anio {
+    #anio_factura_global {
         width: 372px;
-        height: 33px;
-        bottom: 1504px;
-        left: 212px;
-        padding-left: 9px;
+        height: 30px;
+        bottom: 1421px;
         font-size: 18px;
-    }
-
-    .pos35Cliente {
-        width: 245px;
-        height: 20px;
-        bottom: 831px;
-        left: 114px;
-        padding-left: 6px;
-    }
-
-    .pos35Razon {
-        width: 245px;
-        height: 20px;
-        bottom: 831px;
-        left: 144px;
-        padding-left: 6px;
-    }
-
-    .pos35Uso {
-        width: 245px;
-        height: 20px;
-        bottom: 831px;
-        left: 174px;
-        padding-left: 6px;
-    }
-
-    .pos35Email {
-        width: 245px;
-        height: 20px;
-        bottom: 778px;
-        left: -633px;
-        padding-left: 6px;
-    }
-
-    .pos35Codigo {
-        width: 245px;
-        height: 20px;
-        bottom: 801px;
-        left: 393px;
-        padding-left: 6px;
-    }
-
-    .pos35CReg {
-        width: 245px;
-        height: 20px;
-        bottom: 748px;
-        left: 145px;
-        padding-left: 6px;
+        padding-left: 18px;
+        left: 255px;
     }
 
     .pos35Agregar {
-        width: 80px;
+        width: 124px;
+        height: 61px;
+        bottom: 1191px;
+        left: 158px;
+    }
+
+    .espacio0 {
+        position: relative;
+        height: 200px;
+        bottom: 1418px;
+        z-index: 0;
+        padding: 0px 138px;
+    }
+
+    /* DATOS CLIENTE */
+    #anio {
+        width: 374px;
+        height: 35px;
+        padding-left: 18px;
+        font-size: 18px;
+        margin-left: 870px;
+        margin-bottom: 2px;
+    }
+    
+    #clienteF {
+        width: 374px;
+        height: 35px;
+        padding-left: 18px;
+        font-size: 18px;
+        margin-left: 29px;
+    }
+
+    #usofactura {
+        width: 369px;
+        height: 35px;
+        padding-left: 18px;
+        font-size: 18px;
+        margin-left: 46px;
+        margin-top: 134px;
+        margin-bottom: 49px;
+        
+    }
+
+    #razonsocial {
+        width: 369px;
+        height: 35px;
+        padding-left: 18px;
+        font-size: 18px;
+        margin-left: 44px;
+    }
+    
+    #correo { 
+        width: 372px;
+        height: 35px;
+        padding-left: 18px;
+        font-size: 18px;
+        margin-left: 29px;
+        margin-bottom: 50px;
+    }
+    
+    #codigop {
+        width: 372px;
+        height: 35px;
+        padding-left: 18px;
+        font-size: 18px;
+        margin-left: 45px;
+    }
+    
+    #regimenfiscal {
+        width: 372px;
+        height: 35px;
+        padding-left: 18px;
+        font-size: 18px;
+        margin-left: 450px;
+    }
+    
+
+    /* POSICION 36 */
+    .espacio1 {
+        position: relative;
+        height: 200px;
+        bottom: 3380px;
+        z-index: 0;
+        padding: 0px 138px;
+    }
+
+    .pos36Des {
+        width: 266px;
+        height: 34px;
+        bottom: 3034px;
+        left: 192px;
+        padding-left: 18px;
+        font-size: 18px;
+    }
+
+    #prodServi{
+        width: 266px;
+        height: 34px;
+        bottom: 3034px;
+        left: 225px;
+        padding-left: 18px;
+        font-size: 18px;
+    }
+
+    #unidadMed {
+        width: 266px;
+        height: 34px;
+        bottom: 3034px;
+        left: 259px;
+        padding-left: 18px;
+        font-size: 18px;
+    }
+
+    #cantidad {
+        width: 266px;
+        height: 34px;
+        bottom: 2953px;
+        left: -618px;
+        padding-left: 18px;
+        font-size: 18px;
+    }
+
+    #valorUni {
+        width: 266px;
+        height: 33px;
+        bottom: 2953px;
+        left: -586px;
+        padding-left: 18px;
+        font-size: 18px;
+    }
+
+    #importe {
+        width: 266px;
+        height: 33px;
+        bottom: 2987px;
+        left: 798px;
+        padding-left: 18px;
+        font-size: 18px;
+    }
+
+    #descuento {
+        width: 266px;
+        height: 34px;
+        bottom: 2988px;
+        left: 833px;
+        padding-left: 18px;
+        font-size: 18px;
+    }
+
+    #objImpuesto {
+        width: 266px;
+        height: 34px;
+        bottom: 2909px;
+        left: -348px;
+        padding-left: 18px;
+        font-size: 18px;
+    }
+
+    #numeroIden {
+        width: 266px;
+        height: 34px;
+        bottom: 2941px;
+        left: -315px;
+        padding-left: 18px;
+        font-size: 18px;
+    }
+
+    #tasa {
+        width: 16px;
+        height: 16px;
+        bottom: 2668px;
+        left: -834px
+    }
+
+    #save {
+        width: 119px;
+        height: 57px;
+        bottom: 1530px;
+        left: -940px;
+    }
+    
+    .espacio2 {
+        position: relative;
+        height: 200px;
+        bottom: 1722px;
+        z-index: 0;
+        padding: 0px 138px;
+    }
+
+    .pos37sellar {
+        width: 130px;
+        height: 61px;
+        bottom: 1468px;
+        left: 150px;
+    }
+
+    
+    /* POSICION 38 */
+    #key {
+        width: 114px;
+        height: 50px;
+        bottom: 1031px;
+        left: 1150px;
+    }
+
+    #fiel {
+        width: 582px;
+        height: 30px;
+        bottom: 1317px;
+        left: 228px;
+    }
+
+    #abrir {
+        width: 114px;
+        height: 35px;
+        bottom: 980px;
+        left: 560px;
+    }
+
+    #cer {
+        width: 114px;
+        height: 50px;
+        bottom: 955px;
+        left: 1150px;
+    }
+
+    #fiel2 {
+        width: 582px;
+        height: 30px;
+        bottom: 1297px;
+        left: 228px;
+    }
+
+    #abrir2 {
+        width: 114px;
+        height: 35px;
+        bottom: 965px;
+        left: 560px;
+    }
+
+    #contrasena {
+        width: 1010px;
+        height: 28px;
+        bottom: 1094px;
+        left: 129px;
+        text-align: left;
+        padding-left: 12px;
+    }
+
+    #conf {
+        width: 130px;
+        height: 50px;
+        bottom: 904px;
+        left: 19px;
+    }
+
+    #fir {
+        width: 110px;
+        height: 50px;
+        bottom: 903px;
+        left: 142px;
+    }
+
+    #desc {
+        width: 40px;
         height: 40px;
-        bottom: 695px;
-        left: 105px;
-    }*/
+        bottom: 986px;
+        left: 162px;
+    }
+
+    #vista {
+        width: 93px;
+        height: 27px;
+        bottom: 1305px;
+        left: 1082px;
+    }
+
 }
