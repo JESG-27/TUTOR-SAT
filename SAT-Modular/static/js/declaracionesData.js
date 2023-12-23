@@ -2,19 +2,19 @@
 // Posición 0
 var SAT_inicio = `
 <div class="tuto-window">
-    <img class="" src="/static/images/Declaraciones/SAT-inicio-pt1.png" alt="image">
-    <img class="" src="/static/images/Declaraciones/SAT-Inicio-pt2.png" alt="image">
-    <input class="" type="button" onclick="siguiente(), actualizarTexto(1)" value="Declaraciones">
+    <img class="captura" src="/static/images/Declaraciones/SAT-inicio-pt1.png" alt="image">
+    <img class="capturaCorta4" src="/static/images/Declaraciones/SAT-Inicio-pt2.png" alt="image">
+    <input id="selec" class="dec0Dec" type="button" onclick="siguiente(), actualizarTexto(1)" value="">
 </div>
 `;
 
 // Posición 1
 var declaraciones = `
 <div class="tuto-window">
-    <img class="" src="/static/images/Declaraciones/Declaraciones-pt1.png" alt="image">
-    <img class="" src="/static/images/Declaraciones/Declaraciones-pt2.png" alt="image" id="declaraciones_2">
-    <input class="" type="button" onclick="ocultarinput('RSC'), mostrarinput('opcionRSC'), imagen('declaraciones_2','/static/images/Declaraciones/Declaraciones-pt2-c1.png'), actualizarTexto(2)" value="Regimen Simplificado de Confianza" id="RSC">
-    <input class="" type="button" onclick="siguiente(), actualizarTexto(3)" value="Presenta tu declaración de pagos mensuales..." id="opcionRSC" style="display : none">
+    <img class="captura" src="/static/images/Declaraciones/Declaraciones-pt1.png" alt="image">
+    <img class="captura" src="/static/images/Declaraciones/Declaraciones-pt2.png" alt="image" id="declaraciones_2">
+    <input id="selec" class="dec1Reg" type="button" onclick="ocultarinput('RSC'), mostrarinput('opcionRSC'), imagen('declaraciones_2','/static/images/Declaraciones/Declaraciones-pt2-c1.png'), actualizarTexto(2)" value="" id="RSC">
+    <input class="" type="button" onclick="siguiente(), actualizarTexto(3)" value="" id="opcionRSC" style="display : none">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(0)">
 `
@@ -22,11 +22,11 @@ var declaraciones = `
 // Posición 2
 var presenta_declaracion = `
 <div class="tuto-window">
-    <img class="" src="/static/images/Declaraciones/Iniciar-1.png" alt="image">
-    <img class="" src="/static/images/Declaraciones/Iniciar-2.png" alt="image">
-    <img class="" src="/static/images/Declaraciones/Iniciar-3.png" alt="image">
-    <img class="" src="/static/images/Declaraciones/Iniciar-4.png" alt="image">
-    <input class="" type="button" onclick="siguiente(), actualizarTexto(4)" value="INICIAR">
+    <img class="captura" src="/static/images/Declaraciones/Iniciar-1.png" alt="image">
+    <img class="captura" src="/static/images/Declaraciones/Iniciar-2.png" alt="image">
+    <img class="captura" src="/static/images/Declaraciones/Iniciar-3.png" alt="image">
+    <img class="captura" src="/static/images/Declaraciones/Iniciar-4.png" alt="image">
+    <input id="selec" class="dec2Ini" type="button" onclick="siguiente(), actualizarTexto(4)" value="">
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(1)">
 `;
@@ -34,10 +34,11 @@ var presenta_declaracion = `
 // Posición 3
 var login_declaraciones = `
 <div class="tuto-window">
-    <img class="" src="/static/images/Declaraciones/Login.png" alt="image">
+    <img class="captura" src="/static/images/Declaraciones/Login.png" alt="image">
+    <img class="captura" src="/static/images/Declaraciones/Login-bottom.png" alt="image">
 
     <div class="">
-        <input class="" type="text" onclick="actualizarTexto(5)" onchange="login('RFC_login')" id="RFC_login" onkeyup="this.value = this.value.toUpperCase();">
+        <input class="dec3RFC" type="text" onclick="actualizarTexto(5)" onchange="login('RFC_login')" id="RFC_login" onkeyup="this.value = this.value.toUpperCase();">
         <input class="" type="password" onclick="actualizarTexto(6)" onchange="login('contrasena_login')" id="contrasena_login" style="display : none">
         <input class="" type="text" onclick="actualizarTexto(7)" onchange="login('captcha_login')" id="captcha_login" style="display : none">
         <input class="" type="button" onclick="siguiente(), actualizarTexto(8)" id="enviar_login" style="display : none" value="Enviar">
