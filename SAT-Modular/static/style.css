@@ -1510,6 +1510,12 @@ h2.CFDI {
     display: block;
 }
 
+.capturaCorta4 {
+    width: 100%;
+    height: 50%;
+    display: block;
+}
+
 
 /* -------BOTONES TUTORIAL CFDI ------------------------------------------------------------------------------------------ */
 .inicioBoton {
@@ -3051,6 +3057,70 @@ h2.CFDI {
     color: #052573;
 }
 
+/* Declaraciones -----------------------------------------------------------------------------------------------*/
+#selec {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.dec0Dec {
+    width: 79px;
+    height: 69px;
+    bottom: 710px;
+    left: 166px;
+}
+
+.dec1Reg {
+    width: 760px;
+    height: 28px;
+    bottom: 526px;
+    left: 155px;
+}
+
+#opcionRSC {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 760px;
+    height: 28px;
+    bottom: 492px;
+    left: 155px;
+}
+
+.dec2Ini {
+    width: 80px;
+    height: 30px;
+    bottom: 581px;
+    left: 588px;
+}
+
+#dec3RFC {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 650px;
+    height: 18px;
+    bottom: 285px;
+    left: 236px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#dec3RFC:focus {
+    outline: none;
+}
+
+#dec3RFC:valid {
+    background-color: none;
+}
+
 /* Large screens -----------------------------------------------------------------------------------------------*/
 @media only screen and (min-width : 1920px) {
     .name-course {
@@ -3116,7 +3186,7 @@ h2.CFDI {
     .pos2Servicio {
         width: 500px;
         height: 30px;
-        bottom: 496px;
+        bottom: 520px;
         left: 257px;
     }
 
@@ -3799,4 +3869,11 @@ h2.CFDI {
         left: 1082px;
     }
 
+    /**/
+    .pos0dec {
+        width: 105px;
+        height: 90px;
+        bottom: 1100px;
+        left: 260px;
+    }
 }
