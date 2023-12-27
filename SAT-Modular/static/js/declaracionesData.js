@@ -41,7 +41,7 @@ var login_declaraciones = `
         <input class="dec3RFC" type="text" onclick="actualizarTexto(5)" onchange="login('RFC_login')" id="RFC_login" onkeyup="this.value = this.value.toUpperCase();">
         <input class="" type="password" onclick="actualizarTexto(6)" onchange="login('contrasena_login')" id="contrasena_login" style="display : none">
         <input class="" type="text" onclick="actualizarTexto(7)" onchange="login('captcha_login')" id="captcha_login" style="display : none">
-        <input class="" type="button" onclick="siguiente(), actualizarTexto(8)" id="enviar_login" style="display : none" value="Enviar">
+        <input class="" type="button" onclick="siguiente(), actualizarTexto(8)" id="enviar_login" style="display : none" value="">
     </div>
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(3)">
@@ -50,17 +50,17 @@ var login_declaraciones = `
 // Posición 4
 var inicio_declaraciones = `
 <div class="tuto-window">
-<img class="" src="/static/images/Declaraciones/inicio-declaraciones.png" alt="image" id="img_declaracion">
+<img class="captura" src="/static/images/Declaraciones/inicio-declaraciones.png" alt="image" id="img_declaracion">
     
     <div class="">
-        <input class="" type="button" onclick="ocultarinput('presentar_decla'), mostrarinput('periodicidad_decla'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion.png'), actualizarTexto(9)" id="presentar_decla" value="Presentar declaración">
-        <input class="" type="button" onclick="ocultarinput('periodicidad_decla'), mostrarinput('periodicidad_mensual'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion-c1.png'), actualizarTexto(10)" id="periodicidad_decla" value="Periodicidad" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('periodicidad_mensual'), mostrarinput('periodo_decla'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion-c2.png'), actualizarTexto(11)" id="periodicidad_mensual" value="Mensual" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('periodo_decla'), mostrarinput('periodo_noviembre'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion-c3.png')" id="periodo_decla" value="Periodo" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('periodo_noviembre'), mostrarinput('tipo_declaracion'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion-c4.png'), actualizarTexto(12)" id="periodo_noviembre" value="Noviembre" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('tipo_declaracion'), mostrarinput('tipo_normal'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion-c5.png')" id="tipo_declaracion" value="Tipo declaración" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('tipo_normal'), mostrarinput('siguiente_decla'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion-c6.png'), actualizarTexto(13)" id="tipo_normal" value="Normal" style="display : none">
-        <input class="" type="button" onclick="siguiente(),actualizarTexto(14)" id="siguiente_decla" value="Siguiente" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('presentar_decla'), mostrarinput('periodicidad_decla'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion.png'), actualizarTexto(9)" id="presentar_decla" value="">
+        <input class="" type="button" onclick="ocultarinput('periodicidad_decla'), mostrarinput('periodicidad_mensual'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion-c1.png'), actualizarTexto(10)" id="periodicidad_decla" value="" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('periodicidad_mensual'), mostrarinput('periodo_decla'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion-c2.png'), actualizarTexto(11)" id="periodicidad_mensual" value="" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('periodo_decla'), mostrarinput('periodo_noviembre'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion-c3.png')" id="periodo_decla" value="" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('periodo_noviembre'), mostrarinput('tipo_declaracion'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion-c4.png'), actualizarTexto(12)" id="periodo_noviembre" value="" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('tipo_declaracion'), mostrarinput('tipo_normal'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion-c5.png')" id="tipo_declaracion" value="" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('tipo_normal'), mostrarinput('siguiente_decla'), imagen('img_declaracion', '/static/images/Declaraciones/presentar-declaracion-c6.png'), actualizarTexto(13)" id="tipo_normal" value="" style="display : none">
+        <input class="" type="button" onclick="siguiente(),actualizarTexto(14)" id="siguiente_decla" value="" style="display : none">
     </div>
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(4)">
@@ -69,10 +69,10 @@ var inicio_declaraciones = `
 // Posición 5
 var declaracion_isr = `
 <div class="tuto-window">
-<img class="" src="/static/images/Declaraciones/Declaraciones-isr-c1.png" alt="image" id="img_isr_simp">
+<img class="captura" src="/static/images/Declaraciones/Declaraciones-isr-c1.png" alt="image" id="img_isr_simp">
     
     <div class="">
-        <input class="" type="button" onclick="siguiente(),actualizarTexto(15)" id="iniciar_isr" value="Iniciar declaracion ISR">
+        <input class="" type="button" onclick="siguiente(),actualizarTexto(15)" id="iniciar_isr" value="">
     </div>
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(8)">
@@ -81,16 +81,16 @@ var declaracion_isr = `
 // Posición 6
 var isr_pt1 = `
 <div class="tuto-window">
-<img class="" src="/static/images/Declaraciones/Declaraciones-isr-c2.png" alt="image" id="img_isr_simp_pt1">
+<img class="captura" src="/static/images/Declaraciones/Declaraciones-isr-c2.png" alt="image" id="img_isr_simp_pt1">
     
     <div class="">
-        <input class="" type="button" onclick="ocultarinput('copropiedad'), mostrarinput('total_ingresos'),imagen('img_isr_simp_pt1', '/static/images/Declaraciones/Declaraciones-isr-pt1-c1.png'), actualizarTexto(16)" id="copropiedad" value="Seleccionar">
-        <input class="" type="button" onclick="ocultarinput('total_ingresos'), mostrarinput('mostrar_total_ingresos'),imagen('img_isr_simp_pt1', '/static/images/Declaraciones/Declaraciones-isr-pt1-c2.png'), actualizarTexto(17)" id="total_ingresos" value="no" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('mostrar_total_ingresos'), mostrarinput('cerrar_total_ingresos'),imagen('img_isr_simp_pt1', '/static/images/Declaraciones/Declaraciones-isr-pt1-c3.png'), actualizarTexto(18)" id="mostrar_total_ingresos" value="mostrar" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('cerrar_total_ingresos'), mostrarinput('devoluciones_desc_bon'),imagen('img_isr_simp_pt1', '/static/images/Declaraciones/Declaraciones-isr-pt1-c2.png'), actualizarTexto(19)" id="cerrar_total_ingresos" value="cerrar" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('devoluciones_desc_bon'), mostrarinput('dec_devo_bonif_por_copropiedad'),imagen('img_isr_simp_pt1', '/static/images/Declaraciones/Declaraciones-isr-pt1-c4.png'), actualizarTexto(20)" id="devoluciones_desc_bon" value="mostrar" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('copropiedad'), mostrarinput('total_ingresos'),imagen('img_isr_simp_pt1', '/static/images/Declaraciones/Declaraciones-isr-pt1-c1.png'), actualizarTexto(16)" id="copropiedad" value="">
+        <input class="" type="button" onclick="ocultarinput('total_ingresos'), mostrarinput('mostrar_total_ingresos'),imagen('img_isr_simp_pt1', '/static/images/Declaraciones/Declaraciones-isr-pt1-c2.png'), actualizarTexto(17)" id="total_ingresos" value="" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('mostrar_total_ingresos'), mostrarinput('cerrar_total_ingresos'),imagen('img_isr_simp_pt1', '/static/images/Declaraciones/Declaraciones-isr-pt1-c3.png'), actualizarTexto(18)" id="mostrar_total_ingresos" value="" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('cerrar_total_ingresos'), mostrarinput('devoluciones_desc_bon'),imagen('img_isr_simp_pt1', '/static/images/Declaraciones/Declaraciones-isr-pt1-c2.png'), actualizarTexto(19)" id="cerrar_total_ingresos" value="" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('devoluciones_desc_bon'), mostrarinput('dec_devo_bonif_por_copropiedad'),imagen('img_isr_simp_pt1', '/static/images/Declaraciones/Declaraciones-isr-pt1-c4.png'), actualizarTexto(20)" id="devoluciones_desc_bon" value="" style="display : none">
         <input class="" type="text" onclick="actualizarTexto(21)" onchange="Validar_numero('dec_devo_bonif_por_copropiedad','cerrar_dec_devo_bonif','img_isr_simp_pt1','/static/images/Declaraciones/Declaraciones-isr-pt1-c5.png')" id="dec_devo_bonif_por_copropiedad" style="display : none">
-        <input class="" type="button" onclick="siguiente(),actualizarTexto(22)" id="cerrar_dec_devo_bonif" value="cerrar" style="display : none"  > 
+        <input class="" type="button" onclick="siguiente(),actualizarTexto(22)" id="cerrar_dec_devo_bonif" value="" style="display : none"  > 
 
     </div>
 </div>
@@ -100,16 +100,16 @@ var isr_pt1 = `
 // Posición 7
 var isr_pt2 = `
 <div class="tuto-window">
-<img class="" src="/static/images/Declaraciones/Declaraciones-isr-pt2-c1.png" alt="image" id="img_isr_simp_pt2">
+<img class="captura" src="/static/images/Declaraciones/Declaraciones-isr-pt2-c1.png" alt="image" id="img_isr_simp_pt2">
     
     <div class="">
-        <input class="" type="button" onclick="ocultarinput('mostrar_ingresos_disminuir'), mostrarinput('agregar_ingresos_disminuir'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c2.png'), actualizarTexto(23)" id="mostrar_ingresos_disminuir" value="mostrar">
-        <input class="" type="button" onclick="ocultarinput('agregar_ingresos_disminuir'), mostrarinput('seleccionar_ingresos_disminuir'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c3.png'), actualizarTexto(24)" id="agregar_ingresos_disminuir" value="agregar" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('seleccionar_ingresos_disminuir'), mostrarinput('sin_ingreso_disminuir'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c4.png'), actualizarTexto(25)" id="seleccionar_ingresos_disminuir" value="seleccionar" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('sin_ingreso_disminuir'), mostrarinput('importe_disminuir'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c5.png'), actualizarTexto(26)" id="sin_ingreso_disminuir" value="sin ingreso a disminuir" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('mostrar_ingresos_disminuir'), mostrarinput('agregar_ingresos_disminuir'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c2.png'), actualizarTexto(23)" id="mostrar_ingresos_disminuir" value="">
+        <input class="" type="button" onclick="ocultarinput('agregar_ingresos_disminuir'), mostrarinput('seleccionar_ingresos_disminuir'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c3.png'), actualizarTexto(24)" id="agregar_ingresos_disminuir" value="" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('seleccionar_ingresos_disminuir'), mostrarinput('sin_ingreso_disminuir'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c4.png'), actualizarTexto(25)" id="seleccionar_ingresos_disminuir" value="" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('sin_ingreso_disminuir'), mostrarinput('importe_disminuir'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c5.png'), actualizarTexto(26)" id="sin_ingreso_disminuir" value="" style="display : none">
         <input class="" type="text" onclick="actualizarTexto(27)" onchange="Validar_numero('importe_disminuir','guardar_sin_ingreso_disminuir','img_isr_simp_pt2','/static/images/Declaraciones/Declaraciones-isr-pt2-c6.png')" id="importe_disminuir" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('guardar_sin_ingreso_disminuir'),mostrarinput('cerrar_ingreso_disminuir'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c7.png'), actualizarTexto(28)" id="guardar_sin_ingreso_disminuir" value="Guardar" style="display : none">
-        <input class="" type="button" onclick="siguiente(),actualizarTexto(29)" id="cerrar_ingreso_disminuir" value="cerrar" style="display : none"  > 
+        <input class="" type="button" onclick="ocultarinput('guardar_sin_ingreso_disminuir'),mostrarinput('cerrar_ingreso_disminuir'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c7.png'), actualizarTexto(28)" id="guardar_sin_ingreso_disminuir" value="" style="display : none">
+        <input class="" type="button" onclick="siguiente(),actualizarTexto(29)" id="cerrar_ingreso_disminuir" value="" style="display : none"  > 
     </div>
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(15)">
@@ -118,7 +118,7 @@ var isr_pt2 = `
 // Posición 8
 var isr_pt3 = `
 <div class="tuto-window">
-    <img class="" src="/static/images/Declaraciones/Declaraciones-isr-pt3-c1.png" alt="image" id="img_isr_simp_pt3">
+    <img class="captura" src="/static/images/Declaraciones/Declaraciones-isr-pt3-c1.png" alt="image" id="img_isr_simp_pt3">
     
     <div class="">
         <input class="" type="button" onclick="ocultarinput('mostrar_ingresos_adicionales'), mostrarinput('agregar_ingresos_adicionales'),imagen('img_isr_simp_pt3', '/static/images/Declaraciones/Declaraciones-isr-pt3-c2.png'), actualizarTexto(30)" id="mostrar_ingresos_adicionales" value="mostrar">
@@ -136,7 +136,7 @@ var isr_pt3 = `
 // Posición 9
 var isr_pt4 = `
 <div class="tuto-window">
-    <img class="" src="/static/images/Declaraciones/Declaraciones-isr-pt4-c1.png" alt="image" id="img_isr_simp_pt4">
+    <img class="captura" src="/static/images/Declaraciones/Declaraciones-isr-pt4-c1.png" alt="image" id="img_isr_simp_pt4">
     
     <div class="">
         <input class="" type="button" onclick="ocultarinput('mostrar_ingresos_totales'), mostrarinput('agregar_ingresos_totales'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c2.png'), actualizarTexto(34)" id="mostrar_ingresos_totales" value="mostrar">
@@ -154,7 +154,7 @@ var isr_pt4 = `
 // Posición 10
 var isr_pt5 = `
 <div class="tuto-window">
-    <img class="" src="/static/images/Declaraciones/Declaraciones-isr-pt5-c1.png" alt="image" id="img_isr_simp_pt5">
+    <img class="captura" src="/static/images/Declaraciones/Declaraciones-isr-pt5-c1.png" alt="image" id="img_isr_simp_pt5">
     
     <div class="">
         <input class="" type="button" onclick="ocultarinput('determinacion'), mostrarinput('mostrar_isr_retenido'),imagen('img_isr_simp_pt5', '/static/images/Declaraciones/Declaraciones-isr-pt5-c2.png'), actualizarTexto(38)" id="determinacion" value="determinacion">
