@@ -3066,6 +3066,8 @@ h2.CFDI {
     border: none;
 }
 
+/* POSICION 0 */
+
 .dec0Dec {
     width: 79px;
     height: 69px;
@@ -3073,12 +3075,16 @@ h2.CFDI {
     left: 166px;
 }
 
+/* POSICION 1 */
+
 .dec1Reg {
     width: 760px;
     height: 28px;
     bottom: 526px;
     left: 155px;
 }
+
+/* POSICION 2 */
 
 #opcionRSC {
     display: inline-block;
@@ -3099,27 +3105,370 @@ h2.CFDI {
     left: 588px;
 }
 
-#dec3RFC {
-    display: none;
-    position: absolute;
+/* POSICION 3 */
+#RFC_login {
+    display: inline-block;
+    position: relative;
     cursor: pointer;
-    background: none;
     border: none;
-    width: 650px;
-    height: 18px;
-    bottom: 285px;
-    left: 236px;
+    width: 349px;
+    height: 20px;
+    bottom: 898px;
+    left: 317px;
     text-align: left;
-    padding-left: 10px;
+    padding-left: 9px;
+    color: #666;
 }
 
-#dec3RFC:focus {
+#RFC_login:focus {
     outline: none;
 }
 
-#dec3RFC:valid {
-    background-color: none;
+#RFC_login:valid {
+    background-color: #fff;
 }
+
+
+#contrasena_login {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    width: 349px;
+    height: 20px;
+    bottom: 865px;
+    left: -35px;
+    text-align: left;
+    padding-left: 9px;
+    color: #666;
+}
+
+#contrasena_login:focus {
+    outline: none;
+}
+
+#contrasena_login:valid {
+    background-color: #fff;
+}
+
+#captcha_login {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    width: 349px;
+    height: 20px;
+    bottom: 747px;
+    left: -389px;
+    text-align: left;
+    padding-left: 9px;
+    color: #666;
+}
+
+#captcha_login:focus {
+    outline: none;
+}
+
+#captcha_login:valid {
+    background-color: #fff;
+}
+
+#enviar_login {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 84px;
+    height: 32px;
+    bottom: 737px;
+    left: 587px;
+}
+
+/* POSICION 4 */
+#presentar_decla {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 140px;
+    height: 35px;
+    bottom: 426px;
+    left: 97px;
+}
+
+#periodicidad_decla {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 200px;
+    height: 20px;
+    bottom: 286px;
+    left: 331px;
+}
+
+#periodicidad_mensual {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 200px;
+    height: 15px;
+    bottom: 253px;
+    left: 331px;
+}
+
+#periodo_decla {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 200px;
+    height: 20px;
+    bottom: 286px;
+    left: 785px;
+}
+
+#periodo_noviembre {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 201px;
+    height: 12px;
+    bottom: 130px;
+    left: 784px;
+}
+
+#tipo_declaracion {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 200px;
+    height: 20px;
+    bottom: 260px;
+    left: 331px;
+}
+
+#tipo_normal {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 201px;
+    height: 12px;
+    bottom: 228px;
+    left: 331px;
+}
+
+#siguiente_decla {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 97px;
+    height: 33px;
+    bottom: 36px;
+    left: 489px;
+}
+
+/* POSICION 5 */  
+#iniciar_isr {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 184px;
+    height: 88px;
+    bottom: 202px;
+    left: 335px;
+}
+
+/* POSICION 6 */  
+#copropiedad {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 174px;
+    height: 20px;
+    bottom: 212px;
+    left: 480px;
+}
+
+#total_ingresos {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 174px;
+    height: 15px;
+    bottom: 165px;
+    left: 480px;
+}
+
+#mostrar_total_ingresos {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 170px;
+    height: 20px;
+    bottom: 172px;
+    left: 480px;
+}
+
+#cerrar_total_ingresos {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 31px;
+    height: 31px;
+    bottom: 525px;
+    left: 1008px;
+}
+
+#devoluciones_desc_bon {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 113px;
+    height: 20px;
+    bottom: 147px;
+    left: 690px;
+}
+
+#dec_devo_bonif_por_copropiedad {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 200px;
+    height: 16px;
+    padding-left: 9px;
+    font-size: 10px;
+    color:#666;
+    bottom: 269px;
+    left: 468px;
+}
+
+#dec_devo_bonif_por_copropiedad:focus {
+    outline: none;
+}
+
+#dec_devo_bonif_por_copropiedad:valid {
+    background-color: #fff;
+    color: #666;
+}
+
+#cerrar_dec_devo_bonif {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 80px;
+    height: 24px;
+    bottom: 168px;
+    left: 764px;
+}
+
+/* POSICION 7 */  
+#mostrar_ingresos_disminuir {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 113px;
+    height: 20px;
+    bottom: 120px;
+    left: 690px;
+}
+
+#agregar_ingresos_disminuir {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 88px;
+    height: 24px;
+    bottom: 460px;
+    left: 40px;
+}
+
+#seleccionar_ingresos_disminuir {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 90px;
+    height: 22px;
+    bottom: 390px;
+    left: 440px;
+}
+
+#sin_ingreso_disminuir {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 330px;
+    height: 15px;
+    bottom: 395px;
+    left: 264px;
+}
+
+#importe_disminuir {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 220px;
+    height: 16px;
+    padding-left: 9px;
+    font-size: 10px;
+    color:#666;
+    bottom: 433px;
+    left: 756px;
+}
+
+#importe_disminuir:focus {
+    outline: none;
+}
+
+#importe_disminuir:valid {
+    background-color: #fff;
+    color: #666;
+} 
+
+#guardar_sin_ingreso_disminuir {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 90px;
+    height: 22px;
+    bottom: 390px;
+    left: 216px;
+}
+
+#cerrar_ingreso_disminuir {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 80px;
+    height: 24px;
+    bottom: 252px;
+    left: 743px;
+}
+
 
 /* Large screens -----------------------------------------------------------------------------------------------*/
 @media only screen and (min-width : 1920px) {
