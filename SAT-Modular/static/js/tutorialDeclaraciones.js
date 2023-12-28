@@ -38,6 +38,20 @@ async function imagen(id, nuv){
     img.src = nuv
 }
 
+// Mostrar Imagen
+async function mostrarimagen(id){
+
+    inputActual = document.getElementById(id)
+    inputActual.style.display="block"
+}
+
+// Mostrar Boton Final
+async function mostrarboton(id){
+
+    inputActual = document.getElementById(id)
+    inputActual.style.display="flex"
+}
+
 // Login
 async function login(id){
     inputActual = document.getElementById(id)

@@ -121,13 +121,13 @@ var isr_pt3 = `
     <img class="captura" src="/static/images/Declaraciones/Declaraciones-isr-pt3-c1.png" alt="image" id="img_isr_simp_pt3">
     
     <div class="">
-        <input class="" type="button" onclick="ocultarinput('mostrar_ingresos_adicionales'), mostrarinput('agregar_ingresos_adicionales'),imagen('img_isr_simp_pt3', '/static/images/Declaraciones/Declaraciones-isr-pt3-c2.png'), actualizarTexto(30)" id="mostrar_ingresos_adicionales" value="mostrar">
-        <input class="" type="button" onclick="ocultarinput('agregar_ingresos_adicionales'), mostrarinput('seleccionar_ingresos_adicionales'),imagen('img_isr_simp_pt3', '/static/images/Declaraciones/Declaraciones-isr-pt3-c3.png'), actualizarTexto(24)" id="agregar_ingresos_adicionales" value="agregar" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('seleccionar_ingresos_adicionales'), mostrarinput('sin_ingreso_adicional'),imagen('img_isr_simp_pt3', '/static/images/Declaraciones/Declaraciones-isr-pt3-c4.png'), actualizarTexto(31)" id="seleccionar_ingresos_adicionales" value="seleccionar" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('sin_ingreso_adicional'), mostrarinput('importe_adicional'),imagen('img_isr_simp_pt3', '/static/images/Declaraciones/Declaraciones-isr-pt3-c5.png'), actualizarTexto(26)" id="sin_ingreso_adicional" value="sin ingreso adicional" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('mostrar_ingresos_adicionales'), mostrarinput('agregar_ingresos_adicionales'),imagen('img_isr_simp_pt3', '/static/images/Declaraciones/Declaraciones-isr-pt3-c2.png'), actualizarTexto(30)" id="mostrar_ingresos_adicionales" value="">
+        <input class="" type="button" onclick="ocultarinput('agregar_ingresos_adicionales'), mostrarinput('seleccionar_ingresos_adicionales'),imagen('img_isr_simp_pt3', '/static/images/Declaraciones/Declaraciones-isr-pt3-c3.png'), actualizarTexto(24)" id="agregar_ingresos_adicionales" value="" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('seleccionar_ingresos_adicionales'), mostrarinput('sin_ingreso_adicional'),imagen('img_isr_simp_pt3', '/static/images/Declaraciones/Declaraciones-isr-pt3-c4.png'), actualizarTexto(31)" id="seleccionar_ingresos_adicionales" value="" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('sin_ingreso_adicional'), mostrarinput('importe_adicional'),imagen('img_isr_simp_pt3', '/static/images/Declaraciones/Declaraciones-isr-pt3-c5.png'), actualizarTexto(26)" id="sin_ingreso_adicional" value="" style="display : none">
         <input class="" type="text" onclick="actualizarTexto(32)" onchange="Validar_numero('importe_adicional','guardar_sin_ingreso_adicional','img_isr_simp_pt3','/static/images/Declaraciones/Declaraciones-isr-pt3-c6.png')" id="importe_adicional" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('guardar_sin_ingreso_adicional'),mostrarinput('cerrar_ingreso_adicional'),imagen('img_isr_simp_pt3', '/static/images/Declaraciones/Declaraciones-isr-pt3-c7.png'), actualizarTexto(28)" id="guardar_sin_ingreso_adicional" value="Guardar" style="display : none">
-        <input class="" type="button" onclick="siguiente(),actualizarTexto(33)" id="cerrar_ingreso_adicional" value="cerrar" style="display : none"  >  
+        <input class="" type="button" onclick="ocultarinput('guardar_sin_ingreso_adicional'),mostrarinput('cerrar_ingreso_adicional'),imagen('img_isr_simp_pt3', '/static/images/Declaraciones/Declaraciones-isr-pt3-c7.png'), actualizarTexto(28)" id="guardar_sin_ingreso_adicional" value="" style="display : none">
+        <input class="" type="button" onclick="siguiente(),actualizarTexto(33)" id="cerrar_ingreso_adicional" value="" style="display : none"  >  
     </div>
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(22)">
@@ -139,13 +139,13 @@ var isr_pt4 = `
     <img class="captura" src="/static/images/Declaraciones/Declaraciones-isr-pt4-c1.png" alt="image" id="img_isr_simp_pt4">
     
     <div class="">
-        <input class="" type="button" onclick="ocultarinput('mostrar_ingresos_totales'), mostrarinput('agregar_ingresos_totales'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c2.png'), actualizarTexto(34)" id="mostrar_ingresos_totales" value="mostrar">
-        <input class="" type="button" onclick="ocultarinput('agregar_ingresos_totales'), mostrarinput('seleccionar_ingresos_totales'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c3.png'), actualizarTexto(24)" id="agregar_ingresos_totales" value="agregar" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('seleccionar_ingresos_totales'), mostrarinput('actividad_empresarial'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c4.png'), actualizarTexto(35)" id="seleccionar_ingresos_totales" value="seleccionar" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('actividad_empresarial'), mostrarinput('total_ingresos'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c5.png'), actualizarTexto(26)" id="actividad_empresarial" value="Actividad Empresarial" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('mostrar_ingresos_totales'), mostrarinput('agregar_ingresos_totales'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c2.png'), actualizarTexto(34)" id="mostrar_ingresos_totales" value="">
+        <input class="" type="button" onclick="ocultarinput('agregar_ingresos_totales'), mostrarinput('seleccionar_ingresos_totales'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c3.png'), actualizarTexto(24)" id="agregar_ingresos_totales" value="" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('seleccionar_ingresos_totales'), mostrarinput('actividad_empresarial'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c4.png'), actualizarTexto(35)" id="seleccionar_ingresos_totales" value="" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('actividad_empresarial'), mostrarinput('total_ingresos'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c5.png'), actualizarTexto(26)" id="actividad_empresarial" value="" style="display : none">
         <input class="" type="text" onclick="actualizarTexto(36)" onchange="Validar_numero('total_ingresos','guardar_ingreso_total','img_isr_simp_pt4','/static/images/Declaraciones/Declaraciones-isr-pt4-c6.png')" id="total_ingresos" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('guardar_ingreso_total'),mostrarinput('cerrar_ingreso_total'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c7.png'), actualizarTexto(28)" id="guardar_ingreso_total" value="Guardar" style="display : none">
-        <input class="" type="button" onclick="siguiente(), actualizarTexto(37)" id="cerrar_ingreso_total" value="cerrar" style="display : none"  >   
+        <input class="" type="button" onclick="ocultarinput('guardar_ingreso_total'),mostrarinput('cerrar_ingreso_total'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c7.png'), actualizarTexto(28)" id="guardar_ingreso_total" value="" style="display : none">
+        <input class="" type="button" onclick="siguiente(), actualizarTexto(37)" id="cerrar_ingreso_total" value="" style="display : none"  >   
     </div>
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(29)">
@@ -157,10 +157,10 @@ var isr_pt5 = `
     <img class="captura" src="/static/images/Declaraciones/Declaraciones-isr-pt5-c1.png" alt="image" id="img_isr_simp_pt5">
     
     <div class="">
-        <input class="" type="button" onclick="ocultarinput('determinacion'), mostrarinput('mostrar_isr_retenido'),imagen('img_isr_simp_pt5', '/static/images/Declaraciones/Declaraciones-isr-pt5-c2.png'), actualizarTexto(38)" id="determinacion" value="determinacion">
-        <input class="" type="button" onclick="ocultarinput('mostrar_isr_retenido'), mostrarinput('isr_retenido_valor'),imagen('img_isr_simp_pt5', '/static/images/Declaraciones/Declaraciones-isr-pt5-c3.png'), actualizarTexto(39)" id="mostrar_isr_retenido" value="mostrar" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('determinacion'), mostrarinput('mostrar_isr_retenido'),imagen('img_isr_simp_pt5', '/static/images/Declaraciones/Declaraciones-isr-pt5-c2.png'), actualizarTexto(38)" id="determinacion" value="">
+        <input class="" type="button" onclick="ocultarinput('mostrar_isr_retenido'), mostrarinput('isr_retenido_valor'),imagen('img_isr_simp_pt5', '/static/images/Declaraciones/Declaraciones-isr-pt5-c3.png'), actualizarTexto(39)" id="mostrar_isr_retenido" value="" style="display : none">
         <input class="" type="text" onclick="actualizarTexto(40)" onchange="Validar_numero('isr_retenido_valor','cerar_isr_retenido','img_isr_simp_pt5','/static/images/Declaraciones/Declaraciones-isr-pt5-c4.png')" id="isr_retenido_valor" style="display : none">
-        <input class="" type="button" onclick="siguiente(), actualizarTexto(41)" id="cerar_isr_retenido" value="cerrar" style="display : none"  >
+        <input class="" type="button" onclick="siguiente(), actualizarTexto(41)" id="cerar_isr_retenido" value="" style="display : none"  >
     </div>
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(33)">
@@ -169,14 +169,14 @@ var isr_pt5 = `
 // Posición 11
 var isr_pt6 = `
 <div class="tuto-window">
-    <img class="" src="/static/images/Declaraciones/Declaraciones-isr-pt6-c1_1.png" alt="image" id="img_isr_simp_pt6_1" style="display : none">
-    <img class="" src="/static/images/Declaraciones/Declaraciones-isr-pt6-c1_2.png" alt="image" id="img_isr_simp_pt6_2">
+    <img class="capturaCortaCFDI2" src="/static/images/Declaraciones/Declaraciones-isr-pt6-c1_1.png" alt="image" id="img_isr_simp_pt6_1" style="display : none">
+    <img class="captura" src="/static/images/Declaraciones/Declaraciones-isr-pt6-c1_2.png" alt="image" id="img_isr_simp_pt6_2">
     
     <div class="">
-        <input class="" type="button" onclick="ocultarinput('pago'), mostrarinput('img_isr_simp_pt6_1'),mostrarinput('compensaciones_aplicar'),imagen('img_isr_simp_pt6_2', '/static/images/Declaraciones/Declaraciones-isr-pt6-c2.png'), actualizarTexto(42)" id="pago" value="Pago">
-        <input class="" type="button" onclick="ocultarinput('compensaciones_aplicar'), mostrarinput('no_compensaciones_aplicar'),imagen('img_isr_simp_pt6_2', '/static/images/Declaraciones/Declaraciones-isr-pt6-c3.png'), actualizarTexto(43)" id="compensaciones_aplicar" value="Selecciona" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('no_compensaciones_aplicar'), mostrarinput('guardar_isr'),imagen('img_isr_simp_pt6_2', '/static/images/Declaraciones/Declaraciones-isr-pt6-c4.png'), actualizarTexto(44)" id="no_compensaciones_aplicar" value="NO" style="display : none">
-        <input class="" type="button" onclick="siguiente(), actualizarTexto(45)" id="guardar_isr" value="Guardar" style="display : none"  >
+        <input class="" type="button" onclick="ocultarinput('pago'), mostrarimagen('img_isr_simp_pt6_1'),mostrarinput('compensaciones_aplicar'),imagen('img_isr_simp_pt6_2', '/static/images/Declaraciones/Declaraciones-isr-pt6-c2.png'), actualizarTexto(42)" id="pago" value="">
+        <input class="" type="button" onclick="ocultarinput('compensaciones_aplicar'), mostrarinput('no_compensaciones_aplicar'),imagen('img_isr_simp_pt6_2', '/static/images/Declaraciones/Declaraciones-isr-pt6-c3.png'), actualizarTexto(43)" id="compensaciones_aplicar" value="" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('no_compensaciones_aplicar'), mostrarinput('guardar_isr'),imagen('img_isr_simp_pt6_2', '/static/images/Declaraciones/Declaraciones-isr-pt6-c4.png'), actualizarTexto(44)" id="no_compensaciones_aplicar" value="" style="display : none">
+        <input class="" type="button" onclick="siguiente(), actualizarTexto(45)" id="guardar_isr" value="" style="display : none"  >
 
     </div>
 </div>
@@ -185,10 +185,10 @@ var isr_pt6 = `
 // Posición 12
 var isr_final = `
 <div class="tuto-window">
-    <img class="" src="/static/images/Declaraciones/Declaraciones-iva-c1.png" alt="image" id="img_iva_pt1">
+    <img class="captura" src="/static/images/Declaraciones/Declaraciones-iva-c1.png" alt="image" id="img_iva_pt1">
     
     <div class="">
-        <input class="" type="button" onclick="siguiente(), actualizarTexto(46)" id="iva_simplificado" value="iva simplificado" >
+        <input class="" type="button" onclick="siguiente(), actualizarTexto(46)" id="iva_simplificado" value="" >
 
     </div>
 </div>
@@ -198,15 +198,15 @@ var isr_final = `
 // Posición 13
 var iva_pt1 = `
 <div class="tuto-window">
-    <img class="" src="/static/images/Declaraciones/Declaraciones-iva-header.png" alt="image" id="img_iva_header">
-    <img class="" src="/static/images/Declaraciones/Declaraciones-iva-c2.png" alt="image" id="img_iva_pt2">
+    <img class="capturaCorta4" src="/static/images/Declaraciones/Declaraciones-iva-header.png" alt="image" id="img_iva_header">
+    <img class="captura" src="/static/images/Declaraciones/Declaraciones-iva-c2.png" alt="image" id="img_iva_pt2">
     
     <div class="">
-        <input class="" type="button" onclick="ocultarinput('mostrar_iva_simp'),ocultarinput('img_iva_header'),mostrarinput('IVA_acreditable'),imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-c3.png'), actualizarTexto(47)" id="mostrar_iva_simp" value="Capturar">
+        <input class="" type="button" onclick="ocultarinput('mostrar_iva_simp'),ocultarinput('img_iva_header'),mostrarinput('IVA_acreditable'),imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-c3.png'), actualizarTexto(47)" id="mostrar_iva_simp" value="">
         <input class="" type="text" onclick="actualizarTexto(48)" onchange="Validar_numero('IVA_acreditable', 'IVA_acreditable_2', 'img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-c4.png')" id="IVA_acreditable" style="display : none">
         <input class="" type="text" onclick="actualizarTexto(49)" onchange="Validar_numero('IVA_acreditable_2', 'cerrar_IVA_acreditable', 'img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-c5.png')" id="IVA_acreditable_2" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('cerrar_IVA_acreditable'), ocultarinput('IVA_acreditable'), ocultarinput('IVA_acreditable_2'),imagen('img_iva_header','/static/images/Declaraciones/Declaraciones-iva-header-2.png'), imagen('img_iva_pt2','/static/images/Declaraciones/Declaraciones-iva-c6.png'), mostrarinput('img_iva_header'), mostrarinput('pago_IVA'), actualizarTexto(50)" id="cerrar_IVA_acreditable" value="CERRAR" style="display : none">
-        <input class="" type="button" onclick="siguiente(), actualizarTexto(51)" id="pago_IVA" value="Pago" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('cerrar_IVA_acreditable'), ocultarinput('IVA_acreditable'), ocultarinput('IVA_acreditable_2'),imagen('img_iva_header','/static/images/Declaraciones/Declaraciones-iva-header-2.png'), imagen('img_iva_pt2','/static/images/Declaraciones/Declaraciones-iva-c6.png'), mostrarimagen('img_iva_header'), mostrarinput('pago_IVA'), actualizarTexto(50)" id="cerrar_IVA_acreditable" value="" style="display : none">
+        <input class="" type="button" onclick="siguiente(), actualizarTexto(51)" id="pago_IVA" value="" style="display : none">
     </div>
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(45)">
@@ -215,15 +215,15 @@ var iva_pt1 = `
 // Posición 14
 var iva_pt2 = `
 <div class="tuto-window">
-    <img class="" src="/static/images/Declaraciones/Declaraciones-iva-header-pago.png" alt="image" id="img_iva_header">
-    <img class="" src="/static/images/Declaraciones/Declaraciones-iva-pago-c1.png" alt="image" id="img_iva_pt2">
+    <img class="capturaCortaCFDI2" src="/static/images/Declaraciones/Declaraciones-iva-header-pago.png" alt="image" id="img_iva_header">
+    <img class="captura" src="/static/images/Declaraciones/Declaraciones-iva-pago-c1.png" alt="image" id="img_iva_pt2">
     
     <div class="">
-        <input class="" type="button" onclick="ocultarinput('compensacion'), mostrarinput('compensacion_no'), imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-pago-c2.png')" id="compensacion" value="Seleccionar">
-        <input class="" type="button" onclick="ocultarinput('compensacion_no'), mostrarinput('estimulos'), imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-pago-c3.png'), actualizarTexto(52)" id="compensacion_no" value="No" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('estimulos'), mostrarinput('estimulos_no'), imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-pago-c4.png')" id="estimulos" value="Seleccionar" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('estimulos_no'), mostrarinput('guardar_iva'), imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-pago-c5.png'), actualizarTexto(53)" id="estimulos_no" value="No" style="display : none">
-        <input class="" type="button" onclick="siguiente(), actualizarTexto(54)" id="guardar_iva" value="guardar" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('compensacion'), mostrarinput('compensacion_no'), imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-pago-c2.png')" id="compensacion" value="">
+        <input class="" type="button" onclick="ocultarinput('compensacion_no'), mostrarinput('estimulos'), imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-pago-c3.png'), actualizarTexto(52)" id="compensacion_no" value="" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('estimulos'), mostrarinput('estimulos_no'), imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-pago-c4.png')" id="estimulos" value="" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('estimulos_no'), mostrarinput('guardar_iva'), imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-pago-c5.png'), actualizarTexto(53)" id="estimulos_no" value="" style="display : none">
+        <input class="" type="button" onclick="siguiente(), actualizarTexto(54)" id="guardar_iva" value="" style="display : none">
     </div>
 </div>
 <input class="atras" type="button" onclick="anterior(), actualizarTexto(46)">
@@ -232,13 +232,13 @@ var iva_pt2 = `
 // Posición 15
 var finalizar_declaracion = `
 <div class="tuto-window">
-    <img class="" src="/static/images/Declaraciones/Declaraciones-iva-header-pago.png" alt="image" id="img_iva_header">
-    <img class="" src="/static/images/Declaraciones/Declaraciones-completa-c1.png" alt="image" id="img_iva_pt2">
+    <img class="capturaCortaCFDI2" src="/static/images/Declaraciones/Declaraciones-iva-header-pago.png" alt="image" id="img_iva_header">
+    <img class="captura" src="/static/images/Declaraciones/Declaraciones-completa-c1.png" alt="image" id="img_iva_pt2">
     
     <div class="">
-        <input class="" type="button" onclick="ocultarinput('enviar_declaracion'), mostrarinput('si_declaracion'), imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-completa-c2.png'), actualizarTexto(55)" id="enviar_declaracion" value="Enviar Declaración">
-        <input class="" type="button" onclick="ocultarinput('si_declaracion'), mostrarinput('descargar'), imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-completa-c3.png'), actualizarTexto(56)" id="si_declaracion" value="Si" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('descargar'), mostrarinput('finalizar'), imagen('img_iva_header', '/static/images/Declaraciones/Declaraciones-completa-header.png')" id="descargar" value="DESCARGAR" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('enviar_declaracion'), mostrarinput('si_declaracion'), imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-completa-c2.png'), actualizarTexto(55)" id="enviar_declaracion" value="">
+        <input class="" type="button" onclick="ocultarinput('si_declaracion'), mostrarinput('descargar'), imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-completa-c3.png'), actualizarTexto(56)" id="si_declaracion" value="" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('descargar'), mostrarboton('finalizar'), imagen('img_iva_header', '/static/images/Declaraciones/Declaraciones-completa-header.png')" id="descargar" value="" style="display : none">
         <button class="" id="finalizar" style="display : none"><a href="/tutoriales">Finalizar</a></button> 
     </div>
 </div>
@@ -528,7 +528,7 @@ Lee con atención el texto y selecciona la opción de "SÍ".
 
 // Posición 56
 var acuse_recibo = `
-Este es el documento que se genera, es tu acuse de recibo. Para no perderlo selecciona la opción de descargar y de esta forma obtendras este archivo en PDF.
+Este es el documento que se genera, es tu acuse de recibo. Para no perderlo selecciona la opción de descargar y de esta forma obtendras este archivo en PDF y podrás pagar en el banco llevandolo impreso.
 `;
 
 // HTML de tutorial
