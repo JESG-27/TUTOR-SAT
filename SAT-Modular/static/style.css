@@ -3407,10 +3407,10 @@ h2.CFDI {
     cursor: pointer;
     background: none;
     border: none;
-    width: 90px;
-    height: 22px;
-    bottom: 390px;
-    left: 440px;
+    width: 230px;
+    height: 16px;
+    bottom: 428px;
+    left: 266px;
 }
 
 #sin_ingreso_disminuir {
@@ -3469,6 +3469,496 @@ h2.CFDI {
     left: 743px;
 }
 
+/* POSICION 8 */  
+#mostrar_ingresos_adicionales {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 113px;
+    height: 20px;
+    bottom: 95px;
+    left: 690px;
+}
+
+#agregar_ingresos_adicionales {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 88px;
+    height: 24px;
+    bottom: 460px;
+    left: 40px;
+}
+
+#seleccionar_ingresos_adicionales {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 230px;
+    height: 16px;
+    bottom: 428px;
+    left: 266px;
+}
+
+#sin_ingreso_adicional {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 330px;
+    height: 15px;
+    bottom: 395px;
+    left: 264px;
+}
+
+#importe_adicional {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 220px;
+    height: 16px;
+    padding-left: 9px;
+    font-size: 10px;
+    color:#666;
+    bottom: 433px;
+    left: 756px;
+}
+
+#importe_adicional:focus {
+    outline: none;
+}
+
+#importe_adicional:valid {
+    background-color: #fff;
+    color: #666;
+} 
+
+#guardar_sin_ingreso_adicional {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 90px;
+    height: 22px;
+    bottom: 390px;
+    left: 216px;
+}
+
+#cerrar_ingreso_adicional {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 80px;
+    height: 24px;
+    bottom: 252px;
+    left: 743px;
+}
+
+/* POSICION 9 */  
+#mostrar_ingresos_totales {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 113px;
+    height: 20px;
+    bottom: 69px;
+    left: 690px;
+}
+
+#agregar_ingresos_totales {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 88px;
+    height: 24px;
+    bottom: 388px;
+    left: 40px;
+}
+
+#seleccionar_ingresos_totales {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 230px;
+    height: 16px;
+    bottom: 358px;
+    left: 266px;
+}
+
+#actividad_empresarial {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 348px;
+    height: 16px;
+    bottom: 324px;
+    left: 266px;
+}
+
+#total_ingresos {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 230px;
+    height: 16px;
+    padding-left: 9px;
+    font-size: 10px;
+    color:#666;
+    bottom: 362px;
+    left: 756px;
+}
+
+#total_ingresos:focus {
+    outline: none;
+}
+
+#total_ingresos:valid {
+    background-color: #fff;
+    color: #666;
+} 
+
+#guardar_ingreso_total {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 90px;
+    height: 22px;
+    bottom: 320px;
+    left: 205px;
+}
+
+#cerrar_ingreso_total {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 77px;
+    height: 22px;
+    bottom: 202px;
+    left: 705px;
+}
+
+/* POSICION 10 */  
+#determinacion {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 103px;
+    height: 22px;
+    bottom: 271px;
+    left: 198px;
+}
+
+#mostrar_isr_retenido {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 113px;
+    height: 20px;
+    bottom: 110px;
+    left: 690px;
+}
+
+#isr_retenido_valor {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 200px;
+    height: 15px;
+    padding-left: 9px;
+    font-size: 10px;
+    color: #666;
+    bottom: 129px;
+    left: 462px;
+}
+
+#isr_retenido_valor:focus {
+    outline: none;
+}
+
+#isr_retenido_valor:valid {
+    background-color: #fff;
+    color: #666;
+} 
+
+#cerar_isr_retenido {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 77px;
+    height: 22px;
+    bottom: 39px;
+    left: 759px;
+}
+
+/* POSICION 11 */  
+#pago {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 57px;
+    height: 26px;
+    bottom: 274px;
+    left: 320px;
+}
+
+#compensaciones_aplicar {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 160px;
+    height: 16px;
+    bottom: 263px;
+    left: 482px;
+}
+
+#no_compensaciones_aplicar {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 164px;
+    height: 16px;
+    bottom: 217px;
+    left: 482px;
+}
+
+#guardar_isr {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 87px;
+    height: 26px;
+    bottom: 450px;
+    left: 877px;
+}
+
+/* POSICION 12 */  
+#iva_simplificado {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 184px;
+    height: 88px;
+    bottom: 202px;
+    left: 560px;
+}
+
+/* POSICION 13 */ 
+#mostrar_iva_simp {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 112px;
+    height: 19px;
+    bottom: 230px;
+    left: 690px;
+}
+
+#IVA_acreditable {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 200px;
+    height: 15px;
+    padding-left: 9px;
+    font-size: 10px;
+    color: #666;
+    bottom: 417px;
+    left: 467px;
+}
+
+#IVA_acreditable:focus {
+    outline: none;
+}
+
+#IVA_acreditable:valid {
+    background-color: #fff;
+    color: #666;
+}
+
+#IVA_acreditable_2  {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 200px;
+    height: 15px;
+    padding-left: 9px;
+    font-size: 10px;
+    color: #666;
+    bottom: 378px;
+    left: 264px;
+}
+
+#IVA_acreditable_2:focus {
+    outline: none;
+}
+
+#IVA_acreditable_2:valid {
+    background-color: #fff;
+    color: #666;
+}
+
+#cerrar_IVA_acreditable {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 77px;
+    height: 22px;
+    bottom: 275px;
+    left: 560px;
+}
+
+#pago_IVA {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 57px;
+    height: 26px;
+    bottom: 510px;
+    left: 230px;
+}
+
+/* POSICION 14 */ 
+#compensacion {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 160px;
+    height: 16px;
+    bottom: 289px;
+    left: 482px;
+}
+
+#compensacion_no {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 163px;
+    height: 16px;
+    bottom: 243px;
+    left: 482px;
+}
+
+#estimulos {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 160px;
+    height: 16px;
+    bottom: 262px;
+    left: 482px;
+}
+
+#estimulos_no {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 162px;
+    height: 16px;
+    bottom: 218px;
+    left: 482px;
+}
+
+#guardar_iva {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 87px;
+    height: 26px;
+    bottom: 450px;
+    left: 877px;
+}
+
+/* POSICION 15 */ 
+#enviar_declaracion {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 126px;
+    height: 20px;
+    bottom: 100px;
+    left: 527px;
+}
+
+#si_declaracion {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 52px;
+    height: 27px;
+    bottom: 97px;
+    left: 601px;
+}
+
+#descargar {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 100px;
+    height: 28px;
+    bottom: 447px;
+    left: 883px;
+}
+
+#finalizar {
+    display: flex;
+    margin: 0 auto;
+    border: none;
+    padding: 15px 0px;
+}
+
+#finalizar a {
+    display: inline-block;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    border-radius: 10px;
+    background: linear-gradient(315deg, #9C1DE7 0.52%, #052573 74%);
+    transition: all .42s;
+    text-decoration: none;
+}
+
+#finalizar a:hover {
+    background: none;
+    border: 2px solid #9C1DE7;
+    color: #052573;
+}
 
 /* Large screens -----------------------------------------------------------------------------------------------*/
 @media only screen and (min-width : 1920px) {
