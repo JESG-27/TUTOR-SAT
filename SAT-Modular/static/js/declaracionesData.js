@@ -89,7 +89,7 @@ var isr_pt1 = `
         <input class="" type="button" onclick="ocultarinput('mostrar_total_ingresos'), mostrarinput('cerrar_total_ingresos'),imagen('img_isr_simp_pt1', '/static/images/Declaraciones/Declaraciones-isr-pt1-c3.png'), actualizarTexto(18)" id="mostrar_total_ingresos" value="" style="display : none">
         <input class="" type="button" onclick="ocultarinput('cerrar_total_ingresos'), mostrarinput('devoluciones_desc_bon'),imagen('img_isr_simp_pt1', '/static/images/Declaraciones/Declaraciones-isr-pt1-c2.png'), actualizarTexto(19)" id="cerrar_total_ingresos" value="" style="display : none">
         <input class="" type="button" onclick="ocultarinput('devoluciones_desc_bon'), mostrarinput('dec_devo_bonif_por_copropiedad'),imagen('img_isr_simp_pt1', '/static/images/Declaraciones/Declaraciones-isr-pt1-c4.png'), actualizarTexto(20)" id="devoluciones_desc_bon" value="" style="display : none">
-        <input class="" type="text" onclick="actualizarTexto(21)" onchange="Validar_numero('dec_devo_bonif_por_copropiedad','cerrar_dec_devo_bonif','img_isr_simp_pt1','/static/images/Declaraciones/Declaraciones-isr-pt1-c5.png')" id="dec_devo_bonif_por_copropiedad" style="display : none">
+        <input class="" type="text" onclick="actualizarTexto(21)" onchange="Validar_numero('dec_devo_bonif_por_copropiedad','cerrar_dec_devo_bonif','img_isr_simp_pt1','/static/images/Declaraciones/Declaraciones-isr-pt1-c5.png'), cambiarbottom('dec_devo_bonif_por_copropiedad', '277px')" id="dec_devo_bonif_por_copropiedad" style="display : none">
         <input class="" type="button" onclick="siguiente(),actualizarTexto(22)" id="cerrar_dec_devo_bonif" value="" style="display : none"  > 
 
     </div>
@@ -107,8 +107,8 @@ var isr_pt2 = `
         <input class="" type="button" onclick="ocultarinput('agregar_ingresos_disminuir'), mostrarinput('seleccionar_ingresos_disminuir'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c3.png'), actualizarTexto(24)" id="agregar_ingresos_disminuir" value="" style="display : none">
         <input class="" type="button" onclick="ocultarinput('seleccionar_ingresos_disminuir'), mostrarinput('sin_ingreso_disminuir'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c4.png'), actualizarTexto(25)" id="seleccionar_ingresos_disminuir" value="" style="display : none">
         <input class="" type="button" onclick="ocultarinput('sin_ingreso_disminuir'), mostrarinput('importe_disminuir'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c5.png'), actualizarTexto(26)" id="sin_ingreso_disminuir" value="" style="display : none">
-        <input class="" type="text" onclick="actualizarTexto(27)" onchange="Validar_numero('importe_disminuir','guardar_sin_ingreso_disminuir','img_isr_simp_pt2','/static/images/Declaraciones/Declaraciones-isr-pt2-c6.png')" id="importe_disminuir" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('guardar_sin_ingreso_disminuir'),mostrarinput('cerrar_ingreso_disminuir'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c7.png'), actualizarTexto(28)" id="guardar_sin_ingreso_disminuir" value="" style="display : none">
+        <input class="" type="text" onclick="actualizarTexto(27)" onchange="Validar_numero('importe_disminuir','guardar_sin_ingreso_disminuir','img_isr_simp_pt2','/static/images/Declaraciones/Declaraciones-isr-pt2-c6.png'), cambiarbottom('importe_disminuir', '438px')" id="importe_disminuir" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('guardar_sin_ingreso_disminuir'),mostrarinput('cerrar_ingreso_disminuir'),imagen('img_isr_simp_pt2', '/static/images/Declaraciones/Declaraciones-isr-pt2-c7.png'), actualizarTexto(28), ocultarinput('importe_disminuir')" id="guardar_sin_ingreso_disminuir" value="" style="display : none">
         <input class="" type="button" onclick="siguiente(),actualizarTexto(29)" id="cerrar_ingreso_disminuir" value="" style="display : none"  > 
     </div>
 </div>
@@ -125,8 +125,8 @@ var isr_pt3 = `
         <input class="" type="button" onclick="ocultarinput('agregar_ingresos_adicionales'), mostrarinput('seleccionar_ingresos_adicionales'),imagen('img_isr_simp_pt3', '/static/images/Declaraciones/Declaraciones-isr-pt3-c3.png'), actualizarTexto(24)" id="agregar_ingresos_adicionales" value="" style="display : none">
         <input class="" type="button" onclick="ocultarinput('seleccionar_ingresos_adicionales'), mostrarinput('sin_ingreso_adicional'),imagen('img_isr_simp_pt3', '/static/images/Declaraciones/Declaraciones-isr-pt3-c4.png'), actualizarTexto(31)" id="seleccionar_ingresos_adicionales" value="" style="display : none">
         <input class="" type="button" onclick="ocultarinput('sin_ingreso_adicional'), mostrarinput('importe_adicional'),imagen('img_isr_simp_pt3', '/static/images/Declaraciones/Declaraciones-isr-pt3-c5.png'), actualizarTexto(26)" id="sin_ingreso_adicional" value="" style="display : none">
-        <input class="" type="text" onclick="actualizarTexto(32)" onchange="Validar_numero('importe_adicional','guardar_sin_ingreso_adicional','img_isr_simp_pt3','/static/images/Declaraciones/Declaraciones-isr-pt3-c6.png')" id="importe_adicional" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('guardar_sin_ingreso_adicional'),mostrarinput('cerrar_ingreso_adicional'),imagen('img_isr_simp_pt3', '/static/images/Declaraciones/Declaraciones-isr-pt3-c7.png'), actualizarTexto(28)" id="guardar_sin_ingreso_adicional" value="" style="display : none">
+        <input class="" type="text" onclick="actualizarTexto(32)" onchange="Validar_numero('importe_adicional','guardar_sin_ingreso_adicional','img_isr_simp_pt3','/static/images/Declaraciones/Declaraciones-isr-pt3-c6.png'), cambiarbottom('importe_adicional', '438px')" id="importe_adicional" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('guardar_sin_ingreso_adicional'),mostrarinput('cerrar_ingreso_adicional'),imagen('img_isr_simp_pt3', '/static/images/Declaraciones/Declaraciones-isr-pt3-c7.png'), actualizarTexto(28), ocultarinput('importe_adicional')" id="guardar_sin_ingreso_adicional" value="" style="display : none">
         <input class="" type="button" onclick="siguiente(),actualizarTexto(33)" id="cerrar_ingreso_adicional" value="" style="display : none"  >  
     </div>
 </div>
@@ -142,9 +142,9 @@ var isr_pt4 = `
         <input class="" type="button" onclick="ocultarinput('mostrar_ingresos_totales'), mostrarinput('agregar_ingresos_totales'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c2.png'), actualizarTexto(34)" id="mostrar_ingresos_totales" value="">
         <input class="" type="button" onclick="ocultarinput('agregar_ingresos_totales'), mostrarinput('seleccionar_ingresos_totales'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c3.png'), actualizarTexto(24)" id="agregar_ingresos_totales" value="" style="display : none">
         <input class="" type="button" onclick="ocultarinput('seleccionar_ingresos_totales'), mostrarinput('actividad_empresarial'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c4.png'), actualizarTexto(35)" id="seleccionar_ingresos_totales" value="" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('actividad_empresarial'), mostrarinput('total_ingresos'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c5.png'), actualizarTexto(26)" id="actividad_empresarial" value="" style="display : none">
-        <input class="" type="text" onclick="actualizarTexto(36)" onchange="Validar_numero('total_ingresos','guardar_ingreso_total','img_isr_simp_pt4','/static/images/Declaraciones/Declaraciones-isr-pt4-c6.png')" id="total_ingresos" style="display : none">
-        <input class="" type="button" onclick="ocultarinput('guardar_ingreso_total'),mostrarinput('cerrar_ingreso_total'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c7.png'), actualizarTexto(28)" id="guardar_ingreso_total" value="" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('actividad_empresarial'), mostrarinput('total_ingresos2'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c5.png'), actualizarTexto(26)" id="actividad_empresarial" value="" style="display : none">
+        <input class="" type="text" onclick="actualizarTexto(36)" onchange="Validar_numero('total_ingresos2','guardar_ingreso_total','img_isr_simp_pt4','/static/images/Declaraciones/Declaraciones-isr-pt4-c6.png'), cambiarbottom('total_ingresos2', '368px')" id="total_ingresos2" style="display : none">
+        <input class="" type="button" onclick="ocultarinput('guardar_ingreso_total'),mostrarinput('cerrar_ingreso_total'),imagen('img_isr_simp_pt4', '/static/images/Declaraciones/Declaraciones-isr-pt4-c7.png'), actualizarTexto(28), ocultarinput('total_ingresos2')" id="guardar_ingreso_total" value="" style="display : none">
         <input class="" type="button" onclick="siguiente(), actualizarTexto(37)" id="cerrar_ingreso_total" value="" style="display : none"  >   
     </div>
 </div>
@@ -159,7 +159,7 @@ var isr_pt5 = `
     <div class="">
         <input class="" type="button" onclick="ocultarinput('determinacion'), mostrarinput('mostrar_isr_retenido'),imagen('img_isr_simp_pt5', '/static/images/Declaraciones/Declaraciones-isr-pt5-c2.png'), actualizarTexto(38)" id="determinacion" value="">
         <input class="" type="button" onclick="ocultarinput('mostrar_isr_retenido'), mostrarinput('isr_retenido_valor'),imagen('img_isr_simp_pt5', '/static/images/Declaraciones/Declaraciones-isr-pt5-c3.png'), actualizarTexto(39)" id="mostrar_isr_retenido" value="" style="display : none">
-        <input class="" type="text" onclick="actualizarTexto(40)" onchange="Validar_numero('isr_retenido_valor','cerar_isr_retenido','img_isr_simp_pt5','/static/images/Declaraciones/Declaraciones-isr-pt5-c4.png')" id="isr_retenido_valor" style="display : none">
+        <input class="" type="text" onclick="actualizarTexto(40)" onchange="Validar_numero('isr_retenido_valor','cerar_isr_retenido','img_isr_simp_pt5','/static/images/Declaraciones/Declaraciones-isr-pt5-c4.png'), cambiarbottom('isr_retenido_valor', '134px')" id="isr_retenido_valor" style="display : none">
         <input class="" type="button" onclick="siguiente(), actualizarTexto(41)" id="cerar_isr_retenido" value="" style="display : none"  >
     </div>
 </div>
@@ -203,8 +203,8 @@ var iva_pt1 = `
     
     <div class="">
         <input class="" type="button" onclick="ocultarinput('mostrar_iva_simp'),ocultarinput('img_iva_header'),mostrarinput('IVA_acreditable'),imagen('img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-c3.png'), actualizarTexto(47)" id="mostrar_iva_simp" value="">
-        <input class="" type="text" onclick="actualizarTexto(48)" onchange="Validar_numero('IVA_acreditable', 'IVA_acreditable_2', 'img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-c4.png')" id="IVA_acreditable" style="display : none">
-        <input class="" type="text" onclick="actualizarTexto(49)" onchange="Validar_numero('IVA_acreditable_2', 'cerrar_IVA_acreditable', 'img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-c5.png')" id="IVA_acreditable_2" style="display : none">
+        <input class="" type="text" onclick="actualizarTexto(48)" onchange="Validar_numero('IVA_acreditable', 'IVA_acreditable_2', 'img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-c4.png'), cambiarbottom('IVA_acreditable', '422px')" id="IVA_acreditable" style="display : none">
+        <input class="" type="text" onclick="actualizarTexto(49)" onchange="Validar_numero('IVA_acreditable_2', 'cerrar_IVA_acreditable', 'img_iva_pt2', '/static/images/Declaraciones/Declaraciones-iva-c5.png'), cambiarbottom('IVA_acreditable_2', '384px')" id="IVA_acreditable_2" style="display : none">
         <input class="" type="button" onclick="ocultarinput('cerrar_IVA_acreditable'), ocultarinput('IVA_acreditable'), ocultarinput('IVA_acreditable_2'),imagen('img_iva_header','/static/images/Declaraciones/Declaraciones-iva-header-2.png'), imagen('img_iva_pt2','/static/images/Declaraciones/Declaraciones-iva-c6.png'), mostrarimagen('img_iva_header'), mostrarinput('pago_IVA'), actualizarTexto(50)" id="cerrar_IVA_acreditable" value="" style="display : none">
         <input class="" type="button" onclick="siguiente(), actualizarTexto(51)" id="pago_IVA" value="" style="display : none">
     </div>

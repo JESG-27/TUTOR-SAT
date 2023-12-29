@@ -52,6 +52,16 @@ async function mostrarboton(id){
     inputActual.style.display="flex"
 }
 
+// Cambiar bottom
+async function cambiarbottom(id, px){
+
+    var inputActual = document.getElementById(id);
+    inputActual.style.bottom = px;
+    inputActual.style.textAlign = "right"
+    inputActual.style.paddingRight= "5px"
+}
+
+
 // Login
 async function login(id){
     inputActual = document.getElementById(id)
@@ -81,14 +91,14 @@ async function Validar_numero(id,siguiente,idimg,img){
     inputActual = document.getElementById(id)
     //console.log(siguiente)
 
-    if (inputActual.value == "0" && (id == "dec_devo_bonif_por_copropiedad" || id == "importe_disminuir" || id == "importe_adicional" || id == "isr_retenido_valor" || id == "IVA_acreditable_2")){
+    if (inputActual.value == "0" && (id == "dec_devo_bonif_por_copropiedad" || id == "importe_disminuir" || id == "importe_adicional2" || id == "isr_retenido_valor" || id == "IVA_acreditable_2")){
 
         inputActual.setAttribute("readonly", " ")
         document.getElementById("tutorialText").innerHTML = "Perfecto, presiona cerrar para ir al siguiente apartado"
         imagen(idimg, img)
         mostrarinput(siguiente)
     }
-    else if (inputActual.value == "2597" && id == "total_ingresos" ){
+    else if (inputActual.value == "2597" && id == "total_ingresos2" ){
 
         inputActual.setAttribute("readonly", " ")
         document.getElementById("tutorialText").innerHTML = "Perfecto, presiona guardar para ir al siguiente apartado"
