@@ -3328,10 +3328,10 @@ h2.CFDI {
     cursor: pointer;
     background: none;
     border: none;
-    width: 31px;
-    height: 31px;
-    bottom: 525px;
-    left: 1008px;
+    width: 72px;
+    height: 21px;
+    bottom: 42px;
+    left: 966px;
 }
 
 #devoluciones_desc_bon {
@@ -3349,7 +3349,6 @@ h2.CFDI {
     position: relative;
     cursor: pointer;
     border: none;
-    background: none;
     width: 200px;
     height: 16px;
     padding-left: 9px;
@@ -3428,8 +3427,7 @@ h2.CFDI {
     position: relative;
     cursor: pointer;
     border: none;
-    background: none;
-    width: 220px;
+    width: 233px;
     height: 16px;
     padding-left: 9px;
     font-size: 10px;
@@ -3454,8 +3452,8 @@ h2.CFDI {
     border: none;
     width: 90px;
     height: 22px;
-    bottom: 390px;
-    left: 216px;
+    bottom: 391px;
+    left: 203px;
 }
 
 #cerrar_ingreso_disminuir {
@@ -3466,7 +3464,7 @@ h2.CFDI {
     width: 80px;
     height: 24px;
     bottom: 252px;
-    left: 743px;
+    left: 967px;
 }
 
 /* POSICION 8 */  
@@ -3518,8 +3516,7 @@ h2.CFDI {
     position: relative;
     cursor: pointer;
     border: none;
-    background: none;
-    width: 220px;
+    width: 233px;
     height: 16px;
     padding-left: 9px;
     font-size: 10px;
@@ -3544,8 +3541,8 @@ h2.CFDI {
     border: none;
     width: 90px;
     height: 22px;
-    bottom: 390px;
-    left: 216px;
+    bottom: 391px;
+    left: 203px;
 }
 
 #cerrar_ingreso_adicional {
@@ -3556,7 +3553,7 @@ h2.CFDI {
     width: 80px;
     height: 24px;
     bottom: 252px;
-    left: 743px;
+    left: 967px;
 }
 
 /* POSICION 9 */  
@@ -3604,12 +3601,11 @@ h2.CFDI {
     left: 266px;
 }
 
-#total_ingresos {
+#total_ingresos2 {
     position: relative;
     cursor: pointer;
     border: none;
-    background: none;
-    width: 230px;
+    width: 231px;
     height: 16px;
     padding-left: 9px;
     font-size: 10px;
@@ -3646,7 +3642,7 @@ h2.CFDI {
     width: 77px;
     height: 22px;
     bottom: 202px;
-    left: 705px;
+    left: 968px;
 }
 
 /* POSICION 10 */  
@@ -3676,8 +3672,7 @@ h2.CFDI {
     position: relative;
     cursor: pointer;
     border: none;
-    background: none;
-    width: 200px;
+    width: 202px;
     height: 15px;
     padding-left: 9px;
     font-size: 10px;
@@ -3779,8 +3774,7 @@ h2.CFDI {
     position: relative;
     cursor: pointer;
     border: none;
-    background: none;
-    width: 200px;
+    width: 203px;
     height: 15px;
     padding-left: 9px;
     font-size: 10px;
@@ -3802,14 +3796,13 @@ h2.CFDI {
     position: relative;
     cursor: pointer;
     border: none;
-    background: none;
-    width: 200px;
+    width: 202px;
     height: 15px;
     padding-left: 9px;
     font-size: 10px;
     color: #666;
     bottom: 378px;
-    left: 264px;
+    left: 261px;
 }
 
 #IVA_acreditable_2:focus {
@@ -3829,7 +3822,7 @@ h2.CFDI {
     width: 77px;
     height: 22px;
     bottom: 275px;
-    left: 560px;
+    left: 555px;
 }
 
 #pago_IVA {
