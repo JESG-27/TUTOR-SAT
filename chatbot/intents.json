@@ -370,7 +370,7 @@
         "¿Por que se selecciona el pago de una sola exhibicion?",
         "¿Cual es la clave de pago en una sola exhibicion?",
         "¿Que significa PUE?",
-        "pago sola exhibicion",
+        "Pago sola exhibicion",
         "PUE"
       ],
       "responses": [
@@ -385,7 +385,7 @@
         "¿Cual es la cantidad minima de facturas?",
         "numero de facturas",
         "cuantas facturas",
-        "más facturas"
+        "Mas facturas"
       ],
       "responses": [
         "Cuando preguntas sobre cuantas facturas puedes generar te refieres a la periodicidad de la factura, puedes generar una factura como mínimo o varias al mes y no hay límite de importe"
@@ -398,10 +398,47 @@
         "¿Quien es el publico general?",
         "¿Cual es la clave de publico general?",
         "publico general",
-        "clave publico general"
+        "Clave publico general"
       ],
       "responses": [
         "La factura al público en general engloba operaciones realizadas en un determinado periodo de tiempo, cuando se te solicita en el apartado cliente se ingresa al cliente XAXX010101000 que corresponde a la clave de público en general."
+      ]
+    },
+    {
+      "tag": "IVAdefinicion",
+      "patterns": [
+        "¿Que es el IVA?",
+        "¿Que significa IVA?",
+        "IVA",
+        "Impuesto de IVA"
+      ],
+      "responses": [
+        "El Impuesto de Valor Agregado IVA, es un impuesto indirecto, es decir, los contribuyentes no lo pagan directamente sino que lo trasladan o cobran a una tercera persona, y quien lo absorbe es el consumidor final del bien o servicio."
+      ]
+    },
+    {
+      "tag": "IVAacreditablePeriodo",
+      "patterns": [
+        "¿Que es el IVA acreditable del periodo?",
+        "¿Que es acreditable del periodo?",
+        "IVA acreditable del periodo",
+        "Impuesto acreditable del periodo",
+        "Acreditable del periodo"
+      ],
+      "responses": [
+        "Esto hace referencia a el impuesto efectivamente pagado en gastos realizados (compras y gastos) que cumplan con los requisitos fiscales (estrictamente indispensables)"
+      ]
+    },
+    {
+      "tag": "IVAcompensaciones",
+      "patterns": [
+        "¿Cuales son las compensaciones de IVA?",
+        "¿Que son las compensaciones?",
+        "¿Tengo que aplicar compensaciones?",
+        "Compensaciones por aplicar"
+      ],
+      "responses": [
+        "La compensación en términos del artículo 2185 del Código Civil Federal es una forma de extinción de las obligaciones que tiene lugar cuando dos personas reúnen la calidad de deudores y acreedores recíprocamente y por su propio derecho."
       ]
     }
   ]
