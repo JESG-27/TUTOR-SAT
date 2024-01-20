@@ -440,6 +440,255 @@
       "responses": [
         "La compensación en términos del artículo 2185 del Código Civil Federal es una forma de extinción de las obligaciones que tiene lugar cuando dos personas reúnen la calidad de deudores y acreedores recíprocamente y por su propio derecho."
       ]
+    },
+    {
+      "tag": "RESICO",
+      "patterns": [
+        "Régimen Simplificado de Confianza",
+        "¿Qué es RESICO?",
+        "RESICO"
+      ],
+      "responses": [
+        "Pueden inscribirse aquellas personas físicas que realicen únicamente actividades empresariales, profesionales u otorguen el uso o goce temporal de bienes, siempre que la totalidad de sus ingresos propios de la actividad o las actividades, obtenidos en el ejercicio inmediato anterior, no excedan de la cantidad de tres millones quinientos mil pesos."
+      ]
+    },
+    {
+      "tag": "pagoDeclaracion",
+      "patterns": [
+        "¿Cuándo se hace la declaración?",
+        "¿Cada cuando se paga el ISR?",
+        "¿Cada cuando se paga el IVA?",
+        "Pago de IVA",
+        "Pago de ISR"
+      ],
+      "responses": [
+        "De acuerdo con lo que establece el Sistema de Administración Tributaria (SAT) esta declaración debe realizarse a más tardar el día 17 del mes siguiente al que corresponde el pago."
+      ]
+    },
+    {
+      "tag": "DecProvisional",
+      "patterns": [
+        "Declaración provisional",
+        "¿Que es la declaración provisional"
+      ],
+      "responses": [
+        "Es la forma en que de se presenta la información sobre los ingresos, gastos, utilidades y pérdidas en un mes."
+      ]
+    },
+    {
+      "tag": "ImpuestosDeclaraciones",
+      "patterns": [
+        "¿Cuáles son los impuestos federales en las declaraciones?",
+        "¿Qué se presenta en las declaraciones?",
+        "Impuestos de declaraciones"
+      ],
+      "responses": [
+        "Impuesto Sobre la Renta (ISR), Impuesto al Valor Agregado (IVA), Impuesto Empresarial a Tasa Única (IETU), Impuesto Especial Sobre Producción y Servicios (IEPS), Retenciones de Impuestos realizadas a terceros"
+      ]
+    },
+    {
+      "tag": "Multa",
+      "patterns": [
+        "¿Qué pasa si no pago las declaraciones?",
+        "Es importante pagar",
+        "Debo pagar las declaraciones",
+        "¿Hay multas?"
+      ],
+      "responses": [
+        "Cuando se paga fuera del plazo alguna obligación fiscal, las autoridades pueden llegar a imponer alguna multa o recargo."
+      ]
+    },
+    {
+      "tag": "ISR",
+      "patterns": [
+        "¿Qué es el ISR?",
+        "¿Para qué es el ISR?"
+      ],
+      "responses": [
+        "La declaración “ISR simplificado de confianza, Personas físicas” se crea con el objeto de simplificar el cumplimiento de pago del Impuesto sobre la Renta de las personas físicas del Régimen Simplificado de Confianza."
+      ]
+    },
+    {
+      "tag": "Excentos",
+      "patterns": [
+        "Quienes tienen ingresos exentos de ISR",
+        "Hasta que cantidad se tienen ingresos exentos de ISR",
+        "Impuestos Exentos"
+      ],
+      "responses": [
+        "Son los ingresos no sujetos al pago de impuesto obtenidos en el mes que corresponden al pago mensual que declara. Las personas físicas que se dediquen a la agricultura, ganadería, silvicultura y actividades pesqueras tendrán ingresos exentos hasta por $900,000."
+      ]
+    },
+    {
+      "tag": "OpcCon",
+      "patterns": [
+        "Opción consultas, declaraciones, orden de pago, acuses",
+        "Consultas"
+      ],
+      "responses": [
+        "En la opción de “Consultas”, podrás consultar y reimprimir las declaraciones presentadas, por obligación, pagadas y los acuses de recibo de la declaración."
+      ]
+    },
+    {
+      "tag": "OpcDec",
+      "patterns": [
+        "Opción Presentación declaración otras obligaciones"
+      ],
+      "responses": [
+        "En esta opción podrás declarar las obligaciones que no se encuentran registradas en la sección Obligaciones a declarar del apartado Configuración de la declaración"
+      ]
+    },
+    {
+      "tag": "Periodo",
+      "patterns": [
+        "¿Qué periodicidad debo seleccionar?",
+        "Periodicidad"
+      ],
+      "responses": [
+        "La periodicidad es Mensual"
+      ]
+    },
+    {
+      "tag": "TipoDecla",
+      "patterns": [
+        "¿Qué tipo de declaración selecciono?",
+        "Declaración normal",
+        "Declaración complementaria"
+      ],
+      "responses": [
+        "- Declaración normal: Este tipo de declaraciones son presentadas por primera vez en el periodo. - Declaración complementaria: Es la que se presenta para corregir una omisión o equivocación en las declaraciones normales."
+      ]
+    },
+    {
+      "tag": "SelDec",
+      "patterns": [
+        "¿Por qué tengo seleccionado ISR e IVA?",
+        "La declaración de ISR",
+        "La declaración de IVA"
+      ],
+      "responses": [
+        "La declaración de ISR está prellenada con la información de los comprobantes fiscales de tipo ingreso emitidos por las personas físicas en el periodo de pago. La declaración de IVA está prellenada con la información de los comprobantes fiscales de tipo ingreso y egreso, emitidos y recibidos por las personas físicas en el periodo de pago."
+      ]
+    },
+    {
+      "tag": "Copropiedad",
+      "patterns": [
+        "¿Cómo se si mis ingresos son por copropiedad?",
+        "Copropiedad",
+        "Ingresos por copropiedad"
+      ],
+      "responses": [
+        "Se establece que hay copropiedad cuando una cosa o un derecho pertenecen pro-indiviso a varias personas."
+      ]
+    },
+    {
+      "tag": "Adici",
+      "patterns": [
+        "Ingresos adicionales del mes"
+      ],
+      "responses": [
+        "Son los ingresos adicionales que obtuvo el contribuyente en el mes que declara."
+      ]
+    },
+    {
+      "tag": "ImpCob",
+      "patterns": [
+        "Total de impuestos percibidos por la actividad",
+        "Ingresos cobrados y amparados por facturas del mes"
+      ],
+      "responses": [
+        "Es el resultado de Ingresos cobrados del mes más los Ingresos adicionales del mes"
+      ]
+    },
+    {
+      "tag": "Descuento",
+      "patterns": [
+        "¿Cómo aplico mis Devoluciones, descuentos y bonificaciones?",
+        "Devoluciones",
+        "Descuentos",
+        "Bonificaciones"
+      ],
+      "responses": [
+        "Cuando el monto del impuesto causado por el contribuyente en el mes de que se trate resulte inferior al monto del impuesto que se disminuya, el contribuyente podrá disminuir la diferencia que resulte entre dichos montos, en la siguiente o siguientes declaraciones, hasta agotarlo. Puedes ver todos los detalles en el artículo 60 del SAT: <br><a href='https://www.sat.gob.mx/articulo/98559/articulo-6'>Click aquí</a>"
+      ]
+    },
+    {
+      "tag": "Base",
+      "patterns": [
+        "Base gravable"
+      ],
+      "responses": [
+        "Es el resultado de Ingresos cobrados y amparados por facturas del mes menos los ingresos exentos, en caso de existir, del mes que se declara."
+      ]
+    },
+    {
+      "tag": "ImpMen",
+      "patterns": [
+        "Impuesto mensual"
+      ],
+      "responses": [
+        "Es el impuesto determinado, resultado de multiplicarla base gravable por la tasa"
+      ]
+    },
+    {
+      "tag": "Retenido",
+      "patterns": [
+        "ISR retenido",
+        "ISR no acreditable"
+      ],
+      "responses": [
+        "La información de este campo corresponde a las retenciones realizadas por las personas morales a la tasa del 1.25%"
+      ]
+    },
+    {
+      "tag": "ACargo",
+      "patterns": [
+        "Impuesto a cargo"
+      ],
+      "responses": [
+        "Es el resultado de restar el impuesto mensual menos el ISR retenido."
+      ]
+    },
+    {
+      "tag": "Compen",
+      "patterns": [
+        "Compensaciones por aplicar",
+        "Compensaciones"
+      ],
+      "responses": [
+        "Para aplicar la compensación de cantidades a favor, contesta “Sí” a la pregunta, durante el llenado de ISR para habilitar el campo “Compensaciones”, con el fin de registrar los datos correspondientes a la declaración en la que se generó el saldo a favor que deseas compensar.",
+        "Para registrar el importe de los saldos a favor que deseas compensar, selecciona el botón “Capturar”, con ello se habilitará un apartado en el cual registrarás los datos de las declaraciones en donde se generaron los saldos a favor que deseas compensar."
+      ]
+    },
+    {
+      "tag": "CantPago",
+      "patterns": [
+        "Cantidad a pagar "
+      ],
+      "responses": [
+        "Es el resultado de disminuir el total de contribuciones con el total de aplicaciones"
+      ]
+    },
+    {
+      "tag": "PerFis",
+      "patterns": [
+        "¿Qué es una persona física?",
+        "Persona física"
+      ],
+      "responses": [
+        "Es un individuo que realiza cualquier actividad económica (vendedor, comerciante, empleado, profesionista, etc.), el cual tiene derechos y obligaciones."
+      ]
+    },
+    {
+      "tag": "PerMor",
+      "patterns": [
+        "Persona moral",
+        "¿Qué es una persona moral?"
+      ],
+      "responses": [
+        "Es el conjunto de personas físicas, que se unen para la realización de un fin colectivo, son entes creados por el derecho, no tienen una realidad material o corporal, sin embargo, la ley les otorga capacidad jurídica para tener derechos y obligaciones."
+      ]
     }
+    
   ]
 }
