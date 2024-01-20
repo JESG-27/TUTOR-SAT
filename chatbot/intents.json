@@ -138,7 +138,7 @@
         "pagina"
       ],
       "responses": [
-        "Este es el portal del SAT: <br><a href='https://www.sat.gob.mx/home'>Click aquí</a>"
+        "Este es el portal del SAT: <br><a href='https://www.sat.gob.mx/home' target='_blank'>Click aquí</a>"
       ]
     },
     {
@@ -287,7 +287,7 @@
         "¿Cuales son las oficionas del SAT?"
       ],
       "responses": [
-        "Existen diversas oficinas a las que puedes acudir, todo depende de tu ubicación. Puedes consultar la más cercana en el siguiente link <a href = 'https://www.sat.gob.mx/empresas/directorio-nacional-de-modulos-de-servicios-tributarios'>Click aquí</a>"
+        "Existen diversas oficinas a las que puedes acudir, todo depende de tu ubicación. Puedes consultar la más cercana en el siguiente link <a href = 'https://www.sat.gob.mx/empresas/directorio-nacional-de-modulos-de-servicios-tributarios' target='_blank'>Click aquí</a>"
       ]
     },
     {
@@ -309,7 +309,7 @@
         "¿Como tramito mi RFC?"
       ],
       "responses": [
-        "El RFC es una clave única alfanumérica compuesta de 13 letras y números para personas físicas y para personas morales es de 12 elementos.<br> Es un documento oficial que identifica a los contribuyentes y permite realizar declaraciones de impuestos y trámites con el Gobierno. Para obtenerlo, se necesita la CURP, la identificación oficial vigente y una cita en las oficinas del SAT. <br>Si quieres obtener tu RFC puedes consultarlo en el siguiente enlace <br> <a href = 'https://www.sat.gob.mx/tramites/28753/obten-tu-rfc-con-la-clave-unica-de-registro-de-poblacion-curp'> Click aquí</a>"
+        "El RFC es una clave única alfanumérica compuesta de 13 letras y números para personas físicas y para personas morales es de 12 elementos.<br> Es un documento oficial que identifica a los contribuyentes y permite realizar declaraciones de impuestos y trámites con el Gobierno. Para obtenerlo, se necesita la CURP, la identificación oficial vigente y una cita en las oficinas del SAT. <br>Si quieres obtener tu RFC puedes consultarlo en el siguiente enlace <br> <a href = 'https://www.sat.gob.mx/tramites/28753/obten-tu-rfc-con-la-clave-unica-de-registro-de-poblacion-curp' target='_blank'> Click aquí</a>"
       ]
     },
     {
@@ -381,7 +381,7 @@
       "tag": "generarFacturas",
       "patterns": [
         "¿Cuantas facturas puedo generar?",
-        "¿Puedo generar más de una factura?",
+        "¿Puedo generar mas de una factura?",
         "¿Cual es la cantidad minima de facturas?",
         "numero de facturas",
         "cuantas facturas",
@@ -444,8 +444,8 @@
     {
       "tag": "RESICO",
       "patterns": [
-        "Régimen Simplificado de Confianza",
-        "¿Qué es RESICO?",
+        "Regimen Simplificado de Confianza",
+        "¿Que es RESICO?",
         "RESICO"
       ],
       "responses": [
@@ -455,7 +455,7 @@
     {
       "tag": "pagoDeclaracion",
       "patterns": [
-        "¿Cuándo se hace la declaración?",
+        "¿Cuando se hace la declaracion?",
         "¿Cada cuando se paga el ISR?",
         "¿Cada cuando se paga el IVA?",
         "Pago de IVA",
@@ -468,7 +468,7 @@
     {
       "tag": "DecProvisional",
       "patterns": [
-        "Declaración provisional",
+        "Declaracion provisional",
         "¿Que es la declaración provisional"
       ],
       "responses": [
@@ -478,8 +478,8 @@
     {
       "tag": "ImpuestosDeclaraciones",
       "patterns": [
-        "¿Cuáles son los impuestos federales en las declaraciones?",
-        "¿Qué se presenta en las declaraciones?",
+        "¿Cuales son los impuestos federales en las declaraciones?",
+        "¿Que se presenta en las declaraciones?",
         "Impuestos de declaraciones"
       ],
       "responses": [
@@ -489,7 +489,7 @@
     {
       "tag": "Multa",
       "patterns": [
-        "¿Qué pasa si no pago las declaraciones?",
+        "¿Que pasa si no pago las declaraciones?",
         "Es importante pagar",
         "Debo pagar las declaraciones",
         "¿Hay multas?"
@@ -501,11 +501,11 @@
     {
       "tag": "ISR",
       "patterns": [
-        "¿Qué es el ISR?",
-        "¿Para qué es el ISR?"
+        "¿Que es el ISR?",
+        "¿Para que es el ISR?"
       ],
       "responses": [
-        "La declaración “ISR simplificado de confianza, Personas físicas” se crea con el objeto de simplificar el cumplimiento de pago del Impuesto sobre la Renta de las personas físicas del Régimen Simplificado de Confianza."
+        "La declaración ISR simplificado de confianza, Personas físicas se crea con el objeto de simplificar el cumplimiento de pago del Impuesto sobre la Renta de las personas físicas del Régimen Simplificado de Confianza."
       ]
     },
     {
@@ -522,17 +522,17 @@
     {
       "tag": "OpcCon",
       "patterns": [
-        "Opción consultas, declaraciones, orden de pago, acuses",
+        "Opcion consultas, declaraciones, orden de pago, acuses",
         "Consultas"
       ],
       "responses": [
-        "En la opción de “Consultas”, podrás consultar y reimprimir las declaraciones presentadas, por obligación, pagadas y los acuses de recibo de la declaración."
+        "En la opción de Consultas, podrás consultar y reimprimir las declaraciones presentadas, por obligación, pagadas y los acuses de recibo de la declaración."
       ]
     },
     {
       "tag": "OpcDec",
       "patterns": [
-        "Opción Presentación declaración otras obligaciones"
+        "Opcion Presentacion declaracion otras obligaciones"
       ],
       "responses": [
         "En esta opción podrás declarar las obligaciones que no se encuentran registradas en la sección Obligaciones a declarar del apartado Configuración de la declaración"
@@ -541,7 +541,7 @@
     {
       "tag": "Periodo",
       "patterns": [
-        "¿Qué periodicidad debo seleccionar?",
+        "¿Que periodicidad debo seleccionar?",
         "Periodicidad"
       ],
       "responses": [
@@ -551,9 +551,9 @@
     {
       "tag": "TipoDecla",
       "patterns": [
-        "¿Qué tipo de declaración selecciono?",
-        "Declaración normal",
-        "Declaración complementaria"
+        "¿Que tipo de declaracion selecciono?",
+        "Declaracion normal",
+        "Declaracion complementaria"
       ],
       "responses": [
         "- Declaración normal: Este tipo de declaraciones son presentadas por primera vez en el periodo. - Declaración complementaria: Es la que se presenta para corregir una omisión o equivocación en las declaraciones normales."
@@ -562,9 +562,9 @@
     {
       "tag": "SelDec",
       "patterns": [
-        "¿Por qué tengo seleccionado ISR e IVA?",
-        "La declaración de ISR",
-        "La declaración de IVA"
+        "¿Por que tengo seleccionado ISR e IVA?",
+        "La declaracion de ISR",
+        "La declaracion de IVA"
       ],
       "responses": [
         "La declaración de ISR está prellenada con la información de los comprobantes fiscales de tipo ingreso emitidos por las personas físicas en el periodo de pago. La declaración de IVA está prellenada con la información de los comprobantes fiscales de tipo ingreso y egreso, emitidos y recibidos por las personas físicas en el periodo de pago."
@@ -573,7 +573,7 @@
     {
       "tag": "Copropiedad",
       "patterns": [
-        "¿Cómo se si mis ingresos son por copropiedad?",
+        "¿Como se si mis ingresos son por copropiedad?",
         "Copropiedad",
         "Ingresos por copropiedad"
       ],
@@ -603,13 +603,13 @@
     {
       "tag": "Descuento",
       "patterns": [
-        "¿Cómo aplico mis Devoluciones, descuentos y bonificaciones?",
+        "¿Como aplico mis Devoluciones, descuentos y bonificaciones?",
         "Devoluciones",
         "Descuentos",
         "Bonificaciones"
       ],
       "responses": [
-        "Cuando el monto del impuesto causado por el contribuyente en el mes de que se trate resulte inferior al monto del impuesto que se disminuya, el contribuyente podrá disminuir la diferencia que resulte entre dichos montos, en la siguiente o siguientes declaraciones, hasta agotarlo. Puedes ver todos los detalles en el artículo 60 del SAT: <br><a href='https://www.sat.gob.mx/articulo/98559/articulo-6'>Click aquí</a>"
+        "Cuando el monto del impuesto causado por el contribuyente en el mes de que se trate resulte inferior al monto del impuesto que se disminuya, el contribuyente podrá disminuir la diferencia que resulte entre dichos montos, en la siguiente o siguientes declaraciones, hasta agotarlo. Puedes ver todos los detalles en el artículo 60 del SAT: <br><a href='https://www.sat.gob.mx/articulo/98559/articulo-6' target='_blank'>Click aquí</a>"
       ]
     },
     {
@@ -656,8 +656,8 @@
         "Compensaciones"
       ],
       "responses": [
-        "Para aplicar la compensación de cantidades a favor, contesta “Sí” a la pregunta, durante el llenado de ISR para habilitar el campo “Compensaciones”, con el fin de registrar los datos correspondientes a la declaración en la que se generó el saldo a favor que deseas compensar.",
-        "Para registrar el importe de los saldos a favor que deseas compensar, selecciona el botón “Capturar”, con ello se habilitará un apartado en el cual registrarás los datos de las declaraciones en donde se generaron los saldos a favor que deseas compensar."
+        "Para aplicar la compensación de cantidades a favor, contesta Sí a la pregunta, durante el llenado de ISR para habilitar el campo Compensaciones, con el fin de registrar los datos correspondientes a la declaración en la que se generó el saldo a favor que deseas compensar.",
+        "Para registrar el importe de los saldos a favor que deseas compensar, selecciona el botón Capturar, con ello se habilitará un apartado en el cual registrarás los datos de las declaraciones en donde se generaron los saldos a favor que deseas compensar."
       ]
     },
     {
@@ -672,8 +672,8 @@
     {
       "tag": "PerFis",
       "patterns": [
-        "¿Qué es una persona física?",
-        "Persona física"
+        "¿Que es una persona física?",
+        "Persona fisica"
       ],
       "responses": [
         "Es un individuo que realiza cualquier actividad económica (vendedor, comerciante, empleado, profesionista, etc.), el cual tiene derechos y obligaciones."
@@ -683,12 +683,58 @@
       "tag": "PerMor",
       "patterns": [
         "Persona moral",
-        "¿Qué es una persona moral?"
+        "¿Que es una persona moral?"
       ],
       "responses": [
         "Es el conjunto de personas físicas, que se unen para la realización de un fin colectivo, son entes creados por el derecho, no tienen una realidad material o corporal, sin embargo, la ley les otorga capacidad jurídica para tener derechos y obligaciones."
       ]
+    },
+    {
+      "tag": "actividadesGravadas",
+      "patterns": [
+        "actividades gravadas IVA",
+        "¿Cuales son las actividades gravadas del IVA?",
+        "IVA acreditable por actividades gravadas"
+      ],
+      "responses": [
+        "Se captura el IVA pagado, que correspondan a las actividades o ventas gravadas a tasa 16% u 8% y 0%"
+      ]
+    },
+    {
+      "tag": "actividadesMixtas",
+      "patterns": [
+        "actividades mixtas IVA",
+        "¿Cuales son las actividades mixtas del IVA?",
+        "IVA acreditable por actividades mixtas"
+      ],
+      "responses": [
+        "Se captura la proporción de IVA pagado por las actividades parcialmente gravadas y exentas."
+      ]
+    },
+    {
+      "tag": "estimulosAplicar",
+      "patterns": [
+        "estimulos aplicar",
+        "¿Cuales son los estimulos por aplicar?",
+        "estimulos por aplicar",
+        "estimulos aplicables",
+        "¿Que estimulos son aplicables?"
+      ],
+      "responses": [
+        "Los Estímulos fiscales son beneficios que reciben los contribuyentes que cumplen ciertos requisitos para reducir o eliminar el pago tributario de determinados gravámenes. Pueden ser actividades de enajenación de bienes, prestación de servicios independientes u otorgamiento del uso o goce temporal de bienes en los locales."
+      ]
+    },
+    {
+      "tag": "tasaIVA",
+      "patterns": [
+        "¿Cual es la tasa del IVA?",
+        "¿Que tasa del IVA debo aplicar?",
+        "tasa del IVA",
+        "¿Como puedo calcular la tasa del IVA?"
+      ],
+      "responses": [
+        "El porcentaje del IVA tiene una tasa general del 16%. La tasa de IVA especial para la zona Fronteriza equivale al 8%. Tasa del 0% para algunos específicos como enajenaciones (venta o donación) de terrenos y casas habitación. <br> Si quieres ver más a detalle en que se aplica cada tasa puedes consultar el siguiente <a href='https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf' target='_blank'>documento</a> <br>Si quieres calcularlo lo puedes hacer <a href='http://www.calculadorasat.com/calcular-iva' target='_blank'>aquí</a>"
+      ]
     }
-    
   ]
 }
