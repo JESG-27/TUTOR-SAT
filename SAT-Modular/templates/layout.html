@@ -23,6 +23,9 @@
         <a class="btn" href="/tutoriales"><button>Tutoriales</button></a>
     </header>
 
+    <button onclick="sendMessage('Tengo RFC')">Test</button>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/apitest.js') }}"></script>
+
     {% block body %}
     {% endblock %}
 

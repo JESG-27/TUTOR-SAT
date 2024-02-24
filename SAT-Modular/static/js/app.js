@@ -52,36 +52,32 @@ class Chatbox {
 
         let msg1 = { name: "User", message: text1 }
         this.messages.push(msg1);
-
-        // fetch($SCRIPT_ROOT + '/predict', {
-        //     method: 'POST',
-        //     body: JSON.stringify({ message: text1 }),
-        //     mode: 'cors',
-        //     headers: {
-        //       'Content-Type': 'application/json'
-        //     },
-        //   })
-          fetch('http://127.0.0.1:5001/predict', {
-            method: 'POST',
-            body: JSON.stringify({ message: text1 }),
-            mode: 'cors',
-            headers: {
-                'Access-Control-Allow-Origin':'http://127.0.0.1:5001/predict',
-                'Content-Type': 'application/json'
+        
+        fetch('https://chatbotsatsim.pythonanywhere.com/predict', {
+        method: 'POST',
+        body: JSON.stringify({ message: text1 }),
+        mode: 'cors',
+        headers: {
+            'Content-Type': 'application/json'
             },
-          })
-          .then(r => r.json())
-          .then(r => {
+        })
+        .then(r => {
+        if (!r.ok) {
+            throw new Error('Network response was not ok');
+            }
+        })
+        .then(r => r.json())
+        .then(r => {
             let msg2 = { name: "Bot", message: r.answer };
             this.messages.push(msg2);
             this.updateChatText(chatbox)
             textField.value = ''
-
-        }).catch((error) => {
-            console.error('Error:', error);
+        })
+        .catch((Error) => {
+            console.Error('Error:', Error);
             this.updateChatText(chatbox)
             textField.value = ''
-          });
+        });
     }
 
     updateChatText(chatbox) {
