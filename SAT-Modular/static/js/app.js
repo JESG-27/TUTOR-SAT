@@ -43,7 +43,7 @@ class Chatbox {
         }
     }
 
-    onSendButton(chatbox) {
+    async onSendButton(chatbox) {
         var textField = chatbox.querySelector('input');
         let text1 = textField.value
         if (text1 === "") {
@@ -52,32 +52,30 @@ class Chatbox {
 
         let msg1 = { name: "User", message: text1 }
         this.messages.push(msg1);
+
+        try {
+            const url = "https://chatbotsatsim.pythonanywhere.com/predict";
+            const response = await fetch(url, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ message : text1 }),
+            });
         
-        fetch('https://chatbotsatsim.pythonanywhere.com/predict', {
-        method: 'POST',
-        body: JSON.stringify({ message: text1 }),
-        mode: 'cors',
-        headers: {
-            'Content-Type': 'application/json'
-            },
-        })
-        .then(r => {
-        if (!r.ok) {
-            throw new Error('Network response was not ok');
+            if (response.ok) {
+                const data = await response.json();
+                let msg2 = { name: "Bot", message: data.answer };
+                this.messages.push(msg2);
+                this.updateChatText(chatbox)
+                textField.value = ''
+            } else {
+                console.error("Error:", response.statusText);
             }
-        })
-        .then(r => r.json())
-        .then(r => {
-            let msg2 = { name: "Bot", message: r.answer };
-            this.messages.push(msg2);
-            this.updateChatText(chatbox)
-            textField.value = ''
-        })
-        .catch((Error) => {
-            console.Error('Error:', Error);
-            this.updateChatText(chatbox)
-            textField.value = ''
-        });
+        }
+        catch (error) {
+            console.error("Error:", error);
+        }
     }
 
     updateChatText(chatbox) {
