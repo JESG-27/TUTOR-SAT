@@ -29,7 +29,7 @@ class Chatbox {
     }
 
     prompt(chatbox) {
-        this.messages.push({ name: "Bot", message: "Bienvenido a SATSIM. Yo puedo ayudarte con tus dudas. <br>  1. Si quieres conocer más de nosotros da clic aquí <a href = 'https://digicor.com.au/advanced-search'> SATSIM web</a> . <br> 2. Si deseas ver los tutoriales que tenemos da clic aquí <a href = 'https://digicor.com.au/advanced-search'> Tutoriales</a>." });
+        this.messages.push({ name: "Bot", message: "Bienvenido a SATSIM. Yo puedo ayudarte con tus dudas. <br>  1. Si quieres conocer más de nosotros da clic aquí <a href = 'https://satsim.pythonanywhere.com/sobre_satsim'> SATSIM web</a> . <br> 2. Si deseas ver los tutoriales que tenemos da clic aquí <a href = 'https://satsim.pythonanywhere.com/tutoriales'> Tutoriales</a>." });
         this.updateChatText(chatbox)
     }
 
@@ -75,6 +75,10 @@ class Chatbox {
         }
         catch (error) {
             console.error("Error:", error);
+            let msg2 = { name: "Bot", message: "Parece que no puedo conectarme contigo, lo siento" };
+            this.messages.push(msg2);
+            this.updateChatText(chatbox)
+            textField.value = ''
         }
     }
 
