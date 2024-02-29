@@ -1095,7 +1095,7 @@ section.left .contactInfo {
 }
 
 .teams img {
-    width: 200px;
+    width: 180px;
     height: 200px;
     margin: 7px;
 }
@@ -4707,5 +4707,586 @@ h2.CFDI {
         height: 90px;
         bottom: 1100px;
         left: 260px;
+    }
+
+    /* EFIRMA CFDI */
+    #buscarKey {
+        width: 115px;
+        height: 49px;
+        bottom: 370px;
+        left: 1139px;
+    }
+
+    #Fiel_ {
+        width: 570px;
+        height: 25px;
+        bottom: 635px;
+        left: 230px;
+    }
+
+    #claveprivada {
+        width: 570px;
+        height: 25px;
+        bottom: 657px;
+        left: 230px;
+    }
+
+    #abrirkey {
+        width: 120px;
+        height: 35px;
+        bottom: 327px;
+        left: 555px;
+    }
+
+    #buscarCer {
+        width: 115px;
+        height: 49px;
+        bottom: 294px;
+        left: 1139px;
+    }
+
+    #cer_ {
+        width: 570px;
+        height: 25px;
+        bottom: 657px;
+        left: 230px;
+    }
+
+    #abrircer {
+        width: 120px;
+        height: 35px;
+        bottom: 327px;
+        left: 555px;
+    }
+
+    #contrasena2 {
+        width: 900px;
+        height: 30px;
+        bottom: 501px;
+        left: 289px;
+        text-align: left;
+        padding-left: 12px;
+        font-size: 15px;
+    }
+
+    #confirmar {
+        width: 140px;
+        height: 50px;
+        bottom: 243px;
+        left: 1015px;
+    }
+
+    #firmarAviso {
+        width: 109px;
+        height: 50px;
+        bottom: 243px;
+        left: 1145px;
+    }
+
+    #TermCondiSiguiente {
+        width: 140px;
+        height: 45px;
+        bottom: 230px;
+        left: 1018px;
+    }
+
+    /* Declaraciones -----------------------------------------------------------------------------------------------*/
+    /* POSICION 0 */
+
+    .dec0Dec {
+        width: 109px;
+        height: 95px;
+        bottom: 1100px;
+        left: 260px;
+    }
+
+    /* POSICION 1 */
+
+    .dec1Reg {
+        width: 1180px;
+        height: 45px;
+        bottom: 804px;
+        left: 231px;
+    }
+
+    #opcionRSC {
+        width: 795px;
+        height: 30px;
+        bottom: 743px;
+        left: 231px;
+    }
+
+    .dec2Ini {
+        width: 140px;
+        height: 50px;
+        bottom: 887px;
+        left: 872px;
+    }
+
+    #RFC_login {
+        width: 520px;
+        height: 33px;
+        bottom: 1366px;
+        left: 478px;
+        text-align: left;
+        padding-left: 12px;
+        font-size: 15px;
+    }
+
+    #contrasena_login {
+        width: 520px;
+        height: 33px;
+        bottom: 1317px;
+        left: -46px;
+        text-align: left;
+        padding-left: 12px;
+        font-size: 15px;
+    }
+
+    #captcha_login {
+        width: 520px;
+        height: 33px;
+        bottom: 1136px;
+        left: -569px;
+        text-align: left;
+        padding-left: 12px;
+        font-size: 15px;
+    }
+
+    #enviar_login {
+        width: 134px;
+        height: 54px;
+        bottom: 1124px;
+        left: 878px;
+    }
+
+    #presentar_decla {
+        width: 210px;
+        height: 45px;
+        bottom: 646px;
+        left: 150px;
+    }
+
+    #periodicidad_decla {
+        width: 309px;
+        height: 30px;
+        bottom: 436px;
+        left: 493px;
+    }
+
+    #periodicidad_mensual {
+        width: 300px;
+        height: 19px;
+        bottom: 383px;
+        left: 498px;
+    }
+
+    #periodo_decla {
+        width: 305px;
+        height: 30px;
+        bottom: 436px;
+        left: 1178px;
+    }
+
+    #periodo_noviembre {
+        width: 300px;
+        height: 19px;
+        bottom: 191px;
+        left: 1178px;
+    }
+
+    #tipo_declaracion {
+        width: 309px;
+        height: 30px;
+        bottom: 397px;
+        left: 493px;
+    }
+
+    #tipo_normal {
+        left: 496px;
+        width: 307px;
+        height: 25px;
+        bottom: 344px;
+    }
+
+    #siguiente_decla {
+        width: 150px;
+        height: 48px;
+        left: 735px;
+        bottom: 53px;
+    }
+    
+    #iniciar_isr {
+        width: 250px;
+        height: 145px;
+        left: 520px;
+        bottom: 310px;
+    }
+
+    #copropiedad {
+        width: 250px;
+        height: 32px;
+        bottom: 322px;
+        left: 724px;
+    }
+
+    #total_ingresos {
+        width: 250px;
+        height: 20px;
+        bottom: 250px;
+        left: 724px;
+    }
+
+    #mostrar_total_ingresos {
+        width: 250px;
+        height: 32px;
+        bottom: 264px;
+        left: 724px;
+    }
+
+    #cerrar_total_ingresos {
+        width: 116px;
+        height: 37px;
+        bottom: 65px;
+        left: 1447px;
+    }
+
+    #devoluciones_desc_bon {
+        width: 179px;
+        height: 37px;
+        bottom: 226px;
+        left: 1033px;
+    }
+
+    #dec_devo_bonif_por_copropiedad {
+        width: 300px;
+        height: 24px;
+        bottom: 404px;
+        left: 702px;
+        text-align: left;
+        padding-left: 12px;
+        font-size: 15px;
+    }
+
+    #cerrar_dec_devo_bonif {
+        width: 116px;
+        height: 37px;
+        bottom: 255px;
+        left: 1152px;
+    }
+
+    #mostrar_ingresos_disminuir {
+        width: 179px;
+        height: 37px;
+        bottom: 186px;
+        left: 1033px;
+    }
+
+    #agregar_ingresos_disminuir {
+        width: 136px;
+        height: 37px;
+        bottom: 700px;
+        left: 60px;
+    }
+
+    #seleccionar_ingresos_disminuir {
+        width: 350px;
+        height: 26px;
+        bottom: 653px;
+        left: 400px;
+    }
+
+    #sin_ingreso_disminuir {
+        width: 510px;
+        height: 25px;
+        bottom: 605px;
+        left: 394px;
+    }
+
+    #importe_disminuir {
+        display: inline-block;
+        width: 340px;
+        height: 24px;
+        bottom: 651px;
+        left: 1135px;
+        padding-left: 12px;
+        font-size: 15px;
+        padding-right: 5px;
+    }
+
+    #guardar_sin_ingreso_disminuir  {
+        width: 136px;
+        height: 37px;
+        bottom: 598px;
+        left: 314px;
+    }
+
+    #cerrar_ingreso_disminuir {
+        width: 117px;
+        height: 37px;
+        bottom: 386px;
+        left: 1454px;
+    }
+
+    #mostrar_ingresos_adicionales {
+        width: 179px;
+        height: 37px;
+        bottom: 147px;
+        left: 1033px;
+    }
+
+    #agregar_ingresos_adicionales {
+        width: 136px;
+        height: 37px;
+        bottom: 700px;
+        left: 60px;
+    }
+
+    #seleccionar_ingresos_adicionales {
+        width: 350px;
+        height: 26px;
+        bottom: 653px;
+        left: 400px; 
+    }
+
+    #sin_ingreso_adicional {
+        width: 370px;
+        height: 25px;
+        bottom: 605px;
+        left: 394px;
+    }
+
+    #importe_adicional {
+        width: 340px;
+        height: 24px;
+        bottom: 651px;
+        left: 1135px;
+        font-size: 15px;
+        padding-right: 5px;
+    }
+
+    #guardar_sin_ingreso_adicional {
+        width: 136px;
+        height: 37px;
+        bottom: 598px;
+        left: 314px;
+    }
+
+    #cerrar_ingreso_adicional {
+        width: 117px;
+        height: 37px;
+        bottom: 385px;
+        left: 1456px;
+    }
+    
+    #mostrar_ingresos_totales {
+        width: 179px;
+        height: 37px;
+        bottom: 107px;
+        left: 1033px;
+    }
+
+    #agregar_ingresos_totales {
+        width: 135px;
+        height: 35px;
+        bottom: 592px;
+        left: 60px;
+    }
+
+    #seleccionar_ingresos_totales {
+        width: 345px;
+        height: 25px;
+        bottom: 546px;
+        left: 399px;
+    }
+
+    #actividad_empresarial {
+        width: 498px;
+        height: 21px;
+        bottom: 495px;
+        left: 397px;
+    }
+
+    #total_ingresos2 {
+        width: 348px;
+        height: 24px;
+        bottom: 545px;
+        left: 1135px;
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+    #guardar_ingreso_total {
+        width: 136px;
+        height: 37px;
+        bottom: 490px;
+        left: 310px;
+    }
+
+    #cerrar_ingreso_total {
+        width: 117px;
+        height: 37px;
+        bottom: 310px;
+        left: 1456px;
+    }
+
+    #determinacion {
+        width: 170px;
+        height: 45px;
+        bottom: 415px;
+        left: 290px;
+    }
+
+    #mostrar_isr_retenido {
+        width: 183px;
+        height: 35px;
+        bottom: 169px;
+        left: 1031px;
+    }
+
+    #isr_retenido_valor {
+        width: 307px;
+        height: 23px;
+        padding-left: 15px;
+        font-size: 15px;
+        bottom: 189px;
+        left: 692px;
+    }
+
+    #cerar_isr_retenido {
+        width: 117px;
+        height: 37px;
+        bottom: 61px;
+        left: 1135px;
+    }
+
+    #pago {
+        width: 98px;
+        height: 44px;
+        bottom: 420px;
+        left: 474px;
+    }
+
+    #compensaciones_aplicar {
+        width: 246px;
+        height: 26px;
+        bottom: 400px;
+        left: 722px;
+    }
+
+    #no_compensaciones_aplicar {
+        width: 246px;
+        height: 25px;
+        bottom: 330px;
+        left: 722px;
+    }
+    
+    #guardar_isr {
+        width: 137px;
+        height: 52px;
+        bottom: 691px;
+        left: 1315px;
+    }
+
+    #iva_simplificado {
+        width: 244px;
+        height: 148px;
+        bottom: 322px;
+        left: 855px;
+    }
+
+    #mostrar_iva_simp {
+        width: 182px;
+        height: 35px;
+        bottom: 353px;
+        left: 1030px;
+    }
+
+    #IVA_acreditable {
+        width: 303px;
+        height: 25px;
+        padding-left: 15px;
+        font-size: 15px;
+        bottom: 628px;
+        left: 703px;
+    }
+
+    #IVA_acreditable_2 {
+        width: 303px;
+        height: 25px;
+        padding-left: 15px;
+        font-size: 15px;
+        bottom: 568px;
+        left: 396px;
+    }
+
+    #cerrar_IVA_acreditable {
+        width: 117px;
+        height: 37px;
+        bottom: 421px;
+        left: 842px;
+    }
+
+    #pago_IVA {
+        width: 98px;
+        height: 44px;
+        bottom: 780px;
+        left: 339px;
+    }
+
+    #compensacion {
+        width: 246px;
+        height: 26px;
+        bottom: 439px;
+        left: 722px;
+    }
+
+    #compensacion_no {
+        width: 246px;
+        height: 25px;
+        bottom: 369px;
+        left: 722px;
+    }
+    
+    #estimulos {
+        width: 246px;
+        height: 26px;
+        bottom: 400px;
+        left: 722px;
+    }
+
+    #estimulos_no {
+        width: 246px;
+        height: 25px;
+        bottom: 330px;
+        left: 722px;
+    }
+
+    #guardar_iva {
+        width: 145px;
+        height: 46px;
+        bottom: 688px;
+        left: 1312px;
+    }
+
+    #enviar_declaracion {
+        width: 210px;
+        height: 37px;
+        bottom: 156px;
+        left: 780px;
+    }
+
+    #si_declaracion {
+        width: 90px;
+        height: 45px;
+        bottom: 149px;
+        left: 896px;
+    }
+
+    #descargar {
+        width: 160px;
+        height: 50px;
+        bottom: 684px;
+        left: 1319px;
     }
 }
