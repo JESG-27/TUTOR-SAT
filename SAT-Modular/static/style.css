@@ -563,6 +563,7 @@ header {
 .preguntas-container {
     margin: auto 5%;
     display: flex;
+    margin-bottom: 30%;
 }
 
 /* Dos columnas principales*/
@@ -1096,7 +1097,7 @@ section.left .contactInfo {
 
 .teams img {
     width: 180px;
-    height: 200px;
+    height: 180px;
     margin: 7px;
 }
 
@@ -1153,6 +1154,7 @@ section.left .contactInfo {
     min-height: 85vh;
     display: grid;
     place-items: center;
+    margin-bottom: 10%;
 }
 
 .title h1 {
@@ -1321,6 +1323,7 @@ h2.CFDI {
 .CFDI-container {
     margin: 2% 5%;
     display: flex;
+    margin-bottom: 10%;
 }
 
 /* Dos columnas principales*/
@@ -5288,5 +5291,10 @@ h2.CFDI {
         height: 50px;
         bottom: 684px;
         left: 1319px;
+    }
+
+    /*Preguntas frecuentes*/
+    .preguntas-container {
+        margin: auto 5%;
     }
 }
