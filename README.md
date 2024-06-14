@@ -13,4 +13,4 @@ Tecnologías utilizadas:
 * HTML
 * CSS
 
-![Foundational C# with Microsoft](premiacion.png)
+![Image](premiacion.png)
