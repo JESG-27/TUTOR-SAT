@@ -13,4 +13,4 @@ Tecnologías utilizadas:
 * HTML
 * CSS
 
-![Image](premiacion.png)
+![Image](premiacion.webp)
